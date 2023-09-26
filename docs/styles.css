@@ -6,3 +6,9 @@ h1 {
     color: black;
     text-align: center;
 }
+
+button {
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+}
