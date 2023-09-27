@@ -1,0 +1,44 @@
+body {
+    background-color: greenyellow;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    color: #000;
+    text-align: justify;
+}
+
+h3 {
+    color: #000;
+    text-align: justify;
+}
+
+p {
+    color: #000;
+    text-align: justify;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table, tr, td {
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    border-style: solid;
+}
+
+ul {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    font-size: small;
+}
+
+button {
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+}
