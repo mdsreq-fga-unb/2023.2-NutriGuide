@@ -1,26 +1,23 @@
-
-
-<h1 align="center"> NutriGuide </h1>
-<h3 align="center"> 2023.2 </h3>
-
-## Sobre 
-
-
-<br>
-
-
-<p align="justify">&emsp;&emsp;Este repositório destina-se a o NutriGuide, sendo este o projeto de disciplana para a matéria de Requisitos de Software ministrada pelo professor George Marscicano.                                                           
-
-<p align="justify">&emsp;&emsp;O NutriGuide é um aplicativo web que serve como uma plataforma que facilita a interação entre um nutricionista e os seus pacientes com o objetivo de facilitar a comunicação entre ambos.
-
-
+# Início
 
 
 
 <br>
 
 
-## Integrantes
+## Sobre a disciplina
+
+<p align="justify">&emsp;&emsp;Este repositório destina-se a o NutriGuide, sendo este o projeto de disciplana para a matéria de Requisitos de Software ministrada pelo professor George Marscicano.</p>
+
+---
+
+## Sobre o site.
+
+<p align="justify">&emsp;&emsp;O NutriGuide é um aplicativo web que serve como uma plataforma que facilita a interação entre um nutricionista e os seus pacientes com o objetivo de facilitar a comunicação entre ambos.</p>
+
+---
+
+## Contribuidores
 
 |                                                                                          **Foto**                                                                                          |         **Nome**         |                       **GitHub**                        |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------: | :-----------------------------------------------------: |
@@ -30,9 +27,20 @@
 |    <a href="https://github.com/luanatorress"><img src="https://avatars.githubusercontent.com/u/129525424?v=4" height="auto" width="90" style="border-radius:50%"></a> &nbsp; &nbsp; &nbsp;     |    Luana Souza Silva Torres     |        [luanatorress](https://github.com/luanatorress)        |
 |   <a href="https://github.com/henriqtorresl"><img src="https://avatars.githubusercontent.com/u/102327244?v=4" height="auto" width="90" style="border-radius:50%"></a> &nbsp; &nbsp; &nbsp;   | Henrique Torres Landin  |     [henriqtorresl](https://github.com/henriqtorresl)     |
 
+---
+
+## Histórico de versão
+
+| Versão |    Data    |      Descrição       |  Autor  | Revisor |
+| :----: | :--------: | :------------------: | :-----: | :-----: |
+|  0.1   | 29/09/2023 | Criaçaõ do documento | Guilherme |   |
+
+
+---
+
+
 
 <hr/>
-<p align="center"><b>Grupo Skywalkers</b></p>
-<p align="center">Requisitos de Software<br /><br />
+<p align="center"><b>Grupo 1</b></p>
+<p align="center">Interação Humano-Computador<br /><br />
 <a href="https://fga.unb.br" target="_blank"><img width="230"src="https://4.bp.blogspot.com/-0aa6fAFnSnA/VzICtBQgciI/AAAAAAAARn4/SxVsQPFNeE0fxkCPVgMWbhd5qIEAYCMbwCLcB/s1600/unb-gama.png"></a>
-</p>
