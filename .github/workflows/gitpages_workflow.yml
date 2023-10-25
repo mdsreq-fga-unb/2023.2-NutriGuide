@@ -20,4 +20,8 @@ jobs:
           path: .cache
       - run: pip install mkdocs-material
       - run: mkdocs build
+<<<<<<<< HEAD:.github/workflows/gitpages_workflow.yml
       - run: mkdocs gh-deploy --force
+========
+      - run: mkdocs gh-deploy --force
+>>>>>>>> 2b40c2cf7588cb028aa4b1803059bec5467138b3:.github/workflows/ci.yml
