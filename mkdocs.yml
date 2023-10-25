@@ -1,37 +1,74 @@
-site_name: NutriGuide
 
-repo_name: "2023.2-NutriGuide"
-repo_url: "https://github.com/mdsreq-fga-unb/2023.2-NutriGuide"
+ # Project information
+site_name: Nutriguide
+site_author: Skywalkers
+site_description: >-
+  Documentação para do projeto Nutriguide realizado na disciplina de
+  Requisitos de Software na Universidade de Brasília
 
-copyright: "Copyright &copy; 2023 Grupo Skywalkers"
-theme:
+
+# Repository
+repo_url: https://github.com/mdsreq-fga-unb/2023.2-NutriGuide
+repo_name: NutriGuide
+
+
+# Configuration
+docs_dir: docs
+theme: 
+  hide_toc: true 
   name: material
+  language: pt-BR
+  icon: 
+   repo: fontawesome/brands/github
+  font: 
+    text: Roboto
   features:
-    - navigation.tabs
-    - navigation.sections
-    - toc.integrate
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - content.tabs.link
+  - navigation.instant
+  - navigation.section
+  - navigation.path
+  - navigation.top
+  - tabs
 
-  language: pt
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
+        icon: material/brightness-7
+        name: Mudar para o modo escuro
       primary: green
       accent: orange 
     - scheme: slate 
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode    
-      primary: green
-      accent: orange
-nav:
+        icon: material/brightness-4
+        name: Mudar para o modo claro
+      primary: deep green
+      accent: deep orange
+
+
+# Page tree
+nav: 
   - Início: index.md
   - Apresentações: 
-    - Unidade 01 - 28/09/2023: apresentacoes/Unidade01.md 
- 
+    - Unidade 01 - 28/09/2023: apresentacoes/Unidade01.md
+  - Visão:
+    - Visão geral do produto: visao_produto/visao_do_produto.md
+    - Visão geral do projeto: visao_projeto/visao_do_projeto.md
+    - Processo de desenvolvimento: processo_desenvolvimento/processo_de_desenvolvimento.md
+    - Lições aprendidas: licoes_aprendidas/licoes_aprendidas.md
+
+# Extensions
+markdown_extensions:
+  - pymdownx.emoji
+  - pymdownx.tasklist
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
 
