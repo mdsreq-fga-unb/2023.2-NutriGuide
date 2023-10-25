@@ -1,4 +1,6 @@
 
+mkdocs gh-deploy --force
+
  # Project information
 site_name: Nutriguide
 site_author: Skywalkers
@@ -73,4 +75,4 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
-mkdocs gh-deploy --force
+
