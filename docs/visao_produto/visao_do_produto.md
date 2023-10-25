@@ -1,9 +1,16 @@
-
 # Visão Geral do Produto
 
 ## Problema
 
-Ter um sistema único para informações de vários pacientes para organização e otimização do trabalho do **nutricionista**, de forma que o paciente também tenha acesso a essas informações de forma rápida e prática.
+No contexto atual, diversas pessoas enfrentam obstáculos significativos quando se trata de buscar assistência nutricional adequada e eficaz. A dificuldade em encontrar e acessar um nutricionista qualificado é um desafio comum, muitas vezes devido à falta de informações disponíveis ou à distância geográfica entre os pacientes e os profissionais de saúde. Além disso, para aqueles que já estão em tratamento, o acompanhamento de planos alimentares e a avaliação de sua evolução podem ser tarefas complexas.
+
+A comunicação entre nutricionistas e pacientes é essencial para garantir o sucesso dos tratamentos, mas frequentemente é ineficaz e desorganizada, o que pode levar a resultados insatisfatórios. Além disso, a carência de recursos educacionais sobre nutrição e princípios de alimentação saudável é um problema que afeta muitos indivíduos interessados em melhorar sua saúde por meio da dieta.
+
+Por outro lado, os próprios nutricionistas também enfrentam desafios na gestão de pacientes, como a organização de informações, a criação de planos alimentares personalizados e a falta de uma plataforma que promova o compartilhamento de conhecimento e a divulgação de seus serviços.
+
+Para abordar essa série de desafios, desenvolvemos um sistema abrangente e inovador. Este sistema oferece aos nutricionistas a capacidade de cadastrar, gerenciar, criar e acompanhar pacientes de forma eficiente. Além disso, eles podem compartilhar informações valiosas na comunidade e atrair novos pacientes. Os pacientes, por sua vez, podem acessar planos alimentares personalizados, acompanhar seu progresso por meio de gráficos intuitivos, e estabelecer uma comunicação direta com seus nutricionistas por meio de um chat dedicado.
+
+Até mesmo os usuários não cadastrados têm a oportunidade de se informar sobre nutrição e entrar em contato com nutricionistas colaboradores para receber a assistência necessária. Dessa forma, nosso sistema se propõe a resolver os desafios de acesso à assistência nutricional, acompanhamento de pacientes, comunicação eficaz e educação nutricional, fornecendo uma solução completa e revolucionária para nutricionistas, pacientes e aqueles em busca de orientação nutricional.
 
 ## Declaração de Posição do Produto
 
@@ -24,10 +31,27 @@ O software beneficiará o nutricionista pois será um ambiente único de forma q
 
 ## Objetivos do Produto
 
-Os principais objetivos do produto são facilitar a comunicação entre paciente e nutricionista, fornecer dados de maneira prática e eficiente e, por fim, otimizar o trabalho do nutricionista, auxiliando na orga-nização e as mudanças alimentares de cada paciente.
+Nosso produto tem como principal objetivo criar uma solução inovadora que atenda às necessidades de nutricionistas, pacientes e potenciais pacientes, abordando os desafios identificados anteriormente. Nossa missão é proporcionar um ambiente que promova a saúde e o bem-estar por meio de uma série de objetivos bem definidos:
+
+    Facilitar o Acesso à Assistência Nutricional: O produto visa eliminar as barreiras tradicionais que dificultam o acesso a nutricionistas qualificados, permitindo que pacientes em potencial encontrem e se conectem facilmente com profissionais de saúde competentes.
+
+    Melhorar o Acompanhamento de Pacientes: Buscamos proporcionar uma experiência eficaz e organizada para pacientes acompanharem seus planos alimentares e evolução, garantindo uma comunicação mais direta e eficiente entre nutricionistas e pacientes.
+
+    Promover Comunicação Eficaz: O produto tem como objetivo fornecer uma plataforma de comunicação direta e eficaz entre nutricionistas e seus pacientes, melhorando o entendimento, a motivação e a clareza das informações essenciais para o tratamento.
+
+    Fornecer Educação Nutricional: Queremos oferecer uma fonte confiável de recursos educacionais sobre nutrição e alimentação saudável, tornando mais fácil para os pacientes compreenderem os princípios da alimentação saudável.
+
+    Simplificar a Gestão de Pacientes para Nutricionistas: Nosso sistema pretende auxiliar os nutricionistas na organização de informações, criação de planos alimentares personalizados e na divulgação de seus serviços por meio da comunidade, economizando tempo e esforço.
+
+    Conectar Pacientes e Nutricionistas: O produto visa criar um ambiente onde os pacientes possam se beneficiar de um relacionamento próximo com nutricionistas, enquanto também oferece oportunidades para a comunidade colaborativa.
 
 ## Tecnologias e ferramentas a serem utilizadas
 
 | Backend | Node.js, com o framework Express.js |
 | Frontend | TypeScript, com o framework Angular |
 | Banco de Dados | MySQL |
+
+| Versão |    Data    |      Descrição       |  Autor  | Revisor |
+| :----: | :--------: | :------------------: | :-----: | :-----: |
+|  0.1   | 24/10/2023 | Criaçaõ do documento | [Guilherme](https://github.com/GG555-13) | [Eric](https://github.com/Ericcs10)  |
+|  1.0   | 25/10/2023 | Aprimorando o documento | [Eric](https://github.com/Ericcs10) | [Guilherme](https://github.com/GG555-13), [Henrique](https://github.com/henriqtorresl)  |
