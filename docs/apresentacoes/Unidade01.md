@@ -4,4 +4,4 @@
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
-|  0.1   | 29/09/2023 | Criaçaõ do documento | Guilherme |   |
+|  0.1   | 29/09/2023 | Criaçaõ do documento | [Guilherme](https://github.com/GG555-13) |   |

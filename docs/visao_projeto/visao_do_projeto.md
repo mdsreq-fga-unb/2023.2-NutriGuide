@@ -97,7 +97,7 @@ Critérios de Replanejamento
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
-|  0.1   | 24/10/2023 | Criaçaõ do documento | Guilherme |   |
+|  0.1   | 24/10/2023 | Criaçaõ do documento | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
 
 
 ---
