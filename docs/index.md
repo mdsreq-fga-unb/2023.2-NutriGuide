@@ -37,10 +37,3 @@
 
 
 ---
-
-
-
-<hr/>
-<p align="center"><b>Grupo 1</b></p>
-<p align="center">Interação Humano-Computador<br /><br />
-<a href="https://fga.unb.br" target="_blank"><img width="230"src="https://4.bp.blogspot.com/-0aa6fAFnSnA/VzICtBQgciI/AAAAAAAARn4/SxVsQPFNeE0fxkCPVgMWbhd5qIEAYCMbwCLcB/s1600/unb-gama.png"></a>
