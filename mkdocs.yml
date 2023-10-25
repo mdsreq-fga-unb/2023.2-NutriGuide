@@ -1,6 +1,4 @@
 
-mkdocs gh-deploy --force
-
  # Project information
 site_name: Nutriguide
 site_author: Skywalkers
