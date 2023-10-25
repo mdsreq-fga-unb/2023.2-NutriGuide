@@ -47,6 +47,7 @@ theme:
 # Page tree
 nav: 
   - Início: index.md
+  - Facção Skywalkers: historia_faccao/historia_faccao.md
   - Apresentações: 
     - Unidade 01 - 28/09/2023: apresentacoes/Unidade01.md
   - Visão:
