@@ -48,7 +48,7 @@ Tabela 1 - Organização de papeis (Fonte: Autor, 2023)
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
-|  0.1   | 25/10/2023 | Criação do documento | Guilherme |   |
+|  0.1   | 25/10/2023 | Criação do documento | Guilherme, Eric, Arthur, Henrique, Luana |   |
 
 
 ---

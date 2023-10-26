@@ -136,4 +136,4 @@ Tabela 2 - Tabela das US INVEST (Fonte: Autor, 2023)
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
-|  0.1   | 24/10/2023 | Criação do documento | Eric |  Guilherme |
+|  0.1   | 24/10/2023 | Criação do documento | Eric, Luana, Henrique, Arthur, Guilherme |  Guilherme |

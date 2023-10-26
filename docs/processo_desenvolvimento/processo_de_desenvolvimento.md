@@ -137,21 +137,21 @@ Figura 2 - SAFe ScrumXP (Fonte: [scrum.org](https://www.scrum.org/resources/blog
 
 ### Análise e Consenso
 
-- **levantamento inicial de requisitos**: participação de todas as partes interessadas através das entrevistas e dos questionários coletados
-- **documentação de requisitos**: os requisitos levantados deram documentados através de diagramas de caso de uso e lista de requisitos
-- **análise de requisitos**: para verificar se os requisitos levantados inicialmente atendem às necessidades, se estão alinhados com o projeto e se não são contraditórios
-- **priorização de requisitos**: questionário Google forms destinado às partes interessadas para definir urgência dos requisitos e quais podem ser adiados ou eliminados
-- **validação**: a partir do feedback obtido pelas entrevistas e questionários
+- **levantamento inicial de requisitos**: participação de todas as partes interessadas através das entrevistas e dos questionários coletados.
+- **documentação de requisitos**: os requisitos levantados deram documentados através do backlog na estrutura do SAFE e lista de Requisitos. 
+- **análise de requisitos**: para verificar se os requisitos levantados inicialmente atendem às necessidades, se estão alinhados com o projeto e se não são contraditórios.
+- **priorização de requisitos**: priorização através da análise de critérios como complexidade e valor de negócio; pode-se utilizar a técnica MosCow juntamente à esta análise.
+- **validação**: a partir de checklist e walkthroughs entre a equipe e representantes do público-alvo.
 - **documentação de mudanças**: será criado um histórico de versão dos requisitos caso haja necessidade de mudança em algum requisito
-- **obtenção de consenso**: será obtido através das entrevistas, questionários e feedback
-- **validação técnica**: protótipo de alta fidelidade (Figma) com o cliente, github (declarar a visão do produto), reuniões entre integrantes
+- **obtenção de consenso**: será obtido através das entrevistas e feedback.
+- **validação técnica**: protótipo de alta fidelidade (Figma) com o representante-cliente, github (declarar a visão do produto), reuniões entre integrantes
 - **Ferramentas**: Trello, Figma, Discord, Microsoft Teams, Github, Google Forms e LucidChart
 
 ### Declaração
 
 - Serão definidos todos os requisitos funcionais e não funcionais nessa etapa
-- **Requisitos funcionais**: será utilizado diagrama UML e casos de uso para ilustrar recursos e capacidades que o sistema deve ter
-- **Requisitos não funcionais**: serão listados e documentados
+- **Requisitos funcionais**: listagem e backlog na estrutura do SAFE.
+- **Requisitos não funcionais**: serão listados e documentados.
 - **Requisitos de interface**: apresentação de prototipagem simples em papel para descrever o sistema
 - **Restrições e limitações**: serão listadas e documentadas, todas as partes interessadas serão avisadas
 - **Métodos de validação**: através de questionários e disponibilização das documentações para obtermos opiniões sobre o andamento dessa etapa
@@ -182,4 +182,5 @@ Figura 2 - SAFe ScrumXP (Fonte: [scrum.org](https://www.scrum.org/resources/blog
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  0.1   | 24/10/2023 | Criaçaõ do documento | Arthur | Guilherme  |
-|  0.2   | 25/10/2023 | Revisando o arquivo conforme o feedback do professor | Guilherme |   |
+|  0.2   | 25/10/2023 | Revisando o arquivo conforme o feedback do professor | Guilherme |  Luana |
+|  0.3   | 25/10/2023 | Revisando o arquivo conforme a missão 2 | Luana | Eric |
