@@ -55,6 +55,8 @@ nav:
     - Visão geral do projeto: visao_projeto/visao_do_projeto.md
     - Processo de desenvolvimento: processo_desenvolvimento/processo_de_desenvolvimento.md
     - Lições aprendidas: licoes_aprendidas/licoes_aprendidas.md
+  - Requisitos do Produto:
+    - Backlog: requisitos-produto/backlog.md
 
 # Extensions
 markdown_extensions:
