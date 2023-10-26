@@ -56,7 +56,6 @@ nav:
     - Processo de desenvolvimento: processo_desenvolvimento/processo_de_desenvolvimento.md
   - Requisitos do Produto:
     - Backlog: requisitos-produto/backlog.md
-    - Alinhamento Backlog: backlog-produto/alinhamento_backlog.md
     - MVP: /requisitos-produto/MVP.md
   - Verificação e Validação Beach Tennis CoordiMate: requisitos-produto/verificacaoguardioes.md
 
