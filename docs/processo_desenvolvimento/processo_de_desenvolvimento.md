@@ -66,7 +66,7 @@ As Facetas do processo de Engenharia de Requisitos são encontradas no IREB (202
 <center>
 
 
-![Facetas do processo de ER](../assets/images/processo-de-desenvolvimento/Facetas.png)
+![Facetas do processo de ER](../assets/images/Facetas.png)
 
 Figura 1 - Facetas do processo de ER (Fonte: International Requirements Engineering Board, 2022)
 
@@ -112,7 +112,7 @@ As equipes ágeis que aplicam o SAFe ScrumXP seguem uma cadência regular de eve
 <center>
 
 
-![ScrumXP](../assets/images/processo-de-desenvolvimento/Scrum_and_XP.jpg)
+![ScrumXP](../assets/images/Scrum_and_XP.jpg)
 
 
 
