@@ -5,7 +5,7 @@ De acordo com os objetivos definidos no projeto e a definição do backlog é po
 
 | Objetivos                                       | Features                                      |
 |-------------------------------------------------|----------------------------------------------|
-| Obj 1: Facilitar o Acesso à Assistência Nutricional | FT01: Página de registro, FT02: Validar criação da conta, FT03: Acessar página de login |
+| Obj 1: Unificar o Sistema | FT01: Página de registro, FT02: Validar criação da conta, FT03: Acessar página de login |
 | Obj 2: Melhorar o Acompanhamento de Pacientes | FT09: Buscar Paciente, FT10: Evolução dos Pacientes, FT11: Criar Plano Alimentar |
 | Obj 3: Promover Comunicação Eficaz | FT19: Enviar e Receber Avisos, FT20: Enviar e Receber Mensagens |
 | Obj 4: Fornecer Educação Nutricional | FT15: Acessar Página de Pesquisa, FT16: Pesquisar pelo Nutricionista |
