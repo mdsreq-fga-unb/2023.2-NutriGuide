@@ -22,7 +22,6 @@ Link do MIRO: <https://miro.com/app/board/uXjVP5R0Pa0=/?share_link_id=5664690546
 
 ---
 
-## Requisitos não-Funcionais
 
 ## Requisitos Não-Funcionais
 | Nº | Classificação | Descrição |
