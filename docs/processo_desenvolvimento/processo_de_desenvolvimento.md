@@ -183,4 +183,4 @@ Figura 2 - SAFe ScrumXP (Fonte: [scrum.org](https://www.scrum.org/resources/blog
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  0.1   | 24/10/2023 | Criaçaõ do documento | Arthur | Guilherme  |
 |  0.2   | 25/10/2023 | Revisando o arquivo conforme o feedback do professor | Guilherme |  Luana |
-|  0.3   | 25/10/2023 | Revisando o arquivo conforme a missão 2 | Luana | Eric |
+|  0.3   | 26/10/2023 | Revisando o arquivo conforme a missão 2 | Luana | Eric |
