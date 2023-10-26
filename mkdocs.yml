@@ -40,8 +40,8 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Mudar para o modo claro
-      primary: deep green
-      accent: deep orange
+      primary:  green
+      accent:  orange
 
 
 # Page tree
