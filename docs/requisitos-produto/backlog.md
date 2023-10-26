@@ -11,6 +11,8 @@ O backlog da equipe contém todo o trabalho possível que uma equipe pode fazer 
 Embora não seja conceitualmente complexo, alguns aspectos essenciais tornam o backlog da equipe crítico para o desenvolvimento ágil. Por exemplo, ele contém todo o trabalho para uma equipe ágil avançar na solução e alinha todos os membros da equipe a um objetivo comum. É uma lista de desejos, não de compromissos. Os itens podem ser estimados (preferencialmente) ou não, mas é apenas uma lista ordenada, e não há compromisso de tempo específico para conclusão. 
 
 Abaixo se encontra o backlog do produto, ele foi feito com base no backlog SAFe, os requisitos foram divididos em Épicos,Capacidades, Features e User Stories.
+
+Link do MIRO: <https://miro.com/app/board/uXjVP5R0Pa0=/?share_link_id=566469054676>
  
  <center>
 
