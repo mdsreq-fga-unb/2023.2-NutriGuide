@@ -22,13 +22,15 @@ O usuário alvo e cliente do produto é o nutricionista, que adquire esta funcio
 
 O software beneficiará o nutricionista pois será um ambiente único de forma que armazenará dados de diversos pacientes num só local, facilitando a comunicação, a organização e as mudanças no plano alimentar de cada paciente.
 
+|  |        |  
+| :----: | :--------: |
 | Para | Nutricionistas |
 | Quem | Facilitar o atendimento deste a seus clientes |
 | O NutriGuide | é um site web |
 | Que | facilita a comunicação do nutricionista e ajuda que este acompanhe seus clientes e ajude no seu trabalho a o incentivar seus clientes a ter uma dieta mais saudável |
 | Ao contrário | vários atendimentos presenciais |
 | Nosso produto | busca facilitar a interação entre nutricionista e cliente |
-
+Tabela 1 - Declaração de Posição do Produto (Fonte: Autor, 2023)
 ## Objetivos do Produto
 
 Nosso produto tem como principal objetivo criar uma solução inovadora que atenda às necessidades de nutricionistas, pacientes e potenciais pacientes, abordando os desafios identificados anteriormente. Nossa missão é proporcionar um ambiente que promova a saúde e o bem-estar por meio de uma série de objetivos bem definidos:
@@ -46,12 +48,16 @@ Nosso produto tem como principal objetivo criar uma solução inovadora que aten
     Conectar Pacientes e Nutricionistas: O produto visa criar um ambiente onde os pacientes possam se beneficiar de um relacionamento próximo com nutricionistas, enquanto também oferece oportunidades para a comunidade colaborativa.
 
 ## Tecnologias e ferramentas a serem utilizadas
+|  |        |  
+| :----: | :--------: | 
+| Backend |     Node.js, com o framework Express.js  |   
+|  Frontend    | TypeScript, com o framework Angular |  
+|  Banco de Dados  |  MySQL | 
+Tabela 2 - Tecnologias que serão usadas e aonde (Fonte: Autor, 2023)
 
-| Backend | Node.js, com o framework Express.js |
-| Frontend | TypeScript, com o framework Angular |
-| Banco de Dados | MySQL |
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
-|  0.1   | 24/10/2023 | Criaçaõ do documento | [Guilherme](https://github.com/GG555-13) | [Eric](https://github.com/Ericcs10)  |
+|  0.1   | 24/10/2023 | Criação do documento | [Guilherme](https://github.com/GG555-13) | [Eric](https://github.com/Ericcs10)  |
 |  1.0   | 25/10/2023 | Aprimorando o documento | [Eric](https://github.com/Ericcs10) | [Guilherme](https://github.com/GG555-13), [Henrique](https://github.com/henriqtorresl)  |
+|  1.1   | 25/10/2023 | Arrumando as tabelas | [Guilherme](https://github.com/GG555-13) |   |
