@@ -18,18 +18,18 @@ A tabela 1 possui os principais papeis e quem serão os responsáveis por garant
 | Desenvolvedor de Software        |  Produzir códigos eficientes e inteligíveis, testar e implementar programas e sistemas, reparar e aprimorar softwares existentes.                      | Arthur | Luana, Eric, Henrique e Guilherme  |
 | Testador de Qualidade            | Garantir que o software desenvolvido esteja livre de defeitos e atenda aos requisitos do projeto, criar casos de teste e cenários para validar o software.                        | Luana | Eric, Guilherme, Henrique e Arthur |
 | Dono do Produto               |   Maximizar o valor do produto, definindo as prioridades e gerenciando o Product Backlog.                | Guilherme |  Luana, Guilherme, Henrique e Eric |
-| Clientes               |    Fornecer as necessidades e os requisitos do produto, que serão priorizados pelo Dono do Produto.               | Irmã do Eric (nutricionista) |  Comunidade de nutricionistas |
+| Clientes               |    Fornecer as necessidades e os requisitos do produto, que serão priorizados pelo Dono do Produto.               | Catarine Camargo(nutricionista) |  George Marsicano, Comunidade de nutricionistas |
 
 Tabela 1 - Organização de papeis (Fonte: Autor, 2023)
+</center>
 
----
 
 ## Planejamento das Fases e/ou Iterações do Projeto
 
 
 
-<center>
 
+<center>
 
 Sprint | Produto (Entrega) | Data Início | Data Fim
 ------ | ----------------- | ----------- | --------
@@ -43,10 +43,12 @@ Sprint 7 | US (aba da comuniade) | 24/11/23 | 07/12/23
 Sprint 8 | Entregar MVP | 24/11/23 | 07/12/23
 
 Tabela 2 - Organização das sprints do projeto (Fonte: Autor, 2023)
+</center>
 
----
 
 ## Matriz de Comunicação
+
+<center>
 
 | **Tipo**                        | **Descrição**                                                                                                                                                                   | **Área/Envolvidos** | **Periodicidade** | **Produtos Gerados** |
 |:--------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------:|:-----------------:| :-----------------:|
@@ -56,7 +58,7 @@ Tabela 2 - Organização das sprints do projeto (Fonte: Autor, 2023)
 | Retrospectiva            | Após a Revisão, a equipe realiza uma retrospectiva para avaliar o processo de desenvolvimento e identificar oportunidades de melhoria. Essa avaliação é importante para garantir que o processo de desenvolvimento esteja sempre evoluindo e se adaptando às necessidades da equipe.                      |  Equipe do Trabalho, Professor, Monitor| Depois da revisão |  Documentar o que Melhorar levando em conta o que aconteceu na sprint passada e o feedback na Revisão  |
 
 Tabela 3 - Organização da matriz de comunicação (Fonte: Autor, 2023)
-
+</center>
 
 
 </br></br>                                                                                         
@@ -64,7 +66,8 @@ Tabela 3 - Organização da matriz de comunicação (Fonte: Autor, 2023)
 
 ## Gerenciamento de Riscos
 
-| 
+
+
 <center>
 
 | **Risco**          | **Descrição**                                                                                                                                                                                                     | **Probabilidade** | **Ações de Mitigação**                                                                                                                                                                                                                                                       |
@@ -77,27 +80,33 @@ Tabela 3 - Organização da matriz de comunicação (Fonte: Autor, 2023)
 
 Tabela 4 - Tabela de riscos (Fonte: Autor, 2023)
 
+</center>
 
+                                                                                       
 
-</center>                                                                                         
----
 
 ## Critérios de Replanejamento
 
 
-- Desvios significativos no cronograma ou no orçamento
-- Alterações nos requisitos do projeto
-- Problemas de qualidade
-- Alterações nos recursos disponíveis(equipe)                                                                                       
----
+-  Desvios significativos no cronograma ou no orçamento. 
 
-Critérios de Replanejamento
+-  Alterações nos requisitos do projeto. 
+
+-  Problemas de qualidade. 
+
+- Alterações nos recursos disponíveis(equipe). 
+
+
+
+
+
+
 
 ## Histórico de versão
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
-|  0.1   | 24/10/2023 | Criaçaõ do documento | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
-
+|  0.1   | 24/10/2023 | Criação do documento | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
+|  1.2   | 25/10/2023 | Arrumando as tabelas e modificando os participantes de Cliente | [Guilherme](https://github.com/GG555-13) |   |
 
 ---

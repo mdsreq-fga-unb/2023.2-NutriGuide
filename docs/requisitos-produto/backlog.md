@@ -12,7 +12,7 @@ Embora não seja conceitualmente complexo, alguns aspectos essenciais tornam o b
 
 Abaixo se encontra o backlog do produto, ele foi feito com base no backlog SAFe, os requisitos foram divididos em Épicos,Capacidades, Features e User Stories.
 
-Link do MIRO: <https://miro.com/app/board/uXjVP5R0Pa0=/?share_link_id=566469054676>
+Link do MIRO: <[https://miro.com/app/board/uXjVP5R0Pa0=/?share_link_id=566469054676](https://miro.com/app/board/uXjVNX3Jq88=/?share_link_id=498530680934)>
  
  <center>
 
