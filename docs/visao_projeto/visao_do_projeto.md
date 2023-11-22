@@ -1,11 +1,7 @@
 # Visão de Projeto
 
 
-
-<br>
-
-
-## Organização do Projeto
+## **Organização do Projeto**
 
 A tabela 1 possui os principais papeis e quem serão os responsáveis por garantir que as tarefas ligadas a cada papel, estão sendo cumpridas.
 
@@ -20,11 +16,12 @@ A tabela 1 possui os principais papeis e quem serão os responsáveis por garant
 | Dono do Produto               |   Maximizar o valor do produto, definindo as prioridades e gerenciando o Product Backlog.                | Guilherme |  Luana, Guilherme, Henrique e Eric |
 | Clientes               |    Fornecer as necessidades e os requisitos do produto, que serão priorizados pelo Dono do Produto.               | Catarine Camargo(nutricionista) |  George Marsicano, Comunidade de nutricionistas |
 
-Tabela 1 - Organização de papeis (Fonte: Autor, 2023)
+Tabela 1 - Organização de papeis 
+(Fonte: [Guilherme](https://github.com/GG555-13), 2023)
 </center>
 
 
-## Planejamento das Fases e/ou Iterações do Projeto
+## **Planejamento das Fases e/ou Iterações do Projeto**
 
 
 
@@ -42,11 +39,12 @@ Sprint 6 | US(pesquisar nutricionista e paciente ) | 10/10/23 | 23/11/23
 Sprint 7 | US (aba da comuniade) | 24/11/23 | 07/12/23
 Sprint 8 | Entregar MVP | 24/11/23 | 07/12/23
 
-Tabela 2 - Organização das sprints do projeto (Fonte: Autor, 2023)
+Tabela 2 - Organização das sprints do projeto 
+(Fonte: [Guilherme](https://github.com/GG555-13), 2023)
 </center>
 
 
-## Matriz de Comunicação
+## **Matriz de Comunicação**
 
 <center>
 
@@ -57,14 +55,15 @@ Tabela 2 - Organização das sprints do projeto (Fonte: Autor, 2023)
 | Revisão        |  Ao final da iteração, a equipe se reúne para revisar o trabalho realizado e verificar se os objetivos foram alcançados. Essa revisão é importante para identificar pontos de melhoria e ajustar o planejamento das próximas iterações.existentes.                      |  Equipe do Trabalho,  | Após terminar a Sprint |  Ver a situação atual do projeto e como é possível melhorar. |
 | Retrospectiva            | Após a Revisão, a equipe realiza uma retrospectiva para avaliar o processo de desenvolvimento e identificar oportunidades de melhoria. Essa avaliação é importante para garantir que o processo de desenvolvimento esteja sempre evoluindo e se adaptando às necessidades da equipe.                      |  Equipe do Trabalho, Professor, Monitor| Depois da revisão |  Documentar o que Melhorar levando em conta o que aconteceu na sprint passada e o feedback na Revisão  |
 
-Tabela 3 - Organização da matriz de comunicação (Fonte: Autor, 2023)
+Tabela 3 - Organização da matriz de comunicação 
+(Fonte: [Guilherme](https://github.com/GG555-13), 2023)
 </center>
 
 
 </br></br>                                                                                         
 ---
 
-## Gerenciamento de Riscos
+## **Gerenciamento de Riscos**
 
 
 
@@ -78,14 +77,15 @@ Tabela 3 - Organização da matriz de comunicação (Fonte: Autor, 2023)
 | Risco de prazo     | O prazo limitado para o projeto pode levar a atrasos na implementação do aplicativo, especialmente se houver problemas técnicos ou de escopo.                                                                     | Alta              | Criar um cronograma realista e mander este atualizado com prazos realistas e margem de manobra, manter uma comunicação aberta com a equipe e stakeholders do projeto para gerenciar expectativas e identificar problemas antecipadamente.                                                |
 | Risco de segurança | Se a aplicação não estiver adequadamente protegida, as informações sensíveis do nutricionista e paciente podem estar em risco de acesso não autorizado.                                                      | Alta              | Implementar medidas de segurança adequadas, incluindo criptografia de dados, autenticação forte de usuários, testes de penetração regulares e conformidade com as normas de segurança da informação.                                                                         |
 
-Tabela 4 - Tabela de riscos (Fonte: Autor, 2023)
+Tabela 4 - Tabela de riscos 
+(Fonte: [Guilherme](https://github.com/GG555-13), 2023)
 
 </center>
 
                                                                                        
 
 
-## Critérios de Replanejamento
+## **Critérios de Replanejamento**
 
 
 -  Desvios significativos no cronograma ou no orçamento. 
@@ -99,14 +99,9 @@ Tabela 4 - Tabela de riscos (Fonte: Autor, 2023)
 
 
 
-
-
-
 ## Histórico de versão
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  0.1   | 24/10/2023 | Criação do documento | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
-|  1.2   | 25/10/2023 | Arrumando as tabelas e modificando os participantes de Cliente | [Guilherme](https://github.com/GG555-13) |   |
-
----
+|  1.2   | 25/10/2023 | Arrumando as tabelas e modificando os participantes de Cliente | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
