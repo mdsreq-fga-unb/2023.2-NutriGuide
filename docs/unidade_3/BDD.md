@@ -1,6 +1,7 @@
 # Atividade PBB e BDD - HealthNet
 
 ## BDD
+[Atividade PBB](../assets/Exercício de Construção de Backlog de Produto usando PBB.pdf)
 
 Após o nosso grupo terminar as US e os seus críterios de aceitação conforme instruído pelo o professor fizemos o nosso BDD com base nas US e críterios de aceitação do grupo BERSERK, abaixo pode se ver as US, seus críterios de aceitação e seus cenários separados por persona
 
