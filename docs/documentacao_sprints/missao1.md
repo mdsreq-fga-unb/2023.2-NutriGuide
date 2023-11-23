@@ -21,9 +21,17 @@ Data: 05/09 a 12/09
 | Débitos                     | Aprovar ideia de tema e cliente (antiga ou nova)|
 | Sprint Retrospective        | O problema encontrado foi que o processo inicialmente escolhido não era o mais adequado para o nosso projeto, de acordo com o feedback do professor, foram escolhidos o processo e o ciclo de vida, |
 
-### Planning
-
+### **Planning Meeting**
+ 
 <center> ![](../assets/images/missao1_sprint1_planning.png) </center>
+
+### **Review Meeting**
+
+<center> ![](../assets/images/missao1_sprint1_review.png) </center>
+
+### **Retrospective Meeting**
+
+<center> ![](../assets/images/missao1_sprint1_retro.png) </center>
 
 ### Sprint 2
 
@@ -37,6 +45,17 @@ Data: 13/09 a 28/09
 | Débitos                     | Não adicionamos história da facção ao pages |
 | Sprint Retrospective        | Tudo o que foi feito durante a missão 1 foi devidamente documentado no pages, Vídeo foi gravado,  |
 
+### **Planning Meeting**
+ 
+<center> ![](../assets/images/missao1_sprint2_planning.png) </center>
+
+### **Review Meeting**
+
+<center> ![](../assets/images/missao1_sprint2_review.png) </center>
+
+### **Retrospective Meeting**
+
+<center> ![](../assets/images/missao1_sprint2_retro.png) </center>
 
 ## Histórico de versão
 
