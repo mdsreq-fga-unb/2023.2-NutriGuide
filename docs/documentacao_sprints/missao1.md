@@ -39,3 +39,4 @@ Data: 13/09 a 28/09
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  1.0   | 22/11/2023 | Criação da página | [Henrique](https://github.com/henriqtorresl) |   |
+|  1.1   | 22/11/2023 | Descrição missão 1| [Eric](https://github.com/Ericcs10) | [Luana Torres](https://github.com/luanatorress)  |

@@ -15,12 +15,11 @@ Data: 31/10 a 14/11
 
 | Cerimônia                   | Atividades da Sprint       |
 |-----------------------------|---------------------------|
-| Sprint Planning             |                           |
-| Backlog da Sprint           |                           |
-| Sprint Review               |                           |
-| Débitos                     |                           |
-| Sprint Retrospective        |                           |
-
+| Sprint Planning             |  Alterar Mvp, Alterar o git pages, Atividade PBB, Aprovar novo MVP, Atividade Validação e verificação, Atividade BDD, Estudo sobre DoR e DoD   |
+| Backlog da Sprint           |   US39, US37, US1, US43, US 35, US9, US6, US16  |
+| Sprint Review               |   As mudanças foram aprovadas, Atividade de PBB aprovada,  Atividade de BDD aprovada, Retiramos as US de CRUD de usuário e acrescentamos as US de usuário default,  |
+| Débitos                     |    MVP ainda não foi aprovado  |
+| Sprint Retrospective        |  conseguimos fazer todas as atividades, A equipe parece ter encontrado um ritmo, Atualizar o pages, Fazer as alterações pedidas no MVP |
 
 ### Sprint 2
 
@@ -28,11 +27,11 @@ Data: 15/11 a 23/11
 
 | Cerimônia                   | Atividades da Sprint       |
 |-----------------------------|---------------------------|
-| Sprint Planning             |                           |
-| Backlog da Sprint           |                           |
-| Sprint Review               |                           |
-| Débitos                     |                           |
-| Sprint Retrospective        |                           |
+| Sprint Planning             | Valores de negocio atualizar, Adicionar criterios de aceitação as US, Planejamento de sprints (atualizar e postar), DoR e DoD, Atividade USM|
+| Backlog da Sprint           |US22, US40, US45, US49 |
+| Sprint Review               | MVP aprovado, seguir com as atividades, Alterar USM, Criar criterios de aceitação,  |
+| Débitos                     | Não participamos do ponto de controle |
+| Sprint Retrospective        | Conseguimos concluir tudo |
 
 
 
@@ -40,4 +39,5 @@ Data: 15/11 a 23/11
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
-|  1.0   | 22/11/2023 | Criação da página | [Henrique](https://github.com/henriqtorresl) |   |
+|  1.0   | 22/11/2023 | Criação da página | [Henrique](https://github.com/henriqtorresl) |  [Eric](https://github.com/Ericcs10) |
+|  1.1   | 22/11/2023 | Descrição missão 1| [Eric](https://github.com/Ericcs10) | [Luana Torres](https://github.com/luanatorress)  |
