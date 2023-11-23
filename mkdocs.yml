@@ -61,6 +61,8 @@ nav:
     - Alinhamento Backlog: requisitos-produto/alinhamento_backlog.md
   - Atividades Unidade 3: 
     - USM: unidade_3/USM.md
+    - PBB: unidade_3/PBB.md
+    - BDD: unidade_3/BDD.md
   - Verificação e Validação Beach Tennis CoordiMate: requisitos-produto/verificacaoguardioes.md
   - Documentação das Sprints:
     - Missão 1: documentacao_sprints/missao1.md
