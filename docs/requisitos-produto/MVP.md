@@ -9,6 +9,9 @@ Should: valor de negócio < 5 mas com pontuação geral>=12
 Could: valor de negócio = 4 e pontuação geral <12
 Won't: valor de negócio <4 pontuação geral <11
 
+Abaixo está o MIRO usado na criação do MVP:
+
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVNWybxac=/?moveToViewport=6055,20915,10518,12494&embedId=681267620991" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
 Abaixo estão descritas as US's definidas para o MVP, que foram categorizadas nas categorias Must Have e Should Have: 
 
