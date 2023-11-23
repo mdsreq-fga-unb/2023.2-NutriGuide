@@ -6,7 +6,7 @@
 
 O PBB (Product Backlog Building) foi feito a partir da atividade fornecida pelo professor, nessa atividae o professor ofereceu um problema para criar um USM para um software de gestão de dados de paciente para uma rede de clínicas e hospitais , a atividade pode ser vista no link abaixo.
 
-[Atividade USM](../assets/Exercício de Construção de Backlog de Produto usando PBB.pdf)
+[Atividade PBB](../assets/Exercício de Construção de Backlog de Produto usando PBB.pdf)
 
 ### Solução
 
