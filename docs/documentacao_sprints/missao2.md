@@ -23,13 +23,19 @@ Data: 03/10 a 17/10
 
 ### **Planning Meeting**
  
+- Template da planning:
+ 
 <center> ![](../assets/images/missao2_sprint1_planning.png) </center>
 
 ### **Review Meeting**
 
+- Template da review:
+
 <center> ![](../assets/images/missao2_sprint1_review.png) </center>
 
 ### **Retrospective Meeting**
+
+- Template da retrospective:
 
 <center> ![](../assets/images/missao2_sprint1_retro.png) </center>
 
@@ -47,13 +53,19 @@ Data: 18/10 a 26/10
 
 ### **Planning Meeting**
  
+- Template da planning:
+
 <center> ![](../assets/images/missao2_sprint2_planning.png) </center>
 
 ### **Review Meeting**
 
+- Template da review:
+
 <center> ![](../assets/images/missao2_sprint2_review.png) </center>
 
 ### **Retrospective Meeting**
+
+- Template da retrospective:
 
 <center> ![](../assets/images/missao2_sprint2_retro.png) </center>
 
