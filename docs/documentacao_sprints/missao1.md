@@ -21,6 +21,10 @@ Data: 05/09 a 12/09
 | Débitos                     | Aprovar ideia de tema e cliente (antiga ou nova)|
 | Sprint Retrospective        | O problema encontrado foi que o processo inicialmente escolhido não era o mais adequado para o nosso projeto, de acordo com o feedback do professor, foram escolhidos o processo e o ciclo de vida, |
 
+### Planning
+
+<center> ![](../assets/images/missao1_sprint1_planning.png) </center>
+
 ### Sprint 2
 
 Data: 13/09 a 28/09
