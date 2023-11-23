@@ -21,6 +21,25 @@ Data: 31/10 a 14/11
 | Débitos                     |    MVP ainda não foi aprovado  |
 | Sprint Retrospective        |  conseguimos fazer todas as atividades, A equipe parece ter encontrado um ritmo, Atualizar o pages, Fazer as alterações pedidas no MVP |
 
+
+### **Planning Meeting**
+ 
+- Template da planning:
+
+<center> ![](../assets/images/missao3_sprint1_planning.png) </center>
+
+### **Review Meeting**
+
+- Template da review:
+
+<center> ![](../assets/images/missao3_sprint1_review.png) </center>
+
+### **Retrospective Meeting**
+
+- Template da retrospective:
+
+<center> ![](../assets/images/missao3_sprint1_retro.png) </center>
+
 ### Sprint 2
 
 Data: 15/11 a 23/11
@@ -33,6 +52,23 @@ Data: 15/11 a 23/11
 | Débitos                     | Não participamos do ponto de controle |
 | Sprint Retrospective        | Conseguimos concluir tudo |
 
+### **Planning Meeting**
+ 
+- Template da planning:
+
+<center> ![](../assets/images/missao3_sprint2_planning.png) </center>
+
+### **Review Meeting**
+
+- Template da review:
+
+<center> ![](../assets/images/missao3_sprint2_review.png) </center>
+
+### **Retrospective Meeting**
+
+- Template da retrospective:
+
+<center> ![](../assets/images/missao3_sprint2_retro.png) </center>
 
 
 ## Histórico de versão

@@ -21,6 +21,24 @@ Data: 03/10 a 17/10
 | Débitos                     | Não conseguimos fazer as alterações pedidas no Pages |
 | Sprint Retrospective        | Conseguimos separar os requisitos e falar com o cliente, conseguimos fazer chegar nas historias de usuario a partir dos requisitos, fizemos a avaliação do backlog de outra equipe na atividade em sala, começamos o backlog |
 
+### **Planning Meeting**
+ 
+- Template da planning:
+ 
+<center> ![](../assets/images/missao2_sprint1_planning.png) </center>
+
+### **Review Meeting**
+
+- Template da review:
+
+<center> ![](../assets/images/missao2_sprint1_review.png) </center>
+
+### **Retrospective Meeting**
+
+- Template da retrospective:
+
+<center> ![](../assets/images/missao2_sprint1_retro.png) </center>
+
 ### Sprint 2
 
 Data: 18/10 a 26/10
@@ -33,6 +51,23 @@ Data: 18/10 a 26/10
 | Débitos                     | Aprovar MVP |
 | Sprint Retrospective        | Nos organizamos para priorizar as US, Participamos das atividades em sala, Criamos o backlog do produto, Atualizamos o github pages, Entregamos a missão |
 
+### **Planning Meeting**
+ 
+- Template da planning:
+
+<center> ![](../assets/images/missao2_sprint2_planning.png) </center>
+
+### **Review Meeting**
+
+- Template da review:
+
+<center> ![](../assets/images/missao2_sprint2_review.png) </center>
+
+### **Retrospective Meeting**
+
+- Template da retrospective:
+
+<center> ![](../assets/images/missao2_sprint2_retro.png) </center>
 
 ## Histórico de versão
 
