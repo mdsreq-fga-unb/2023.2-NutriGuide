@@ -21,6 +21,17 @@ Data: 31/10 a 14/11
 | Débitos                     |                           |
 | Sprint Retrospective        |                           |
 
+### **Planning Meeting**
+ 
+<center> ![](../assets/images/missao3_sprint1_planning.png) </center>
+
+### **Review Meeting**
+
+<center> ![](../assets/images/missao3_sprint1_review.png) </center>
+
+### **Retrospective Meeting**
+
+<center> ![](../assets/images/missao3_sprint1_retro.png) </center>
 
 ### Sprint 2
 
@@ -34,6 +45,17 @@ Data: 15/11 a 23/11
 | Débitos                     |                           |
 | Sprint Retrospective        |                           |
 
+### **Planning Meeting**
+ 
+<center> ![](../assets/images/missao3_sprint2_planning.png) </center>
+
+### **Review Meeting**
+
+<center> ![](../assets/images/missao3_sprint2_review.png) </center>
+
+### **Retrospective Meeting**
+
+<center> ![](../assets/images/missao3_sprint2_retro.png) </center>
 
 
 ## Histórico de versão
