@@ -60,6 +60,10 @@ nav:
     - MVP: requisitos-produto/MVP.md
     - Alinhamento Backlog: requisitos-produto/alinhamento_backlog.md
   - Verificação e Validação Beach Tennis CoordiMate: requisitos-produto/verificacaoguardioes.md
+  - Documentação das Sprints:
+    - Missão 1: documentacao_sprints/missao1.md
+    - Missão 2: documentacao_sprints/missao2.md
+    - Missão 3: documentacao_sprints/missao3.md
 
 # Extensions
 markdown_extensions:
