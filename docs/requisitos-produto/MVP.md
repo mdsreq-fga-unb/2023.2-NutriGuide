@@ -40,5 +40,6 @@ Abaixo estão descritas as US's definidas para o MVP, que foram categorizadas na
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  0.1   | 25/10/2023 | Criação do MVP | Luana Torres |  Eric Camargo |
 |  0.2   | 19/11/2023 | Ajustes do MVP | Luana Torres |  Eric Camargo |
+|  0.3   | 2/11/2023 | Adicionando o MIRO | Guilherme Oliveira |  Eric Camargo |
 
 ---
