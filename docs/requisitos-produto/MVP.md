@@ -1,6 +1,7 @@
 ## MVP1
 
 O MVP foi criado a partir da priorização do backlog pela técnica denominada com MosCow (Must Have, Should Have, Could Have e Won't Have). Definiu-se 2 critérios de avaliação, o critério de complexidade variando de 5 a 1, onde 5 muito complexo e 1 pouco complexo; e o criteŕio valor de negócio, com peso 2 na análise, onde 5 a US agrega muito valor de negócio e 1 agrega pouco valor de negócio.
+Na segunda versão do MVP, levamos em consideração o feedback recebido e repontuamos as sprints.
 
 A escala para definir o MVP foi a seguinte:
 Must: Valor de negócio = 5 ou pontuação geral >=12
