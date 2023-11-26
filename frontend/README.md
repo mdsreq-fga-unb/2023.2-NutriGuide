@@ -4,6 +4,8 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 
 ## Para rodar o Projeto
 
+- Dependências do node: `npm install`
+
 Execute o comando `ng serve` para rodar o projeto localmente na porta 4200: `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar algum dos arquivos de origem.
 
 ## Componentes pelo CLI
