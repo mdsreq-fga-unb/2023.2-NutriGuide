@@ -1,0 +1,1608 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação para do projeto Nutriguide realizado na disciplina de Requisitos de Software na Universidade de Brasília">
+      
+      
+        <meta name="author" content="Skywalkers">
+      
+      
+      
+        <link rel="prev" href="../PBB/">
+      
+      
+        <link rel="next" href="../DoR_DoD/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2">
+    
+    
+      
+        <title>BDD - Nutriguide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d451bc0e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a5377069.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#atividade-pbb-e-bdd-healthnet" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Nutriguide" class="md-header__button md-logo" aria-label="Nutriguide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nutriguide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              BDD
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="orange"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="orange"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mdsreq-fga-unb/2023.2-NutriGuide" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    NutriGuide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Nutriguide" class="md-nav__button md-logo" aria-label="Nutriguide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Nutriguide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mdsreq-fga-unb/2023.2-NutriGuide" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    NutriGuide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../historia_faccao/historia_faccao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Facção Skywalkers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Apresentações
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Apresentações
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/Unidade01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unidade 01 - 28/09/2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/Unidade02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unidade 02 - 26/10/2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visão
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Visão
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao_produto/visao_do_produto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão geral do produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao_projeto/visao_do_projeto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão geral do projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../processo_desenvolvimento/processo_de_desenvolvimento/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Requisitos do Produto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Requisitos do Produto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos-produto/backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos-produto/MVP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MVP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos-produto/alinhamento_backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alinhamento Backlog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Atividades Unidade 3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Atividades Unidade 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    USM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PBB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PBB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    BDD
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    BDD
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bdd" class="md-nav__link">
+    BDD
+  </a>
+  
+    <nav class="md-nav" aria-label="BDD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maria-recepcionista" class="md-nav__link">
+    Maria (Recepcionista)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dr-joao-medico" class="md-nav__link">
+    DR João (Médico)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#livia-farmaceutica" class="md-nav__link">
+    Lívia (Farmacêutica)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rafael-coordenador-de-agendamento" class="md-nav__link">
+    Rafael (Coordenador de Agendamento)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    Histórico de versão
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DoR_DoD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DoR e DoD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos-produto/verificacaoguardioes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verificação e Validação Beach Tennis CoordiMate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentação das Sprints
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Documentação das Sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentacao_sprints/missao1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Missão 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentacao_sprints/missao2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Missão 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentacao_sprints/missao3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Missão 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bdd" class="md-nav__link">
+    BDD
+  </a>
+  
+    <nav class="md-nav" aria-label="BDD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maria-recepcionista" class="md-nav__link">
+    Maria (Recepcionista)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dr-joao-medico" class="md-nav__link">
+    DR João (Médico)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#livia-farmaceutica" class="md-nav__link">
+    Lívia (Farmacêutica)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rafael-coordenador-de-agendamento" class="md-nav__link">
+    Rafael (Coordenador de Agendamento)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    Histórico de versão
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="atividade-pbb-e-bdd-healthnet">Atividade PBB e BDD - HealthNet</h1>
+<h2 id="bdd">BDD</h2>
+<p><a href="../../assets/Exerc%C3%ADcio%20de%20Constru%C3%A7%C3%A3o%20de%20Backlog%20de%20Produto%20usando%20PBB.pdf">Atividade PBB</a></p>
+<p>Após o nosso grupo terminar as US e os seus críterios de aceitação conforme instruído pelo o professor fizemos o nosso BDD com base nas US e críterios de aceitação do grupo BERSERK, abaixo pode se ver as US, seus críterios de aceitação e seus cenários separados por persona</p>
+<h3 id="maria-recepcionista">Maria (Recepcionista)</h3>
+<p><center>
+  US
+ </center></p>
+<p>Como recepcionista posso cadastrar novos pacientes para melhorar a precisão do atendimento </p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>A recepcionista não pode cadastrar alguem que tem conta   </li>
+<li>A  recepcionista pode cadastrar alguém sem conta  </li>
+</ul>
+<p>Cenário: paciente não possui conta
+DADO que o paciente não possui conta, QUANDO eu for cadastrar o paciente, ENTÃO o sistema deve liberar o cadastro do novo paciente.</p>
+<p><center>
+  US
+ </center></p>
+<p>como recepcionista posso inserir dados para adicionar os dados ao perfil</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>Recepcionista adicionar o historico medico do paciente</li>
+<li>Pode adicionar medicamentos que o usuario possui alergia  </li>
+</ul>
+<p><center>
+Cenário: histórico médico do paciente foi alterado
+</center></p>
+<p>DADO que o paciente possui conta no sistema e seu histórico médico foi alterado, QUANDO eu for alterar seu histórico médico, ENTÃO o sistema deve deixar alterar.</p>
+<p><center>
+  US
+ </center></p>
+<p>como recepcionista posso coletar as informações das outras unidades para agilizar o atendimento</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>A recepcionista pode transferir os dados de outra unidade do paciente</li>
+<li>A recepcionista pode unificar os dados do paciente de outras unidades de heath tech  </li>
+</ul>
+<p><center>
+ Cenário: paciente se consulta em mais de uma unidade 
+</center></p>
+<p>DADO que o paciente possui conta e tem dados em outra unidade, QUANDO eu coletar as informações de outra unidade, ENTÃO o sistema deve transferir os dados do paciente selecionado.</p>
+<p><center>
+  US
+ </center></p>
+<p>como recepcionista posso acessar as informações cadastradas para confirmar se estão corretas</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>as recepcionista pode visualizar quais informações foram inseridas</li>
+<li>pode visualizar as informações que estão faltando  </li>
+</ul>
+<p><center>
+ Cenário: Visualizar informações de um paciente
+</center></p>
+<p>DADO que o paciente possui cadastro e informações cadastradas, QUANDO eu acessar sua conta, ENTÃO o sistema deve mostrar na tela as informações do paciente</p>
+<p><center>
+  US
+ </center></p>
+<p>Como recepcionista, posso inserir dados para atualizar dados ao perfil.</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>Só pode realizar a atualização se o paciente já estiver cadastro.</li>
+<li>A recepcionista deve poder visualizar as informações alteradas.  </li>
+</ul>
+<p><center>
+Cenário: Atualizar dados do perfil.
+</center></p>
+<p>DADO que a recepcionista acesse o perfil do paciente, E que ela selecione a opção de atualizar dados, QUANDO inserir as informações atualizadas no perfil do paciente, ENTÃO o sistema deve salvar as alterações feitas no perfil, E o sistema deve exibir uma confirmação de que os dados foram atualizados com sucesso.
+Como recepcionista, posso acessar as informações cadastradas para realizar atualizações nos dados.</p>
+<p><center>
+Cenário: Acessar e Atualizar Dados do Paciente.
+</center></p>
+<p>DADO que a recepcionista esteja autenticada no sistema, E que ela tenha acesso ao cadastro de pacientes, QUANDO selecionar o perfil de um paciente específico, E optar pela opção de atualizar dados, ENTÃO o sistema deve exibir as informações cadastradas do paciente, E permitir que a recepcionista faça as atualizações necessárias no perfil do paciente, E ao salvar as alterações, o sistema deve exibir uma confirmação de que os dados foram atualizados com sucesso.</p>
+<p><center>
+  US
+ </center></p>
+<p>Como recepcionista, posso atualizar informações de outras unidades para poder manter o sistema integrado.</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>A recepcionista deve ter acesso das informações de outras unidades</li>
+<li>A recepcionista deve ser capaz de alterar dados de outras unidades  </li>
+</ul>
+<p><center>
+Cenário: Atualizar Informações de Outras Unidades. 
+</center>
+DADO que a recepcionista esteja autenticada no sistema, E que ela tenha permissões para acessar dados de outras unidades, E que ela selecione a opção de atualizar informações de uma unidade específica, QUANDO realizar as alterações necessárias nos dados da unidade, ENTÃO o sistema deve salvar as atualizações feitas na unidade, E exibir uma confirmação de que os dados foram atualizados com sucesso</p>
+<p><center>
+  US
+ </center>
+Como recepcionista, posso sobrepor as informações para realizar a atualização do sistema.</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>a recepcionista pode colocar novas informações no sistema</li>
+<li>a recepcionista pode apagar as informações antigas  </li>
+</ul>
+<p><center>
+Cenário: Sobrepor Informações para Atualização do Sistema.
+</center></p>
+<p>DADO que a recepcionista esteja autenticada no sistema, E que ela tenha permissões para sobrepor informações, E que ela selecione a opção de atualizar dados de um paciente específico, QUANDO sobrepor ou editar as informações necessárias no sistema, ENTÃO o sistema deve aceitar as alterações e sobrepor as informações existentes, E exibir uma confirmação de que os dados foram atualizados com sucesso.</p>
+<h3 id="dr-joao-medico">DR João (Médico)</h3>
+<p><center>
+  US
+ </center> 
+ Como Médico eu quero visualizar a predição de possíveis doenças para potencializar o diagnóstico</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>O médico pode ver uma lista com as possíveis doenças de cada pacientes.</li>
+<li>O médico pode visualizar sintomas das possíveis doenças.</li>
+<li>O médico visualizar as possíveis doenças por ordem de gravidade.<br />
+<center>
+Cenário: Médico visualiza lista de possíveis doenças de um paciente
+</center></li>
+</ul>
+<p>Dado que o Médico está logado no sistema E que há um paciente com predições de doenças Quando o Médico acessa a página de predições de doenças do paciente Então o Médico deve ver a lista de possíveis doenças do paciente</p>
+<p><center>
+Cenário: Médico visualiza sintomas das possíveis doenças
+</center></p>
+<p>Dado que o Médico está logado no sistema E que há um paciente com predições de doenças Quando o Médico acessa a página de predições de doenças do paciente Então o Médico deve ver a lista de possíveis doenças do paciente E deve ver os sintomas de cada possível doença</p>
+<p><center>
+Cenário: Médico visualiza possíveis doenças por ordem de gravidade
+</center></p>
+<p>Dado que o Médico está logado no sistema E que há um paciente com predições de doenças Quando o Médico acessa a página de predições de doenças do paciente Então o Médico deve ver a lista de possíveis doenças do paciente E deve ver as possíveis doenças ordenadas por gravidade</p>
+<p><center>
+  US
+ </center> 
+Como Médico eu quero utilizar um filtro de tratamento Para facilitar na busca de informações do paciente</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>O médico pode utilizar do filtro de tratamento para buscar informações sobre o paciente</li>
+<li>O médico encontrar informações do paciente de forma organizada  </li>
+</ul>
+<p><center>
+Cenário: O médico pode utilizar do filtro de tratamento para buscar informações sobre o paciente
+</center></p>
+<p>Dado que o médico está logado no sistema E o médico está na página de busca de pacientes Quando o médico seleciona o filtro de tratamento E o médico insere o nome do tratamento E o médico clica no botão de busca Então o sistema exibe uma lista de pacientes que receberam o tratamento</p>
+<p><center>
+Cenário: O médico encontrar informações do paciente de forma organizada
+</center></p>
+<p>Dado que o médico está logado no sistema E o médico está na página de busca de pacientes Quando o médico seleciona o filtro de tratamento E o médico insere o nome do tratamento E o médico clica no botão de busca E o sistema exibe uma lista de pacientes que receberam o tratamento Então o sistema exibe as informações do paciente de forma organizada</p>
+<p><center>
+  US
+ </center> </p>
+<p>Como Médico eu quero visualizar todas as informações do paciente em uma tela Para facilitar na busca de informações do paciente</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>o medico pode  visualizar as informações de todos os paciente em uma tela scroll</li>
+<li>o medico pode visualizar informações de apenas um paciente  </li>
+</ul>
+<p><center>
+Cenário: O médico pode visualizar as informações de todos os pacientes em uma tela scroll
+</center></p>
+<p>Dado que o médico está logado no sistema E o médico está na página de busca de pacientes Quando o médico clica no botão "Visualizar todos os pacientes" Então o sistema exibe todas as informações dos pacientes em uma tela scroll</p>
+<p><center>
+Cenário: O médico pode visualizar informações de apenas um paciente
+</center></p>
+<p>Dado que o médico está logado no sistema E o médico está na página de busca de pacientes Quando o médico insere o nome do paciente na barra de pesquisa E o médico clica no botão de busca Então o sistema exibe as informações do paciente em uma tela</p>
+<p><center>
+  US
+ </center> 
+Como Médico eu quero utilizar um filtro de pacientes Para facilitar na busca do paciente</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>o medico pode selecionar o paciente em que ele quer visualizar as informações</li>
+<li>o medico pode selecionar o cpf do paciente em que ele quer visualizar as informações</li>
+<li>o medico pode selecionar o nome do paciente em que ele quer visualizar as informações  </li>
+</ul>
+<p><center>
+Cenário: O médico pode selecionar o paciente em que ele quer visualizar as informações
+</center></p>
+<p>Dado que o médico está logado no sistema E o médico está na página de busca de pacientes Quando o médico seleciona o filtro de pacientes E o médico seleciona o paciente Então o sistema exibe as informações do paciente</p>
+<p><center>
+Cenário: O médico pode selecionar o cpf do paciente em que ele quer visualizar as informações
+</center></p>
+<p>Dado que o médico está logado no sistema E o médico está na página de busca de pacientes
+Quando o médico seleciona o filtro de pacientes E o médico insere o cpf do paciente E o médico clica no botão de busca Então o sistema exibe as informações do paciente</p>
+<p><center>
+Cenário: O médico pode selecionar o nome do paciente em que ele quer visualizar as informações
+</center></p>
+<p>Dado que o médico está logado no sistema E o médico está na página de busca de pacientes Quando o médico seleciona o filtro de pacientes E o médico insere o nome do paciente E o médico clica no botão de busca Então o sistema exibe as informações do paciente</p>
+<p><center>
+  US
+ </center> 
+Como Médico eu quero receber um alerta de risco Para prevenir possíveis contratempos</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>O médico deve receber os alertas a cada paciente que atende.</li>
+<li>O médico deve poder selecionar gatilhos para receber os alertas.  </li>
+</ul>
+<p><center>
+Cenário: O médico deve receber os alertas a cada paciente que atende
+</center></p>
+<p>Dado que o médico está logado no sistema E o médico está na página de informações do paciente Quando o médico seleciona a opção "Receber alertas de risco" Então o sistema envia um alerta de risco para o médico a cada paciente que ele atende</p>
+<p><center>
+Cenário: O médico deve poder selecionar gatilhos para receber os alertas
+</center></p>
+<p>Dado que o médico está logado no sistema E o médico está na página de configurações de alerta de risco Quando o médico seleciona os gatilhos para receber alertas Então o sistema envia alertas de risco para o médico com base nos gatilhos selecionados</p>
+<p><center>
+  US
+ </center> 
+como médico posso utilizar um filtro de data para saber quando foram realizados os processos</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>o medico pode selecionar o ano em que ele quer visualizar as informações</li>
+<li>o medico pode selecionar o mês em que ele quer visualizar as informações</li>
+<li>o medico pode selecionar o dia em que ele quer visualizar as informações  </li>
+</ul>
+<p><center>
+Cenário: Selecionar data válida 
+</center></p>
+<p>DADO que o médico selecione o data válida, QUANDO filtrar por data, ENTÃO o sistema deve retornar os processos realizados na data escolhida, seja no ano, mês ou dia.</p>
+<p><center>
+  US
+ </center> 
+Como médico, posso utilizar um filtro de unidade para saber onde os pacientes se consultaram.</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>o medico pode selecionar a unidade do heal tech em que ele quer visualizar as informações</li>
+<li>O médico deve ser capaz de obter informações detalhadas sobre unidades que os pacientes já se consultaram  </li>
+</ul>
+<p><center>
+Cenário: Filtrar Pacientes por Unidade de Consulta 
+</center></p>
+<p>DADO que o médico esteja autenticado no sistema, E que ele tenha permissões para acessar informações de unidades de consulta, E que existam pacientes registrados no sistema, QUANDO o médico selecionar a opção de filtrar por unidade de consulta, E escolher uma unidade específica, ENTÃO o sistema deve exibir a lista de pacientes que se consultaram na unidade escolhida, E apresentar informações relevantes sobre esses pacientes, E permitir ao médico visualizar detalhes adicionais sobre cada paciente, se necessário.</p>
+<h3 id="livia-farmaceutica">Lívia (Farmacêutica)</h3>
+<p><center>
+  US
+ </center>
+Como Farmacêutica eu quero acessar as informações detalhadas dos medicamentos para Tornar o processo de liberação de remédios mais seguro</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>A farmacêutica deve conseguir ver os detalhes dos medicamentos.</li>
+<li>A farmacêutica deve poder ver possíveis interações perigosas do medicamento.  </li>
+</ul>
+<p><center>
+Cenário: Acessar informações detalhadas dos medicamentos
+</center></p>
+<p>Dado que a Farmacêutica está logada no sistema
+Quando a Farmacêutica clica no botão "Detalhes"
+Então a Farmacêutica vê as informações detalhadas do medicamento</p>
+<p><center>
+Cenário: Ver possíveis interações perigosas do medicamento
+</center></p>
+<p>Dado que a Farmacêutica está logada no sistema
+Quando a Farmacêutica clica no botão "Interações Perigosas"
+Então a Farmacêutica vê as possíveis interações perigosas do medicamento</p>
+<p><center>
+  US
+ </center>
+Como Farmacêutica eu quero acessar o registro de medicamentos dispensados para ter um  controle de segurança de armazenamento</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>A farmacêutica deve conseguir ver o histórico de medicamentos que foram dispensados</li>
+<li>A farmaceutica deve conseguir ver quem pediu o médicamento que saiu  </li>
+</ul>
+<p><center>
+Cenário: Ver histórico de medicamentos dispensados
+</center></p>
+<p>Dado que a Farmacêutica está logada no sistema
+Quando a Farmacêutica clica no botão "Histórico"
+Então a Farmacêutica vê o histórico de medicamentos dispensados</p>
+<p><center>
+Cenário: Ver quem pediu o medicamento que saiu
+</center></p>
+<p>Dado que a Farmacêutica está logada no sistema
+Quando a Farmacêutica clica no botão "Detalhes"
+Então a Farmacêutica vê quem pediu o medicamento que saiu</p>
+<p><center>
+  US
+ </center></p>
+<p>Como Farmacêutica eu quero acessar o relatório de riscos para deixar mais seguro o  processo de interações medicamentosas</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>A farmacêutica deve conseguir ver o relatório de riscos de pacientes</li>
+<li>deve ter acesso a uma lista de substancias que o paciente é alergico  </li>
+</ul>
+<p><center>
+Cenário: Ver relatório de riscos de pacientes
+</center></p>
+<p>Dado que a Farmacêutica está logada no sistema
+Quando a Farmacêutica clica no botão "Relatório de Riscos"
+Então a Farmacêutica vê o relatório de riscos de pacientes</p>
+<p><center>
+Cenário: Ver lista de substâncias alérgicas do paciente
+</center></p>
+<p>Dado que a Farmacêutica está logada no sistema
+Quando a Farmacêutica clica no botão "Substâncias Alérgicas"
+Então a Farmacêutica vê a lista de substâncias alérgicas do paciente</p>
+<p><center>
+  US
+ </center>
+Como Farmacêutica eu quero acessar o estoque de medicamentos para ter um controle de segurança de armazenamento</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>A farmacêutica pode ver o estoque de medicamentos</li>
+<li>deve saber a quantidade de cada medicamento   </li>
+</ul>
+<p><center>
+Cenário: Farmacêutica visualiza o estoque de medicamentos
+</center></p>
+<div class="highlight"><pre><span></span><code>Dado que a Farmacêutica está logada no sistema
+Quando ela acessa a página de estoque de medicamentos
+</code></pre></div>
+<p>Então ela deve ver a lista de medicamentos disponíveis e ver a quantidade de cada medicamento</p>
+<p><center>
+Cenário: Farmacêutica verifica a quantidade de um medicamento específico
+</center></p>
+<p>Dado que a Farmacêutica está logada no sistema
+E que ela está na página de estoque de medicamentos
+Quando ela procurar por um medicamento específico e deve ver a quantidade deste medicamento</p>
+<p><center>
+  US
+ </center>
+Como Farmacêutica eu quero acessar o estoque de medicamentos para ter um controle de segurança de armazenamento</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>A farmacêutica pode ver o estoque de medicamentos</li>
+<li>Deve saber a quantidade de cada medicamento  </li>
+</ul>
+<p><center>
+Cenário: Farmacêutica visualiza o estoque de medicamentos
+</center>
+Dado que a Farmacêutica está logada no sistema
+Quando ela acessa a página de estoque de medicamentos
+Então ela deve ver a lista de medicamentos disponíveis e ver a quantidade de cada medicamento</p>
+<p><center>
+Cenário: Farmacêutica verifica a quantidade de um medicamento específico
+</center></p>
+<p>Dado que a Farmacêutica está logada no sistema
+E que ela está na página de estoque de medicamentos
+Quando ela procurar por um medicamento específico e deve ver a quantidade deste medicamento</p>
+<h3 id="rafael-coordenador-de-agendamento">Rafael (Coordenador de Agendamento)</h3>
+<p><center>
+  US
+ </center>
+Como Coordenador de Agendamento eu quero coletar informações Para ajustar agendas</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>Quando o médico tiver horários conflitantes o coordenador consegue cancelar o agendamento</li>
+<li>Quando o paciente tiver horário conflitante o coordenador consegue cancelar o agendamento  </li>
+</ul>
+<p><center>
+Cenário: O coordenador consegue cancelar o agendamento quando o médico tiver horários conflitantes
+</center></p>
+<p>Dado que o coordenador está logado no sistema
+E o coordenador está na página de agendamento
+Quando o coordenador seleciona o agendamento com horários conflitantes
+E o coordenador clica no botão "Cancelar agendamento"
+Então o sistema cancela o agendamento</p>
+<p><center>
+Cenário: O coordenador consegue cancelar o agendamento quando o paciente tiver horário conflitante
+</center></p>
+<p>Dado que o coordenador está logado no sistema
+E o coordenador está na página de agendamento
+Quando o coordenador seleciona o agendamento com horários conflitantes
+E o coordenador clica no botão "Cancelar agendamento"
+Então o sistema cancela o agendamento</p>
+<p><center>
+  US
+ </center></p>
+<p>Como Coordenador de Agendamento eu quero sincronizar o calendário entre todas as unidades para manter o sistema atualizado e integrado</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>Consegue visualizar a disponibilidade dos médicos das outras unidades </li>
+<li>Consegue informar a disponibilidade de médicos da sua unidade  </li>
+</ul>
+<p><center>
+Cenário: Visualizar disponibilidade dos médicos das outras unidades
+</center></p>
+<p>Dado que o Coordenador de Agendamento está logado
+E que a opção de visualizar a disponibilidade dos médicos das outras unidades foi selecionada
+Quando o botão "Visualizar" é clicado
+Então a disponibilidade dos médicos das outras unidades é exibida</p>
+<p><center>
+Cenário: Informar disponibilidade de médicos da sua unidade
+</center></p>
+<p>Dado que o Coordenador de Agendamento está logado
+E que a opção de informar a disponibilidade de médicos da sua unidade foi selecionada
+Quando o formulário com a disponibilidade dos médicos da sua unidade é preenchido
+E o botão "Enviar" é clicado
+Então a disponibilidade dos médicos da sua unidade é atualizada no sistema</p>
+<p><center>
+  US
+ </center>
+ Como Coordenador de Agendamento eu quero consultar as agendas dos médicos para saber os dias disponíveis</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>o coordenador pode acessar o calendario do medico </li>
+<li>o coordenador é notificado sobre os dias disponiveis do medico  </li>
+</ul>
+<p><center>
+Cenário: Acessar calendário do médico
+</center></p>
+<p>Dado que estou logado como Coordenador de Agendamento
+E que eu selecionei a opção de acessar o calendário do médico
+Quando eu clico no botão "Acessar"
+Então eu vejo o calendário do médico</p>
+<p><center>
+Cenário: Receber notificação sobre dias disponíveis do médico
+</center></p>
+<p>Dado que estou logado como Coordenador de Agendamento
+E que eu selecionei a opção de receber notificação sobre os dias disponíveis do médico
+Quando o médico atualiza sua disponibilidade
+Então eu recebo uma notificação sobre os dias disponíveis do médico</p>
+<p><center>
+  US
+ </center>
+Como Coordenador de Agendamento eu quero cancelar consultas
+Para avisar o médico que a consulta foi desmarcada</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>so pode ser cancelada uma consulta que foi marcada anteriormente</li>
+<li>o médico responsável pela consulta será notificado  </li>
+</ul>
+<p><center>
+Cenário: Visualizar disponibilidade dos médicos das outras unidades
+</center></p>
+<p>Dado que o Coordenador de Agendamento está logado
+E que a opção de visualizar a disponibilidade dos médicos das outras unidades foi selecionada
+Quando o botão "Visualizar" é clicado
+Então a disponibilidade dos médicos das outras unidades é exibida</p>
+<p><center>
+Cenário: Receber notificação sobre dias disponíveis do médico
+</center>
+Cenário: Receber notificação sobre dias disponíveis do médico
+Dado que o Coordenador de Agendamento está logado
+E que a opção de receber notificação sobre os dias disponíveis do médico foi selecionada
+Quando o médico atualiza sua disponibilidade
+Então o Coordenador de Agendamento recebe uma notificação sobre os dias disponíveis do médico</p>
+<p><center>
+  US
+ </center>
+Como Coordenador de Agendamento eu quero confirmar consultas para avisar o médico que a consulta foi confirmada</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>coordenador de agendamentos pode clicar em consulta confirmada para indicar que a consulta está confirmada</li>
+<li>o médico responsável pela consulta será notificado  </li>
+</ul>
+<p><center>
+Cenário: Coordenador de Agendamento confirma consulta
+</center></p>
+<div class="highlight"><pre><span></span><code>Dado que o Coordenador de Agendamento está logado no sistema e que há uma consulta agendada
+Quando o Coordenador de Agendamento clicar em &quot;Consulta Confirmada&quot;
+Então a consulta é marcada como confirmada e o médico responsável pela consulta é notificado
+</code></pre></div>
+<p><center>
+Cenário: Médico verifica consultas confirmadas
+</center></p>
+<div class="highlight"><pre><span></span><code>Dado que o Médico está logado no sistema e que há consultas confirmadas
+Quando o Médico acessa a lista de consultas confirmadas
+Então o Médico deve ver a lista de consultas confirmadas e deve ver a data e hora de cada consulta confirmada
+</code></pre></div>
+<p><center>
+  US
+ </center>
+Como Coordenador de Agendamento, eu quero notificar pacientes sobre as consultas para manter os pacientes cientes e atualizados.</p>
+<p><center>
+ Críterios de Aceitação
+</center></p>
+<ul>
+<li>coordenador de agendamentos pode notificar os pacientes que a consulta foi confirmada</li>
+<li>coordenador de agendamentos pode notificar os pacientes que a consulta foi cancelada</li>
+<li>coordenador de agendamentos pode notificar os pacientes que a consulta está chegando  </li>
+</ul>
+<p><center>
+Cenário: Notificação de Confirmação
+</center></p>
+<p>Dado que a consulta foi confirmada E o Coordenador de Agendamento deseja notificar o paciente Quando o Coordenador de Agendamento envia uma notificação de confirmação Então o paciente deve receber uma notificação de confirmação</p>
+<p><center>
+Cenário: Notificação de Cancelamento
+</center>
+Dado que a consulta foi cancelada E o Coordenador de Agendamento deseja notificar o paciente Quando o Coordenador de Agendamento envia uma notificação de cancelamento Então o paciente deve receber uma notificação de cancelamento</p>
+<p><center>
+Cenário: Notificação de Chegada
+</center>
+Cenário: Notificação de Chegada
+Dado que a consulta está chegando E o Coordenador de Agendamento deseja notificar o paciente Quando o Coordenador de Agendamento envia uma notificação de chegada Então o paciente deve receber uma notificação de chegada</p>
+<h2 id="historico-de-versao">Histórico de versão</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Versão</th>
+<th align="center">Data</th>
+<th align="center">Descrição</th>
+<th align="center">Autor</th>
+<th align="center">Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0.1</td>
+<td align="center">13/11/2023</td>
+<td align="center">Criação do BDD</td>
+<td align="center">Guilherme, Eric, Henrique, Luana</td>
+<td align="center">Guilherme,Luana</td>
+</tr>
+<tr>
+<td align="center">0.2</td>
+<td align="center">22/11/2023</td>
+<td align="center">Arrumando para colocar no GitPages</td>
+<td align="center">Guilherme</td>
+<td align="center">Luana</td>
+</tr>
+</tbody>
+</table>
+<hr />
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Voltar para o topo
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.section", "navigation.path", "navigation.top", "tabs"], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.726fbb30.min.js"></script>
+      
+    
+  </body>
+</html>
