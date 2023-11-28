@@ -1,0 +1,102 @@
+.header {
+    margin: 20px 0 0 25px;  /* superior | direita | inferior | esquerda */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    h1 {
+        color: #fff;
+        font-size: 64px;
+        font-family: Overpass;
+        font-weight: bold;
+    }
+}
+
+.formulario {
+    margin: 100px 200px 0 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    h2 {
+        color: #fff;
+        font-size: 48px;
+        font-family: Overpass;
+        font-weight: bold;
+    }
+
+    h3 {
+        margin-top: 30px;
+        color: #fff;
+        font-size: 32px;
+        font-family: Overpass;
+        font-weight: lighter;
+        padding: 10px 0 10px 0;     /* superior | direita | inferior | esquerda */
+        border-bottom: 3px solid #FFFFFF;
+        margin: 3px;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+.botao {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: Overpass;
+    font-weight: lighter;
+    background-color: #F49320;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    border-radius: 50px;
+}
+
+.botao:hover {
+    cursor: pointer;
+}
+
+.botoes-suporiores {
+    display: flex;
+    flex-direction: row;
+}
+
+.inputs {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-superior {
+    font-size: 24px;
+    font-family: Overpass;
+    font-weight: lighter;
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.input-inferior {
+    margin: 10px 0 0 0;
+    input {
+        width: 40%;
+        font-size: 24px;
+        font-family: Overpass;
+        font-weight: lighter;
+        border: none;
+        border-radius: 50px;
+        padding: 5px;
+    }
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit {
+    display: flex;
+    flex-direction: row-reverse;
+}
