@@ -1,19 +1,10 @@
-.header {
-    margin: 20px 0 0 25px;  /* superior | direita | inferior | esquerda */
-    display: flex;
-    flex-direction: column;
+.container {
+    position: absolute;
     width: 100%;
-    h1 {
-        color: #fff;
-        font-size: 64px;
-        font-family: Overpass;
-        font-weight: bold;
-    }
-}
-
-.formulario {
-    margin: 100px 200px 0 200px;
+    margin: 150px 0 0 0;   /* superior | direita | inferior | esquerda */
     display: flex;
+    align-items: center; 
+    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
 
@@ -34,13 +25,6 @@
         border-bottom: 3px solid #FFFFFF;
         margin: 3px;
     }
-
-    form {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
 }
 
 .botao {
@@ -58,6 +42,7 @@
 
 .botao:hover {
     cursor: pointer;
+    background-color: #b66a0e;
 }
 
 .botoes-suporiores {
@@ -83,7 +68,7 @@
 .input-inferior {
     margin: 10px 0 0 0;
     input {
-        width: 40%;
+        width: 45%;
         font-size: 24px;
         font-family: Overpass;
         font-weight: lighter;
@@ -99,4 +84,35 @@
 .submit {
     display: flex;
     flex-direction: row-reverse;
+}
+
+.lifestyle {
+    margin-top: 250px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+    img {
+        position: absolute;
+    }
+}
+
+.list {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+}
+
+.item {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+
+    img {
+        width: 35px;
+        height: 27px;
+        margin-right: 10px;
+    }
 }

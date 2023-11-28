@@ -1,8 +1,4 @@
-<div class="header">
-    <h1>NutriGuide</h1>
-</div>
-
-<div class="formulario">
+<div class="container">
     <h2>
         Procure por um Nutricionista
     </h2>
@@ -18,20 +14,65 @@
         </div>
 
         <div class="inputs">
-            <input 
-                class="input-superior" 
-                type="text" 
-                placeholder="Nome do Nutricionista"
-                formControlName="nome"
-            >
+            <input class="input-superior" type="text" placeholder="Nome do Nutricionista" formControlName="nome">
             <div class="input-inferior">
                 <input type="text" placeholder="Especialidade" formControlName="especialidade">
                 <input type="text" placeholder="Cidade ou Região" formControlName="cidadeRegiao">
             </div>
-        </div>    
+        </div>
 
         <div class="submit">
             <button class="botao" (click)="submeterFormulario()">Pesquisar</button>
         </div>
     </form>
+
+    <div class="lifestyle">
+        <img src="../../../assets/img/lifestyle.png" alt="">
+        <h1>Porquê Escolher o nutriguide?</h1>
+    </div>
+
+    <div class="list">
+        <div>
+            <img src="../../../assets/img/morangos.png">
+        </div>
+
+        <div>
+            <div class="item">
+                <img src="../../../assets/img/check.png">
+                <p>Procure por nutricionistas especialistas.</p>
+            </div>
+
+            <div class="item">
+                <img src="../../../assets/img/check.png">
+                <p>Acesso a comunidade de nutricionistas.</p>
+            </div>
+
+            <div class="item">
+                <img src="../../../assets/img/check.png">
+                <p>Planos Alimentares disponíveis a todo momento.</p>
+            </div>
+
+            <div class="item">
+                <img src="../../../assets/img/check.png">
+                <p>Atendimentos preseneciais e Teleconsulta.</p>
+            </div>
+
+            <div class="item">
+                <img src="../../../assets/img/check.png">
+                <p>Acompanhamento personalizado.</p>
+            </div>
+
+            <div class="item">
+                <img src="../../../assets/img/check.png">
+                <p>Registro de Evolução.</p>
+            </div>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/meditacao.png">
+            <img src="../../../assets/img/corrida.png">
+            <img src="../../../assets/img/comidas.png">
+        </div>
+    </div>
+
 </div>
