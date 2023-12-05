@@ -16,5 +16,7 @@ Para mais informações: [Node.js](https://nodejs.org/en/docs).
 
 ## Para rodar o deploy
 
-- Basta rodar o comando `vercel`
-- url da api do nutriguide: `https://api-nutriguide-3xr36mok7-henriqtorresls-projects.vercel.app`
+- Primeiro fazer o build do projeto: `npm run build`
+- Rodar o comando `vercel`
+- E por último rodar o comando `vercel --prod`
+- url da api do nutriguide: `https://api-nutriguide-6sltx4u7n-henriqtorresls-projects.vercel.app`
