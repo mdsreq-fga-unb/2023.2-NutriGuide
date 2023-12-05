@@ -9,6 +9,8 @@ import { HeaderComponent } from './modules/header/header.component';
 import { CadastroComponent } from './modules/cadastro/cadastro.component';
 import { LoginComponent } from './modules/login/login.component';
 import { MeusPacientesComponent } from './modules/meus-pacientes/meus-pacientes.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppMaterialModule } from './shared/app-material/app-material.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { MeusPacientesComponent } from './modules/meus-pacientes/meus-pacientes.
   imports: [
     AppRoutingModule,
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    AppMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
