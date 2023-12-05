@@ -1,2 +1,43 @@
 <app-header></app-header>
-<p>meus-pacientes works!</p>
+
+<div class="container">
+
+    <div class="title">
+        <p>Pacientes Cadastrados</p>
+
+        <!-- Adicionar funcionalidade -->
+        <button>
+            Cadastrar Paciente
+        </button>
+    </div>
+
+    <div class="table">
+        <div class="table-header">
+
+            <table>
+                <tr>
+                    <th *ngFor="let coluna of colunas">{{ coluna }}</th>
+                </tr>
+            </table>
+    
+        </div>
+    
+        <div class="table-body">
+    
+            <table>
+                    <tr *ngFor="let linha of linhas">
+                        <td>{{ linha.nome }}</td>
+                        <td>{{ linha.idade }}</td>
+                        <td>{{ linha.contato }}</td>
+                        <td>{{ linha.condicoesMedicas }}</td>
+                        <td>
+                            <button>
+                                <img src="../../../assets/img/editar.png">
+                            </button>
+                        </td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
