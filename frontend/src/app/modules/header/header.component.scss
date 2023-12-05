@@ -1,0 +1,51 @@
+.header {
+    background-color: #22A353;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.itens {
+    a {
+        text-shadow: 0.05em 0.05em 0.05em #333;
+        font-size: 32px;
+        text-decoration: none;
+        color: #FFFFFF;
+        margin: 0 30px 0 30px;
+    }
+
+    a:hover {
+        color: #e0dbdb;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.meu-perfil {
+
+    button {
+        box-shadow: 0.05em 0.05em 0.05em #333;
+
+        font-size: 28px;
+        text-decoration: none;
+        color: #FFFFFF;
+        background-color: #F49320;
+        padding: 10px 20px 5px 20px; /* superior | direita | inferior | esquerda */
+        border-radius: 25px;
+        border: none;
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: #ca7b1a;
+    }
+
+    img {
+        width: 35px;
+        height: 28px;
+        margin-left: 5px;
+    }
+
+}
