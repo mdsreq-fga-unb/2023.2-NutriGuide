@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './modules/header/header.component';
 import { CadastroComponent } from './modules/cadastro/cadastro.component';
 import { LoginComponent } from './modules/login/login.component';
+import { MeusPacientesComponent } from './modules/meus-pacientes/meus-pacientes.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LoginComponent } from './modules/login/login.component';
     PaginaConsultaComponent,
     HeaderComponent,
     CadastroComponent,
-    LoginComponent
+    LoginComponent,
+    MeusPacientesComponent
   ],
   imports: [
     AppRoutingModule,
