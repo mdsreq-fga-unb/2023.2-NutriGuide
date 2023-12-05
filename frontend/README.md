@@ -23,3 +23,7 @@ Execute `ng test` para executar os testes de unidade via [Karma](https://karma-r
 ## Documentação da CLI do Angular
 
 Para obter mais ajuda sobre o Angular CLI, use `ng help` ou confira a página [Visão geral do Angular CLI e referência de comandos](https://angular.io/cli).
+
+## Url de Produção
+
+Para acessar nosso site: `https://nutriguide-req.netlify.app/inicio`
