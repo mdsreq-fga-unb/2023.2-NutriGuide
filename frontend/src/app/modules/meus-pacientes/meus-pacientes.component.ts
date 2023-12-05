@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CadastrarPacienteComponent } from '../cadastrar-paciente/cadastrar-paciente.component';
 
 // apagar depois:
 interface Paciente {
@@ -47,10 +49,19 @@ export class MeusPacientesComponent implements OnInit {
     this.paciente1
   ];
 
-  constructor() { }
+  constructor(
+    public dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
 
+  }
+
+  abrirDialogCadatrar(): void {
+    const dialogRef = this.dialog.open(CadastrarPacienteComponent, {
+      width: '1500px',
+      height: '800px'
+    });
   }
 
 }

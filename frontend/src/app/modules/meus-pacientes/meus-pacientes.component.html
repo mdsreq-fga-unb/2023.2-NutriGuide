@@ -6,7 +6,7 @@
         <p>Pacientes Cadastrados</p>
 
         <!-- Adicionar funcionalidade -->
-        <button>
+        <button (click)="abrirDialogCadatrar()">
             Cadastrar Paciente
         </button>
     </div>
@@ -31,7 +31,7 @@
                         <td>{{ linha.contato }}</td>
                         <td>{{ linha.condicoesMedicas }}</td>
                         <td>
-                            <button>
+                            <button matTooltip="Editar Paciente">
                                 <img src="../../../assets/img/editar.png">
                             </button>
                         </td>

@@ -11,6 +11,8 @@ import { LoginComponent } from './modules/login/login.component';
 import { MeusPacientesComponent } from './modules/meus-pacientes/meus-pacientes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './shared/app-material/app-material.module';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { CadastrarPacienteComponent } from './modules/cadastrar-paciente/cadastrar-paciente.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { AppMaterialModule } from './shared/app-material/app-material.module';
     HeaderComponent,
     CadastroComponent,
     LoginComponent,
-    MeusPacientesComponent
+    MeusPacientesComponent,
+    CadastrarPacienteComponent
   ],
   imports: [
     AppRoutingModule,
