@@ -20,15 +20,18 @@ console.log('Conectado com o banco!');
 //     console.log('retorno: ', results);
 // });
 
+let teste;
+
 connection.query('SELECT * FROM tabela_teste', (err, results) => {
     console.log('retorno: ', results);
+    teste = results;
 });
 
 // fechando a conexão
 connection.end();
 
 app.get('/', (req, res) => {
-    res.send('Olá mundo!');
+    res.send(teste!);
 })
 
 app.listen(8080, () => {
