@@ -1,1 +1,86 @@
-<p>cadastrar-paciente works!</p>
+<div class="container">
+
+    <div class="title">
+        <h3>Cadastrar Paciente</h3>
+    </div>
+
+    <form class="formulario">
+
+        <section class="inputs">
+            <div class="input-item">
+                <p>Nome do Paciente</p>
+                <input type="text" placeholder="Nome Completo">
+            </div>
+
+            <div class="input-item">
+                <p>Data de Nascimento</p>
+                <input type="date">
+            </div>
+
+            <div class="input-item">
+                <p>Endereço</p>
+                <input type="text" placeholder="Endereço Completo">
+            </div>
+        </section>
+
+        <section class="inputs">
+            <div class="input-item">
+                <p>Telefone</p>
+                <input type="text" placeholder="XX XXXX-XXXX">
+            </div>
+
+            <div class="input-item">
+                <p>E-mail</p>
+                <input type="text" placeholder="paciente@email.com">
+            </div>
+
+            <div class="input-item">
+                <p>Principal Objetivo/Queixa</p>
+                <input type="text" placeholder="Ex.: Emagrecimento">
+            </div>
+        </section>
+
+        <section class="inputs">
+            <div class="input-item">
+                <p>Altura</p>
+                <input type="text" placeholder="Em metros">
+            </div>
+
+            <div class="input-item">
+                <p>Peso</p>
+                <input type="text" placeholder="Em Kg">
+            </div>
+
+            <div class="input-item">
+                <p>Gênero</p>
+                <input type="text" placeholder="Gênero">
+            </div>
+        </section>
+
+        <section class="text-area">
+            <div class="text-area-item">
+                <p>Doenças/ Comorbidade</p>
+                <textarea name="" id="" cols="30" rows="10"
+                placeholder="Campo para mencionar informações complementares ou pertinentes"></textarea>
+            </div>
+
+            <div class="text-area-item">
+                <p>Medicações Administradas</p>
+                <textarea name="" id="" cols="30" rows="10"
+                placeholder="Campo para mencionar informações complementares ou pertinentes"></textarea>
+            </div>
+        </section>
+
+        <div class="botoes">
+            <div class="botao-cancelar">
+                <button (click)="cancelar()">Cancelar</button>
+            </div>
+            
+            <div class="botao-registrar">
+                <button (click)="registrar()">Registrar</button>
+            </div>
+        </div>
+
+    </form>
+
+</div>
