@@ -4,69 +4,69 @@
         <h3>Cadastrar Paciente</h3>
     </div>
 
-    <form class="formulario">
+    <form class="formulario" [formGroup]="this.formulario">
 
         <section class="inputs">
             <div class="input-item">
                 <p>Nome do Paciente</p>
-                <input type="text" placeholder="Nome Completo">
+                <input type="text" placeholder="Nome Completo" formControlName="nome">
             </div>
 
             <div class="input-item">
                 <p>Data de Nascimento</p>
-                <input type="date">
+                <input type="date" formControlName="nascimento">
             </div>
 
             <div class="input-item">
                 <p>Endereço</p>
-                <input type="text" placeholder="Endereço Completo">
+                <input type="text" placeholder="Endereço Completo" formControlName="endereço">
             </div>
         </section>
 
         <section class="inputs">
             <div class="input-item">
                 <p>Telefone</p>
-                <input type="text" placeholder="XX XXXX-XXXX">
+                <input type="text" placeholder="XX XXXX-XXXX" formControlName="telefone">
             </div>
 
             <div class="input-item">
                 <p>E-mail</p>
-                <input type="text" placeholder="paciente@email.com">
+                <input type="text" placeholder="paciente@email.com" formControlName="email">
             </div>
 
             <div class="input-item">
                 <p>Principal Objetivo/Queixa</p>
-                <input type="text" placeholder="Ex.: Emagrecimento">
+                <input type="text" placeholder="Ex.: Emagrecimento" formControlName="objetivo">
             </div>
         </section>
 
         <section class="inputs">
             <div class="input-item">
                 <p>Altura</p>
-                <input type="text" placeholder="Em metros">
+                <input type="text" placeholder="Em metros" formControlName="altura">
             </div>
 
             <div class="input-item">
                 <p>Peso</p>
-                <input type="text" placeholder="Em Kg">
+                <input type="text" placeholder="Em Kg" formControlName="peso">
             </div>
 
             <div class="input-item">
                 <p>Gênero</p>
-                <input type="text" placeholder="Gênero">
+                <input type="text" placeholder="Gênero" formControlName="genero">
             </div>
         </section>
 
         <section class="text-area">
             <div class="text-area-item">
                 <p>Doenças/ Comorbidade</p>
-                <textarea name="" id="" cols="30" rows="10"
+                <textarea name="" id="" cols="30" rows="10" formControlName="doencas"
                 placeholder="Campo para mencionar informações complementares ou pertinentes"></textarea>
             </div>
 
             <div class="text-area-item">
                 <p>Medicações Administradas</p>
-                <textarea name="" id="" cols="30" rows="10"
+                <textarea name="" id="" cols="30" rows="10" formControlName="medicacoes"
                 placeholder="Campo para mencionar informações complementares ou pertinentes"></textarea>
             </div>
         </section>
