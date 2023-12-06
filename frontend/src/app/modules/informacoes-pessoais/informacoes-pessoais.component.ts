@@ -31,7 +31,6 @@ export class InformacoesPessoaisComponent implements OnInit {
     .subscribe(
       (usuario) => {
         this.usuario = usuario;
-
         this.load = true;
       }
     );
