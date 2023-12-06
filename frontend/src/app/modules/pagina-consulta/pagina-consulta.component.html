@@ -2,10 +2,10 @@
 <img class="plano-de-fundo" src="../../../assets/img/plano-de-fundo2.png">
 <img class="plano-de-fundo" src="../../../assets/img/plano-de-fundo.png">
 
-<div class="header" *ngIf="notLogado() else logado">
+<div class="header" *ngIf="isLogado() === false else logado">
     <img id="logo" src="../../../assets/img/logo.png">
 
-    <div class="botoes">
+    <div class="botoes-nao-logado">
         <h3>É nutricionista? <a routerLink="/cadastro">Cadastre-se</a></h3>
 
         <button (click)="irParaLogin()">
@@ -16,11 +16,32 @@
 </div>
 
 <ng-template #logado>
-    <div class="header">
-        <img id="logo" src="../../../assets/img/logo.png">
+    <!--Verificar se o usuário é nutricionista ou se é paciente-->
+
+    <ng-container *ngIf="isNutricionista() === true else paciente" >
+        <div class="header">
+            <img id="logo" src="../../../assets/img/logo.png">
+        
+            <div class="botoes-logado">
+                <a routerLink="/consultar-pacientes">Meus Pacientes</a>
+                <a routerLink="#">Minha Comunidade</a>
+        
+                <button (click)="irParaMeuPerfil()">
+                    Meu Perfil
+                    <img src="../../../assets/img/icone-user.png">
+                </button>
+            </div>
+        </div>
+    </ng-container>
     
-        <!--Adicionar como seria o top-bar do usuario logado-->
-    </div>
+
+    <ng-template #paciente>
+        <div class="header">
+            <img id="logo" src="../../../assets/img/logo.png">
+
+        </div>
+    </ng-template> 
+
 </ng-template>
 
 <div class="container">

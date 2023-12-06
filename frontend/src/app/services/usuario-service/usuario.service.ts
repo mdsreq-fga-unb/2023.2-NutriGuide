@@ -6,15 +6,20 @@ import { Constantes } from 'src/app/shared/constantes/constantes';
 @Injectable({
   providedIn: 'root'
 })
-export class LoginService {
+export class UsuarioService {
 
   constructor(
     private httpClient: HttpClient
   ) { }
 
-  login(usuario: any): Observable<any> {
-    return this.httpClient.post(`${Constantes.nutriguideApi}/login`, usuario)
-    .pipe(take(1));
+  getUserByName(nome: string): Observable<any> {
+
+    return this.httpClient.get(`${Constantes.nutriguideApi}/user/nome?nome=${nome}`, {
+      headers: {
+        authorization: 'Bearer ' + localStorage.getItem('token')
+      }
+    }).pipe(take(1));
+
   }
 
 }

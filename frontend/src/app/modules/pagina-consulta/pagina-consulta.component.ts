@@ -5,6 +5,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ConsultarNutricionistasComponent } from '../consultar-nutricionistas/consultar-nutricionistas.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { take } from 'rxjs';
+import { Constantes } from 'src/app/shared/constantes/constantes';
+import { UsuarioService } from 'src/app/services/usuario-service/usuario.service';
 
 @Component({
   selector: 'app-pagina-consulta',
@@ -14,6 +16,7 @@ import { take } from 'rxjs';
 export class PaginaConsultaComponent implements OnInit {
 
   formulario!: FormGroup;
+  usuario!: any;
 
   // Injeção de Dependências:
   constructor(
@@ -21,12 +24,17 @@ export class PaginaConsultaComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     private dialog: MatDialog,
-    private snackbar: MatSnackBar
+    private snackbar: MatSnackBar,
+    private usuarioService: UsuarioService
   ) {}
 
   // Construtor padrão do Angular:
   ngOnInit(): void {
     this.criarFormulario();
+
+    this.usuarioService.getUserByName(String(localStorage.getItem('nome'))).subscribe((usuario) => {
+      this.usuario = usuario;
+    });
   }
 
   // criando o formulário:  
@@ -65,9 +73,18 @@ export class PaginaConsultaComponent implements OnInit {
   }
 
   // função que verifica se o usuário está ou não logado
-  notLogado(): boolean {
-    // adicionar a lógica que verifica se está ou não logado
-    return true;
+  isLogado(): boolean {
+    return Constantes.isLogado();
+  }
+
+  isNutricionista(): boolean {
+    if (Constantes.isNutricionista(this.usuario) === 'nutricionista') return true;
+    
+    return false;
+  }
+
+  irParaMeuPerfil(): void {
+    // navegar para o meu perfil
   }
 
 } 
