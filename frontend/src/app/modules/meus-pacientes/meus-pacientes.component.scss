@@ -36,7 +36,7 @@
 }
 
 .table {
-    margin: 40px 0 80px 0; /* superior | direita | inferior | esquerda */
+    margin: 40px 0 0 0; /* superior | direita | inferior | esquerda */
     border: 1px solid #F49320;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -109,4 +109,14 @@
 *::-webkit-scrollbar-thumb {
     background-color: #28B225;
     border-radius: 20px;
+}
+
+// ---------------------------- //
+
+.table-footer {
+    background-color: #28B225;
+    height: 30px;
+    margin: 0 0 80px 0; /* superior | direita | inferior | esquerda */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
