@@ -50,4 +50,10 @@ export class InformacoesPessoaisComponent implements OnInit {
     this.location.back();
   }
 
+  logout(): void {
+    localStorage.clear();
+    
+    this.router.navigate(['/inicio'], {relativeTo: this.route.parent});
+  }
+
 }
