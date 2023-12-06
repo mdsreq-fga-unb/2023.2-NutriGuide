@@ -67,14 +67,14 @@ app.post('/login', async (req, res) => {
 
 });
 
-// Rota protegida -> Trás od dados do usuário:
-app.get('/user/:id', checkToken, async (req, res) => {
+// Rota protegida -> Trás od dados do usuário através do seu nome:
+app.get('/user/nome', checkToken, async (req, res) => {
 
-    const { id } = req.params;
+    const { nome } = req.query;
 
     // verificar se o usuário existe:
     const repository = new Repository();
-    const user: User | undefined = await repository.findById(id);
+    const user: User | undefined = await repository.findUserByName(String(nome));
 
     if (!user) {
         return res.status(404).json({msg: 'Usuário não encontrado!'});
