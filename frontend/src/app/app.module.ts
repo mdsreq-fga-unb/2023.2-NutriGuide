@@ -12,7 +12,8 @@ import { MeusPacientesComponent } from './modules/meus-pacientes/meus-pacientes.
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './shared/app-material/app-material.module';
 import { CadastrarPacienteComponent } from './modules/cadastrar-paciente/cadastrar-paciente.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ConsultarNutricionistasComponent } from './modules/consultar-nutricionistas/consultar-nutricionistas.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http'
     CadastroComponent,
     LoginComponent,
     MeusPacientesComponent,
-    CadastrarPacienteComponent
+    CadastrarPacienteComponent,
+    ConsultarNutricionistasComponent
   ],
   imports: [
     AppRoutingModule,

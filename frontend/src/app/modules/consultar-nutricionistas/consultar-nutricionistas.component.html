@@ -1,0 +1,42 @@
+<div class="container">
+
+    <div class="title">
+        <h1>Consultar Nutricionistas</h1>
+    </div>
+
+    <div class="table">
+        <div class="table-header">
+
+            <table>
+                <tr>
+                    <th *ngFor="let coluna of colunas">{{ coluna }}</th>
+                </tr>
+            </table>
+    
+        </div>
+    
+        <div class="table-body">
+    
+            <table>
+                    <tr *ngFor="let linha of linhas">
+                        <td>{{ linha.nome }}</td>
+                        <td>{{ linha.regiao }}</td>
+                        <td>{{ linha.contato }}</td>
+                        <td>{{ linha.redesSociais }}</td>
+                        <td>
+                            <button matTooltip="Detalhar Nutricionista">
+                                <img src="../../../assets/img/editar.png">
+                            </button>
+                        </td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+    <div class="table-footer">
+    </div>
+
+    <div class="botao">
+        <button (click)="fechar()">Fechar</button>
+    </div>
+
+</div>

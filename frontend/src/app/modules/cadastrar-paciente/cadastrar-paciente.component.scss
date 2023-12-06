@@ -69,16 +69,16 @@
 
 .botao-cancelar {
     button {
-    box-shadow: 0.05em 0.05em 0.05em #333;
-    height: 50px;
+        box-shadow: 0.05em 0.05em 0.05em #333;
+        height: 50px;
 
-    font-size: 24px;
-    text-decoration: none;
-    color: #FFFFFF;
-    background-color: #F49320;
-    padding: 0px 40px 0px 40px; /* superior | direita | inferior | esquerda */
-    border-radius: 25px;
-    border: none;
+        font-size: 24px;
+        text-decoration: none;
+        color: #FFFFFF;
+        background-color: #F49320;
+        padding: 0px 40px 0px 40px; /* superior | direita | inferior | esquerda */
+        border-radius: 25px;
+        border: none;
     }
 
     button:hover {
@@ -99,10 +99,10 @@
         padding: 0px 40px 0px 40px; /* superior | direita | inferior | esquerda */
         border-radius: 25px;
         border: none;
-        }
+    }
     
-        button:hover {
-            cursor: pointer;
-            background-color: #228021;
-        }
+    button:hover {
+        cursor: pointer;
+        background-color: #228021;
+    }
 }

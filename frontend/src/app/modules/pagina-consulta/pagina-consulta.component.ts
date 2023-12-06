@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ConsultarNutricionistasComponent } from '../consultar-nutricionistas/consultar-nutricionistas.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { take } from 'rxjs';
 
 @Component({
   selector: 'app-pagina-consulta',
@@ -16,6 +20,8 @@ export class PaginaConsultaComponent implements OnInit {
     private formBuilder: FormBuilder,
     private router: Router,
     private route: ActivatedRoute,
+    private dialog: MatDialog,
+    private snackbar: MatSnackBar
   ) {}
 
   // Construtor padrão do Angular:
@@ -39,6 +45,19 @@ export class PaginaConsultaComponent implements OnInit {
     console.log('Dados do formulário: ', values);
 
     // passar esses dados por query param e fazer a logica no backend
+
+    // abrir o dialog:
+    const dialogRef = this.dialog.open(ConsultarNutricionistasComponent, {
+      data: values,
+      width: '1000px',
+      height: '550px'
+    });
+
+    dialogRef.afterClosed().pipe(take(1)).subscribe(() => {
+      this.snackbar.open('Pop-up de consultar nutricionistas fechado!', 'OK', {
+        duration:3000
+      });
+    });
   }
 
   irParaLogin(): void {
