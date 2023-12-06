@@ -31,10 +31,8 @@ export class PaginaConsultaComponent implements OnInit {
   // Construtor padrão do Angular:
   ngOnInit(): void {
     this.criarFormulario();
+    this.buscarUsuario();
 
-    this.usuarioService.getUserByName(String(localStorage.getItem('nome'))).subscribe((usuario) => {
-      this.usuario = usuario;
-    });
   }
 
   // criando o formulário:  
@@ -46,6 +44,16 @@ export class PaginaConsultaComponent implements OnInit {
       especialidade: [''],
       cidadeRegiao: ['']
     });
+  }
+
+  buscarUsuario() {
+    this.usuarioService
+    .getUserByName(String(localStorage.getItem('nome')))
+    .subscribe(
+      (usuario) => {
+        this.usuario = usuario;
+      }
+    );
   }
 
   submeterFormulario(): void {
@@ -84,7 +92,7 @@ export class PaginaConsultaComponent implements OnInit {
   }
 
   irParaMeuPerfil(): void {
-    // navegar para o meu perfil
+    this.router.navigate(['/informacoes-pessoais'], {relativeTo: this.route.parent});
   }
 
 } 

@@ -13,7 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './shared/app-material/app-material.module';
 import { CadastrarPacienteComponent } from './modules/cadastrar-paciente/cadastrar-paciente.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ConsultarNutricionistasComponent } from './modules/consultar-nutricionistas/consultar-nutricionistas.component'
+import { ConsultarNutricionistasComponent } from './modules/consultar-nutricionistas/consultar-nutricionistas.component';
+import { InformacoesPessoaisComponent } from './modules/informacoes-pessoais/informacoes-pessoais.component';
+import { SpinnerComponent } from './shared/spinner-component/spinner/spinner.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ConsultarNutricionistasComponent } from './modules/consultar-nutricioni
     LoginComponent,
     MeusPacientesComponent,
     CadastrarPacienteComponent,
-    ConsultarNutricionistasComponent
+    ConsultarNutricionistasComponent,
+    InformacoesPessoaisComponent,
+    SpinnerComponent
   ],
   imports: [
     AppRoutingModule,

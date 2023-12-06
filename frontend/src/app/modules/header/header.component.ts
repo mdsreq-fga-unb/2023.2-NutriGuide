@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,14 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  private rotaAtiva: string = '';
-
   constructor(
-
+    private router: Router,
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
     
+  }
+
+  irParaMeuPerfil(): void {
+    this.router.navigate(['/informacoes-pessoais'], {relativeTo: this.route.parent});
   }
 
 }
