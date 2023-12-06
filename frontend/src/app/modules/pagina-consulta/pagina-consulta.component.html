@@ -2,7 +2,7 @@
 <img class="plano-de-fundo" src="../../../assets/img/plano-de-fundo2.png">
 <img class="plano-de-fundo" src="../../../assets/img/plano-de-fundo.png">
 
-<div class="header">
+<div class="header" *ngIf="notLogado() else logado">
     <img id="logo" src="../../../assets/img/logo.png">
 
     <div class="botoes">
@@ -14,6 +14,14 @@
         </button>
     </div>
 </div>
+
+<ng-template #logado>
+    <div class="header">
+        <img id="logo" src="../../../assets/img/logo.png">
+    
+        <!--Adicionar como seria o top-bar do usuario logado-->
+    </div>
+</ng-template>
 
 <div class="container">
     <h2 id="title">

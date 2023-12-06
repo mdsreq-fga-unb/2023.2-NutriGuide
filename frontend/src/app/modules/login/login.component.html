@@ -1,1 +1,34 @@
-<p>login works!</p>
+<div class="container">
+
+    <div class="header">
+        <img src="../../../assets/img/logo2.png">
+
+        <h1>Login</h1>
+    </div>
+
+    <form class="formulario" [formGroup]="this.formulario">
+
+        <div class="item">
+            <p>Nome Completo</p>
+            <input type="text" placeholder="Nome Completo" formControlName="nome">
+        </div>
+
+        <div class="item">
+            <p>E-mail</p>
+            <input type="text" placeholder="E-mail" formControlName="email">
+        </div>
+
+        <div class="botao">
+            <div class="cancelar">
+                <button (click)="cancelar()">Cancelar</button>
+            </div>
+
+            <div class="logar">
+                <button (click)="login()">Entrar</button>
+            </div>
+        </div>
+
+    </form>
+
+
+</div>

@@ -15,7 +15,7 @@ export class PaginaConsultaComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
-    private route: ActivatedRoute  
+    private route: ActivatedRoute,
   ) {}
 
   // Construtor padrão do Angular:
@@ -43,6 +43,12 @@ export class PaginaConsultaComponent implements OnInit {
 
   irParaLogin(): void {
     this.router.navigate(['/login'], {relativeTo: this.route.parent});
+  }
+
+  // função que verifica se o usuário está ou não logado
+  notLogado(): boolean {
+    // adicionar a lógica que verifica se está ou não logado
+    return true;
   }
 
 } 
