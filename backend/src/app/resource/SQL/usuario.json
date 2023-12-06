@@ -1,0 +1,4 @@
+{
+    "findByName": "SELECT * FROM tb_teste where nome = ?",
+    "findById": "SELECT * FROM tb_teste where id = ?"
+}

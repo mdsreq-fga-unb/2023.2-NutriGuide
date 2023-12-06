@@ -1,39 +1,105 @@
-import express from 'express';
-import mysql from 'mysql2';
-import urlDb from './app/repository/connection/configDb';
-
+import express, { NextFunction, Request, Response } from 'express';
+import cors from 'cors';
+import jwt from 'jsonwebtoken';
+import Repository from './app/database/Repository';
+import User from './app/models/User';
 
 const app = express();
 
-// Testando a conexão com o banco:
-const connection = mysql.createConnection(urlDb);
-
-console.log('Conectado com o banco!');
-
-// criando a primeira tabela
-// connection.query('CREATE TABLE tabela_teste ( id INTEGER, nome VARCHAR(50) );', (err, results) => {
-//     console.log('retorno: ', results)
-// });
-
-// inserindo elemento:
-// connection.query("INSERT INTO tabela_teste (id, nome) VALUES (1, 'Henrique') ", (err, results) => {
-//     console.log('retorno: ', results);
-// });
-
-let teste;
-
-connection.query('SELECT * FROM tabela_teste', (err, results) => {
-    console.log('retorno: ', results);
-    teste = results;
-});
-
-// fechando a conexão
-connection.end();
+// Configurações da API
+app.use(cors());
+app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send(teste!);
-})
+    res.send('Bem vindo a API do nutriguide!');
+});
 
-app.listen(8080, () => {
-    console.log('Rodando em "http://localhost:8080"');
+// Responsável pela criação do token:
+const SECRET = 'sdjiodsmadsojqwjieqwaasdbmbadetr';
+
+// rota de login:
+app.post('/login', async (req, res) => {
+
+    const { nome, email } = req.body;
+
+    // validações:
+    if (!nome) {
+        return res.status(422).json({ msg: 'O nome é obrigatório!' });
+    }
+
+    if (!email) {
+        return res.status(422).json({ msg: 'O e-mail é obrigatório' });
+    }
+
+    // verificar se o usuário existe
+    const repository = new Repository();
+    const user: User | undefined = await repository.findUserByName(nome);
+
+    if (!user) {
+        return res.status(404).json({ msg: 'Usuário não encontrado!' });
+    }
+
+    if (email != user.email) {
+        return res.status(404).json({ msg: 'E-mail inválido!' });
+    }
+
+    try {
+        
+        const token = jwt.sign(
+            {
+                id: user.id
+            }
+            , SECRET
+        );
+
+        res.status(200).json(
+            { 
+                msg: 'Logado com sucesso!', 
+                token: token 
+            }
+        );
+
+    } catch (err) {
+        console.log('Erro: ', err);
+
+        res.status(500).json({ msg: 'Aconteceu um erro no servidor, tente novamente mais tarde!' });
+    }
+
+});
+
+// Rota protegida -> Trás od dados do usuário:
+app.get('/user/:id', checkToken, async (req, res) => {
+
+    const { id } = req.params;
+
+    // verificar se o usuário existe:
+    const repository = new Repository();
+    const user: User | undefined = await repository.findById(id);
+
+    if (!user) {
+        return res.status(404).json({msg: 'Usuário não encontrado!'});
+    }
+
+    res.status(200).json(user);
+});
+
+// Middleware jwt que verifica o token:
+function checkToken(req: Request, res: Response, next: NextFunction) {
+    const authHeader = req.headers['authorization'];
+    const token = authHeader && authHeader.split(' ')[1];
+
+    if (!token) {
+        return res.status(401).json({ msg: 'Acesso negado!' });
+    }
+
+    try {
+        jwt.verify(token, SECRET);
+        next();     // Quando não da erro a função next permite que o endpoint continue sendo executado
+    } catch (err) {
+        return res.status(400).json({ msg: 'Token inválido!' });
+    }
+}
+
+app.listen(3000, () => {
+    console.log('Rodando em "http://localhost:3000"');
 });
