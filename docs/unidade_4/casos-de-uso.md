@@ -10,8 +10,15 @@ Durante a revisão e análise do diagrama, foi assegurado que todos os atores e 
 
 Ao explorar este diagrama, convida-se a comunidade a examinar a representação visual gerada, destacando não apenas a funcionalidade do sistema, mas também a complexidade e o escopo da aplicação de viagens "VoyageX". Este é um passo significativo na compreensão e comunicação eficaz sobre o funcionamento desta aplicação fictícia.
 
+No frame abaixo é possível visualizar o digrama:
+
+<center>
+
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVNGlV7k8=/?moveToViewport=-9771,-5754,20736,10496&embedId=979550258699" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+
+</center>
 
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
-|  0.1   | 24/10/2023 | Criação do documento | [Eric](https://github.com/Ericcs10) | [Guilherme](https://github.com/GG555-13)  |
+|  0.1   | 07/12/2023 | Criação do documento | [Eric](https://github.com/Ericcs10) | [Guilherme](https://github.com/GG555-13)  |

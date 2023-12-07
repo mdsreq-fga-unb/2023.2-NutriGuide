@@ -70,6 +70,9 @@ nav:
     - Missão 1: documentacao_sprints/missao1.md
     - Missão 2: documentacao_sprints/missao2.md
     - Missão 3: documentacao_sprints/missao3.md
+  - Unidade 4: 
+    - Casos de uso: unidade_4/casos-de-uso.md
+    - Verificação e Validação Moonwalkers: unidade_4/VVMoonwalkers.md
 
 # Extensions
 markdown_extensions:

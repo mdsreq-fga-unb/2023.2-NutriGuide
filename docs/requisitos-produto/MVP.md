@@ -33,13 +33,22 @@ Abaixo estão descritas as US's definidas para o MVP, que foram categorizadas na
 | US45 | Eu como usuário paciente quero ser capaz de visualizar posts do meu nutricionista na aba comunidade para obter uma experiência personalizada e facilitar o acompanhamento das recomendações nutricionais. |
 | US49 | Eu como usuário paciente quero ser notificado quando receber um aviso para ficar ciente de informações importantes, como atualizações em meu plano alimentar, mensagens do nutricionista ou outras notificações relevantes. |
 
+## Protótipo de Alta Fidelidade
+
+Para obter uma fonte confiável e concreta do delineamento do projeto, definir aspectos visuais e a identidade visual de maneira robusta, foi prototipado a aplicação web no Figma. O protótipo pode ser visualizado abaixo ou [aqui](https://www.figma.com/file/3RA8c7BvQktm4eZ04Df0Yk/NutriGuide?type=design&node-id=0%3A1&mode=design&t=ZWhEBRBQTKuoxrsH-1).
+
+<center>
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3RA8c7BvQktm4eZ04Df0Yk%2FNutriGuide%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DZWhEBRBQTKuoxrsH-1" allowfullscreen></iframe>
+
+</center>
 
 ## Histórico de versão
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
-|  0.1   | 25/10/2023 | Criação do MVP | Luana Torres |  Eric Camargo |
-|  0.2   | 19/11/2023 | Ajustes do MVP | Luana Torres |  Eric Camargo |
-|  0.3   | 2/11/2023 | Adicionando o MIRO | Guilherme Oliveira |  Eric Camargo |
-
+|  0.1   | 25/10/2023 | Criação do MVP |[Luana Torres](https://github.com/luanatorress) |  [Eric Camargo](https://github.com/Ericcs10) |
+|  0.2   | 19/11/2023 | Ajustes do MVP | [Luana Torres](https://github.com/luanatorress) |  [Eric Camargo](https://github.com/Ericcs10) |
+|  0.3   | 02/11/2023 | Adicionando o MIRO | [Guilherme](https://github.com/GG555-13)  |  [Eric Camargo](https://github.com/Ericcs10)|
+|  0.4   | 07/12/2023 | Adicionando o Protótipo | [Luana Torres](https://github.com/luanatorress) |  [Eric Camargo](https://github.com/Ericcs10) |
 ---
