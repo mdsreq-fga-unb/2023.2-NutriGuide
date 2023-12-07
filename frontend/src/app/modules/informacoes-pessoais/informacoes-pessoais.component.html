@@ -22,26 +22,112 @@
             <div class="superior-direita">
                 <h1>Dados Basicos</h1>
 
-                <section class="session-itens">
+                <section class="session-itens-nutri">
                     <section style="display: flex; flex-direction: row; justify-content: space-between;">
-                        <div class="item-superior">
+                        <div class="item-superior-nutri">
+                            <p>Nome Completo</p>
+                            <h2>Catarine Camargo</h2>
+                        </div>
+        
+                        <div class="item-superior-nutri">
+                            <p>Região</p>
+                            <h2>Brasília</h2>
+                        </div>
+
+                        <div class="item-superior-nutri">
+                            <p>Especialidade</p>
+                            <h2>Nutrição Esportiva</h2>
+                        </div>
+                    </section>
+
+                    <section style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <div class="item-inferior-nutri">
+                            <p>Redes Sociais</p>
+                            <h2>catarine.camargo</h2>
+                        </div>
+        
+                        <div class="item-inferior-nutri">
+                            <p>Contato</p>
+                            <h2>0123456789</h2>
+                        </div>
+
+                        <div class="item-inferior-nutri">
+                            <p>Formação</p>
+                            <h2>Nutricionista pela UNB</h2>
+                        </div>
+                    </section>
+                </section>
+            </div>
+
+        </div>
+
+        <div class="inferior">
+            <section class="funcionalidades">
+                <div style="display: flex; width: 100%; justify-content: space-between;">
+                    <div class="func-button">
+                        <button>Enviar mensagem</button>
+                    </div>
+                    <div class="func-button">
+                        <button>Visualizar postagens</button>
+                    </div>
+                    <div class="func-button">
+                        <button>Avaliações</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="botoes">
+                <div class="botao-inicio">
+                    <button (click)="irParaInicio()">Início</button>
+                </div>
+                <div class="botao-voltar">
+                    <button (click)="irParaTelaAnterior()">Voltar</button>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+</ng-container>
+
+<!-- Será mostrado para o usuário paciente -->
+<ng-template #paciente>
+    
+    <div class="container">
+
+        <div class="superior">
+
+            <div class="superior-esquerda">
+                <img src="../../../assets/img/meu-perfil.png">
+
+                <button (click)="logout()">
+                    <mat-icon matTooltip="Sair do Nutriguide">logout</mat-icon>
+                </button>
+            </div>
+
+            <div class="superior-direita">
+                <h1>Dados Basicos</h1>
+
+                <section class="session-itens-paciente">
+                    <section style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <div class="item-superior-paciente">
                             <p>Nome Completo</p>
                             <h2>Fulano da Silva</h2>
                         </div>
         
-                        <div class="item-superior">
+                        <div class="item-superior-paciente">
                             <p>Idade</p>
                             <h2>20</h2>
                         </div>
                     </section>
 
                     <section style="display: flex; flex-direction: row; justify-content: space-between;">
-                        <div class="item-inferior">
+                        <div class="item-inferior-paciente">
                             <p>Condições Médicas</p>
                             <h2>Doenças pré existentes</h2>
                         </div>
         
-                        <div class="item-inferior">
+                        <div class="item-inferior-paciete">
                             <p>Contato</p>
                             <h2>0123456789</h2>
                         </div>
@@ -78,11 +164,6 @@
 
     </div>
 
-</ng-container>
-
-<!-- Será mostrado para o usuário paciente -->
-<ng-template #paciente>
-    
 </ng-template>
 
 </ng-template>

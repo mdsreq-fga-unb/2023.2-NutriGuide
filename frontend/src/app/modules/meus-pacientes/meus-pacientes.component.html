@@ -31,8 +31,8 @@
                         <td>{{ linha.contato }}</td>
                         <td>{{ linha.condicoesMedicas }}</td>
                         <td>
-                            <button matTooltip="Editar Paciente">
-                                <img src="../../../assets/img/editar.png">
+                            <button (click)="abrirDialogDetalhar()" matTooltip="Detalhar Paciente">
+                                <mat-icon>person</mat-icon>
                             </button>
                         </td>
                     </tr>

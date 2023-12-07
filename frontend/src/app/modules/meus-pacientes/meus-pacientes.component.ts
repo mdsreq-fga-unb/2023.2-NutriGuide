@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CadastrarPacienteComponent } from '../cadastrar-paciente/cadastrar-paciente.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { DetalharPacienteComponent } from '../detalhar-paciente/detalhar-paciente.component';
+import { take } from 'rxjs';
 
 // apagar depois:
 interface Paciente {
@@ -65,7 +67,7 @@ export class MeusPacientesComponent implements OnInit {
       height: '800px'
     });
 
-    dialogRef.afterClosed().subscribe((value) => {
+    dialogRef.afterClosed().pipe(take(1)).subscribe((value) => {
       console.log(value);
 
       if (value === 'cancelar') {
@@ -77,6 +79,19 @@ export class MeusPacientesComponent implements OnInit {
           duration: 3000
         });
       }
+    });
+  }
+
+  abrirDialogDetalhar(): void {
+    const dialogRef = this.dialog.open(DetalharPacienteComponent, {
+      width: '1500px',
+      height: '800px'
+    });
+
+    dialogRef.afterClosed().pipe(take(1)).subscribe((value) => {
+        this.snackbar.open('Pop-up de detalhar paciente fechado!', 'OK', {
+          duration: 3000
+        });
     });
   }
 
