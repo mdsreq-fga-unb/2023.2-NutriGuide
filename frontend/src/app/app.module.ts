@@ -15,7 +15,8 @@ import { CadastrarPacienteComponent } from './modules/cadastrar-paciente/cadastr
 import { HttpClientModule } from '@angular/common/http';
 import { ConsultarNutricionistasComponent } from './modules/consultar-nutricionistas/consultar-nutricionistas.component';
 import { InformacoesPessoaisComponent } from './modules/informacoes-pessoais/informacoes-pessoais.component';
-import { SpinnerComponent } from './shared/spinner-component/spinner/spinner.component'
+import { SpinnerComponent } from './shared/spinner-component/spinner/spinner.component';
+import { DetalharPacienteComponent } from './modules/detalhar-paciente/detalhar-paciente.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SpinnerComponent } from './shared/spinner-component/spinner/spinner.com
     CadastrarPacienteComponent,
     ConsultarNutricionistasComponent,
     InformacoesPessoaisComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    DetalharPacienteComponent
   ],
   imports: [
     AppRoutingModule,
