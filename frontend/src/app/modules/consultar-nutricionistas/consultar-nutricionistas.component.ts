@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
+import { ActivatedRoute, Router } from '@angular/router';
 
 // apagar depois:
 interface Nutricionista {
@@ -42,7 +43,9 @@ export class ConsultarNutricionistasComponent implements OnInit {
   ];
 
   constructor(
-    public dialogRef: MatDialogRef<ConsultarNutricionistasComponent>
+    public dialogRef: MatDialogRef<ConsultarNutricionistasComponent>,
+    private router: Router,
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
@@ -50,6 +53,11 @@ export class ConsultarNutricionistasComponent implements OnInit {
   }
 
   fechar(): void {
+    this.dialogRef.close();
+  }
+
+  irPaginaNutri(): void {
+    this.router.navigate(['/informacoes-nutricionista'], {relativeTo: this.route.parent});
     this.dialogRef.close();
   }
 

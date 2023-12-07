@@ -1,17 +1,16 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { UsuarioService } from 'src/app/services/usuario-service/usuario.service';
 import { Constantes } from 'src/app/shared/constantes/constantes';
 import { Location } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
-import { take } from 'rxjs';
 
 @Component({
-  selector: 'app-informacoes-pessoais',
-  templateUrl: './informacoes-pessoais.component.html',
-  styleUrls: ['./informacoes-pessoais.component.scss']
+  selector: 'app-informacoes-nutricionista',
+  templateUrl: './informacoes-nutricionista.component.html',
+  styleUrls: ['./informacoes-nutricionista.component.scss']
 })
-export class InformacoesPessoaisComponent implements OnInit { 
+export class InformacoesNutricionistaComponent implements OnInit { 
 
   usuario!: any;
   load: boolean = false;

@@ -16,7 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { ConsultarNutricionistasComponent } from './modules/consultar-nutricionistas/consultar-nutricionistas.component';
 import { InformacoesPessoaisComponent } from './modules/informacoes-pessoais/informacoes-pessoais.component';
 import { SpinnerComponent } from './shared/spinner-component/spinner/spinner.component';
-import { DetalharPacienteComponent } from './modules/detalhar-paciente/detalhar-paciente.component'
+import { DetalharPacienteComponent } from './modules/detalhar-paciente/detalhar-paciente.component';
+import { InformacoesPacienteComponent } from './modules/informacoes-paciente/informacoes-paciente.component';
+import { InformacoesNutricionistaComponent } from './modules/informacoes-nutricionista/informacoes-nutricionista.component'
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { DetalharPacienteComponent } from './modules/detalhar-paciente/detalhar-
     ConsultarNutricionistasComponent,
     InformacoesPessoaisComponent,
     SpinnerComponent,
-    DetalharPacienteComponent
+    DetalharPacienteComponent,
+    InformacoesPacienteComponent,
+    InformacoesNutricionistaComponent
   ],
   imports: [
     AppRoutingModule,

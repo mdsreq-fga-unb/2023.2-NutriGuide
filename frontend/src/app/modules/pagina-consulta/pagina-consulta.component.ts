@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ConsultarNutricionistasComponent } from '../consultar-nutricionistas/consultar-nutricionistas.component';
@@ -17,6 +17,7 @@ export class PaginaConsultaComponent implements OnInit {
 
   formulario!: FormGroup;
   usuario!: any;
+  load: boolean = false;
 
   // Injeção de Dependências:
   constructor(
@@ -32,7 +33,6 @@ export class PaginaConsultaComponent implements OnInit {
   ngOnInit(): void {
     this.criarFormulario();
     this.buscarUsuario();
-
   }
 
   // criando o formulário:  
@@ -52,6 +52,8 @@ export class PaginaConsultaComponent implements OnInit {
     .subscribe(
       (usuario) => {
         this.usuario = usuario;
+
+        this.load = true;
       }
     );
   }

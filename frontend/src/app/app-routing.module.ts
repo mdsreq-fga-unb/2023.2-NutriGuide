@@ -5,6 +5,7 @@ import { CadastroComponent } from "./modules/cadastro/cadastro.component";
 import { LoginComponent } from "./modules/login/login.component";
 import { MeusPacientesComponent } from "./modules/meus-pacientes/meus-pacientes.component";
 import { InformacoesPessoaisComponent } from "./modules/informacoes-pessoais/informacoes-pessoais.component";
+import { InformacoesNutricionistaComponent } from "./modules/informacoes-nutricionista/informacoes-nutricionista.component";
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'inicio' },
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'cadastro', component: CadastroComponent },
   { path: 'login', component: LoginComponent },
   { path:'consultar-pacientes', component: MeusPacientesComponent },
-  { path: 'informacoes-pessoais', component: InformacoesPessoaisComponent }
+  { path: 'informacoes-pessoais', component: InformacoesPessoaisComponent },
+  { path: 'informacoes-nutricionista', component: InformacoesNutricionistaComponent }
 ];
 
 @NgModule({
