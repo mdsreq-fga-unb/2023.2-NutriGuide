@@ -13,6 +13,7 @@ export class InformacoesPessoaisComponent implements OnInit {
 
   usuario!: any;
   load: boolean = false;
+  imagem: string = '';
 
   constructor(
     private usuarioService: UsuarioService,
@@ -54,6 +55,22 @@ export class InformacoesPessoaisComponent implements OnInit {
     localStorage.clear();
     
     this.router.navigate(['/inicio'], {relativeTo: this.route.parent});
+  }
+
+  upload(event: any) { 
+    const reader = new FileReader();
+
+    if (event.target.files && event.target.files.length) {
+      const file = event.target.files[0];
+
+      reader.readAsDataURL(file);
+
+      reader.onload = (a) => {
+        this.imagem = String(reader.result);
+
+        // após isso eu faço uma lógica de salvar a imagem no banco:
+      };
+    }
   }
 
 }

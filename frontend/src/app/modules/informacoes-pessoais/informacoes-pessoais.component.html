@@ -12,11 +12,26 @@
         <div class="superior">
 
             <div class="superior-esquerda">
-                <img src="../../../assets/img/meu-perfil.png">
+                <ng-container *ngIf="this.imagem === '' else possuiFoto">
+                    <img src="../../../assets/img/meu-perfil.png">
+                </ng-container>
+                
+                <ng-template #possuiFoto>
+                    <img [src]="this.imagem">
+                </ng-template>      
 
-                <button (click)="logout()">
-                    <mat-icon matTooltip="Sair do Nutriguide">logout</mat-icon>
-                </button>
+                <div class="botoes-usuario">
+
+                    <label matTooltip="Alterar a foto de perfil" for="imagem">
+                        <mat-icon>upgrade</mat-icon>
+                    </label>
+                    <input (change)="upload($event)" type="file" accept="image/*" id="imagem">
+
+                    <button (click)="logout()">
+                        <mat-icon matTooltip="Sair do Nutriguide">logout</mat-icon>
+                    </button>
+                </div>
+
             </div>
 
             <div class="superior-direita">
@@ -100,9 +115,17 @@
             <div class="superior-esquerda">
                 <img src="../../../assets/img/meu-perfil.png">
 
-                <button (click)="logout()">
-                    <mat-icon matTooltip="Sair do Nutriguide">logout</mat-icon>
-                </button>
+                <div class="botoes-usuario">
+
+                    <label matTooltip="Alterar a foto de perfil" for="imagem">
+                        <mat-icon>upgrade</mat-icon>
+                    </label>
+                    <input type="file" accept="image/*" id="imagem">
+
+                    <button (click)="logout()">
+                        <mat-icon matTooltip="Sair do Nutriguide">logout</mat-icon>
+                    </button>
+                </div>
             </div>
 
             <div class="superior-direita">
