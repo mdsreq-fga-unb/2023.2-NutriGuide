@@ -26,34 +26,34 @@
                     <section style="display: flex; flex-direction: row; justify-content: space-between;">
                         <div class="item-superior">
                             <p>Nome Completo</p>
-                            <h2>Catarine Camargo</h2>
+                            <h2>{{ nutricionista.nome_usuario }}</h2>
                         </div>
         
                         <div class="item-superior">
                             <p>Região</p>
-                            <h2>Brasília</h2>
+                            <h2>{{ nutricionista.regiao }}</h2>
                         </div>
 
                         <div class="item-superior">
                             <p>Especialidade</p>
-                            <h2>Nutrição Esportiva</h2>
+                            <h2>{{ nutricionista.especialidade }}</h2>
                         </div>
                     </section>
 
                     <section style="display: flex; flex-direction: row; justify-content: space-between;">
                         <div class="item-inferior">
                             <p>Redes Sociais</p>
-                            <h2>catarine.camargo</h2>
+                            <h2>{{ nutricionista.redesocial }}</h2>
                         </div>
         
                         <div class="item-inferior">
                             <p>Contato</p>
-                            <h2>0123456789</h2>
+                            <h2>{{ nutricionista.telefone }}</h2>
                         </div>
 
                         <div class="item-inferior">
                             <p>Formação</p>
-                            <h2>Nutricionista pela UNB</h2>
+                            <h2>{{ nutricionista.faculdade }}</h2>
                         </div>
                     </section>
                 </section>

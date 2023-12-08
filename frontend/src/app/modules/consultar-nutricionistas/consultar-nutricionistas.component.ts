@@ -61,8 +61,8 @@ export class ConsultarNutricionistasComponent implements OnInit {
     this.dialogRef.close();
   }
 
-  irPaginaNutri(): void {
-    this.router.navigate(['/informacoes-nutricionista'], {relativeTo: this.route.parent});
+  irPaginaNutri(idNutri: number): void {
+    this.router.navigate(['/informacoes-nutricionista', idNutri], {relativeTo: this.route.parent});
     this.dialogRef.close();
   }
 

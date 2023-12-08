@@ -202,9 +202,9 @@ export default class Repository {
         });
     }
 
-    getProgressoByIdPaciente(idPaciente: string): Promise<UsuarioNutricionista | undefined> {
+    getProgressoByIdPaciente(idPaciente: string): Promise<ProgressoPaciente[] | undefined> {
         return new Promise((resolve, reject) => {
-            this.database.query<UsuarioNutricionista[]>(
+            this.database.query<ProgressoPaciente[]>(
                 progressoPaciente.trazerPorIdPaciente,
                 [idPaciente],  
                 (err, result) => {
@@ -213,7 +213,7 @@ export default class Repository {
 
                         this.database.end();
                     } else {
-                        resolve(result?.[0]);
+                        resolve(result);
                     }
             });
         });

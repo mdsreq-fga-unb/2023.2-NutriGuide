@@ -18,7 +18,8 @@ import { InformacoesPessoaisComponent } from './modules/informacoes-pessoais/inf
 import { SpinnerComponent } from './shared/spinner-component/spinner/spinner.component';
 import { DetalharPacienteComponent } from './modules/detalhar-paciente/detalhar-paciente.component';
 import { InformacoesPacienteComponent } from './modules/informacoes-paciente/informacoes-paciente.component';
-import { InformacoesNutricionistaComponent } from './modules/informacoes-nutricionista/informacoes-nutricionista.component'
+import { InformacoesNutricionistaComponent } from './modules/informacoes-nutricionista/informacoes-nutricionista.component';
+import { ProgressoPacienteComponent } from './modules/progresso-paciente/progresso-paciente.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { InformacoesNutricionistaComponent } from './modules/informacoes-nutrici
     SpinnerComponent,
     DetalharPacienteComponent,
     InformacoesPacienteComponent,
-    InformacoesNutricionistaComponent
+    InformacoesNutricionistaComponent,
+    ProgressoPacienteComponent
   ],
   imports: [
     AppRoutingModule,

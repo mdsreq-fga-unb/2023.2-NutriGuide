@@ -76,8 +76,8 @@ export class MeusPacientesComponent implements OnInit {
     });
   }
 
-  irInfoPaciente(): void {
-    this.router.navigate(['/informacoes-paciente'], {relativeTo: this.route.parent});
+  irInfoPaciente(idPaciente: number): void {
+    this.router.navigate(['/informacoes-paciente', idPaciente], {relativeTo: this.route.parent});
   }
 
 }

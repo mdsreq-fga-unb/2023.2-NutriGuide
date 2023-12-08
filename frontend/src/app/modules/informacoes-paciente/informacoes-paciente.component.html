@@ -12,10 +12,10 @@
                 <ng-container *ngIf="this.imagem === '' else possuiFoto">
                     <img src="../../../assets/img/meu-perfil.png">
                 </ng-container>
-                
+
                 <ng-template #possuiFoto>
                     <img [src]="this.imagem">
-                </ng-template>      
+                </ng-template>
 
             </div>
 
@@ -26,12 +26,12 @@
                     <section style="display: flex; flex-direction: row; justify-content: space-between;">
                         <div class="item-superior">
                             <p>Nome Completo</p>
-                            <h2>Fulano da Silva</h2>
+                            <h2>{{ paciete.nome_usuario }}</h2>
                         </div>
-        
+
                         <div class="item-superior">
-                            <p>Idade</p>
-                            <h2>20 anos</h2>
+                            <p>Data de Nascimento</p>
+                            <h2>{{ paciete.data_nascimento | date }}</h2>
                         </div>
 
                     </section>
@@ -39,12 +39,12 @@
                     <section style="display: flex; flex-direction: row; justify-content: space-between;">
                         <div class="item-inferior">
                             <p>Condições Médicas</p>
-                            <h2>Doenças pré existentes</h2>
+                            <h2>{{ paciete.comorbidades }}</h2>
                         </div>
-        
+
                         <div class="item-inferior">
                             <p>Contato</p>
-                            <h2>0123456789</h2>
+                            <h2>{{ paciete.telefone }}</h2>
                         </div>
 
                     </section>
@@ -57,15 +57,45 @@
             <section class="funcionalidades">
                 <div style="display: flex; width: 100%; justify-content: space-between;">
                     <div class="func-button">
-                        <button>Progresso do paciente</button>
+                        <button 
+                            (click)="abrirProgressoPaciente(paciete)"
+                            matTooltip="Visualizar progresso do paciente"
+                        >
+                            Progresso do paciente
+                        </button>
+
+                        <div class="botao-icone">
+                            <button 
+                                (click)="abrirProgressoPaciente(paciete)"
+                                matTooltip="Registrar progresso do paciente"
+                            >
+                                <mat-icon>
+                                    how_to_reg   
+                                </mat-icon>
+                            </button>
+                        </div>
                     </div>
 
                     <div class="func-button">
-                        <button>Criar plano alimentar</button>
+                        <button
+                            matTooltip="Plano alimentar"
+                        >
+                            Gerenciar plano alimentar de {{ paciete.nome_usuario }}
+                        </button>
+
+                        <div class="botao-icone">
+                            <button 
+                                matTooltip="Plano alimentar atual"
+                            >
+                                <mat-icon>
+                                    restaurant
+                                </mat-icon>
+                            </button>
+                        </div>
                     </div>
 
                     <div class="func-button">
-                        <button>Editar informações pessoais</button>
+                        <button>Editar informações do paciente</button>
                     </div>
                 </div>
             </section>

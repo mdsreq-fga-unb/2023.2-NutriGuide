@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { UsuarioService } from 'src/app/services/usuario-service/usuario.service';
 import { Location } from '@angular/common';
 import { Router, ActivatedRoute } from '@angular/router';
+import { PacienteService } from 'src/app/services/paciente-service/paciente.service';
+import UsuarioPaciente from 'src/app/interfaces/UsuarioPaciente';
+import { MatDialog } from '@angular/material/dialog';
+import { ProgressoPacienteComponent } from '../progresso-paciente/progresso-paciente.component';
 
 @Component({
   selector: 'app-informacoes-paciente',
@@ -13,29 +16,33 @@ export class InformacoesPacienteComponent implements OnInit {
   usuario!: any;
   load: boolean = false;
   imagem: string = '';
+  paciete!: UsuarioPaciente;
+  idPaciente!: number;
 
   constructor(
-    private usuarioService: UsuarioService,
+    private pacienteService: PacienteService,
     private router: Router,
     private route: ActivatedRoute,
-    private location: Location
+    private location: Location,
+    private dialog: MatDialog
   ) {}
 
   ngOnInit(): void {
-    this.load = true;
+    this.idPaciente = this.route.snapshot.params['id'];
 
-    this.buscarUsuario();
+    this.buscarPaciente();
   }
 
-  buscarUsuario() {
-    // this.usuarioService
-    // .getUserByName(String(localStorage.getItem('nome')))
-    // .subscribe(
-    //   (usuario) => {
-    //     this.usuario = usuario;
-    //     this.load = true;
-    //   }
-    // );
+  buscarPaciente() {
+    this.pacienteService.getOne(this.idPaciente).subscribe((p) => {
+      this.paciete = p;
+
+      if (p.dado_foto !== null) {
+        this.imagem = p.dado_foto!;
+      }
+
+      this.load = true;
+    });
   }
 
   irParaInicio(): void {
@@ -46,26 +53,14 @@ export class InformacoesPacienteComponent implements OnInit {
     this.location.back();
   }
 
-  logout(): void {
-    localStorage.clear();
-    
-    this.router.navigate(['/inicio'], {relativeTo: this.route.parent});
-  }
+  abrirProgressoPaciente(paciente: UsuarioPaciente): void {
+    const dialogRef = this.dialog.open(ProgressoPacienteComponent, {
+      data: paciente,
+      width: '1000px',
+      height: '550px'
+    });
 
-  upload(event: any) { 
-    const reader = new FileReader();
-
-    if (event.target.files && event.target.files.length) {
-      const file = event.target.files[0];
-
-      reader.readAsDataURL(file);
-
-      reader.onload = (a) => {
-        this.imagem = String(reader.result);
-
-        // após isso eu faço uma lógica de salvar a imagem no banco:
-      };
-    }
+    // dialogRef.afterClosed()
   }
 
 }

@@ -15,8 +15,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path:'consultar-pacientes', component: MeusPacientesComponent },
   { path: 'informacoes-pessoais', component: InformacoesPessoaisComponent },
-  { path: 'informacoes-nutricionista', component: InformacoesNutricionistaComponent },
-  { path: 'informacoes-paciente', component: InformacoesPacienteComponent }
+  { path: 'informacoes-nutricionista/:id', component: InformacoesNutricionistaComponent },
+  { path: 'informacoes-paciente/:id', component: InformacoesPacienteComponent }
 ];
 
 @NgModule({

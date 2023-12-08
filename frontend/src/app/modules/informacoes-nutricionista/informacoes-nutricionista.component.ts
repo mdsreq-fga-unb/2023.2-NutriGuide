@@ -1,9 +1,8 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { UsuarioService } from 'src/app/services/usuario-service/usuario.service';
-import { Constantes } from 'src/app/shared/constantes/constantes';
 import { Location } from '@angular/common';
+import UsuarioNutricionista from 'src/app/interfaces/UsuarioNutricionista';
+import { NutricionistaService } from 'src/app/services/nutricionista-service/nutricionista.service';
 
 @Component({
   selector: 'app-informacoes-nutricionista',
@@ -15,29 +14,32 @@ export class InformacoesNutricionistaComponent implements OnInit {
   usuario!: any;
   load: boolean = false;
   imagem: string = '';
+  idNutricionista!: number;
+  nutricionista!: UsuarioNutricionista;
 
   constructor(
-    private usuarioService: UsuarioService,
+    private nutricionistaService: NutricionistaService,
     private router: Router,
     private route: ActivatedRoute,
     private location: Location
   ) {}
 
   ngOnInit(): void {
-    this.load = true;
+    this.idNutricionista = this.route.snapshot.params['id'];
 
-    this.buscarUsuario();
+    this.buscarNutricionista();
   }
 
-  buscarUsuario() {
-    // this.usuarioService
-    // .getUserByName(String(localStorage.getItem('nome')))
-    // .subscribe(
-    //   (usuario) => {
-    //     this.usuario = usuario;
-    //     this.load = true;
-    //   }
-    // );
+  buscarNutricionista() {
+    this.nutricionistaService.getOne(this.idNutricionista).subscribe((n) => {
+      this.nutricionista = n;
+
+      if (n.dadofoto != null) {
+        this.imagem = n.dadofoto;
+      }
+
+      this.load = true;
+    });
   }
 
   irParaInicio(): void {
@@ -46,28 +48,6 @@ export class InformacoesNutricionistaComponent implements OnInit {
 
   irParaTelaAnterior(): void {
     this.location.back();
-  }
-
-  logout(): void {
-    localStorage.clear();
-    
-    this.router.navigate(['/inicio'], {relativeTo: this.route.parent});
-  }
-
-  upload(event: any) { 
-    const reader = new FileReader();
-
-    if (event.target.files && event.target.files.length) {
-      const file = event.target.files[0];
-
-      reader.readAsDataURL(file);
-
-      reader.onload = (a) => {
-        this.imagem = String(reader.result);
-
-        // após isso eu faço uma lógica de salvar a imagem no banco:
-      };
-    }
   }
 
 }

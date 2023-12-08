@@ -186,7 +186,7 @@ app.get('/progresso-paciente/:idPaciente', async (req, res) => {
     const { idPaciente } = req.params;
 
     const service = new Service;
-    const progresso = await service.getProgressoByIdPaciente(idPaciente);
+    const progresso: ProgressoPaciente[] | undefined = await service.getProgressoByIdPaciente(idPaciente);
 
     if (progresso !== undefined) {
         res.status(200).json(progresso);
