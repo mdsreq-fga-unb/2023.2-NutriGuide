@@ -1,0 +1,18 @@
+export default interface UsuarioNutricionista {
+    id_usuario: number;
+    cpf: number;
+    nome_usuario: string;
+    email: string;
+    sexo: string;       // ENUM: ou 'M' ou 'F'
+    telefone: string;
+    cep: string;
+    data_nascimento: Date;
+    role: string;
+    id_nutricionista: number;
+    regiao: string;
+    faculdade: string;
+    especialidade: string;
+    redesocial: string;
+    nomefoto?: string;
+    dadofoto?: string;
+}
