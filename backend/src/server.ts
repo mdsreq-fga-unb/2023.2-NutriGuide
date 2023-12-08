@@ -5,6 +5,7 @@ import Repository from './app/database/Repository';
 import User from './app/models/Usuario';
 import UsuarioPaciente from './app/models/UsuarioPaciente';
 import Service from './app/service/Service';
+import ProgressoPaciente from './app/models/ProgressoPaciente';
 
 const app = express();
 
@@ -181,7 +182,29 @@ app.get('/nutricionista-nome', async (req, res) => {
     
 });
 
+app.get('/progresso-paciente/:idPaciente', async (req, res) => {
+    const { idPaciente } = req.params;
 
+    const service = new Service;
+    const progresso = await service.getProgressoByIdPaciente(idPaciente);
+
+    if (progresso !== undefined) {
+        res.status(200).json(progresso);
+    } else {
+        res.status(404).json({ msg: 'Progressos não encontrados!' })
+    }
+    
+});
+
+
+app.post('/progresso-paciente', async (req, res) => {
+    const service = new Service();
+    const progressoPaciente: ProgressoPaciente = req.body;
+    
+    await service.insertProgressoPaciente(progressoPaciente);
+
+    res.json({ msg: 'Progresso do paciente registrado com sucesso!' });
+});
 
 
 app.listen(3000, () => {

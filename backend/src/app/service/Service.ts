@@ -1,4 +1,5 @@
 import Repository from "../database/Repository";
+import ProgressoPaciente from "../models/ProgressoPaciente";
 import Usuario from "../models/Usuario";
 import UsuarioPaciente from "../models/UsuarioPaciente";
 
@@ -50,5 +51,13 @@ export default class Service {
     }
 
     // Implementar o filtro de nutricionistas com query param...
+
+    public async getProgressoByIdPaciente(idPaciente: string) {
+        return await this.repository.getProgressoByIdPaciente(idPaciente);
+    }
+
+    public async insertProgressoPaciente(progresso: ProgressoPaciente) {
+        return await this.repository.insertProgressoPaciente(progresso);
+    }
 
 }

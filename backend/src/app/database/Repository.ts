@@ -7,6 +7,8 @@ import paciente from '../resource/SQL/paciente.json'
 import Usuario from "../models/Usuario";
 import UsuarioPaciente from "../models/UsuarioPaciente";
 import UsuarioNutricionista from "../models/UsuarioNutricionista";
+import ProgressoPaciente from "../models/ProgressoPaciente";
+import progressoPaciente from "../resource/SQL/progressoPaciente.json"
 
 export default class Repository {
 
@@ -199,6 +201,41 @@ export default class Repository {
             });
         });
     }
-    
+
+    getProgressoByIdPaciente(idPaciente: string): Promise<UsuarioNutricionista | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<UsuarioNutricionista[]>(
+                progressoPaciente.trazerPorIdPaciente,
+                [idPaciente],  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result?.[0]);
+                    }
+            });
+        });
+    }
+
+    public async insertProgressoPaciente(progresso: ProgressoPaciente): Promise<void> {
+        await new Promise((resolve, reject) => {
+            this.database.query<User[]>(
+                progressoPaciente.inserir, 
+                [progresso.id_paciente, progresso.data, progresso.peso, progresso.habitos_alimentares, progresso.medidas_corporais, progresso.queixa, progresso.nivel_atividade_fisica, progresso.suplementacao_atual], 
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result?.[0]);
+
+                        this.database.end();
+                    }
+            });
+        });
+    }
 
 }
