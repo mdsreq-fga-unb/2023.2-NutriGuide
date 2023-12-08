@@ -9,5 +9,5 @@ export default interface Usuario extends RowDataPacket {
     telefone: string;
     cep: string;
     data_nascimento: Date;
-    role: string;
+    tipo_usuario: string;
 }

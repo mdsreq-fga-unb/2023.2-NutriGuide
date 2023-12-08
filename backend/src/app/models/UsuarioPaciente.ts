@@ -9,7 +9,7 @@ export default interface UsuarioPaciente extends RowDataPacket {
     telefone: string;
     cep: string;
     data_nascimento: Date;
-    role: string;
+    tipo_usuario: string;
     id_paciente: number;
     peso: number;
     altura: number;

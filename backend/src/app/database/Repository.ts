@@ -165,6 +165,40 @@ export default class Repository {
             });
         });
     }
+
+    getOneNutricionistaByNomeUser(nome: string): Promise<UsuarioNutricionista | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<UsuarioNutricionista[]>(
+                nutricionista.trazerPorNomeUsuario,
+                [nome],  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result?.[0]);
+                    }
+            });
+        });
+    }
+
+    getOnePacienteByNomeUser(nome: string): Promise<UsuarioNutricionista | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<UsuarioNutricionista[]>(
+                paciente.trazerPorNomeUsuario,
+                [nome],  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result?.[0]);
+                    }
+            });
+        });
+    }
     
 
 }

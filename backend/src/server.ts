@@ -123,6 +123,29 @@ app.get('/paciente/:id', async (req, res) => {
     
 });
 
+app.get('/paciente-nome', async (req, res) => {
+    const { nome } = req.query;
+
+    const service = new Service;
+    const paciente = await service.getOnePacienteByNomeUser(String(nome));
+
+    if (paciente !== undefined) {
+        res.status(200).json(paciente);
+    } else {
+        res.status(404).json({ msg: 'Paciente não encontrado!' })
+    }
+    
+});
+
+app.post('/paciente', async (req, res) => {
+    const paciente: UsuarioPaciente = req.body;
+
+    const service = new Service;
+    await service.insertPaciente(paciente);
+
+    res.status(200).json({msg: 'Paciente inserido com sucesso!'});
+});
+
 app.get('/nutricionista', async (req, res) => {
     const service = new Service;
     const nutricionista = await service.getAllNutricionistas();
@@ -139,20 +162,27 @@ app.get('/nutricionista/:id', async (req, res) => {
     if (nutricionista !== undefined) {
         res.status(200).json(nutricionista);
     } else {
-        res.status(404).json({ msg: 'Paciente não encontrado!' })
+        res.status(404).json({ msg: 'Nutricionista não encontrado!' })
+    }
+    
+});
+
+app.get('/nutricionista-nome', async (req, res) => {
+    const { nome } = req.query;
+
+    const service = new Service;
+    const nutricionista = await service.getOneNutricionistaByNomeUser(String(nome));
+
+    if (nutricionista !== undefined) {
+        res.status(200).json(nutricionista);
+    } else {
+        res.status(404).json({ msg: 'Nutricionista não encontrado!' })
     }
     
 });
 
 
-app.post('/paciente', async (req, res) => {
-    const paciente: UsuarioPaciente = req.body;
 
-    const service = new Service;
-    await service.insertPaciente(paciente);
-
-    res.status(200).json({msg: 'Paciente inserido com sucesso!'});
-});
 
 app.listen(3000, () => {
     console.log('Rodando em "http://localhost:3000"');

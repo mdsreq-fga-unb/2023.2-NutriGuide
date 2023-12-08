@@ -41,6 +41,14 @@ export default class Service {
         return await this.repository.getOneNutricionista(idNutricionista);
     }
 
+    public async getOneNutricionistaByNomeUser(nome: string) {
+        return await this.repository.getOneNutricionistaByNomeUser(nome);
+    }
+
+    public async getOnePacienteByNomeUser(nome: string) {
+        return await this.repository.getOnePacienteByNomeUser(nome);
+    }
+
     // Implementar o filtro de nutricionistas com query param...
 
 }
