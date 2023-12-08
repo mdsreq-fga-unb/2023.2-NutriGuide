@@ -99,4 +99,38 @@ export default class Repository {
         });
     }
 
+    getAllPacientes(): Promise<UsuarioPaciente[] | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<UsuarioPaciente[]>(
+                paciente.trazerTodos,  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+                    }
+            });
+        });
+    }
+
+    getOnePaciente(idPaciente: string): Promise<UsuarioPaciente | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<UsuarioPaciente[]>(
+                paciente.trazerPorId,
+                [idPaciente],  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result?.[0]);
+                    }
+            });
+        });
+    }
+    
+
 }

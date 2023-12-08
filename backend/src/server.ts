@@ -102,23 +102,28 @@ function checkToken(req: Request, res: Response, next: NextFunction) {
     }
 }
 
-// app.get('/paciente', async (req, res) => {
-//     const paciente: UsuarioPaciente = req.body;
+app.get('/paciente', async (req, res) => {
+    const service = new Service;
+    const pacientes = await service.getAllPacientes();
 
-//     const service = new Service;
-//     await service.getAll(paciente);
+    res.status(200).json(pacientes);
+});
 
-//     res.status(200).json({msg: 'Paciente inserido com sucesso!'});
-// });
+app.get('/paciente/:id', async (req, res) => {
+    const { id } = req.params;
 
-// app.get('/paciente/:id', async (req, res) => {
-//     const { id } = req.params;
+    const service = new Service;
+    const paciente = await service.getOnePaciente(id);
 
-//     const service = new Service;
-//     await service.getOne(id);
+    console.log(paciente);
 
-//     res.status(200).json({msg: 'Paciente inserido com sucesso!'});
-// });
+    if (paciente !== undefined) {
+        res.status(200).json(paciente);
+    } else {
+        res.status(404).json({ msg: 'Paciente não encontrado!' })
+    }
+    
+});
 
 
 app.post('/paciente', async (req, res) => {
