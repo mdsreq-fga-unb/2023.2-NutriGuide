@@ -1,7 +1,11 @@
 import urlDb from "../connection/configDb";
-import User from "../models/User";
+import User from "../models/Usuario";
 import mysql from 'mysql2';
 import usuario from '../resource/SQL/usuario.json'
+import nutricionista from '../resource/SQL/nutricionista.json'
+import paciente from '../resource/SQL/paciente.json'
+import Usuario from "../models/Usuario";
+import UsuarioPaciente from "../models/UsuarioPaciente";
 
 export default class Repository {
 
@@ -11,7 +15,7 @@ export default class Repository {
         this.database = mysql.createPool(urlDb);
     }
 
-    public findUserByName(nome: string): Promise<User | undefined> {
+    public findUserByName(nome: string): Promise<Usuario | undefined> {
         return new Promise((resolve, reject) => {
             this.database.query<User[]>(usuario.findByName, [nome], (err, result) => {
                 if (err) {
@@ -27,7 +31,7 @@ export default class Repository {
         });
     }
 
-    public findById(id: string): Promise<User | undefined> {
+    public findById(id: string): Promise<Usuario | undefined> {
         return new Promise((resolve, reject) => {
             this.database.query<User[]>(usuario.findById, [id], (err, result) => {
                 if (err) {
@@ -39,6 +43,58 @@ export default class Repository {
 
                     this.database.end();
                 }
+            });
+        });
+    }
+
+    public insertUserPaciente(user: Usuario): Promise<Usuario | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<User[]>(
+                usuario.inserirPaciente, 
+                [user.cpf, user.email, user.sexo, user.telefone, user.cep, user.data_nascimento, user.nome_usuario, user.tipo_usuario], 
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result?.[0]);
+                    }
+            });
+        });
+    }
+
+    public trazUltimoIdInserido(): Promise<Usuario | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<Usuario[]>(
+                usuario.trazUltimoIdInserido,  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result?.[0]);
+                    }
+            });
+        });
+    }
+
+    public insertPaciente(userPaciente: UsuarioPaciente, idUsuario: number): Promise<Usuario | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<User[]>(
+                paciente.inserir, 
+                [userPaciente.peso, userPaciente.altura, userPaciente.queixa, userPaciente.comorbidades, userPaciente.medicacoes, idUsuario], 
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result?.[0]);
+
+                        this.database.end();
+                    }
             });
         });
     }

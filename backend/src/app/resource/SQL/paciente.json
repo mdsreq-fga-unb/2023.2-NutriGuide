@@ -1,0 +1,3 @@
+{
+    "inserir": " INSERT INTO tb_paciente (peso, altura, queixa, comorbidades, medicacoes, id_usuario) VALUES (?, ?, ?, ?, ?, ?)"
+}

@@ -2,7 +2,9 @@ import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import jwt from 'jsonwebtoken';
 import Repository from './app/database/Repository';
-import User from './app/models/User';
+import User from './app/models/Usuario';
+import UsuarioPaciente from './app/models/UsuarioPaciente';
+import Service from './app/service/Service';
 
 const app = express();
 
@@ -10,7 +12,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
     res.send('Bem vindo a API do nutriguide!');
 });
 
@@ -99,6 +101,34 @@ function checkToken(req: Request, res: Response, next: NextFunction) {
         return res.status(400).json({ msg: 'Token inválido!' });
     }
 }
+
+// app.get('/paciente', async (req, res) => {
+//     const paciente: UsuarioPaciente = req.body;
+
+//     const service = new Service;
+//     await service.getAll(paciente);
+
+//     res.status(200).json({msg: 'Paciente inserido com sucesso!'});
+// });
+
+// app.get('/paciente/:id', async (req, res) => {
+//     const { id } = req.params;
+
+//     const service = new Service;
+//     await service.getOne(id);
+
+//     res.status(200).json({msg: 'Paciente inserido com sucesso!'});
+// });
+
+
+app.post('/paciente', async (req, res) => {
+    const paciente: UsuarioPaciente = req.body;
+
+    const service = new Service;
+    await service.insertPaciente(paciente);
+
+    res.status(200).json({msg: 'Paciente inserido com sucesso!'});
+});
 
 app.listen(3000, () => {
     console.log('Rodando em "http://localhost:3000"');
