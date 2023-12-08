@@ -4,6 +4,7 @@ import { CadastrarPacienteComponent } from '../cadastrar-paciente/cadastrar-paci
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DetalharPacienteComponent } from '../detalhar-paciente/detalhar-paciente.component';
 import { take } from 'rxjs';
+import { ActivatedRoute, Router } from '@angular/router';
 
 // apagar depois:
 interface Paciente {
@@ -54,7 +55,9 @@ export class MeusPacientesComponent implements OnInit {
 
   constructor(
     public dialog: MatDialog,
-    private snackbar: MatSnackBar
+    private snackbar: MatSnackBar,
+    private router: Router,
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
@@ -93,6 +96,10 @@ export class MeusPacientesComponent implements OnInit {
           duration: 3000
         });
     });
+  }
+
+  irInfoPaciente(): void {
+    this.router.navigate(['/informacoes-paciente'], {relativeTo: this.route.parent});
   }
 
 }

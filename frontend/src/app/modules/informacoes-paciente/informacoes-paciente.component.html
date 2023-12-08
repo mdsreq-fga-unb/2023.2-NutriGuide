@@ -1,1 +1,85 @@
-<p>informacoes-paciente works!</p>
+<ng-container *ngIf="load === false else loaded">
+    <app-spinner></app-spinner>
+</ng-container>
+
+<ng-template #loaded>
+
+    <div class="container">
+
+        <div class="superior">
+
+            <div class="superior-esquerda">
+                <ng-container *ngIf="this.imagem === '' else possuiFoto">
+                    <img src="../../../assets/img/meu-perfil.png">
+                </ng-container>
+                
+                <ng-template #possuiFoto>
+                    <img [src]="this.imagem">
+                </ng-template>      
+
+            </div>
+
+            <div class="superior-direita">
+                <h1>Dados Basicos</h1>
+
+                <section class="session-itens">
+                    <section style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <div class="item-superior">
+                            <p>Nome Completo</p>
+                            <h2>Fulano da Silva</h2>
+                        </div>
+        
+                        <div class="item-superior">
+                            <p>Idade</p>
+                            <h2>20 anos</h2>
+                        </div>
+
+                    </section>
+
+                    <section style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <div class="item-inferior">
+                            <p>Condições Médicas</p>
+                            <h2>Doenças pré existentes</h2>
+                        </div>
+        
+                        <div class="item-inferior">
+                            <p>Contato</p>
+                            <h2>0123456789</h2>
+                        </div>
+
+                    </section>
+                </section>
+            </div>
+
+        </div>
+
+        <div class="inferior">
+            <section class="funcionalidades">
+                <div style="display: flex; width: 100%; justify-content: space-between;">
+                    <div class="func-button">
+                        <button>Progresso do paciente</button>
+                    </div>
+
+                    <div class="func-button">
+                        <button>Criar plano alimentar</button>
+                    </div>
+
+                    <div class="func-button">
+                        <button>Editar informações pessoais</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="botoes">
+                <div class="botao-inicio">
+                    <button (click)="irParaInicio()">Início</button>
+                </div>
+                <div class="botao-voltar">
+                    <button (click)="irParaTelaAnterior()">Voltar</button>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+</ng-template>

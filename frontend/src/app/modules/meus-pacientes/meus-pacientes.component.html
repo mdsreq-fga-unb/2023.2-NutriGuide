@@ -32,10 +32,10 @@
                         <td>{{ linha.condicoesMedicas }}</td>
                         <td>
                             <button style="margin-right: 5px;" (click)="abrirDialogDetalhar()" matTooltip="Detalhar Paciente">
-                                <mat-icon>person</mat-icon>
+                                <mat-icon>search</mat-icon>
                             </button>
-                            <button style="margin-left: 5px;" matTooltip="Editar Paciente">
-                                <mat-icon>edit</mat-icon>
+                            <button style="margin-left: 5px;" (click)="irInfoPaciente()" matTooltip="Informações do paciente">
+                                <mat-icon>person</mat-icon>
                             </button>
                         </td>
                     </tr>
