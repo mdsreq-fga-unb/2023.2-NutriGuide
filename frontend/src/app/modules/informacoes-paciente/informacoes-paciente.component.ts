@@ -5,6 +5,7 @@ import { PacienteService } from 'src/app/services/paciente-service/paciente.serv
 import UsuarioPaciente from 'src/app/interfaces/UsuarioPaciente';
 import { MatDialog } from '@angular/material/dialog';
 import { ProgressoPacienteComponent } from '../progresso-paciente/progresso-paciente.component';
+import { RegistrarProgressoComponent } from 'src/app/registrar-progresso/registrar-progresso.component';
 
 @Component({
   selector: 'app-informacoes-paciente',
@@ -58,6 +59,16 @@ export class InformacoesPacienteComponent implements OnInit {
       data: paciente,
       width: '1000px',
       height: '550px'
+    });
+
+    // dialogRef.afterClosed()
+  }
+
+  abrirRegistrarProgresso(paciente: UsuarioPaciente): void {
+    const dialogRef = this.dialog.open(RegistrarProgressoComponent, {
+      data: paciente,
+      width: '1000px',
+      height: '700px'
     });
 
     // dialogRef.afterClosed()

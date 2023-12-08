@@ -1,7 +1,7 @@
 export default interface ProgressoPaciente {
     id_progesso: number;
     id_paciente: number;
-    data: Date,
+    data: Date | string,
     peso: number,
     habitos_alimentares: string,
     medidas_corporais: string,

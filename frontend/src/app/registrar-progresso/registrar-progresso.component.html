@@ -1,0 +1,64 @@
+<div class="container">
+
+    <div class="title">
+        <h3>Paciente: {{paciente.nome_usuario}}</h3>
+        <h1>Registrar Evolução</h1>
+    </div>
+
+    <form class="formulario" [formGroup]="this.formulario">
+
+        <section class="inputs">
+            <div class="input-item">
+                <p>Peso</p>
+                <input type="number" placeholder="Em Kg" formControlName="peso">
+            </div>
+
+            <div class="input-item">
+                <p>Principal Objetivo/Queixa</p>
+                <input type="text" placeholder="Ex.: Emagrecimento" formControlName="queixa">
+            </div>
+
+        </section>
+
+        <section class="text-area">
+            <div class="text-area-item">
+                <p>Medidas Corporais</p>
+                <textarea name="" id="" cols="30" rows="10" formControlName="medidasCorporais"
+                placeholder="Ex.: Cintura - 70 cm, Abdômen - 85 cm, Quadril - 100 cm."></textarea>
+            </div>
+
+            <div class="text-area-item">
+                <p>Hábitos Alimentares</p>
+                <textarea name="" id="" cols="30" rows="10" formControlName="habitosAlimentares"
+                placeholder="Ex.: Preferências a doces"></textarea>
+            </div>
+
+        </section>
+
+        <section class="text-area">
+            <div class="text-area-item">
+                <p>Nível de Atividade Física</p>
+                <textarea name="" id="" cols="30" rows="10" formControlName="atividade"
+                placeholder="Atividade e frequência por semana"></textarea>
+            </div>
+
+            <div class="text-area-item">
+                <p>Suplementação Atual</p>
+                <textarea name="" id="" cols="30" rows="10" formControlName="suplementacao"
+                placeholder="Qual suplementação o paciente está tomando"></textarea>
+            </div>
+        </section>
+
+        <div class="botoes">
+            <div class="botao-cancelar">
+                <button (click)="cancelar()">Cancelar</button>
+            </div>
+            
+            <div class="botao-registrar">
+                <button (click)="registrarProgresso()">Registrar</button>
+            </div>
+        </div>
+
+    </form>
+
+</div>
