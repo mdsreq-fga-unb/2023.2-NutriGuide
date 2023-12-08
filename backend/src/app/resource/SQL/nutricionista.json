@@ -1,3 +1,4 @@
 {
-
+    "trazerTodos": "SELECT * FROM tb_nutricionista INNER JOIN tb_usuario USING (id_usuario) ORDER BY id_nutricionista DESC",
+    "trazerPorId": "SELECT * FROM tb_nutricionista INNER JOIN tb_usuario USING (id_usuario) WHERE tb_nutricionista = ?"
 }

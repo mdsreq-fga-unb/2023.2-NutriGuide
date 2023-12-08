@@ -115,10 +115,29 @@ app.get('/paciente/:id', async (req, res) => {
     const service = new Service;
     const paciente = await service.getOnePaciente(id);
 
-    console.log(paciente);
-
     if (paciente !== undefined) {
         res.status(200).json(paciente);
+    } else {
+        res.status(404).json({ msg: 'Paciente não encontrado!' })
+    }
+    
+});
+
+app.get('/nutricionista', async (req, res) => {
+    const service = new Service;
+    const nutricionista = await service.getAllNutricionistas();
+
+    res.status(200).json(nutricionista);
+});
+
+app.get('/nutricionista/:id', async (req, res) => {
+    const { id } = req.params;
+
+    const service = new Service;
+    const nutricionista = await service.getOneNutricionista(id);
+
+    if (nutricionista !== undefined) {
+        res.status(200).json(nutricionista);
     } else {
         res.status(404).json({ msg: 'Paciente não encontrado!' })
     }

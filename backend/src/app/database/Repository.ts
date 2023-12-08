@@ -6,6 +6,7 @@ import nutricionista from '../resource/SQL/nutricionista.json'
 import paciente from '../resource/SQL/paciente.json'
 import Usuario from "../models/Usuario";
 import UsuarioPaciente from "../models/UsuarioPaciente";
+import UsuarioNutricionista from "../models/UsuarioNutricionista";
 
 export default class Repository {
 
@@ -120,6 +121,39 @@ export default class Repository {
             this.database.query<UsuarioPaciente[]>(
                 paciente.trazerPorId,
                 [idPaciente],  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result?.[0]);
+                    }
+            });
+        });
+    }
+
+    getAllNutricionistas(): Promise<UsuarioNutricionista[] | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<UsuarioNutricionista[]>(
+                nutricionista.trazerTodos,  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+                    }
+            });
+        });
+    }
+
+    getOneNutricionista(idNutricionista: string): Promise<UsuarioNutricionista | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<UsuarioNutricionista[]>(
+                nutricionista.trazerPorId,
+                [idNutricionista],  
                 (err, result) => {
                     if (err) {
                         reject(err);
