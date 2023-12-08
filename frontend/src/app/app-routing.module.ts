@@ -6,6 +6,7 @@ import { LoginComponent } from "./modules/login/login.component";
 import { MeusPacientesComponent } from "./modules/meus-pacientes/meus-pacientes.component";
 import { InformacoesPessoaisComponent } from "./modules/informacoes-pessoais/informacoes-pessoais.component";
 import { InformacoesNutricionistaComponent } from "./modules/informacoes-nutricionista/informacoes-nutricionista.component";
+import { InformacoesPacienteComponent } from "./modules/informacoes-paciente/informacoes-paciente.component";
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'inicio' },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path:'consultar-pacientes', component: MeusPacientesComponent },
   { path: 'informacoes-pessoais', component: InformacoesPessoaisComponent },
-  { path: 'informacoes-nutricionista', component: InformacoesNutricionistaComponent }
+  { path: 'informacoes-nutricionista', component: InformacoesNutricionistaComponent },
+  { path: 'informacoes-paciente', component: InformacoesPacienteComponent }
 ];
 
 @NgModule({
