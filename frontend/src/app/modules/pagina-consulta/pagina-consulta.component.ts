@@ -66,7 +66,7 @@ export class PaginaConsultaComponent implements OnInit {
     const dialogRef = this.dialog.open(ConsultarNutricionistasComponent, {
       data: values,
       width: '1000px',
-      height: '550px'
+      height: '600px'
     });
 
     dialogRef.afterClosed().pipe(take(1)).subscribe(() => {

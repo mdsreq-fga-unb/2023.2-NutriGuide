@@ -30,7 +30,7 @@
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 
-    table, th {
+    table {
         width: 100%;
     }
 
@@ -50,14 +50,14 @@
     color: #212121;
     font-size: 15px;
 
-    table, th {
+    table {
         width: 100%;
     }
 
     td{
         padding: 11px 10px 9px 10px;  /* superior | direita | inferior | esquerda */
         text-align: center;
-        width: 60px;
+        width: 120px;
     }
 
     td:hover {
