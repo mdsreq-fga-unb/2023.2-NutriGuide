@@ -5,14 +5,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { DetalharPacienteComponent } from '../detalhar-paciente/detalhar-paciente.component';
 import { take } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
-
-// apagar depois:
-interface Paciente {
-  nome: string;
-  idade: number;
-  contato: number;
-  condicoesMedicas: string;
-}
+import UsuarioPaciente from 'src/app/interfaces/UsuarioPaciente';
+import { PacienteService } from 'src/app/services/paciente-service/paciente.service';
 
 @Component({
   selector: 'app-meus-pacientes',
@@ -21,47 +15,28 @@ interface Paciente {
 })
 export class MeusPacientesComponent implements OnInit {
 
-  // apagar depois
-  colunas: string[] = ['Paciente', 'Idade', 'Contato', 'Condições Médicas Principais', 'Ações'];
-
-  // apagar depois
-  paciente1: Paciente = {
-    nome: 'Henrique',
-    idade: 21,
-    contato: 984441480,
-    condicoesMedicas: 'sei la sei la sei la'
-  }
-
-  // apagar depois
-  linhas: Paciente[] = [
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1,
-    this.paciente1
-  ];
-
+  colunas: string[] = ['Paciente', 'Data de Nascimento', 'Contato', 'Condições Médicas Principais', 'Ações'];
+  pacientesList: UsuarioPaciente[] = [];
+  load: boolean = false;
+  
   constructor(
     public dialog: MatDialog,
     private snackbar: MatSnackBar,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private pacienteService: PacienteService
   ) { }
 
   ngOnInit(): void {
+    this.listarPacientes();
+  }
 
+  listarPacientes(): void {
+    this.pacienteService.getAll().subscribe((p) => {
+      this.pacientesList = p;
+
+      this.load = true;
+    })
   }
 
   abrirDialogCadatrar(): void {
@@ -77,7 +52,9 @@ export class MeusPacientesComponent implements OnInit {
         this.snackbar.open('Pop-up de cadastrar paciente fechado!', 'OK', {
           duration: 3000
         });
-      } else if (value === 'registrar') {
+      } else {
+        this.pacientesList.push(value);
+
         this.snackbar.open('Paciente cadastrado com sucesso!', 'OK', {
           duration: 3000
         });
@@ -85,8 +62,9 @@ export class MeusPacientesComponent implements OnInit {
     });
   }
 
-  abrirDialogDetalhar(): void {
+  abrirDialogDetalhar(paciente: UsuarioPaciente): void {
     const dialogRef = this.dialog.open(DetalharPacienteComponent, {
+      data: paciente,
       width: '1500px',
       height: '800px'
     });

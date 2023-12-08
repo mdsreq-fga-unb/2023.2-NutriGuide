@@ -29,8 +29,18 @@
 
         <form [formGroup]="this.formulario">
             <div class="botoes-suporiores">
-                <button class="botao" formControlName="atendimentoPresencial">Atendimento Presencial</button>
-                <button class="botao" formControlName="teleconsulta">Teleconsulta</button>
+                <button
+                    class="botao" 
+                    matTooltip="Entre em contato com um nutricionista para saber qual o tipo de atendimento que ele realiza"
+                >
+                    Atendimento Presencial
+                </button>
+                <button 
+                    class="botao"
+                    matTooltip="Entre em contato com um nutricionista para saber qual o tipo de atendimento que ele realiza"    
+                >
+                    Teleconsulta
+                </button>
             </div>
 
             <div class="inputs">
@@ -43,7 +53,13 @@
             </div>
 
             <div class="submit">
-                <button class="botao" (click)="submeterFormulario()">Pesquisar</button>
+                <button 
+                    matTooltip="Pesquisar por nutricionistas" 
+                    class="botao" 
+                    (click)="submeterFormulario()"
+                >
+                    Pesquisar
+                </button>
             </div>
         </form>
 
@@ -324,8 +340,18 @@
 
             <form [formGroup]="this.formulario">
                 <div class="botoes-suporiores">
-                    <button class="botao" formControlName="atendimentoPresencial">Atendimento Presencial</button>
-                    <button class="botao" formControlName="teleconsulta">Teleconsulta</button>
+                    <button 
+                        class="botao"
+                        matTooltip="Entre em contato com um nutricionista para saber qual o tipo de atendimento que ele realiza"    
+                    >
+                        Atendimento Presencial
+                    </button>
+                    <button 
+                        class="botao"
+                        matTooltip="Entre em contato com um nutricionista para saber qual o tipo de atendimento que ele realiza"
+                    >
+                        Teleconsulta
+                    </button>
                 </div>
 
                 <div class="inputs">
@@ -338,7 +364,13 @@
                 </div>
 
                 <div class="submit">
-                    <button class="botao" (click)="submeterFormulario()">Pesquisar</button>
+                    <button 
+                        class="botao" 
+                        matTooltip="Pesquisar por nutricionistas" 
+                        (click)="submeterFormulario()"
+                    >
+                        Pesquisar
+                    </button>
                 </div>
             </form>
 

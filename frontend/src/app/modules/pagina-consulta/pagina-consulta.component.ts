@@ -38,8 +38,6 @@ export class PaginaConsultaComponent implements OnInit {
   // criando o formulário:  
   criarFormulario(): void {
     this.formulario = this.formBuilder.group({
-      atendimentoPresencial: [true],      // por padrão atencimento presencial vai vir como true
-      teleconsulta: [false],
       nome: [''],
       especialidade: [''],
       cidadeRegiao: ['']

@@ -7,5 +7,5 @@ export default interface Usuario {
     telefone: string;
     cep: string;
     data_nascimento: Date;
-    role: string;
+    tipo_usuario: string;
 }

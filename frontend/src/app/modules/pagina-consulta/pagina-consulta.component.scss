@@ -164,6 +164,11 @@
 .botoes-suporiores {
     display: flex;
     flex-direction: row;
+
+    button:hover {
+        background-color: #F49320;
+        cursor:auto;
+    }
 }
 
 .inputs {

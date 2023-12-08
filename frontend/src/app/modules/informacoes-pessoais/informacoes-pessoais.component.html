@@ -41,34 +41,34 @@
                     <section style="display: flex; flex-direction: row; justify-content: space-between;">
                         <div class="item-superior-nutri">
                             <p>Nome Completo</p>
-                            <h2>Catarine Camargo</h2>
+                            <h2>{{ usuarioNutricionista.nome_usuario }}</h2>
                         </div>
         
                         <div class="item-superior-nutri">
                             <p>Região</p>
-                            <h2>Brasília</h2>
+                            <h2>{{ usuarioNutricionista.regiao }}</h2>
                         </div>
 
                         <div class="item-superior-nutri">
                             <p>Especialidade</p>
-                            <h2>Nutrição Esportiva</h2>
+                            <h2>{{ usuarioNutricionista.especialidade }}</h2>
                         </div>
                     </section>
 
                     <section style="display: flex; flex-direction: row; justify-content: space-between;">
                         <div class="item-inferior-nutri">
                             <p>Redes Sociais</p>
-                            <h2>catarine.camargo</h2>
+                            <h2>{{ usuarioNutricionista.especialidade }}</h2>
                         </div>
         
                         <div class="item-inferior-nutri">
                             <p>Contato</p>
-                            <h2>0123456789</h2>
+                            <h2>{{ usuarioNutricionista.telefone }}</h2>
                         </div>
 
                         <div class="item-inferior-nutri">
                             <p>Formação</p>
-                            <h2>Nutricionista pela UNB</h2>
+                            <h2>Formado(a) pela universidade: {{ usuarioNutricionista.faculdade }}</h2>
                         </div>
                     </section>
                 </section>
@@ -111,7 +111,13 @@
         <div class="superior">
 
             <div class="superior-esquerda">
-                <img src="../../../assets/img/meu-perfil.png">
+                <ng-container *ngIf="this.imagem === '' else possuiFoto">
+                    <img src="../../../assets/img/meu-perfil.png">
+                </ng-container>
+                
+                <ng-template #possuiFoto>
+                    <img [src]="this.imagem">
+                </ng-template>     
 
                 <div class="botoes-usuario">
 
@@ -133,24 +139,24 @@
                     <section style="display: flex; flex-direction: row; justify-content: space-between;">
                         <div class="item-superior-paciente">
                             <p>Nome Completo</p>
-                            <h2>Fulano da Silva</h2>
+                            <h2>{{ usuarioPaciente.nome_usuario }}</h2>
                         </div>
         
                         <div class="item-superior-paciente">
-                            <p>Idade</p>
-                            <h2>20</h2>
+                            <p>Data de nascimento:</p>
+                            <h2>{{ usuarioPaciente.data_nascimento | date }}</h2>
                         </div>
                     </section>
 
                     <section style="display: flex; flex-direction: row; justify-content: space-between;">
                         <div class="item-inferior-paciente">
                             <p>Condições Médicas</p>
-                            <h2>Doenças pré existentes</h2>
+                            <h2>{{ usuarioPaciente.comorbidades }}</h2>
                         </div>
         
                         <div class="item-inferior-paciente">
                             <p>Contato</p>
-                            <h2>0123456789</h2>
+                            <h2>{{ usuarioPaciente.telefone }}</h2>
                         </div>
                     </section>
                 </section>

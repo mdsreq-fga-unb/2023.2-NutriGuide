@@ -1,48 +1,57 @@
-<app-header></app-header>
+<ng-container *ngIf="load == false else loaded">
+    <app-spinner></app-spinner>
+</ng-container>
 
-<div class="container">
 
-    <div class="title">
-        <p>Pacientes Cadastrados</p>
+<ng-template #loaded>
 
-        <!-- Adicionar funcionalidade -->
-        <button (click)="abrirDialogCadatrar()">
-            Cadastrar Paciente
-        </button>
-    </div>
+    <app-header></app-header>
 
-    <div class="table">
-        <div class="table-header">
-
-            <table>
-                <tr>
-                    <th *ngFor="let coluna of colunas">{{ coluna }}</th>
-                </tr>
-            </table>
+    <div class="container">
     
+        <div class="title">
+            <p>Pacientes Cadastrados</p>
+    
+            <!-- Adicionar funcionalidade -->
+            <button (click)="abrirDialogCadatrar()">
+                Cadastrar Paciente
+            </button>
         </div>
     
-        <div class="table-body">
+        <div class="table">
+            <div class="table-header">
     
-            <table>
-                    <tr *ngFor="let linha of linhas">
-                        <td>{{ linha.nome }}</td>
-                        <td>{{ linha.idade }}</td>
-                        <td>{{ linha.contato }}</td>
-                        <td>{{ linha.condicoesMedicas }}</td>
-                        <td>
-                            <button style="margin-right: 5px;" (click)="abrirDialogDetalhar()" matTooltip="Detalhar Paciente">
-                                <mat-icon>search</mat-icon>
-                            </button>
-                            <button style="margin-left: 5px;" (click)="irInfoPaciente()" matTooltip="Informações do paciente">
-                                <mat-icon>person</mat-icon>
-                            </button>
-                        </td>
+                <table>
+                    <tr>
+                        <th *ngFor="let coluna of colunas">{{ coluna }}</th>
                     </tr>
-            </table>
+                </table>
+        
+            </div>
+        
+            <div class="table-body">
+        
+                <table>
+                        <tr *ngFor="let paciente of pacientesList">
+                            <td>{{ paciente.nome_usuario }}</td>
+                            <td>{{ paciente.data_nascimento | date }}</td>
+                            <td>{{ paciente.telefone }}</td>
+                            <td>{{ paciente.comorbidades }}</td>
+                            <td>
+                                <button style="margin-right: 5px;" (click)="abrirDialogDetalhar(paciente)" matTooltip="Detalhar Paciente">
+                                    <mat-icon>search</mat-icon>
+                                </button>
+                                <button style="margin-left: 5px;" (click)="irInfoPaciente()" matTooltip="Informações do paciente">
+                                    <mat-icon>person</mat-icon>
+                                </button>
+                            </td>
+                        </tr>
+                </table>
+            </div>
         </div>
+    
+        <div class="table-footer"></div>
+    
     </div>
 
-    <div class="table-footer"></div>
-
-</div>
+</ng-template>

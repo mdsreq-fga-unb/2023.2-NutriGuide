@@ -4,72 +4,74 @@
         <h3>Informações do Paciente</h3>
     </div>
 
-    <form class="formulario" [formGroup]="this.formulario">
-
-        <!--Adicionar os formControlName nos inputs, quando essa tela estiver implementada-->
+    <form class="formulario">
 
         <section class="inputs">
             <div class="input-item">
                 <p>Nome do Paciente</p>
-                <input type="text" placeholder="Nome Completo" disabled>
+                <input type="text" placeholder="Nome Completo" disabled [value]="paciente.nome_usuario">
             </div>
 
             <div class="input-item">
                 <p>Data de Nascimento</p>
-                <input type="date" disabled>
+                <input type="text" disabled [value]="paciente.data_nascimento | date">
             </div>
 
             <div class="input-item">
-                <p>Endereço</p>
-                <input type="text" placeholder="Endereço Completo" disabled>
+                <p>CEP</p>
+                <input type="text" placeholder="Endereço Completo" disabled [value]="paciente.cep">
             </div>
         </section>
 
         <section class="inputs">
             <div class="input-item">
                 <p>Telefone</p>
-                <input type="text" placeholder="XX XXXX-XXXX" disabled>
+                <input type="text" placeholder="XX XXXX-XXXX" disabled [value]="paciente.telefone">
             </div>
 
             <div class="input-item">
                 <p>E-mail</p>
-                <input type="text" placeholder="paciente@email.com" disabled>
+                <input type="text" placeholder="paciente@email.com" disabled [value]="paciente.email">
             </div>
 
             <div class="input-item">
                 <p>Principal Objetivo/Queixa</p>
-                <input type="text" placeholder="Ex.: Emagrecimento" disabled>
+                <input type="text" placeholder="Ex.: Emagrecimento" disabled [value]="paciente.queixa">
             </div>
         </section>
 
         <section class="inputs">
             <div class="input-item">
                 <p>Altura</p>
-                <input type="text" placeholder="Em metros" disabled>
+                <input type="text" placeholder="Em metros" disabled [value]="altura(paciente.altura)">
             </div>
 
             <div class="input-item">
                 <p>Peso</p>
-                <input type="text" placeholder="Em Kg" disabled>
+                <input type="text" placeholder="Em Kg" disabled [value]="peso(paciente.peso)">
             </div>
 
             <div class="input-item">
                 <p>Gênero</p>
-                <input type="text" placeholder="Gênero" disabled>
+                <input type="text" placeholder="Gênero" disabled [value]="genero(paciente.sexo)">
             </div>
         </section>
 
         <section class="text-area">
             <div class="text-area-item">
                 <p>Doenças/ Comorbidade</p>
-                <textarea name="" id="" cols="30" rows="10" disabled
-                placeholder="Campo para mencionar informações complementares ou pertinentes"></textarea>
+                <textarea name="" id="" cols="30" rows="10"
+                placeholder="Campo para mencionar informações complementares ou pertinentes">
+                    {{ paciente.comorbidades }}
+                </textarea>
             </div>
 
             <div class="text-area-item">
                 <p>Medicações Administradas</p>
-                <textarea name="" id="" cols="30" rows="10" disabled
-                placeholder="Campo para mencionar informações complementares ou pertinentes"></textarea>
+                <textarea name="" id="" cols="30" rows="10"
+                placeholder="Campo para mencionar informações complementares ou pertinentes">
+                    {{ paciente.medicacoes }}
+                </textarea>
             </div>
         </section>
 

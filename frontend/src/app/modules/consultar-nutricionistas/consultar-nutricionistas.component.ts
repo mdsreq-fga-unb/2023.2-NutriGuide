@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
+import Nutricionista from 'src/app/interfaces/Nutricionista';
+import UsuarioNutricionista from 'src/app/interfaces/UsuarioNutricionista';
+import { NutricionistaService } from 'src/app/services/nutricionista-service/nutricionista.service';
 
-// apagar depois:
-interface Nutricionista {
+interface FomularioConsulta {
   nome: string;
   regiao: string;
-  contato: number;
-  redesSociais: string;
+  especialidade: string;
 }
 
 
@@ -18,38 +19,42 @@ interface Nutricionista {
 })
 export class ConsultarNutricionistasComponent implements OnInit {
 
-  // apagar depois
   colunas: string[] = ['Nutricionista', 'Região', 'Contato', 'Redes Sociais', 'Ações'];
-
-  // apagar depois
-  nutricionista: Nutricionista = {
-    nome: 'Henrique',
-    regiao: 'DF',
-    contato: 984441480,
-    redesSociais: '@henriqtorresl'
-  }
-
-  // apagar depois
-  linhas: Nutricionista[] = [
-    this.nutricionista,
-    this.nutricionista,
-    this.nutricionista,
-    this.nutricionista,
-    this.nutricionista,
-    this.nutricionista,
-    this.nutricionista,
-    this.nutricionista,
-    this.nutricionista
-  ];
+  nutricionistaList: UsuarioNutricionista[] = [];
+  load: boolean = false;
 
   constructor(
     public dialogRef: MatDialogRef<ConsultarNutricionistasComponent>,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    @Inject(MAT_DIALOG_DATA) public dadosFomulario: FomularioConsulta,
+    private nutricionistaService: NutricionistaService
   ) {}
 
   ngOnInit(): void {
-    
+    console.log(this.dadosFomulario);
+    this.buscarNutricionistas();
+  }
+
+  buscarNutricionistas(): void {
+    const nome = this.dadosFomulario.nome;
+    const especialidade = this.dadosFomulario.especialidade;
+    const regiao = this.dadosFomulario.regiao;
+
+    this.nutricionistaService.getAll().subscribe((n) => {
+      this.nutricionistaList = n;
+
+      console.log('opa: ', this.nutricionistaList);
+      this.load = true;
+    });
+
+    // if ( nome === '' && especialidade === '' && regiao === '') {   // usuário não aplicou nenhum filtro
+    //   this.nutricionistaService.getAll().subscribe((n) => {
+    //     this.nutricionistaList = n;
+
+    //     console.log('opa: ', this.nutricionistaList)
+    //   });
+    // }
   }
 
   fechar(): void {

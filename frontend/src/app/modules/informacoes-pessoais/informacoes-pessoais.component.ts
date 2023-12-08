@@ -3,8 +3,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { UsuarioService } from 'src/app/services/usuario-service/usuario.service';
 import { Constantes } from 'src/app/shared/constantes/constantes';
 import { Location } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
-import { take } from 'rxjs';
+import { NutricionistaService } from 'src/app/services/nutricionista-service/nutricionista.service';
+import { PacienteService } from 'src/app/services/paciente-service/paciente.service';
+import UsuarioNutricionista from 'src/app/interfaces/UsuarioNutricionista';
+import UsuarioPaciente from 'src/app/interfaces/UsuarioPaciente';
 
 @Component({
   selector: 'app-informacoes-pessoais',
@@ -13,15 +15,19 @@ import { take } from 'rxjs';
 })
 export class InformacoesPessoaisComponent implements OnInit { 
 
-  usuario!: any;
   load: boolean = false;
   imagem: string = '';
+
+  usuarioNutricionista!: UsuarioNutricionista;
+  usuarioPaciente!: UsuarioPaciente;
 
   constructor(
     private usuarioService: UsuarioService,
     private router: Router,
     private route: ActivatedRoute,
-    private location: Location
+    private location: Location,
+    private nutricionistaService: NutricionistaService,
+    private pacienteService: PacienteService
   ) {}
 
   ngOnInit(): void {
@@ -29,14 +35,24 @@ export class InformacoesPessoaisComponent implements OnInit {
   }
 
   buscarUsuario() {
-    this.usuarioService
-    .getUserByName(String(localStorage.getItem('nome')))
-    .subscribe(
-      (usuario) => {
-        this.usuario = usuario;
+    const role: string = String(localStorage.getItem('role'));
+    const nomeUsuario: string = String(localStorage.getItem('nome'));
+
+    console.log(role);
+
+    if (role === 'nutricionista') {
+      this.nutricionistaService.getOneByNomeUser(nomeUsuario).subscribe((user) => {
+        this.usuarioNutricionista = user;
+
+        this.load =  true;
+      });
+    } else if (role === 'paciente') {
+      this.pacienteService.getOneByNomeUser(nomeUsuario).subscribe((user) => {
+        this.usuarioPaciente = user;
+
         this.load = true;
-      }
-    );
+      })
+    }
   }
 
   isNutricionista(): boolean {

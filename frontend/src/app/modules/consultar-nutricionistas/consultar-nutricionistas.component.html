@@ -1,42 +1,69 @@
-<div class="container">
+<ng-container *ngIf="load === false else loaded">
+    <app-spinner></app-spinner>
+</ng-container>
 
-    <div class="title">
-        <h1>Consultar Nutricionistas</h1>
-    </div>
 
-    <div class="table">
-        <div class="table-header">
+<ng-template #loaded>
 
-            <table>
-                <tr>
-                    <th *ngFor="let coluna of colunas">{{ coluna }}</th>
-                </tr>
-            </table>
-    
+
+    <div class="container">
+
+        <div class="title">
+            <h1>Consultar Nutricionistas</h1>
         </div>
-    
-        <div class="table-body">
-    
-            <table>
-                    <tr *ngFor="let linha of linhas">
-                        <td>{{ linha.nome }}</td>
-                        <td>{{ linha.regiao }}</td>
-                        <td>{{ linha.contato }}</td>
-                        <td>{{ linha.redesSociais }}</td>
+
+        <div class="table">
+            <div class="table-header">
+
+                <table>
+                    <tr>
+                        <th *ngFor="let coluna of colunas">{{ coluna }}</th>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="table-body">
+
+                <table>
+                    <tr *ngFor="let nutricionista of nutricionistaList">
+                        <td 
+                            (click)="irPaginaNutri()"
+                            [matTooltip]="'Especialidade: ' +  nutricionista.especialidade"
+                        >
+                            {{ nutricionista.nome_usuario }}
+                        </td>
+                        <td
+                            (click)="irPaginaNutri()"
+                        >
+                            {{ nutricionista.regiao }}
+                        </td>
+                        <td
+                            (click)="irPaginaNutri()"
+                        >
+                            {{ nutricionista.telefone }}
+                        </td>
+                        <td
+                            (click)="irPaginaNutri()"
+                        >
+                            {{ nutricionista.redesocial }}
+                        </td>
                         <td>
                             <button (click)="irPaginaNutri()" matTooltip="Ir para página do Nutricionista">
                                 <mat-icon>person</mat-icon>
                             </button>
                         </td>
                     </tr>
-            </table>
+                </table>
+            </div>
         </div>
-    </div>
-    <div class="table-footer">
+        <div class="table-footer">
+        </div>
+
+        <div class="botao">
+            <button (click)="fechar()">Fechar</button>
+        </div>
+
     </div>
 
-    <div class="botao">
-        <button (click)="fechar()">Fechar</button>
-    </div>
-
-</div>
+</ng-template>

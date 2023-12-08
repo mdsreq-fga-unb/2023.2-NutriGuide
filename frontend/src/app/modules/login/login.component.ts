@@ -58,9 +58,9 @@ export class LoginComponent implements OnInit {
       .pipe(take(1))
       .subscribe((user) => {
 
-        localStorage.setItem('role', user.role);
+        localStorage.setItem('role', user.tipo_usuario);
 
-        if(user.role === 'nutricionista') {
+        if(user.tipo_usuario === 'nutricionista') {
           this.router.navigate(['/consultar-pacientes']);  // vai para a página de meus pacientes
         } else {
           this.router.navigate(['/inicio']);  // volta para a home

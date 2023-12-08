@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import UsuarioPaciente from 'src/app/interfaces/UsuarioPaciente';
 
 @Component({
   selector: 'app-detalhar-paciente',
@@ -9,36 +10,33 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class DetalharPacienteComponent implements OnInit {
 
-  formulario!: FormGroup;
-
   constructor(
     public dialogRef: MatDialogRef<DetalharPacienteComponent>,
     private formBuilder: FormBuilder,
+    @Inject(MAT_DIALOG_DATA) public paciente: UsuarioPaciente,
   ) {}
 
   ngOnInit(): void {
-    this.criarFormulario();
-  }
 
-  // criando o formulário:  
-  criarFormulario(): void {
-    this.formulario = this.formBuilder.group({    // trazer esses dados para o dialog...
-      nome: [],      
-      nascimento: [],
-      endereço: [],
-      telefone: [],
-      email: [],
-      objetivo: [],
-      altura: [],
-      peso: [],
-      genero: [],
-      doencas: [],
-      medicacoes: []
-    });
   }
 
   fechar(): void {
     this.dialogRef.close();
+  }
+
+  altura(altura: number): string {
+    return `${altura} m`;
+  }
+
+  peso(peso: number): string {
+    const pesoStr = peso.toString();
+
+    return `${pesoStr} Kg`;
+  }
+
+  genero(sexo: string): string {
+    if (sexo === 'M') return 'Masculino';
+    return 'Feminino';
   }
 
 }

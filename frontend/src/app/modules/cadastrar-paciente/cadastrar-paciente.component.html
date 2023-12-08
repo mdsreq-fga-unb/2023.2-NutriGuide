@@ -18,8 +18,8 @@
             </div>
 
             <div class="input-item">
-                <p>Endereço</p>
-                <input type="text" placeholder="Endereço Completo" formControlName="endereço">
+                <p>CEP</p>
+                <input type="text" placeholder="XXXXX-XXX" formControlName="cep">
             </div>
         </section>
 
@@ -52,8 +52,19 @@
             </div>
 
             <div class="input-item">
+                <p>CPF</p>
+                <input type="text" placeholder="Informe o cpf do paciente" formControlName="cpf">
+            </div>
+            
+        </section>
+
+        <section>
+            <div class="input-item">
                 <p>Gênero</p>
-                <input type="text" placeholder="Gênero" formControlName="genero">
+                <select name="genero" matTooltip="Informe o gênero" formControlName="genero">
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                </select>
             </div>
         </section>
 
