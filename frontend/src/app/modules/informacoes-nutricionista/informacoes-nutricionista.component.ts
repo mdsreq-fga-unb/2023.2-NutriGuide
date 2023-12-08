@@ -24,24 +24,20 @@ export class InformacoesNutricionistaComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.load = true;
+
     this.buscarUsuario();
   }
 
   buscarUsuario() {
-    this.usuarioService
-    .getUserByName(String(localStorage.getItem('nome')))
-    .subscribe(
-      (usuario) => {
-        this.usuario = usuario;
-        this.load = true;
-      }
-    );
-  }
-
-  isNutricionista(): boolean {
-    if (Constantes.isNutricionista(this.usuario) === 'nutricionista') return true;
-    
-    return false;
+    // this.usuarioService
+    // .getUserByName(String(localStorage.getItem('nome')))
+    // .subscribe(
+    //   (usuario) => {
+    //     this.usuario = usuario;
+    //     this.load = true;
+    //   }
+    // );
   }
 
   irParaInicio(): void {

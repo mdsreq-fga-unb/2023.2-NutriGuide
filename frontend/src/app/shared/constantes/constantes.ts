@@ -17,10 +17,17 @@ export class Constantes {
     }
 
     // método que verificar se o usuário é um paciente ou um nutricionista
-    public static isNutricionista(usuario: any): string {
-        if (usuario.role === 'nutricionista') return 'nutricionista';
+    public static getRole(): string {
+        const role: string = String(localStorage.getItem('role'));
+
+        if (role === 'nutricionista') {
+            return 'nutricionista';
+        } else if (role === 'nutricionista') {
+            return 'paciente';
+        } else {
+            return 'usuario default';
+        }
         
-        return 'paciente';
     }
 
 }

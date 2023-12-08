@@ -53,7 +53,20 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('nome', usuario.nome);
 
       this.snackBar.open(msg, 'OK', {duration: 2500});
-      this.router.navigate(['/inicio']);  // volta para a home
+  
+      this.usuarioService.getUserByName(usuario.nome)
+      .pipe(take(1))
+      .subscribe((user) => {
+
+        localStorage.setItem('role', user.role);
+
+        if(user.role === 'nutricionista') {
+          this.router.navigate(['/consultar-pacientes']);  // vai para a página de meus pacientes
+        } else {
+          this.router.navigate(['/inicio']);  // volta para a home
+        }
+
+      })
     },
     // erro:
     (e) => {

@@ -40,7 +40,7 @@ export class InformacoesPessoaisComponent implements OnInit {
   }
 
   isNutricionista(): boolean {
-    if (Constantes.isNutricionista(this.usuario) === 'nutricionista') return true;
+    if ( Constantes.getRole() === 'nutricionista') return true;
     
     return false;
   }
