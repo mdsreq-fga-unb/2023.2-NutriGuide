@@ -80,4 +80,9 @@ export default class Service {
         return await this.repository.getAlimentasByIdPaciente(idPaciente);
     }
 
+    public async getPlanoAlimentarByName(nome: string) {
+        return await this.repository.getPlanoAlimentarByName(nome);
+    }
+
+
 }

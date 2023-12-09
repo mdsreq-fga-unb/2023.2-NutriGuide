@@ -262,6 +262,19 @@ app.post('/plano-alimentar', async (req, res) => {
     res.status(200).json({msg: 'Nome do plano alimentar criado com sucesso!'});
 });
 
+app.get('/plano-alimentar', async (req, res) => {
+    const { nome } = req.query;
+    
+    const service = new Service();
+    const plano = await service.getPlanoAlimentarByName(String(nome));
+
+    if (plano !== undefined) {
+        res.status(200).json(plano);
+    } else {
+        res.status(404).json({ msg: 'Não foi encontrado nenhum plano alimentar registrado para o paciente!' })
+    }
+});
+
 app.listen(3000, () => {
     console.log('Rodando em "http://localhost:3000"');
 });

@@ -348,4 +348,21 @@ export default class Repository {
         });
     }
 
+    getPlanoAlimentarByName(nome: string): Promise<PlanoAlimentar | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<PlanoAlimentar[]>(
+                planoAlimentar.trazerPorNome,
+                [nome],  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result?.[0]);
+                    }
+            });
+        });
+    }
+
 }
