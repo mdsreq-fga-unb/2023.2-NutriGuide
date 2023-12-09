@@ -1,7 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
-import Nutricionista from 'src/app/interfaces/Nutricionista';
 import UsuarioNutricionista from 'src/app/interfaces/UsuarioNutricionista';
 import { NutricionistaService } from 'src/app/services/nutricionista-service/nutricionista.service';
 
@@ -44,7 +43,6 @@ export class ConsultarNutricionistasComponent implements OnInit {
     this.nutricionistaService.getAllNutriFiltered(nome, especialidade, regiao).subscribe((n) => {
       this.nutricionistaList = n;
 
-      console.log('opa: ', this.nutricionistaList);
       this.load = true;
     });
   }

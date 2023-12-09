@@ -65,8 +65,6 @@ export class CadastrarPacienteComponent implements OnInit {
     }
 
     this.pacienteService.insert(paciente).subscribe((r) => {
-      console.log(r);
-
       this.dialogRef.close(paciente);
     });
   }

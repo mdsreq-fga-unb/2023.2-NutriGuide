@@ -53,11 +53,13 @@ export class MeusPacientesComponent implements OnInit {
           duration: 3000
         });
       } else {
-        this.pacientesList.push(value);
+        if (value !== undefined) {
+          this.pacientesList.push(value);
 
-        this.snackbar.open('Paciente cadastrado com sucesso!', 'OK', {
-          duration: 3000
-        });
+          this.snackbar.open('Paciente cadastrado com sucesso!', 'OK', {
+            duration: 3000
+          });
+        }
       }
     });
   }
@@ -69,7 +71,7 @@ export class MeusPacientesComponent implements OnInit {
       height: '800px'
     });
 
-    dialogRef.afterClosed().pipe(take(1)).subscribe(() => {
+    dialogRef.afterClosed().pipe(take(1)).subscribe((v) => {
         this.snackbar.open('Pop-up de detalhar paciente fechado!', 'OK', {
           duration: 3000
         });

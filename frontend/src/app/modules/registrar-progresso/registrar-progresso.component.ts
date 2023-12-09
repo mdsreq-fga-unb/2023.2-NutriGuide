@@ -1,9 +1,9 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import UsuarioPaciente from '../interfaces/UsuarioPaciente';
-import { ProgressoPacienteService } from '../services/progresso-paciente-service/progresso-paciente.service';
+import UsuarioPaciente from '../../interfaces/UsuarioPaciente';
+import { ProgressoPacienteService } from '../../services/progresso-paciente-service/progresso-paciente.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import ProgressoPaciente from '../interfaces/ProgressoPaciente';
+import ProgressoPaciente from '../../interfaces/ProgressoPaciente';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({

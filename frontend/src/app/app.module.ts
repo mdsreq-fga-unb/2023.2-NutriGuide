@@ -20,7 +20,10 @@ import { DetalharPacienteComponent } from './modules/detalhar-paciente/detalhar-
 import { InformacoesPacienteComponent } from './modules/informacoes-paciente/informacoes-paciente.component';
 import { InformacoesNutricionistaComponent } from './modules/informacoes-nutricionista/informacoes-nutricionista.component';
 import { ProgressoPacienteComponent } from './modules/progresso-paciente/progresso-paciente.component';
-import { RegistrarProgressoComponent } from './registrar-progresso/registrar-progresso.component'
+import { RegistrarProgressoComponent } from './modules/registrar-progresso/registrar-progresso.component';
+import { ConsultarPlanoComponent } from './modules/consultar-plano/consultar-plano.component';
+import { CriarPlanoComponent } from './modules/criar-plano/criar-plano.component';
+import { InserirAlimentoComponent } from './modules/inserir-alimento/inserir-alimento.component'
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { RegistrarProgressoComponent } from './registrar-progresso/registrar-pro
     InformacoesPacienteComponent,
     InformacoesNutricionistaComponent,
     ProgressoPacienteComponent,
-    RegistrarProgressoComponent
+    RegistrarProgressoComponent,
+    ConsultarPlanoComponent,
+    CriarPlanoComponent,
+    InserirAlimentoComponent
   ],
   imports: [
     AppRoutingModule,

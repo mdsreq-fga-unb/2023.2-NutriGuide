@@ -5,7 +5,7 @@ import { PacienteService } from 'src/app/services/paciente-service/paciente.serv
 import UsuarioPaciente from 'src/app/interfaces/UsuarioPaciente';
 import { MatDialog } from '@angular/material/dialog';
 import { ProgressoPacienteComponent } from '../progresso-paciente/progresso-paciente.component';
-import { RegistrarProgressoComponent } from 'src/app/registrar-progresso/registrar-progresso.component';
+import { RegistrarProgressoComponent } from 'src/app/modules/registrar-progresso/registrar-progresso.component';
 
 @Component({
   selector: 'app-informacoes-paciente',
