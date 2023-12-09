@@ -54,6 +54,10 @@ export class InformacoesPacienteComponent implements OnInit {
     this.location.back();
   }
 
+  irParaGerenciarPlano(): void {
+    this.router.navigate(['/gerenciar-plano', this.idPaciente], {relativeTo: this.route.parent});
+  }
+
   abrirProgressoPaciente(paciente: UsuarioPaciente): void {
     const dialogRef = this.dialog.open(ProgressoPacienteComponent, {
       data: paciente,

@@ -7,6 +7,7 @@ import { MeusPacientesComponent } from "./modules/meus-pacientes/meus-pacientes.
 import { InformacoesPessoaisComponent } from "./modules/informacoes-pessoais/informacoes-pessoais.component";
 import { InformacoesNutricionistaComponent } from "./modules/informacoes-nutricionista/informacoes-nutricionista.component";
 import { InformacoesPacienteComponent } from "./modules/informacoes-paciente/informacoes-paciente.component";
+import { CriarPlanoComponent } from "./modules/criar-plano/criar-plano.component";
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'inicio' },
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path:'consultar-pacientes', component: MeusPacientesComponent },
   { path: 'informacoes-pessoais', component: InformacoesPessoaisComponent },
   { path: 'informacoes-nutricionista/:id', component: InformacoesNutricionistaComponent },
-  { path: 'informacoes-paciente/:id', component: InformacoesPacienteComponent }
+  { path: 'informacoes-paciente/:id', component: InformacoesPacienteComponent },
+  { path: 'gerenciar-plano/:id', component: CriarPlanoComponent }
 ];
 
 @NgModule({

@@ -1,1 +1,177 @@
-<p>criar-plano works!</p>
+<ng-container *ngIf="load === false else loaded">
+
+    <app-spinner></app-spinner>
+
+</ng-container>
+
+
+<ng-template #loaded>
+
+    <div class="container">
+
+        <div class="title">
+            <h1>Gerenciar o Plano Alimentar do Paciente</h1>
+            <h3><span>Paciente:</span> {{ paciente.nome_usuario }}</h3>
+        </div>
+
+        <div class="body">
+
+            <ng-container *ngIf="alimentosList.length > 0 else semPlano">
+
+                <div class="body-title">
+                    <h3>Nome do Plano Alimentar de {{ paciente.nome_usuario }}:</h3>
+                    <div style="display: flex; justify-content: start; margin-top: 10px;">
+                        <form style="display: flex; width: 100%;">
+                            <mat-form-field style="width: 40%;" appearance="outline">
+                                <mat-label>Plano Alimentar</mat-label>
+                                <input matInput disabled [value]="alimentosList[0].nome_plano">
+                            </mat-form-field>
+
+                            <div style="width: 60%; padding-top: 20px;" class="confirmar-plano">
+                                <button disabled matTooltip="Confirmar nome do plano">
+                                    <mat-icon>add_task</mat-icon>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div *ngFor="let refeicao of  refeicoesList" class="refeicoes">
+                    <section class="refeicao-title">
+                        <h3>{{ refeicao.nome_refeicao }}</h3>
+                    </section>
+
+                    <div class="alimentos">
+
+                        <ng-container *ngFor="let alimento of alimentosList">
+                            
+                            <ng-container *ngIf="refeicao.id_refeicao === alimento.id_refeicao">
+
+                                <div class="input-alimentos">
+                                    <mat-form-field style="width: 20%;" matTooltip="Quantidade de gramas" appearance="outline">
+                                        <mat-label>Quantidade</mat-label>
+                                        <input disabled matInput [value]="alimento.quantidade_grama">
+                                    </mat-form-field>
+        
+                                    <mat-form-field style="width: 50%;" matTooltip="Nome do alimento" appearance="outline">
+                                        <mat-label>Alimento</mat-label>
+                                        <input disabled matInput [value]="alimento.nome_alimento">
+                                    </mat-form-field>
+        
+                                    <mat-form-field style="width: 10%;" matTooltip="Quantidade de carboidratos" appearance="outline">
+                                        <mat-label>C</mat-label>
+                                        <input disabled matInput [value]="alimento.qnt_carboidrato">
+                                    </mat-form-field>
+        
+                                    <mat-form-field style="width: 10%;" matTooltip="Quantidade de proteína" appearance="outline">
+                                        <mat-label>P</mat-label>
+                                        <input disabled matInput [value]="alimento.qnt_proteina">
+                                    </mat-form-field>
+        
+                                    <mat-form-field style="width: 10%;" matTooltip="Quantidade de gorduras" appearance="outline">
+                                        <mat-label>G</mat-label>
+                                        <input disabled matInput [value]="alimento.qnt_gordura">
+                                    </mat-form-field>
+                                </div>
+
+                            </ng-container>
+                            
+                        
+                        </ng-container>
+
+                        <button (click)="abrirDialogAlimento(refeicao)" [matTooltip]="'Adicionar alimento para o ' + refeicao.nome_refeicao">
+                            <mat-icon>restaurant</mat-icon>
+                        </button>
+
+                    </div>
+                </div>
+
+            </ng-container>
+
+            <ng-template #semPlano>
+
+                <div class="body-title">
+                    <h3>Nome do Plano Alimentar de {{ paciente.nome_usuario }}:</h3>
+                    <div style="display: flex; justify-content: start; margin-top: 10px;">
+                        <form [formGroup]="formulario" style="display: flex; width: 100%;">
+                            <mat-form-field style="width: 40%;" appearance="outline">
+                                <mat-label>Plano Alimentar</mat-label>
+                                <input matInput formControlName="nome">
+                            </mat-form-field>
+
+                            <div style="width: 60%; padding-top: 20px;" class="confirmar-plano">
+                                <button (click)="inserirPlano()" matTooltip="Confirmar nome do plano">
+                                    <mat-icon>add_task</mat-icon>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div *ngFor="let refeicao of  refeicoesList" class="refeicoes">
+                    <section class="refeicao-title">
+                        <h3>{{ refeicao.nome_refeicao }}</h3>
+                    </section>
+
+                    <div class="alimentos">
+
+                        <ng-container *ngFor="let alimento of alimentosList">
+                            
+                            <div class="input-alimentos">
+                                <mat-form-field style="width: 20%;" matTooltip="Quantidade de gramas" appearance="outline">
+                                    <mat-label>Quantidade</mat-label>
+                                    <input disabled matInput [value]="alimento.quantidade_grama">
+                                </mat-form-field>
+    
+                                <mat-form-field style="width: 50%;" matTooltip="Nome do alimento" appearance="outline">
+                                    <mat-label>Alimento</mat-label>
+                                    <input disabled matInput [value]="alimento.nome_alimento">
+                                </mat-form-field>
+    
+                                <mat-form-field style="width: 10%;" matTooltip="Quantidade de carboidratos" appearance="outline">
+                                    <mat-label>C</mat-label>
+                                    <input disabled matInput [value]="alimento.qnt_carboidrato">
+                                </mat-form-field>
+    
+                                <mat-form-field style="width: 10%;" matTooltip="Quantidade de proteína" appearance="outline">
+                                    <mat-label>P</mat-label>
+                                    <input disabled matInput [value]="alimento.qnt_proteina">
+                                </mat-form-field>
+    
+                                <mat-form-field style="width: 10%;" matTooltip="Quantidade de gorduras" appearance="outline">
+                                    <mat-label>G</mat-label>
+                                    <input disabled matInput [value]="alimento.qnt_gordura">
+                                </mat-form-field>
+                            </div>
+                        
+                        </ng-container>
+
+                        <ng-container *ngIf="planoInserido === false else inserido">
+                            <button disabled (click)="abrirDialogAlimento(refeicao)" matTooltip="Insira um nome para o plano, para poder registrar um alimento">
+                                <mat-icon>restaurant</mat-icon>
+                            </button>
+                        </ng-container>
+
+                        <ng-template #inserido>
+                            <button (click)="abrirDialogAlimento(refeicao)" [matTooltip]="'Adicionar alimento para o ' + refeicao.nome_refeicao">
+                                <mat-icon>restaurant</mat-icon>
+                            </button>
+                        </ng-template>
+                        
+
+                    </div>
+                </div>
+
+            </ng-template>
+
+        </div>
+
+        <div class="footer">
+            <button (click)="voltar()">
+                Voltar
+            </button>
+        </div>
+
+    </div>
+
+</ng-template>

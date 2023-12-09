@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
-import { catchError, take } from 'rxjs';
+import { take } from 'rxjs';
 import { LoginService } from 'src/app/services/login-service/login.service';
 import { UsuarioService } from 'src/app/services/usuario-service/usuario.service';
 
