@@ -76,8 +76,8 @@ export default class Service {
         await this.repository.insertPlanoAlimentar(plano);
     }
 
-    public async getPlanoAlimentarByIdPaciente(idPaciente: string) {
-        return await this.repository.getPlanoAlimentarByIdPaciente(idPaciente);
+    public async getAlimentasByIdPaciente(idPaciente: string) {
+        return await this.repository.getAlimentasByIdPaciente(idPaciente);
     }
 
 }

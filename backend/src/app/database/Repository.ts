@@ -18,6 +18,7 @@ import ProgressoPaciente from "../models/ProgressoPaciente";
 import Refeicao from "../models/Refeicao";
 import Alimento from "../models/Alimento";
 import PlanoAlimentar from "../models/PlanoAlimentar";
+import AlimentoPlanoAlimentar from "../models/AlimentoPlanoAlimentar";
 
 export default class Repository {
 
@@ -330,10 +331,10 @@ export default class Repository {
         });
     }
 
-    getPlanoAlimentarByIdPaciente(idPaciente: string): Promise<PlanoAlimentar[] | undefined> {
+    getAlimentasByIdPaciente(idPaciente: string): Promise<AlimentoPlanoAlimentar[] | undefined> {
         return new Promise((resolve, reject) => {
-            this.database.query<PlanoAlimentar[]>(
-                planoAlimentar.trazerPlanoPorIdPaciente,
+            this.database.query<AlimentoPlanoAlimentar[]>(
+                alimento.trazerPlanoPorIdPaciente,
                 [idPaciente],  
                 (err, result) => {
                     if (err) {

@@ -240,6 +240,19 @@ app.post('/alimento', async (req, res) => {
     res.status(200).json({msg: 'Alimento inserido com sucesso!'});
 });
 
+app.get('/alimento/:idPaciente', async (req, res) => {
+    const { idPaciente } = req.params;
+
+    const service = new Service();
+    const alimentos = await service.getAlimentasByIdPaciente(idPaciente);
+
+    if (alimentos !== undefined && alimentos!.length !== 0) {
+        res.status(200).json(alimentos);
+    } else {
+        res.status(404).json({ msg: 'Não foi encontrado nenhum alimento registrado para o paciente!' })
+    }
+});
+
 app.post('/plano-alimentar', async (req, res) => {
     const plano: PlanoAlimentar = req.body;
     
@@ -247,19 +260,6 @@ app.post('/plano-alimentar', async (req, res) => {
     await service.insertPlanoAlimentar(plano);
 
     res.status(200).json({msg: 'Plano alimentar criado com sucesso!'});
-});
-
-app.get('/plano-alimentar/:idPaciente', async (req, res) => {
-    const { idPaciente } = req.params;
-
-    const service = new Service();
-    const planoAlimentar = await service.getPlanoAlimentarByIdPaciente(idPaciente);
-
-    if (planoAlimentar !== undefined) {
-        res.status(200).json(planoAlimentar);
-    } else {
-        res.status(404).json({ msg: 'Não foi encontrado nenhum plano alimentar para o paciente!' })
-    }
 });
 
 app.listen(3000, () => {
