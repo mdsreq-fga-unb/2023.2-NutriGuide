@@ -1,5 +1,6 @@
 import Repository from "../database/Repository";
 import Alimento from "../models/Alimento";
+import Avaliacao from "../models/Avaliacao";
 import PlanoAlimentar from "../models/PlanoAlimentar";
 import ProgressoPaciente from "../models/ProgressoPaciente";
 import Usuario from "../models/Usuario";
@@ -84,5 +85,12 @@ export default class Service {
         return await this.repository.getPlanoAlimentarByName(nome);
     }
 
+    public async getAvaliacoesById(idNutricionista: string) {
+        return await this.repository.getAvaliacoesById(idNutricionista);
+    }
+
+    public async insertAvaliacao(avaliacao: Avaliacao) {
+        return await this.repository.insertAvaliacao(avaliacao);
+    }
 
 }

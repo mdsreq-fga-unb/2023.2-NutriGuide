@@ -19,6 +19,7 @@ import Refeicao from "../models/Refeicao";
 import Alimento from "../models/Alimento";
 import PlanoAlimentar from "../models/PlanoAlimentar";
 import AlimentoPlanoAlimentar from "../models/AlimentoPlanoAlimentar";
+import Avaliacao from "../models/Avaliacao";
 
 export default class Repository {
 
@@ -360,6 +361,42 @@ export default class Repository {
                         this.database.end();
                     } else {
                         resolve(result?.[0]);
+                    }
+            });
+        });
+    }
+
+    getAvaliacoesById(idNutricionista: string): Promise<Avaliacao[] | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<Avaliacao[]>(
+                avaliacao.trazerPorIdNutricionista,
+                [idNutricionista],  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+                    }
+            });
+        });
+    }
+
+    public async insertAvaliacao(aval: Avaliacao): Promise<void> {
+        await new Promise((resolve, reject) => {
+            this.database.query(
+                avaliacao.inserir, 
+                [aval.avaliacao, aval.nota_nutricionista, aval.id_nutricionista], 
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+
+                        this.database.end();
                     }
             });
         });
