@@ -1,5 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import AlimentoPlanoAlimentar from 'src/app/interfaces/AlimentoPlanoAlimentar';
 import UsuarioPaciente from 'src/app/interfaces/UsuarioPaciente';
 import { AlimentoService } from 'src/app/services/alimento-service/alimento.service';
@@ -12,17 +13,20 @@ import { AlimentoService } from 'src/app/services/alimento-service/alimento.serv
 export class ConsultarPlanoComponent implements OnInit {
 
   load: boolean = false;
-  planoAlimentarNome: string = 'Consultar Plano Alimentar';
+  planoAlimentarNome: string = 'Consulta de Plano Alimentar';
   alimentosPlanoAlimentarList: AlimentoPlanoAlimentar[] = [];
 
   constructor(
     public dialogRef: MatDialogRef<ConsultarPlanoComponent>,
     @Inject(MAT_DIALOG_DATA) public paciente: UsuarioPaciente,
-    private alimentoService: AlimentoService
+    private alimentoService: AlimentoService,
+    private snackbar: MatSnackBar
   ) {}
 
   ngOnInit(): void {
     this.buscarAlimentosPlanoAlimentar();
+
+    console.log(this.alimentosPlanoAlimentarList);
   }
 
   buscarAlimentosPlanoAlimentar(): void {
@@ -31,6 +35,11 @@ export class ConsultarPlanoComponent implements OnInit {
       this.planoAlimentarNome = a[0].nome_plano;
 
       this.load = true;
+    },
+    (err) => {
+      this.load = true;
+
+      this.snackbar.open(err.error.msg, 'OK', {duration: 3000});
     });
   }
 
