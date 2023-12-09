@@ -8,15 +8,15 @@
 
     <form class="formulario" [formGroup]="this.formulario">
 
-        <div class="item">
-            <p>Nome Completo</p>
-            <input type="text" placeholder="Nome Completo" formControlName="nome">
-        </div>
+        <mat-form-field class="item" appearance="outline">
+            <mat-label>Nome Completo</mat-label>
+            <input type="text" matInput placeholder="Nome Completo" formControlName="nome">
+        </mat-form-field>
 
-        <div class="item">
-            <p>E-mail</p>
-            <input type="text" placeholder="E-mail" formControlName="email">
-        </div>
+        <mat-form-field class="item" appearance="outline">
+            <mat-label>E-mail</mat-label>
+            <input type="email" matInput placeholder="E-mail" formControlName="email">
+        </mat-form-field>
 
         <div class="botao">
             <div class="cancelar">
