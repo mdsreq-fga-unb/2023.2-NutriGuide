@@ -75,19 +75,28 @@ export class InserirAlimentoComponent implements OnInit {
       qnt_gordura: this.formulario.value.qntGordura
     }
 
-    this.alimentoService.insert(alimento).subscribe((r) => {
-      this.dialogRef.close();
-      
-      this.snackbar.open(r.msg, 'OK', {
-        duration: 3000
-      });
-    },
-    (err) => {
-      this.snackbar.open('Preencha todos os campos corretamente!', 'OK', {
-        duration: 3000
-      });
-    });
+    if (
+      alimento.nome_alimento !== '' &&
+      alimento.quantidade_grama !== 0 &&
+      alimento.qnt_carboidrato !== 0 &&
+      alimento.qnt_proteina !== 0 &&
+      alimento.qnt_gordura !== 0
+    ) {
 
+      this.alimentoService.insert(alimento).subscribe((r) => {
+        this.dialogRef.close(alimento);
+        
+        this.snackbar.open(r.msg, 'OK', {
+          duration: 3000
+        });
+      },
+      (err) => {
+        this.snackbar.open('Preencha todos os campos corretamente!', 'OK', {
+          duration: 3000
+        });
+      });
+
+    }
   }
 
   cancelar(): void {

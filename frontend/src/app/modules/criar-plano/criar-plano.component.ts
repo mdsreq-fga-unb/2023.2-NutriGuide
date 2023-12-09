@@ -13,6 +13,7 @@ import PlanoAlimentar from 'src/app/interfaces/PlanoAlimentar';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
 import { InserirAlimentoComponent } from '../inserir-alimento/inserir-alimento.component';
+import { take } from 'rxjs';
 
 @Component({
   selector: 'app-criar-plano',
@@ -111,12 +112,14 @@ export class CriarPlanoComponent implements OnInit {
       nomePaciente: this.paciente.nome_usuario
     }
 
-    console.log(data);
-
     const dialogRef = this.dialog.open(InserirAlimentoComponent, {
       data: data,
       width: '600px',
       height: '600px'
+    });
+
+    dialogRef.afterClosed().pipe(take(1)).subscribe((alimento) => {
+      if (alimento !== undefined) this.alimentosList.push(alimento); 
     })
   }
 
