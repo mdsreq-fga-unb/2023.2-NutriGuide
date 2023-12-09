@@ -1,0 +1,142 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    // Adicionando um scroll bar no sentido vertical:
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+// Configurações do scroll bar:
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f3f3f3;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #28B225;
+    border-radius: 20px;
+}
+// ---------------------------- //
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header {
+    width: 50%;
+    padding: 30px 0 0 30px;
+    h3 {
+        margin: 0 0 5px 0;
+    }
+
+    h1 {
+        color: #28B225;
+    }
+}
+
+.pdf-download {
+    width: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    align-items: end;
+    margin-right: 30px;
+
+    button {
+        box-shadow: 0.05em 0.05em 0.05em #333;
+        color: #FFFFFF;
+        background-color: #22A353;
+        border: none;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+    }
+
+    button:hover {
+        background-color: #F49320;
+        cursor: pointer;
+    }
+}
+
+.body-sem-conteudo {
+    background-color: #CBEDCB;
+    border-radius: 10px;
+    border: solid 1px #28B225;
+    height: 60%;
+    margin: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        color: #F49320;
+    }
+}  
+
+.body-conteudo {
+    padding: 20px;
+    background-color: #CBEDCB;
+    border-radius: 10px;
+    border: solid 1px #28B225;
+    height: 60%;
+    margin: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    h3 {
+        span{
+            color: #F49320;
+        }
+        margin-bottom: 5px;
+    }
+
+    h4 {
+        color: #F49320;
+        margin-bottom: 5px;
+    }
+
+    p {
+        margin-bottom: 3px;
+    }
+}  
+
+.footer {
+    margin: 40px 30px 15px 50px;
+    height: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+
+    button {
+        box-shadow: 0.05em 0.05em 0.05em #333;
+        height: 50px;
+
+        font-size: 24px;
+        text-decoration: none;
+        color: #FFFFFF;
+        background-color: #F49320;
+        padding: 0px 40px 0px 40px; /* superior | direita | inferior | esquerda */
+        border-radius: 25px;
+        border: none;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #ca7b1a;
+    }
+}

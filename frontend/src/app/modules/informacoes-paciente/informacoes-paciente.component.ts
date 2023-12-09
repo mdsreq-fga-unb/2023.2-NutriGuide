@@ -6,6 +6,7 @@ import UsuarioPaciente from 'src/app/interfaces/UsuarioPaciente';
 import { MatDialog } from '@angular/material/dialog';
 import { ProgressoPacienteComponent } from '../progresso-paciente/progresso-paciente.component';
 import { RegistrarProgressoComponent } from 'src/app/modules/registrar-progresso/registrar-progresso.component';
+import { ConsultarPlanoComponent } from '../consultar-plano/consultar-plano.component';
 
 @Component({
   selector: 'app-informacoes-paciente',
@@ -74,8 +75,13 @@ export class InformacoesPacienteComponent implements OnInit {
       width: '1000px',
       height: '700px'
     });
-
-    // dialogRef.afterClosed()
   }
 
+  abrirVisualizarPlano(paciente: UsuarioPaciente): void {
+    const dialogRef = this.dialog.open(ConsultarPlanoComponent, {
+      data: paciente,
+      width: '1000px',
+      height: '700px'
+    });
+  }
 }
