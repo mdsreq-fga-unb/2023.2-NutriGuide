@@ -20,6 +20,9 @@ import Alimento from "../models/Alimento";
 import PlanoAlimentar from "../models/PlanoAlimentar";
 import AlimentoPlanoAlimentar from "../models/AlimentoPlanoAlimentar";
 import Avaliacao from "../models/Avaliacao";
+import Post from "../models/Post";
+import UsuarioComentario from "../models/UsuarioComentario";
+import Comentario from "../models/Comentario";
 
 export default class Repository {
 
@@ -390,6 +393,114 @@ export default class Repository {
                 [aval.avaliacao, aval.nota_nutricionista, aval.id_nutricionista], 
                 (err, result) => {
                     if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+
+                        this.database.end();
+                    }
+            });
+        });
+    }
+
+    getAllPost(): Promise<Post[] | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<Post[]>(
+                post.trazerTodos,
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+                    }
+            });
+        });
+    }
+
+    getPostByIdNutricionista(idNutricionista: string): Promise<Post[] | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<Post[]>(
+                post.trazerPorIdNutricionista,
+                [idNutricionista],  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+                    }
+            });
+        });
+    }
+
+    public async insertPost(postagem: Post): Promise<void> {
+        await new Promise((resolve, reject) => {
+            this.database.query(
+                post.inserir, 
+                [postagem.conteudo_post, postagem.data_criacao, postagem.id_nutricionista], 
+                (err, result) => {
+                    if (err) {
+                        console.log('erro: ', err);
+
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+
+                        this.database.end();
+                    }
+            });
+        });
+    }
+
+    getAllComentario(): Promise<UsuarioComentario[] | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<UsuarioComentario[]>(
+                comentario.trazerTodosComentarios,
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+                    }
+            });
+        });
+    }
+
+    getAllComentarioByIdPost(idPost: string): Promise<Post[] | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<Post[]>(
+                comentario.trazerTodosComentariosByIdPost,
+                [idPost],  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+                    }
+            });
+        });
+    }
+
+    public async insertComentario(coment: Comentario): Promise<void> {
+        await new Promise((resolve, reject) => {
+            this.database.query(
+                comentario.inserir, 
+                [coment.data_criacao, coment.conteudo, coment.id_post, coment.id_usuario], 
+                (err, result) => {
+                    if (err) {
+                        console.log('erro: ', err);
+
                         reject(err);
 
                         this.database.end();

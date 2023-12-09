@@ -1,7 +1,9 @@
 import Repository from "../database/Repository";
 import Alimento from "../models/Alimento";
 import Avaliacao from "../models/Avaliacao";
+import Comentario from "../models/Comentario";
 import PlanoAlimentar from "../models/PlanoAlimentar";
+import Post from "../models/Post";
 import ProgressoPaciente from "../models/ProgressoPaciente";
 import Usuario from "../models/Usuario";
 import UsuarioPaciente from "../models/UsuarioPaciente";
@@ -91,6 +93,30 @@ export default class Service {
 
     public async insertAvaliacao(avaliacao: Avaliacao) {
         return await this.repository.insertAvaliacao(avaliacao);
+    }
+
+    public async getAllPost() {
+        return await this.repository.getAllPost();
+    }
+
+    public async getPostByIdNutricionista(idNutricionista: string) {
+        return await this.repository.getPostByIdNutricionista(idNutricionista);
+    }
+
+    public async insertPost(post: Post) {
+        return await this.repository.insertPost(post);
+    }
+
+    public async getAllComentario() {
+        return await this.repository.getAllComentario();
+    }
+
+    public async getAllComentarioByIdPost(idPost: string) {
+        return await this.repository.getAllComentarioByIdPost(idPost);
+    }
+
+    public async insertComentario(comentario: Comentario) {
+        return await this.repository.insertComentario(comentario);
     }
 
 }

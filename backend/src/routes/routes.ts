@@ -8,6 +8,8 @@ import ProgressoPaciente from '../app/models/ProgressoPaciente';
 import Alimento from '../app/models/Alimento';
 import PlanoAlimentar from '../app/models/PlanoAlimentar';
 import Avaliacao from "../app/models/Avaliacao";
+import Post from "../app/models/Post";
+import Comentario from "../app/models/Comentario";
 
 const routes = Router();
 
@@ -291,6 +293,72 @@ routes.post('/avaliacao', async (req, res) => {
     await service.insertAvaliacao(avaliacao);
 
     res.status(200).json({msg: 'Avaliação cadastrada no sistema!'});
+});
+
+routes.get('/post', async (req, res) => {
+    const service = new Service();
+    const posts = await service.getAllPost();
+
+    if (posts !== undefined && posts!.length !== 0) {
+        res.status(200).json(posts);
+    } else {
+        res.status(404).json({ msg: 'Não foram encontradas postagens!' })
+    }
+});
+
+routes.get('/post/:id', async (req, res) => {
+    const { id } = req.params;
+
+    const service = new Service();
+    const posts = await service.getPostByIdNutricionista(id);
+
+    if (posts !== undefined && posts!.length !== 0) {
+        res.status(200).json(posts);
+    } else {
+        res.status(404).json({ msg: 'Não foram encontradas postagens!' })
+    }
+});
+
+routes.post('/post', async (req, res) => {
+    const post: Post = req.body;
+
+    const service = new Service();
+    await service.insertPost(post);
+
+    res.status(200).json({msg: 'Postagem concluída!'});
+});
+
+routes.get('/comentario', async (req, res) => {
+    const service = new Service();
+    const comentarios = await service.getAllComentario();
+
+    if (comentarios !== undefined && comentarios!.length !== 0) {
+        res.status(200).json(comentarios);
+    } else {
+        res.status(404).json({ msg: 'Não foram encontradas postagens!' })
+    }
+});
+
+routes.get('/comentario/:id', async (req, res) => {
+    const { id } = req.params;
+
+    const service = new Service();
+    const comentario = await service.getAllComentarioByIdPost(id);
+
+    if (comentario !== undefined && comentario!.length !== 0) {
+        res.status(200).json(comentario);
+    } else {
+        res.status(404).json({ msg: 'A postagem não possui comentários!' })
+    }
+});
+
+routes.post('/comentario', async (req, res) => {
+    const comentario: Comentario = req.body;
+
+    const service = new Service();
+    await service.insertComentario(comentario);
+
+    res.status(200).json({msg: 'Comentário concluída!'});
 });
 
 export default routes;
