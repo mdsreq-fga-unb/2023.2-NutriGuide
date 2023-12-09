@@ -58,7 +58,7 @@ export class InformacoesPacienteComponent implements OnInit {
     const dialogRef = this.dialog.open(ProgressoPacienteComponent, {
       data: paciente,
       width: '1000px',
-      height: '550px'
+      height: '700px'
     });
 
     // dialogRef.afterClosed()

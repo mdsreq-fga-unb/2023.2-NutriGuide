@@ -27,5 +27,12 @@ export class NutricionistaService {
     return this.httpClient.get<UsuarioNutricionista>(`${this.rota}-nome?nome=${nome}`).pipe(take(1));
   }
 
+  // filtra por query param
+  getAllNutriFiltered(nome: string, especialidade: string, regiao: string): Observable<UsuarioNutricionista[]> {
+    return this.httpClient.get<UsuarioNutricionista[]>(
+      `${this.rota}-filtro?nome=${nome}&especialidade=${especialidade}&regiao=${regiao}`
+    ).pipe(take(1));
+  }
+
 
 }

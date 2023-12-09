@@ -40,7 +40,7 @@ export class PaginaConsultaComponent implements OnInit {
     this.formulario = this.formBuilder.group({
       nome: [''],
       especialidade: [''],
-      cidadeRegiao: ['']
+      regiao: ['']
     });
   }
 
@@ -57,10 +57,7 @@ export class PaginaConsultaComponent implements OnInit {
   }
 
   submeterFormulario(): void {
-    const values = this.formulario.value;   // pega os dados do formulário
-    console.log('Dados do formulário: ', values);
-
-    // passar esses dados por query param e fazer a logica no backend
+    const values = this.formulario.value;
 
     // abrir o dialog:
     const dialogRef = this.dialog.open(ConsultarNutricionistasComponent, {
@@ -73,6 +70,8 @@ export class PaginaConsultaComponent implements OnInit {
       this.snackbar.open('Pop-up de consultar nutricionistas fechado!', 'OK', {
         duration:3000
       });
+
+      this.formulario.reset();
     });
   }
 
