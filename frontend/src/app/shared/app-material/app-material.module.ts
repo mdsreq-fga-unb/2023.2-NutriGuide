@@ -5,6 +5,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [],
@@ -14,7 +15,8 @@ import { MatInputModule } from '@angular/material/input';
     MatDialogModule,
     MatSnackBarModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ]
 })
 export class AppMaterialModule { }

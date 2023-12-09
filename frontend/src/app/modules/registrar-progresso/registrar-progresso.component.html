@@ -8,45 +8,45 @@
     <form class="formulario" [formGroup]="this.formulario">
 
         <section class="inputs">
-            <div class="input-item">
-                <p>Peso</p>
-                <input type="number" placeholder="Em Kg" formControlName="peso">
-            </div>
+            <mat-form-field class="input-item" appearance="outline">
+                <mat-label>Peso</mat-label>
+                <input matInput type="number" placeholder="Em Kg" formControlName="peso">
+            </mat-form-field>
 
-            <div class="input-item">
-                <p>Principal Objetivo/Queixa</p>
-                <input type="text" placeholder="Ex.: Emagrecimento" formControlName="queixa">
-            </div>
+            <mat-form-field class="input-item" appearance="outline">
+                <mat-label>Principal Objetivo/Queixa</mat-label>
+                <input matInput type="text" placeholder="Ex.: Emagrecimento" formControlName="queixa">
+            </mat-form-field>
 
         </section>
 
         <section class="text-area">
-            <div class="text-area-item">
-                <p>Medidas Corporais</p>
-                <textarea name="" id="" cols="30" rows="10" formControlName="medidasCorporais"
+            <mat-form-field class="text-area-item" appearance="outline">
+                <mat-label>Medidas Corporais</mat-label>
+                <textarea matInput name="" id="" cols="30" rows="10" formControlName="medidasCorporais"
                 placeholder="Ex.: Cintura - 70 cm, Abdômen - 85 cm, Quadril - 100 cm."></textarea>
-            </div>
+            </mat-form-field>
 
-            <div class="text-area-item">
-                <p>Hábitos Alimentares</p>
-                <textarea name="" id="" cols="30" rows="10" formControlName="habitosAlimentares"
+            <mat-form-field class="text-area-item" appearance="outline">
+                <mat-label>Hábitos Alimentares</mat-label>
+                <textarea matInput name="" id="" cols="30" rows="10" formControlName="habitosAlimentares"
                 placeholder="Ex.: Preferências a doces"></textarea>
-            </div>
+            </mat-form-field>
 
         </section>
 
         <section class="text-area">
-            <div class="text-area-item">
-                <p>Nível de Atividade Física</p>
-                <textarea name="" id="" cols="30" rows="10" formControlName="atividade"
+            <mat-form-field class="text-area-item" appearance="outline">
+                <mat-label>Nível de Atividade Física</mat-label>
+                <textarea matInput name="" id="" cols="30" rows="10" formControlName="atividade"
                 placeholder="Atividade e frequência por semana"></textarea>
-            </div>
+            </mat-form-field>
 
-            <div class="text-area-item">
-                <p>Suplementação Atual</p>
-                <textarea name="" id="" cols="30" rows="10" formControlName="suplementacao"
+            <mat-form-field class="text-area-item" appearance="outline">
+                <mat-label>Suplementação Atual</mat-label>
+                <textarea matInput name="" id="" cols="30" rows="10" formControlName="suplementacao"
                 placeholder="Qual suplementação o paciente está tomando"></textarea>
-            </div>
+            </mat-form-field>
         </section>
 
         <div class="botoes">

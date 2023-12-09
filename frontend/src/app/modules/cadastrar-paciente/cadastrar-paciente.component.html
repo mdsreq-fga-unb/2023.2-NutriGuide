@@ -7,79 +7,80 @@
     <form class="formulario" [formGroup]="this.formulario">
 
         <section class="inputs">
-            <div class="input-item">
-                <p>Nome do Paciente</p>
-                <input type="text" placeholder="Nome Completo" formControlName="nome">
-            </div>
+            <mat-form-field class="input-item" appearance="outline">
+                <mat-label>Nome do Paciente</mat-label>
+                <input matInput type="text" placeholder="Nome Completo" formControlName="nome">
+            </mat-form-field>
 
-            <div class="input-item">
-                <p>Data de Nascimento</p>
-                <input type="date" formControlName="nascimento">
-            </div>
+            <mat-form-field class="input-item" appearance="outline">
+                <mat-label>Data de Nascimento</mat-label>
+                <input matInput  type="date" formControlName="nascimento">
+            </mat-form-field>
 
-            <div class="input-item">
-                <p>CEP</p>
-                <input type="number" placeholder="XXXXX-XXX" formControlName="cep">
-            </div>
+            <mat-form-field class="input-item" appearance="outline">
+                <mat-label>CEP</mat-label>
+                <input matInput type="number" placeholder="XXXXX-XXX" formControlName="cep">
+            </mat-form-field>
         </section>
 
         <section class="inputs">
-            <div class="input-item">
-                <p>Telefone</p>
-                <input type="text" placeholder="XX XXXX-XXXX" formControlName="telefone">
-            </div>
+            <mat-form-field class="input-item" appearance="outline">
+                <mat-label>Telefone</mat-label>
+                <input matInput type="text" placeholder="XX XXXX-XXXX" formControlName="telefone">
+            </mat-form-field>
 
-            <div class="input-item">
-                <p>E-mail</p>
-                <input type="text" placeholder="paciente@email.com" formControlName="email">
-            </div>
+            <mat-form-field class="input-item" appearance="outline">
+                <mat-label>E-mail</mat-label>
+                <input matInput type="text" placeholder="paciente@email.com" formControlName="email">
+            </mat-form-field>
 
-            <div class="input-item">
-                <p>Principal Objetivo/Queixa</p>
-                <input type="text" placeholder="Ex.: Emagrecimento" formControlName="objetivo">
-            </div>
+            <mat-form-field class="input-item" appearance="outline">
+                <mat-label>Principal Objetivo/Queixa</mat-label>
+                <input matInput type="text" placeholder="Ex.: Emagrecimento" formControlName="objetivo">
+            </mat-form-field>
         </section>
 
         <section class="inputs">
-            <div class="input-item">
-                <p>Altura</p>
-                <input type="number" placeholder="Em metros" formControlName="altura">
-            </div>
+            <mat-form-field class="input-item" appearance="outline">
+                <mat-label>Altura</mat-label>
+                <input matInput type="number" placeholder="Em metros" formControlName="altura">
+            </mat-form-field>
 
-            <div class="input-item">
-                <p>Peso</p>
-                <input type="number" placeholder="Em Kg" formControlName="peso">
-            </div>
+            <mat-form-field class="input-item" appearance="outline">
+                <mat-label>Peso</mat-label>
+                <input matInput type="number" placeholder="Em Kg" formControlName="peso">
+            </mat-form-field>
 
-            <div class="input-item">
-                <p>CPF</p>
-                <input type="number" placeholder="Informe o cpf do paciente" formControlName="cpf">
-            </div>
+            <mat-form-field class="input-item" appearance="outline">
+                <mat-label>CPF</mat-label>
+                <input matInput type="number" placeholder="Informe o cpf do paciente" formControlName="cpf">
+            </mat-form-field>
             
         </section>
 
         <section>
-            <div class="input-item">
-                <p>Gênero</p>
-                <select name="genero" matTooltip="Informe o gênero" formControlName="genero">
-                    <option value="M">Masculino</option>
-                    <option value="F">Feminino</option>
-                </select>
-            </div>
+            <mat-form-field style="width: 98%;" class="input-item" appearance="outline">
+                <mat-label>Gênero</mat-label>
+                <mat-select matInput name="genero" matTooltip="Informe o gênero" formControlName="genero">
+                    <mat-option value="M">Masculino</mat-option>
+                    <mat-option value="F">Feminino</mat-option>
+                </mat-select>
+            </mat-form-field>
         </section>
 
         <section class="text-area">
-            <div class="text-area-item">
-                <p>Doenças/ Comorbidade</p>
-                <textarea name="" id="" cols="30" rows="10" formControlName="doencas"
-                placeholder="Campo para mencionar informações complementares ou pertinentes"></textarea>
-            </div>
 
-            <div class="text-area-item">
-                <p>Medicações Administradas</p>
-                <textarea name="" id="" cols="30" rows="10" formControlName="medicacoes"
+            <mat-form-field class="text-area-item" appearance="outline">
+                <mat-label>Doenças/ Comorbidade</mat-label>
+                <textarea matInput name="" id="" cols="30" rows="10" formControlName="doencas"
                 placeholder="Campo para mencionar informações complementares ou pertinentes"></textarea>
-            </div>
+            </mat-form-field>
+
+            <mat-form-field class="text-area-item" appearance="outline">
+                <mat-label>Medicações Administradas</mat-label>
+                <textarea matInput name="" id="" cols="30" rows="10" formControlName="medicacoes"
+                placeholder="Campo para mencionar informações complementares ou pertinentes"></textarea>
+            </mat-form-field>
         </section>
 
         <div class="botoes">
