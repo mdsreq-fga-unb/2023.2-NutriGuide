@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import UsuarioPaciente from 'src/app/interfaces/UsuarioPaciente';
 import { PacienteService } from 'src/app/services/paciente-service/paciente.service';
 
@@ -16,7 +17,8 @@ export class CadastrarPacienteComponent implements OnInit {
   constructor(
     public dialogRef: MatDialogRef<CadastrarPacienteComponent>,
     private formBuilder: FormBuilder,
-    private pacienteService: PacienteService
+    private pacienteService: PacienteService,
+    private snackbar: MatSnackBar
   ) {}
 
   ngOnInit(): void {
@@ -66,6 +68,11 @@ export class CadastrarPacienteComponent implements OnInit {
 
     this.pacienteService.insert(paciente).subscribe((r) => {
       this.dialogRef.close(paciente);
+    }, 
+    (err) => {
+      this.snackbar.open('Preencha todos os campos corretamente!', 'OK', {
+        duration: 3000
+      });
     });
   }
 

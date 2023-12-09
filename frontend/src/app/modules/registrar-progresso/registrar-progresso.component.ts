@@ -67,11 +67,9 @@ export class RegistrarProgressoComponent implements OnInit {
       this.dialogRef.close();
     },
     (err) => {
-      this.snackbar.open(err.msg, 'OK', {
+      this.snackbar.open('Preencha todos os campos corretamente!', 'OK', {
         duration: 3000
       });
-
-      this.dialogRef.close();
     });
 
   }
