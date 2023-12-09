@@ -4,11 +4,18 @@ import mysql from 'mysql2';
 import usuario from '../resource/SQL/usuario.json'
 import nutricionista from '../resource/SQL/nutricionista.json'
 import paciente from '../resource/SQL/paciente.json'
+import progressoPaciente from "../resource/SQL/progressoPaciente.json"
+import alimento from "../resource/SQL/alimento.json"
+import avaliacao from "../resource/SQL/avaliacao.json"
+import comentario from "../resource/SQL/comentario.json"
+import planoAlimentar from "../resource/SQL/planoAlimentar.json"
+import post from "../resource/SQL/post.json"
+import refeicao from "../resource/SQL/refeicao.json"
 import Usuario from "../models/Usuario";
 import UsuarioPaciente from "../models/UsuarioPaciente";
 import UsuarioNutricionista from "../models/UsuarioNutricionista";
 import ProgressoPaciente from "../models/ProgressoPaciente";
-import progressoPaciente from "../resource/SQL/progressoPaciente.json"
+import Refeicao from "../models/Refeicao";
 
 export default class Repository {
 
@@ -233,6 +240,22 @@ export default class Repository {
                         resolve(result?.[0]);
 
                         this.database.end();
+                    }
+            });
+        });
+    }
+
+    public async getAllRefeicoes(): Promise<Refeicao[] | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<Refeicao[]>(
+                refeicao.trazerTodas, 
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
                     }
             });
         });

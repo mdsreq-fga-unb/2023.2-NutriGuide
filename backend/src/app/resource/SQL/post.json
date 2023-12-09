@@ -1,0 +1,3 @@
+{
+    "trazerPorIdNutricionista": "SELECT * FROM tb_post where id_nutricionista = ?"
+}

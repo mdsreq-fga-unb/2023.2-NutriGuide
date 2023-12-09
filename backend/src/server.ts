@@ -113,7 +113,7 @@ app.get('/paciente', async (req, res) => {
 app.get('/paciente/:id', async (req, res) => {
     const { id } = req.params;
 
-    const service = new Service;
+    const service = new Service();
     const paciente = await service.getOnePaciente(id);
 
     if (paciente !== undefined) {
@@ -127,7 +127,7 @@ app.get('/paciente/:id', async (req, res) => {
 app.get('/paciente-nome', async (req, res) => {
     const { nome } = req.query;
 
-    const service = new Service;
+    const service = new Service();
     const paciente = await service.getOnePacienteByNomeUser(String(nome));
 
     if (paciente !== undefined) {
@@ -141,14 +141,14 @@ app.get('/paciente-nome', async (req, res) => {
 app.post('/paciente', async (req, res) => {
     const paciente: UsuarioPaciente = req.body;
 
-    const service = new Service;
+    const service = new Service();
     await service.insertPaciente(paciente);
 
     res.status(200).json({msg: 'Paciente inserido com sucesso!'});
 });
 
 app.get('/nutricionista', async (req, res) => {
-    const service = new Service;
+    const service = new Service();
     const nutricionista = await service.getAllNutricionistas();
 
     res.status(200).json(nutricionista);
@@ -157,7 +157,7 @@ app.get('/nutricionista', async (req, res) => {
 app.get('/nutricionista/:id', async (req, res) => {
     const { id } = req.params;
 
-    const service = new Service;
+    const service = new Service();
     const nutricionista = await service.getOneNutricionista(id);
 
     if (nutricionista !== undefined) {
@@ -171,7 +171,7 @@ app.get('/nutricionista/:id', async (req, res) => {
 app.get('/nutricionista-nome', async (req, res) => {
     const { nome } = req.query;
 
-    const service = new Service;
+    const service = new Service();
     const nutricionista = await service.getOneNutricionistaByNomeUser(String(nome));
 
     if (nutricionista !== undefined) {
@@ -185,7 +185,7 @@ app.get('/nutricionista-nome', async (req, res) => {
 app.get('/progresso-paciente/:idPaciente', async (req, res) => {
     const { idPaciente } = req.params;
 
-    const service = new Service;
+    const service = new Service();
     const progresso: ProgressoPaciente[] | undefined = await service.getProgressoByIdPaciente(idPaciente);
 
     if (progresso !== undefined) {
@@ -204,6 +204,13 @@ app.post('/progresso-paciente', async (req, res) => {
     await service.insertProgressoPaciente(progressoPaciente);
 
     res.json({ msg: 'Progresso do paciente registrado com sucesso!' });
+});
+
+app.get('/refeicao', async (req, res) => {
+    const service = new Service();
+    const refeicao = await service.getAllRefeicoes();
+
+    res.status(200).json(refeicao);
 });
 
 

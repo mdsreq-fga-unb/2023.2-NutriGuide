@@ -60,4 +60,8 @@ export default class Service {
         return await this.repository.insertProgressoPaciente(progresso);
     }
 
+    public async getAllRefeicoes() {
+        return await this.repository.getAllRefeicoes();
+    }
+
 }
