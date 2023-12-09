@@ -72,6 +72,8 @@ export class PaginaConsultaComponent implements OnInit {
       });
 
       this.formulario.reset();
+      this.criarFormulario();
+
     });
   }
 

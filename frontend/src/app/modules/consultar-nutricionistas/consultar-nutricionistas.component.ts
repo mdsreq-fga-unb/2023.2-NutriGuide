@@ -6,8 +6,8 @@ import { NutricionistaService } from 'src/app/services/nutricionista-service/nut
 
 interface FomularioConsulta {
   nome: string;
-  regiao: string;
   especialidade: string;
+  regiao: string;
 }
 
 
@@ -31,7 +31,6 @@ export class ConsultarNutricionistasComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    console.log(this.dadosFomulario);
     this.buscarNutricionistas();
   }
 
@@ -39,6 +38,8 @@ export class ConsultarNutricionistasComponent implements OnInit {
     const nome = this.dadosFomulario.nome;
     const especialidade = this.dadosFomulario.especialidade;
     const regiao = this.dadosFomulario.regiao;
+
+    console.log(nome, especialidade, regiao);
 
     this.nutricionistaService.getAllNutriFiltered(nome, especialidade, regiao).subscribe((n) => {
       this.nutricionistaList = n;
