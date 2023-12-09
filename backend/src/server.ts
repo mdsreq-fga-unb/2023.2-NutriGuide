@@ -259,7 +259,7 @@ app.post('/plano-alimentar', async (req, res) => {
     const service = new Service();
     await service.insertPlanoAlimentar(plano);
 
-    res.status(200).json({msg: 'Plano alimentar criado com sucesso!'});
+    res.status(200).json({msg: 'Nome do plano alimentar criado com sucesso!'});
 });
 
 app.listen(3000, () => {
