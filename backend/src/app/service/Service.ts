@@ -28,8 +28,8 @@ export default class Service {
         await this.repository.insertPaciente(paciente, retorno!.id_usuario);
     }
 
-    public async getAllPacientes() {
-        return await this.repository.getAllPacientes();
+    public async getAllPacientesByNutriName(responsavel: string) {
+        return await this.repository.getAllPacientesByNutriName(responsavel);
     }
 
     public async getOnePaciente(idPaciente: string) {

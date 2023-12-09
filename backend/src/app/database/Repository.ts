@@ -96,7 +96,7 @@ export default class Repository {
         return new Promise((resolve, reject) => {
             this.database.query<User[]>(
                 paciente.inserir, 
-                [userPaciente.peso, userPaciente.altura, userPaciente.queixa, userPaciente.comorbidades, userPaciente.medicacoes, idUsuario], 
+                [userPaciente.peso, userPaciente.altura, userPaciente.queixa, userPaciente.comorbidades, userPaciente.medicacoes, idUsuario, userPaciente.nutricionista_responsavel], 
                 (err, result) => {
                     if (err) {
                         reject(err);
@@ -111,10 +111,11 @@ export default class Repository {
         });
     }
 
-    getAllPacientes(): Promise<UsuarioPaciente[] | undefined> {
+    getAllPacientesByNutriName(responsavel: string): Promise<UsuarioPaciente[] | undefined> {
         return new Promise((resolve, reject) => {
             this.database.query<UsuarioPaciente[]>(
-                paciente.trazerTodos,  
+                paciente.trazerTodos,
+                [responsavel],  
                 (err, result) => {
                     if (err) {
                         reject(err);

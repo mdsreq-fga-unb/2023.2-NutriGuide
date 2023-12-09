@@ -48,6 +48,8 @@ export class CadastrarPacienteComponent implements OnInit {
   }
 
   registrar(): void {
+    const responsavel: string = String(localStorage.getItem('nome'));
+
     const paciente: UsuarioPaciente = {
       id_usuario: 0,
       cpf:  Number(this.formulario.value.cpf),
@@ -63,7 +65,8 @@ export class CadastrarPacienteComponent implements OnInit {
       altura: Number(this.formulario.value.altura),
       queixa: this.formulario.value.objetivo,
       comorbidades: this.formulario.value.doencas,
-      medicacoes: this.formulario.value.medicacoes
+      medicacoes: this.formulario.value.medicacoes,
+      nutricionista_responsavel: responsavel
     }
 
     this.pacienteService.insert(paciente).subscribe((r) => {

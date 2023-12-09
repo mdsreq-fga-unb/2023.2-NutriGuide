@@ -106,8 +106,10 @@ function checkToken(req: Request, res: Response, next: NextFunction) {
 }
 
 app.get('/paciente', async (req, res) => {
+    const { responsavel } = req.query;
+
     const service = new Service;
-    const pacientes = await service.getAllPacientes();
+    const pacientes = await service.getAllPacientesByNutriName(String(responsavel));
 
     res.status(200).json(pacientes);
 });

@@ -14,6 +14,7 @@ export default interface UsuarioPaciente {
     queixa: string;
     comorbidades: string;
     medicacoes: string;
+    nutricionista_responsavel: string;
     nome_foto?: string;
     dado_foto?: string
 }

@@ -16,7 +16,9 @@ export class PacienteService {
   ) { }
 
   getAll(): Observable<UsuarioPaciente[]> {
-    return this.httpClient.get<UsuarioPaciente[]>(this.rota).pipe(take(1));
+    const responsavel = String(localStorage.getItem('nome'));
+
+    return this.httpClient.get<UsuarioPaciente[]>(`${this.rota}?responsavel=${responsavel}`).pipe(take(1));
   }
 
   getOne(idPaciente: number): Observable<UsuarioPaciente> {

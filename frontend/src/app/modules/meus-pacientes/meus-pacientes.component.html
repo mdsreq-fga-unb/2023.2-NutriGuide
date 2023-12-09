@@ -8,50 +8,66 @@
     <app-header></app-header>
 
     <div class="container">
-    
+
         <div class="title">
             <p>Pacientes Cadastrados</p>
-    
+
             <!-- Adicionar funcionalidade -->
             <button (click)="abrirDialogCadatrar()">
                 Cadastrar Paciente
             </button>
         </div>
-    
+
         <div class="table">
             <div class="table-header">
-    
+
                 <table>
                     <tr>
                         <th *ngFor="let coluna of colunas">{{ coluna }}</th>
                     </tr>
                 </table>
-        
+
             </div>
-        
+
             <div class="table-body">
-        
-                <table>
+
+                <ng-container *ngIf="pacientesList.length > 0 else semConteudo">
+
+                    <table>
                         <tr *ngFor="let paciente of pacientesList">
                             <td>{{ paciente.nome_usuario }}</td>
                             <td>{{ paciente.data_nascimento | date }}</td>
                             <td>{{ paciente.telefone }}</td>
                             <td>{{ paciente.comorbidades }}</td>
                             <td>
-                                <button style="margin-right: 5px;" (click)="abrirDialogDetalhar(paciente)" matTooltip="Detalhar Paciente">
+                                <button style="margin-right: 5px;" (click)="abrirDialogDetalhar(paciente)"
+                                    matTooltip="Detalhar Paciente">
                                     <mat-icon>search</mat-icon>
                                 </button>
-                                <button style="margin-left: 5px;" (click)="irInfoPaciente(paciente.id_paciente)" matTooltip="Informações do paciente">
+                                <button style="margin-left: 5px;" (click)="irInfoPaciente(paciente.id_paciente)"
+                                    matTooltip="Informações do paciente">
                                     <mat-icon>person</mat-icon>
                                 </button>
                             </td>
                         </tr>
-                </table>
+                    </table>
+
+                </ng-container>
+
+                <ng-template #semConteudo>
+
+                    <div class="table-sem-conteudo">
+                        <h2>Você ainda não cadastrou nenhum paciente no sistema!</h2>
+                    </div>
+
+                </ng-template>
+
+
             </div>
         </div>
-    
+
         <div class="table-footer"></div>
-    
+
     </div>
 
 </ng-template>
