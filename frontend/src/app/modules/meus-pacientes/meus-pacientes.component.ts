@@ -69,7 +69,7 @@ export class MeusPacientesComponent implements OnInit {
       height: '800px'
     });
 
-    dialogRef.afterClosed().pipe(take(1)).subscribe((value) => {
+    dialogRef.afterClosed().pipe(take(1)).subscribe(() => {
         this.snackbar.open('Pop-up de detalhar paciente fechado!', 'OK', {
           duration: 3000
         });
