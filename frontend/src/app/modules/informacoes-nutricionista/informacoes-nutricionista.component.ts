@@ -3,6 +3,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import UsuarioNutricionista from 'src/app/interfaces/UsuarioNutricionista';
 import { NutricionistaService } from 'src/app/services/nutricionista-service/nutricionista.service';
+import { MatDialog } from '@angular/material/dialog';
+import { AdicionarAvaliacaoComponent } from '../adicionar-avaliacao/adicionar-avaliacao.component';
+import { Constantes } from 'src/app/shared/constantes/constantes';
+import { AvaliacoesComponent } from '../avaliacoes/avaliacoes.component';
 
 @Component({
   selector: 'app-informacoes-nutricionista',
@@ -16,12 +20,14 @@ export class InformacoesNutricionistaComponent implements OnInit {
   imagem: string = '';
   idNutricionista!: number;
   nutricionista!: UsuarioNutricionista;
+  role: string = Constantes.getRole();
 
   constructor(
     private nutricionistaService: NutricionistaService,
     private router: Router,
     private route: ActivatedRoute,
-    private location: Location
+    private location: Location,
+    private dialog: MatDialog
   ) {}
 
   ngOnInit(): void {
@@ -48,6 +54,22 @@ export class InformacoesNutricionistaComponent implements OnInit {
 
   irParaTelaAnterior(): void {
     this.location.back();
+  }
+
+  avaliarNutricionista(nutricionista: UsuarioNutricionista): void {
+    const dialogRef = this.dialog.open(AdicionarAvaliacaoComponent, {
+      data: nutricionista,
+      width: '600px',
+      height: '600px'
+    });
+  }
+
+  abrirAvaliacoesNutricionista(nutricionista: UsuarioNutricionista): void {
+    const dialogRef = this.dialog.open(AvaliacoesComponent, {
+      data: nutricionista,
+      width: '1000px',
+      height: '700px'
+    });
   }
 
 }

@@ -73,7 +73,23 @@
                     </div>
 
                     <div class="func-button">
-                        <button>Avaliações</button>
+                        <button (click)="abrirAvaliacoesNutricionista(nutricionista)">Avaliações</button>
+
+                        <ng-container *ngIf="this.role === 'paciente'">
+
+                            <div class="botao-icone">
+                                <button 
+                                    matTooltip="Avaliar nutricionista"
+                                    (click)="avaliarNutricionista(nutricionista)"
+                                >
+                                    <mat-icon>
+                                        star_half
+                                    </mat-icon>
+                                </button>
+                            </div>
+
+                        </ng-container>
+                        
                     </div>
                 </div>
             </section>

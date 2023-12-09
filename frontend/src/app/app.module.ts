@@ -23,7 +23,10 @@ import { ProgressoPacienteComponent } from './modules/progresso-paciente/progres
 import { RegistrarProgressoComponent } from './modules/registrar-progresso/registrar-progresso.component';
 import { ConsultarPlanoComponent } from './modules/consultar-plano/consultar-plano.component';
 import { CriarPlanoComponent } from './modules/criar-plano/criar-plano.component';
-import { InserirAlimentoComponent } from './modules/inserir-alimento/inserir-alimento.component'
+import { InserirAlimentoComponent } from './modules/inserir-alimento/inserir-alimento.component';
+import { AvaliacoesComponent } from './modules/avaliacoes/avaliacoes.component';
+import { AdicionarAvaliacaoComponent } from './modules/adicionar-avaliacao/adicionar-avaliacao.component';
+import { MeuPlanoAlimentarComponent } from './modules/meu-plano-alimentar/meu-plano-alimentar.component'
 
 @NgModule({
   declarations: [
@@ -44,7 +47,10 @@ import { InserirAlimentoComponent } from './modules/inserir-alimento/inserir-ali
     RegistrarProgressoComponent,
     ConsultarPlanoComponent,
     CriarPlanoComponent,
-    InserirAlimentoComponent
+    InserirAlimentoComponent,
+    AvaliacoesComponent,
+    AdicionarAvaliacaoComponent,
+    MeuPlanoAlimentarComponent
   ],
   imports: [
     AppRoutingModule,

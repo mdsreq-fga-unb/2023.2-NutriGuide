@@ -7,6 +7,8 @@ import { NutricionistaService } from 'src/app/services/nutricionista-service/nut
 import { PacienteService } from 'src/app/services/paciente-service/paciente.service';
 import UsuarioNutricionista from 'src/app/interfaces/UsuarioNutricionista';
 import UsuarioPaciente from 'src/app/interfaces/UsuarioPaciente';
+import { MeuPlanoAlimentarComponent } from '../meu-plano-alimentar/meu-plano-alimentar.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-informacoes-pessoais',
@@ -27,7 +29,8 @@ export class InformacoesPessoaisComponent implements OnInit {
     private route: ActivatedRoute,
     private location: Location,
     private nutricionistaService: NutricionistaService,
-    private pacienteService: PacienteService
+    private pacienteService: PacienteService,
+    private dialog: MatDialog
   ) {}
 
   ngOnInit(): void {
@@ -89,6 +92,14 @@ export class InformacoesPessoaisComponent implements OnInit {
         // após isso eu faço uma lógica de salvar a imagem no banco:
       };
     }
+  }
+
+  abrirVisualizarPlano(): void {
+    const dialogRef = this.dialog.open(MeuPlanoAlimentarComponent, {
+      data: this.usuarioPaciente,
+      width: '1000px',
+      height: '700px'
+    });
   }
 
 }

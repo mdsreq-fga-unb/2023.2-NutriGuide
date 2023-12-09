@@ -6,6 +6,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [],
@@ -16,7 +17,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatSnackBarModule,
     MatIconModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSliderModule
   ]
 })
 export class AppMaterialModule { }

@@ -1,0 +1,63 @@
+<ng-container *ngIf="load === false else loaded">
+    <app-spinner></app-spinner>
+</ng-container>
+
+
+<ng-template #loaded>
+
+    <ng-container *ngIf="this.avaliacoes.length === 0 else possuiAvaliacoes">
+        <div class="container">
+            <div class="header">
+                <h3>Nutricionista: {{nutricionista.nome_usuario}}</h3>
+                <h1>Avaliações do Nutricionista</h1>
+            </div>
+
+            <div class="body-sem-conteudo">
+                <h2>
+                    O nutricionista ainda não foi avaliado por nenhum paciente!
+                </h2>
+            </div>
+
+            <div class="footer">
+                <button (click)="fechar()">Fechar</button>
+            </div>
+        </div>
+    </ng-container>
+
+    <ng-template #possuiAvaliacoes>
+        <div class="container">
+            <div class="header">
+                <h3>Nutricionista: {{nutricionista.nome_usuario}}</h3>
+                <h1>Avaliações do Nutricionista</h1>
+            </div>
+
+            <ng-container *ngFor="let avaliacao of avaliacoes">
+
+                <div class="body-conteudo">
+
+                    <mat-form-field class="input" appearance="outline">
+                        <mat-label>Comentário:</mat-label>
+                        <input 
+                            type="text" 
+                            matInput 
+                            disabled 
+                            [value]="avaliacao.avaliacao"
+                        >
+                    </mat-form-field>
+
+                    <mat-label matTooltip="Nota de 0 à 10">Nota do Nutricionista: {{ avaliacao.nota_nutricionista }}</mat-label>
+
+                </div>
+
+            </ng-container>
+
+
+
+            <div class="footer">
+                <button (click)="fechar()">Fechar</button>
+            </div>
+        </div>
+    </ng-template>
+
+
+</ng-template>

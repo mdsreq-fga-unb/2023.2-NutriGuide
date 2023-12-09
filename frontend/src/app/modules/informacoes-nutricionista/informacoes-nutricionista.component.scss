@@ -152,6 +152,18 @@
     }
 }
 
+.botao-icone {
+    padding: 10px 10px 0 0;
+    justify-content: end;
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+    }
+}
+
 .botoes {
     display: flex;
     justify-content: space-between;

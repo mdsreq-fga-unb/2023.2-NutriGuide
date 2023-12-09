@@ -22,7 +22,7 @@ export class Constantes {
 
         if (role === 'nutricionista') {
             return 'nutricionista';
-        } else if (role === 'nutricionista') {
+        } else if (role === 'paciente') {
             return 'paciente';
         } else {
             return 'usuario default';

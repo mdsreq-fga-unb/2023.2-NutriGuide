@@ -8,13 +8,12 @@
     <ng-container *ngIf="this.alimentosPlanoAlimentarList.length === 0 else possuiPlano">
         <div class="container">
             <div class="header">
-                <h3>Paciente: {{paciente.nome_usuario}}</h3>
-                <h1>{{ planoAlimentarNome }}</h1>
+                <h1>Informações sobre seu Plano Alimentar</h1>
             </div>
 
             <div class="body-sem-conteudo">
                 <h2>
-                    O paciente, ainda não possui nenhum registro de plano alimentar!
+                    {{ this.paciente.nome_usuario }}, seu nutricionista ainda não fez nenhum registro de plano alimentar para você...
                 </h2>
             </div>
 
@@ -29,13 +28,12 @@
 
             <div class="header-container">
                 <div class="header">
-                    <h3>Paciente: {{paciente.nome_usuario}}</h3>
-                    <h1>Plano Alimentar do Paciente</h1>
+                    <h1>Seu Plano Alimentar</h1>
                 </div>
 
                 <div class="pdf-download">
                     <button 
-                        [matTooltip]="'Clique aqui para baixar as informações do plano de ' + paciente.nome_usuario"
+                        matTooltip="Clique aqui para baixar as informações do seu plano alimentar"
                     >
                         <mat-icon>download</mat-icon>
                     </button>

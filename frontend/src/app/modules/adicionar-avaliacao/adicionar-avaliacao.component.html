@@ -1,0 +1,38 @@
+<ng-container *ngIf="load === false else loaded">
+    <app-spinner></app-spinner>
+</ng-container>
+
+<ng-template #loaded>
+
+    <div class="container">
+        <div class="title">
+            <h2>Avaliar Nutricionista: {{ nutricionista.nome_usuario }}</h2>
+        </div>
+    
+            <form class="input" [formGroup]="formulario">
+    
+                <mat-form-field style="width: 70%;" matTooltip="Texto da avaliação" appearance="outline">
+                    <mat-label>Texto</mat-label>
+                    <textarea matInput name="" id="" cols="30" rows="10" formControlName="conteudo"></textarea>
+                </mat-form-field>
+        
+                <mat-form-field style="width: 35%;" matTooltip="Nota do nutricionista de 0 a 10" appearance="outline">
+                    <mat-label>Nota</mat-label>
+                    <input type="number" matInput formControlName="nota">
+                </mat-form-field>
+        
+            </form>
+    
+            <div class="registrar">
+                <button (click)="cancelar()">
+                    Cancelar
+                </button>
+    
+                <button (click)="avaliar()">
+                    Avaliar
+                </button>
+            </div>
+        
+    </div>
+
+</ng-template>
