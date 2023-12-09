@@ -46,6 +46,10 @@ export default class Service {
         return await this.repository.getOneNutricionistaByNomeUser(nome);
     }
 
+    public async getAllNutricionistasFiltered(nome: string, especialidade: string, regiao: string) {
+        return await this.repository.getAllNutricionistasFiltered(nome, especialidade, regiao);
+    }
+
     public async getOnePacienteByNomeUser(nome: string) {
         return await this.repository.getOnePacienteByNomeUser(nome);
     }

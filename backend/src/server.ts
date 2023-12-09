@@ -182,6 +182,20 @@ app.get('/nutricionista-nome', async (req, res) => {
     
 });
 
+app.get('/nutricionista-filtro', async (req, res) => {
+    const { nome, especialidade, regiao } = req.query;
+
+    const service = new Service();
+    const nutricionistas = await service.getAllNutricionistasFiltered(String(nome), String(especialidade), String(regiao));
+
+    if (nutricionistas !== undefined) {
+        res.status(200).json(nutricionistas);
+    } else {
+        res.status(404).json({ msg: 'Não foi encontrado nenhum nutricionista com os parametros aplicados!' })
+    }
+    
+});
+
 app.get('/progresso-paciente/:idPaciente', async (req, res) => {
     const { idPaciente } = req.params;
 

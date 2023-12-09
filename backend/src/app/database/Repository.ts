@@ -192,6 +192,34 @@ export default class Repository {
         });
     }
 
+    getAllNutricionistasFiltered(nome: string, especialidade: string, regiao: string): Promise<UsuarioNutricionista[] | undefined> {
+        let query: string = nutricionista.trazerFiltrados;
+
+        if (nome !== '') {
+            query += ` AND nome_usuario LIKE '%` + nome + `%'`;
+        } else if (especialidade !== '') {
+            query += ` AND especialidade LIKE '%` + especialidade + `%'`;
+        } else if (regiao !== '') {
+            query += ` AND regiao LIKE '%` + regiao + `%'`;
+        }
+
+        query += ' ORDER BY id_nutricionista DESC';
+
+        return new Promise((resolve, reject) => {
+            this.database.query<UsuarioNutricionista[]>(
+                query,  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+                    }
+            });
+        });
+    }
+
     getOnePacienteByNomeUser(nome: string): Promise<UsuarioNutricionista | undefined> {
         return new Promise((resolve, reject) => {
             this.database.query<UsuarioNutricionista[]>(
