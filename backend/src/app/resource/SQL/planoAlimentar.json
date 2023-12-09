@@ -1,3 +1,4 @@
 {
-    
+    "inserir": "INSERT INTO tb_plano_alimentar (id_paciente, nome_plano) VALUES (?, ?)",
+    "trazerPlanoPorIdPaciente": "SELECT * FROM tb_alimento INNER JOIN tb_plano_alimentar USING (id_plano) WHERE id_paciente = ?"
 }

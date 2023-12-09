@@ -6,6 +6,8 @@ import User from './app/models/Usuario';
 import UsuarioPaciente from './app/models/UsuarioPaciente';
 import Service from './app/service/Service';
 import ProgressoPaciente from './app/models/ProgressoPaciente';
+import Alimento from './app/models/Alimento';
+import PlanoAlimentar from './app/models/PlanoAlimentar';
 
 const app = express();
 
@@ -227,6 +229,36 @@ app.get('/refeicao', async (req, res) => {
     res.status(200).json(refeicao);
 });
 
+app.post('/alimento', async (req, res) => {
+    const alimento: Alimento = req.body;
+
+    const service = new Service();
+    await service.insertAlimento(alimento);
+
+    res.status(200).json({msg: 'Alimento inserido com sucesso!'});
+});
+
+app.post('/plano-alimentar', async (req, res) => {
+    const plano: PlanoAlimentar = req.body;
+    
+    const service = new Service();
+    await service.insertPlanoAlimentar(plano);
+
+    res.status(200).json({msg: 'Plano alimentar criado com sucesso!'});
+});
+
+app.get('/plano-alimentar/:idPaciente', async (req, res) => {
+    const { idPaciente } = req.params;
+
+    const service = new Service();
+    const planoAlimentar = await service.getPlanoAlimentarByIdPaciente(idPaciente);
+
+    if (planoAlimentar !== undefined) {
+        res.status(200).json(planoAlimentar);
+    } else {
+        res.status(404).json({ msg: 'Não foi encontrado nenhum plano alimentar para o paciente!' })
+    }
+});
 
 app.listen(3000, () => {
     console.log('Rodando em "http://localhost:3000"');

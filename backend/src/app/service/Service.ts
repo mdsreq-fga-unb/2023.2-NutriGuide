@@ -1,4 +1,6 @@
 import Repository from "../database/Repository";
+import Alimento from "../models/Alimento";
+import PlanoAlimentar from "../models/PlanoAlimentar";
 import ProgressoPaciente from "../models/ProgressoPaciente";
 import Usuario from "../models/Usuario";
 import UsuarioPaciente from "../models/UsuarioPaciente";
@@ -54,8 +56,6 @@ export default class Service {
         return await this.repository.getOnePacienteByNomeUser(nome);
     }
 
-    // Implementar o filtro de nutricionistas com query param...
-
     public async getProgressoByIdPaciente(idPaciente: string) {
         return await this.repository.getProgressoByIdPaciente(idPaciente);
     }
@@ -66,6 +66,18 @@ export default class Service {
 
     public async getAllRefeicoes() {
         return await this.repository.getAllRefeicoes();
+    }
+
+    public async insertAlimento(alimento: Alimento) {
+        await this.repository.insertAlimento(alimento);
+    }
+
+    public async insertPlanoAlimentar(plano: PlanoAlimentar) {
+        await this.repository.insertPlanoAlimentar(plano);
+    }
+
+    public async getPlanoAlimentarByIdPaciente(idPaciente: string) {
+        return await this.repository.getPlanoAlimentarByIdPaciente(idPaciente);
     }
 
 }

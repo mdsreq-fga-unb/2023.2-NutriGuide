@@ -16,6 +16,8 @@ import UsuarioPaciente from "../models/UsuarioPaciente";
 import UsuarioNutricionista from "../models/UsuarioNutricionista";
 import ProgressoPaciente from "../models/ProgressoPaciente";
 import Refeicao from "../models/Refeicao";
+import Alimento from "../models/Alimento";
+import PlanoAlimentar from "../models/PlanoAlimentar";
 
 export default class Repository {
 
@@ -277,6 +279,61 @@ export default class Repository {
         return new Promise((resolve, reject) => {
             this.database.query<Refeicao[]>(
                 refeicao.trazerTodas, 
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+                    }
+            });
+        });
+    }
+
+    public async insertAlimento(alimen: Alimento): Promise<void> {
+        await new Promise((resolve, reject) => {
+            this.database.query(
+                alimento.inserir, 
+                [alimen.id_alimento, alimen.id_plano, alimen.id_refeicao, alimen.nome_alimento, alimen.quantidade_grama, alimen.qnt_carboidrato, alimen.qnt_proteina, alimen.qnt_gordura], 
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+
+                        this.database.end();
+                    }
+            });
+        });
+    }
+
+    public async insertPlanoAlimentar(plano: PlanoAlimentar): Promise<void> {
+        await new Promise((resolve, reject) => {
+            this.database.query(
+                planoAlimentar.inserir, 
+                [plano.id_paciente, plano.nome_plano], 
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result);
+
+                        this.database.end();
+                    }
+            });
+        });
+    }
+
+    getPlanoAlimentarByIdPaciente(idPaciente: string): Promise<PlanoAlimentar[] | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<PlanoAlimentar[]>(
+                planoAlimentar.trazerPlanoPorIdPaciente,
+                [idPaciente],  
                 (err, result) => {
                     if (err) {
                         reject(err);
