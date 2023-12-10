@@ -1,0 +1,100 @@
+<ng-container *ngIf="load === false else loaded">
+
+    <app-spinner></app-spinner>
+
+</ng-container>
+
+
+<ng-template #loaded>
+
+    <app-header></app-header>
+
+    <div class="container">
+
+        <div class="title">
+            <h1>Minha Comunidade</h1>
+
+            <div class="adicionar-post">
+                <button disabled>
+                    Adicionar Postagem
+                    <mat-icon>post_add</mat-icon>
+                </button>
+            </div>
+        </div>
+
+        <div class="body">
+
+            <ng-container *ngIf="postList.length > 0 else semPost">
+
+                <div *ngFor="let post of  postList" class="body-post">
+                    <div class="post">
+
+                        <div class="inputs">
+                            <div class="div-data">
+                                <mat-form-field class="data-postagem" appearance="outline">
+                                    <mat-label>Data da postagem</mat-label>
+                                    <input disabled matInput [value]="post.data_criacao | date">
+                                </mat-form-field>
+                            </div>
+
+                            <mat-form-field class="conteudo-postagem" appearance="outline">
+                                <mat-label>Conteúdo da Publicação</mat-label>
+                                <textarea matInput name="" id="" cols="30" rows="10" disabled
+                                    [value]="post.conteudo_post"></textarea>
+                            </mat-form-field>
+
+                            <ng-container *ngIf="post.link_iframe !== null">
+                                <div class="iframe-video" [innerHtml]="converterParaIframe(post.link_iframe)"></div>
+                            </ng-container>
+                        </div>
+
+                        <!--Passar um id para trazer apenas os comentários desse post:-->
+                        <ng-container *ngFor="let comentario of comentarios(post.id_post)">
+                            <div class="comentario">
+                                <mat-label>Comentário:</mat-label>
+                                <mat-divider></mat-divider>
+                                <div>
+                                    <h3>{{ comentario.conteudo}}</h3>
+                                </div>
+                                <mat-divider></mat-divider>
+                                <div class="comentario-footer">
+                                    <p><span>Comentado por:</span> {{ comentario.nome_usuario }}, {{ comentario.tipo_usuario }}</p>
+                                    <p><span>{{ comentario.data_criacao | date}}</span></p>
+                                </div>
+                            </div>
+                        </ng-container>
+
+                    </div>
+                </div>
+
+            </ng-container>
+
+            <ng-template #semPost>
+
+                <app-header></app-header>
+
+                <div class="body-title">
+                    <h3>Minha Comunidade</h3>
+                </div>
+
+                <div class="body-post">
+                    <div class="post">
+
+                        <h2 style="color: #F49320;">Você ainda não publicou nada!</h2>
+
+                    </div>
+                </div>
+
+            </ng-template>
+
+        </div>
+
+        <div class="footer">
+            <button (click)="voltar()">
+                Voltar
+            </button>
+        </div>
+
+    </div>
+
+</ng-template>

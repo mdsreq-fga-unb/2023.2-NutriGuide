@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [],
@@ -18,7 +19,8 @@ import { MatSliderModule } from '@angular/material/slider';
     MatIconModule,
     MatInputModule,
     MatSelectModule,
-    MatSliderModule
+    MatSliderModule,
+    MatDividerModule
   ]
 })
 export class AppMaterialModule { }

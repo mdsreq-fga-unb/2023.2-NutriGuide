@@ -4,6 +4,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
 import { take } from 'rxjs';
 import { LoginService } from 'src/app/services/login-service/login.service';
+import { NutricionistaService } from 'src/app/services/nutricionista-service/nutricionista.service';
 import { UsuarioService } from 'src/app/services/usuario-service/usuario.service';
 
 @Component({
@@ -21,7 +22,8 @@ export class LoginComponent implements OnInit {
     private route: ActivatedRoute,
     private loginService: LoginService,
     private snackBar: MatSnackBar,
-    private usuarioService: UsuarioService
+    private usuarioService: UsuarioService,
+    private nutricionistaService: NutricionistaService
   ) {}
 
   ngOnInit(): void {
@@ -61,7 +63,17 @@ export class LoginComponent implements OnInit {
         localStorage.setItem('role', user.tipo_usuario);
 
         if(user.tipo_usuario === 'nutricionista') {
-          this.router.navigate(['/consultar-pacientes']);  // vai para a página de meus pacientes
+
+          this.nutricionistaService.getAll().subscribe((nutri) => {
+            nutri.forEach((n) => {
+
+              if (n.id_usuario === user.id_usuario) {
+                localStorage.setItem('idNutri', n.id_nutricionista.toString());
+                
+                this.router.navigate(['/consultar-pacientes']);  // vai para a página de meus pacientes
+              }
+            });
+          });
         } else {
           this.router.navigate(['/inicio']);  // volta para a home
         }

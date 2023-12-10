@@ -62,16 +62,18 @@
             <mat-form-field class="text-area-item" appearance="outline">
                 <mat-label>Doenças/ Comorbidade</mat-label>
                 <textarea matInput name="" id="" cols="30" rows="10" disabled
-                placeholder="Campo para mencionar informações complementares ou pertinentes">
-                    {{ paciente.comorbidades }}
+                placeholder="Campo para mencionar informações complementares ou pertinentes"
+                [value]="paciente.comorbidades"
+                >
                 </textarea>
             </mat-form-field>
 
             <mat-form-field class="text-area-item" appearance="outline">
                 <mat-label>Medicações Administradas</mat-label>
                 <textarea matInput name="" id="" cols="30" rows="10" disabled
-                placeholder="Campo para mencionar informações complementares ou pertinentes">
-                    {{ paciente.medicacoes }}
+                placeholder="Campo para mencionar informações complementares ou pertinentes"
+                [value]="paciente.medicacoes"
+                >
                 </textarea>
             </mat-form-field>
 

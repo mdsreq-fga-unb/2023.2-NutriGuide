@@ -21,4 +21,8 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/informacoes-pessoais'], {relativeTo: this.route.parent});
   }
 
+  irParaMinhaComunidade(): void {
+    this.router.navigate(['/minha-comunidade', localStorage.getItem('idNutri')], {relativeTo: this.route.parent});
+  }
+
 }

@@ -102,4 +102,8 @@ export class InformacoesPessoaisComponent implements OnInit {
     });
   }
 
+  irParaMinhaComunidade(): void {
+    this.router.navigate(['/minha-comunidade', localStorage.getItem('idNutri')], {relativeTo: this.route.parent});
+  }
+
 }
