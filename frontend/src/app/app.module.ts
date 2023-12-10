@@ -30,7 +30,6 @@ import { MeuPlanoAlimentarComponent } from './modules/meu-plano-alimentar/meu-pl
 import { MinhaComunidadeComponent } from './modules/minha-comunidade/minha-comunidade.component';
 import { ComunidadeNutricionistaComponent } from './modules/comunidade-nutricionista/comunidade-nutricionista.component';
 import { CriarPostComponent } from './modules/criar-post/criar-post.component';
-import { EnviarComentarioComponent } from './modules/enviar-comentario/enviar-comentario.component';
 
 @NgModule({
   declarations: [
@@ -57,8 +56,7 @@ import { EnviarComentarioComponent } from './modules/enviar-comentario/enviar-co
     MeuPlanoAlimentarComponent,
     MinhaComunidadeComponent,
     ComunidadeNutricionistaComponent,
-    CriarPostComponent,
-    EnviarComentarioComponent
+    CriarPostComponent
   ],
   imports: [
     AppRoutingModule,

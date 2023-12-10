@@ -33,7 +33,7 @@ export class ComunidadeNutricionistaComponent implements OnInit {
   formularioComentario!: FormGroup;
   usuario!: Usuario;
 
-  constructor( 
+  constructor(
     private sanitizer: DomSanitizer,
     private postService: PostService,
     private comentarioService: ComentarioService,
@@ -125,22 +125,40 @@ export class ComunidadeNutricionistaComponent implements OnInit {
       id_usuario: this.usuario.id_usuario
     }
 
+    const usuarioComentario: UsuarioComentario = {
+      id_comentario: 0,
+      data_criacao: dataAtual,
+      conteudo: this.formularioComentario.value.comentario,
+      id_post: idPost,
+      id_usuario: this.usuario.id_usuario,
+      cpf: this.usuario.cpf,
+      nome_usuario: this.usuario.nome_usuario,
+      email: this.usuario.email,
+      sexo: this.usuario.sexo,
+      telefone: this.usuario.telefone,
+      cep: this.usuario.cep,
+      data_nascimento: this.usuario.data_nascimento,
+      tipo_usuario: this.usuario.tipo_usuario
+    }
+
     if (comentario.conteudo !== '') {
       this.comentarioService.insert(comentario).subscribe((r) => {
-        this.snackbar.open(r.msg, 'OK', {duration: 3000});
+        this.snackbar.open(r.msg, 'OK', { duration: 3000 });
 
-        window.location.reload();   
+        this.comentariosList.push(usuarioComentario);
+
+        // window.location.reload();   
         this.inputComentario = false;
       });
     } else {
-      this.snackbar.open('Preencha o comentário...', 'OK', {duration: 3000});
+      this.snackbar.open('Preencha o comentário...', 'OK', { duration: 3000 });
     }
-  } 
+  }
 
   fecharComentario(): void {
     this.inputComentario = false;
 
-    this.snackbar.open('Comentários fechados!', 'OK', {duration: 3000});
+    this.snackbar.open('Comentários fechados!', 'OK', { duration: 3000 });
   }
 
 }

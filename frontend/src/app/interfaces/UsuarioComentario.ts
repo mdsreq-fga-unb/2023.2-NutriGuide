@@ -6,10 +6,10 @@ export default interface UsuarioComentario {
     sexo: string;       // ENUM: ou 'M' ou 'F'
     telefone: string;
     cep: string;
-    data_nascimento: Date;
+    data_nascimento: Date | string;
     tipo_usuario: string;
     id_comentario: number;
-    data_criacao: Date;
+    data_criacao: Date | string;
     conteudo: string;
     id_post: number
 }
