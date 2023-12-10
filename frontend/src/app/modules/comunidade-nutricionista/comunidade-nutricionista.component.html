@@ -49,7 +49,7 @@
                                         [value]="post.conteudo_post"></textarea>
                                 </mat-form-field>
     
-                                <ng-container *ngIf="post.link_iframe !== null">
+                                <ng-container *ngIf="post.link_iframe !== null && post.link_iframe !== ''">
                                     <div class="iframe-video" [innerHtml]="converterParaIframe(post.link_iframe)"></div>
                                 </ng-container>
                             </div>
@@ -170,7 +170,7 @@
                                         [value]="post.conteudo_post"></textarea>
                                 </mat-form-field>
     
-                                <ng-container *ngIf="post.link_iframe !== null">
+                                <ng-container *ngIf="post.link_iframe !== null && post.link_iframe !== ''">
                                     <div class="iframe-video" [innerHtml]="converterParaIframe(post.link_iframe)"></div>
                                 </ng-container>
                             </div>

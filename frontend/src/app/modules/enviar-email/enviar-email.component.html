@@ -1,0 +1,102 @@
+<ng-container *ngIf="role === 'paciente' || role === 'nutricionista' else usuarioDefault">
+
+    <div class="container">
+        <div class="header">
+            <h3>Nutricionista: {{nutricionista.nome_usuario}}</h3>
+            <h1>Entrar em contato com o nutricionista</h1>
+        </div>
+
+        <div class="body">
+            <form [formGroup]="formulario">
+            
+                <mat-form-field class="input-item" appearance="outline">
+                    <mat-label>Título do e-mail</mat-label>
+                    <input matInput type="text" formControlName="titulo">
+                </mat-form-field>
+
+                <mat-form-field class="text-area-item" appearance="outline">
+                    <mat-label>Conteúdo do e-mail</mat-label>
+                    <textarea name="" id="" cols="30" rows="10" matInput type="text" formControlName="conteudo"></textarea>
+                </mat-form-field>
+
+            </form>
+        </div>
+
+        <div class="footer">
+            <button 
+                (click)="fechar()"
+                matTooltip="Cancelar"
+            >
+                <mat-icon>
+                    cancel
+                </mat-icon>
+            </button>
+
+            <button 
+                (click)="enviarEmail()"
+                matTooltip="Enviar e-mail"    
+            >
+                <mat-icon>
+                    send
+                </mat-icon>
+            </button>
+        </div>
+    </div>
+
+</ng-container>
+
+<ng-template #usuarioDefault>
+
+    <div class="container">
+        <div class="header">
+            <h3>Nutricionista: {{nutricionista.nome_usuario}}</h3>
+            <h1>Entrar em contato com o nutricionista</h1>
+        </div>
+
+        <div class="body">
+            <form [formGroup]="formulario">
+            
+                <mat-form-field 
+                    class="input-item-sem-cadastro" 
+                    appearance="outline" 
+                    matTooltip="Como você não possui cadastro no sistema, informe seu e-mail..."
+                >
+                    <mat-label>Informe seu e-mail</mat-label>
+                    <input matInput type="text" formControlName="titulo">
+                </mat-form-field>
+
+                <mat-form-field class="input-item-sem-cadastro" appearance="outline">
+                    <mat-label>Título do e-mail</mat-label>
+                    <input matInput type="text" formControlName="titulo">
+                </mat-form-field>
+
+                <mat-form-field class="text-area-item-sem-cadastro" appearance="outline">
+                    <mat-label>Conteúdo do e-mail</mat-label>
+                    <textarea name="" id="" cols="30" rows="10" matInput type="text" formControlName="conteudo"></textarea>
+                </mat-form-field>
+
+            </form>
+        </div>
+
+        <div class="footer">
+            <button 
+                (click)="fechar()"
+                matTooltip="Cancelar"
+            >
+                <mat-icon>
+                    cancel
+                </mat-icon>
+            </button>
+
+            <button 
+                (click)="enviarEmail()"
+                matTooltip="Enviar e-mail"    
+            >
+                <mat-icon>
+                    send
+                </mat-icon>
+            </button>
+        </div>
+    </div>
+
+</ng-template>

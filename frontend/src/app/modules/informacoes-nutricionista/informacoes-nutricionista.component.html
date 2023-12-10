@@ -65,7 +65,12 @@
             <section class="funcionalidades">
                 <div style="display: flex; width: 100%; justify-content: space-between;">
                     <div class="func-button">
-                        <button>Enviar mensagem</button>
+                        <button 
+                            matTooltip="Entrar em contato com o nutricionista por e-mail"
+                            (click)="abrirEnviarEmail(nutricionista)"
+                        >
+                            Enviar mensagem
+                        </button>
                     </div>
 
                     <div class="func-button">

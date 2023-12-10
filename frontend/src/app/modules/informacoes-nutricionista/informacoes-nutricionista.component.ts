@@ -7,6 +7,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { AdicionarAvaliacaoComponent } from '../adicionar-avaliacao/adicionar-avaliacao.component';
 import { Constantes } from 'src/app/shared/constantes/constantes';
 import { AvaliacoesComponent } from '../avaliacoes/avaliacoes.component';
+import { EnviarEmailComponent } from '../enviar-email/enviar-email.component';
 
 @Component({
   selector: 'app-informacoes-nutricionista',
@@ -74,6 +75,14 @@ export class InformacoesNutricionistaComponent implements OnInit {
 
   irParaComunidade(): void {
     this.router.navigate(['/comunidade', this.idNutricionista], {relativeTo: this.route.parent});
+  }
+
+  abrirEnviarEmail(nutricionista: UsuarioNutricionista): void {
+    const dialogRef = this.dialog.open(EnviarEmailComponent, {
+      data: nutricionista,
+      width: '600px',
+      height: '600px'
+    });
   }
 
 }
