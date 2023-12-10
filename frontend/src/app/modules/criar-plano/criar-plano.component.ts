@@ -82,7 +82,13 @@ export class CriarPlanoComponent implements OnInit {
   }
 
   inserirPlano(): void {
-    const nomePlano: string = this.formulario.value.nome;
+    let nomePlano: string = '';
+
+    if (this.alimentosList.length > 0) {
+      nomePlano = this.alimentosList[0].nome_plano;
+    } else {
+      nomePlano = this.formulario.value.nome;
+    }
 
     const planoAlimentar: PlanoAlimentar = {
       id_plano: 0,                  // não precisa ser informado
@@ -119,7 +125,13 @@ export class CriarPlanoComponent implements OnInit {
     });
 
     dialogRef.afterClosed().pipe(take(1)).subscribe((alimento) => {
-      if (alimento !== undefined) this.alimentosList.push(alimento); 
+      if (alimento !== undefined && alimento !== 'cancelar') {
+        this.nomePlano = alimento.nome_plano;
+
+        console.log('nome plano: ', this.nomePlano);
+
+        this.alimentosList.push(alimento);
+      }
     })
   }
 

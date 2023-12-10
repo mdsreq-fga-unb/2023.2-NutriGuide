@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import Alimento from 'src/app/interfaces/Alimento';
+import AlimentoPlanoAlimentar from 'src/app/interfaces/AlimentoPlanoAlimentar';
 import PlanoAlimentar from 'src/app/interfaces/PlanoAlimentar';
 import { AlimentoService } from 'src/app/services/alimento-service/alimento.service';
 import { PlanoAlimentarService } from 'src/app/services/plano-alimentar-service/plano-alimentar.service';
@@ -22,7 +23,7 @@ interface DialogData {
 export class InserirAlimentoComponent implements OnInit {
 
   formulario!: FormGroup;
-  idPlano!: number;
+  plano!: PlanoAlimentar;
   alimento!: Alimento;
   load: boolean = false;
 
@@ -42,7 +43,7 @@ export class InserirAlimentoComponent implements OnInit {
 
   buscarPlano(): void {
     this.planoAlimentarService.getByName(this.data.nomePlano).subscribe((p) => {
-      this.idPlano = p.id_plano;
+      this.plano = p;
 
       this.load = true;
     }, (err) => {
@@ -66,13 +67,27 @@ export class InserirAlimentoComponent implements OnInit {
   registrar(): void {
     const alimento: Alimento = {
       id_alimento: 0,	
-      id_plano: this.idPlano,	
+      id_plano: this.plano.id_plano,	
       id_refeicao: this.data.refeicaoId,	
       nome_alimento: this.formulario.value.nome,	
       quantidade_grama: this.formulario.value.qntGrama,
       qnt_carboidrato: this.formulario.value.qntCarboidrato,	
       qnt_proteina: this.formulario.value.qntProteina,
       qnt_gordura: this.formulario.value.qntGordura
+    }
+
+    const alimentoPlanoAlimentar: AlimentoPlanoAlimentar = {
+      id_alimento: 0,	
+      id_plano: this.plano.id_plano,	
+      id_refeicao: this.data.refeicaoId,	
+      nome_alimento: this.formulario.value.nome,	
+      quantidade_grama: this.formulario.value.qntGrama,
+      qnt_carboidrato: this.formulario.value.qntCarboidrato,	
+      qnt_proteina: this.formulario.value.qntProteina,
+      qnt_gordura: this.formulario.value.qntGordura,
+      id_paciente: this.plano.id_paciente,
+      nome_plano: this.plano.nome_plano,
+      nome_refeicao: ''
     }
 
     if (
@@ -84,7 +99,7 @@ export class InserirAlimentoComponent implements OnInit {
     ) {
 
       this.alimentoService.insert(alimento).subscribe((r) => {
-        this.dialogRef.close(alimento);
+        this.dialogRef.close(alimentoPlanoAlimentar);
         
         this.snackbar.open(r.msg, 'OK', {
           duration: 3000
