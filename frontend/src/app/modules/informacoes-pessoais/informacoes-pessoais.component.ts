@@ -103,7 +103,11 @@ export class InformacoesPessoaisComponent implements OnInit {
   }
 
   irParaMinhaComunidade(): void {
-    this.router.navigate(['/minha-comunidade', localStorage.getItem('idNutri')], {relativeTo: this.route.parent});
+    const idNutri: string = String(localStorage.getItem('idNutri'));
+
+    if (idNutri !== '' && idNutri !== null && idNutri !== undefined) {
+      this.router.navigate(['/minha-comunidade', idNutri], {relativeTo: this.route.parent});
+    }
   }
 
 }
