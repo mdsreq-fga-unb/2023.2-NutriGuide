@@ -127,7 +127,7 @@ export class ComunidadeNutricionistaComponent implements OnInit {
       this.comentarioService.insert(comentario).subscribe((r) => {
         this.snackbar.open(r.msg, 'OK', {duration: 3000});
 
-        window.location.reload();
+        window.location.reload();   
         this.inputComentario = false;
       });
     } else {
