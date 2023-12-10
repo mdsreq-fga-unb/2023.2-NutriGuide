@@ -15,7 +15,7 @@
             <h1>Minha Comunidade</h1>
 
             <div class="adicionar-post">
-                <button disabled>
+                <button (click)="abrirDialogCriarPost()">
                     Adicionar Postagem
                     <mat-icon>post_add</mat-icon>
                 </button>
@@ -71,18 +71,10 @@
 
             <ng-template #semPost>
 
-                <app-header></app-header>
+                <div class="body-sem-post">
 
-                <div class="body-title">
-                    <h3>Minha Comunidade</h3>
-                </div>
+                    <h2 style="color: #F49320;">Você ainda não publicou nada!</h2>
 
-                <div class="body-post">
-                    <div class="post">
-
-                        <h2 style="color: #F49320;">Você ainda não publicou nada!</h2>
-
-                    </div>
                 </div>
 
             </ng-template>

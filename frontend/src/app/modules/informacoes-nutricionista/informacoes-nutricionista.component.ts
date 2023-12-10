@@ -72,4 +72,8 @@ export class InformacoesNutricionistaComponent implements OnInit {
     });
   }
 
+  irParaComunidade(): void {
+    this.router.navigate(['/comunidade', this.idNutricionista], {relativeTo: this.route.parent});
+  }
+
 }

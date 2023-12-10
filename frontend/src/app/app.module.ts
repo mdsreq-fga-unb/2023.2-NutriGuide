@@ -29,6 +29,8 @@ import { AdicionarAvaliacaoComponent } from './modules/adicionar-avaliacao/adici
 import { MeuPlanoAlimentarComponent } from './modules/meu-plano-alimentar/meu-plano-alimentar.component'
 import { MinhaComunidadeComponent } from './modules/minha-comunidade/minha-comunidade.component';
 import { ComunidadeNutricionistaComponent } from './modules/comunidade-nutricionista/comunidade-nutricionista.component';
+import { CriarPostComponent } from './modules/criar-post/criar-post.component';
+import { EnviarComentarioComponent } from './modules/enviar-comentario/enviar-comentario.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { ComunidadeNutricionistaComponent } from './modules/comunidade-nutricion
     AdicionarAvaliacaoComponent,
     MeuPlanoAlimentarComponent,
     MinhaComunidadeComponent,
-    ComunidadeNutricionistaComponent
+    ComunidadeNutricionistaComponent,
+    CriarPostComponent,
+    EnviarComentarioComponent
   ],
   imports: [
     AppRoutingModule,

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="title">
+        <h2>Criar um post</h2>
+    </div>
+
+    <form class="inputs" [formGroup]="formulario">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Conteúdo do Post</mat-label>
+            <textarea matInput name="" id="" cols="30" rows="10" formControlName="conteudo"></textarea>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label
+                matTooltip="Para publicar um vídeo, informe o iframe do youtube, disponível no compartilhar do vídeo (Incorporar)...">
+                Link/Iframe do Vídeo (Opcional)
+            </mat-label>
+            <textarea matInput name="" id="" cols="30" rows="10" formControlName="iframe"></textarea>
+        </mat-form-field>
+
+    </form>
+
+    <div class="registrar">
+        <button (click)="cancelar()">
+            Cancelar
+        </button>
+
+        <button (click)="registrar()">
+            Criar Post
+        </button>
+    </div>
+
+</div>

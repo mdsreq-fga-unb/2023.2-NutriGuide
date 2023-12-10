@@ -9,6 +9,7 @@ import { InformacoesNutricionistaComponent } from "./modules/informacoes-nutrici
 import { InformacoesPacienteComponent } from "./modules/informacoes-paciente/informacoes-paciente.component";
 import { CriarPlanoComponent } from "./modules/criar-plano/criar-plano.component";
 import { MinhaComunidadeComponent } from "./modules/minha-comunidade/minha-comunidade.component";
+import { ComunidadeNutricionistaComponent } from "./modules/comunidade-nutricionista/comunidade-nutricionista.component";
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'inicio' },
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'informacoes-nutricionista/:id', component: InformacoesNutricionistaComponent },
   { path: 'informacoes-paciente/:id', component: InformacoesPacienteComponent },
   { path: 'gerenciar-plano/:id', component: CriarPlanoComponent },
-  { path: 'minha-comunidade/:id', component: MinhaComunidadeComponent }
+  { path: 'minha-comunidade/:id', component: MinhaComunidadeComponent },
+  { path: 'comunidade/:id', component: ComunidadeNutricionistaComponent }
 ];
 
 @NgModule({

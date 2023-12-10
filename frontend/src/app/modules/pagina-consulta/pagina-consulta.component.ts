@@ -7,6 +7,10 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { take } from 'rxjs';
 import { Constantes } from 'src/app/shared/constantes/constantes';
 import { UsuarioService } from 'src/app/services/usuario-service/usuario.service';
+import { PacienteService } from 'src/app/services/paciente-service/paciente.service';
+import UsuarioNutricionista from 'src/app/interfaces/UsuarioNutricionista';
+import { NutricionistaService } from 'src/app/services/nutricionista-service/nutricionista.service';
+import Usuario from 'src/app/interfaces/Usuario';
 
 @Component({
   selector: 'app-pagina-consulta',
@@ -16,8 +20,11 @@ import { UsuarioService } from 'src/app/services/usuario-service/usuario.service
 export class PaginaConsultaComponent implements OnInit {
 
   formulario!: FormGroup;
-  usuario!: any;
+  usuario!: Usuario;
   load: boolean = false;
+  nutriResponsavel!: UsuarioNutricionista;
+  role: string = localStorage.getItem('role')!.toString();
+  strTooltip: string = '';
 
   // Injeção de Dependências:
   constructor(
@@ -26,13 +33,34 @@ export class PaginaConsultaComponent implements OnInit {
     private route: ActivatedRoute,
     private dialog: MatDialog,
     private snackbar: MatSnackBar,
-    private usuarioService: UsuarioService
+    private usuarioService: UsuarioService,
+    private pacienteService: PacienteService,
+    private nutricionistaService: NutricionistaService
   ) {}
 
   // Construtor padrão do Angular:
   ngOnInit(): void {
+    this.buscarIdNutriResponsavel();
     this.criarFormulario();
     this.buscarUsuario();
+  }
+
+  buscarIdNutriResponsavel(): void {
+    if (this.role === 'paciente') {
+      this.pacienteService.getOneByNomeUser(String(localStorage.getItem('nome')))
+      .subscribe((p) => {
+        this.nutricionistaService.getOneByNomeUser(p.nutricionista_responsavel)
+        .subscribe((n) => {
+          this.nutriResponsavel = n;
+
+          if (p.sexo === 'M') {
+            this.strTooltip = 'Ir para comunidade de ' + this.nutriResponsavel.nome_usuario + ', seu nutricionista';
+          } else {
+            this.strTooltip = 'Ir para comunidade de ' + this.nutriResponsavel.nome_usuario + ', sua nutricionista';
+          }
+        });
+      });
+    }
   }
 
   // criando o formulário:  
@@ -98,6 +126,10 @@ export class PaginaConsultaComponent implements OnInit {
 
   irParaMinhaComunidade(): void {
     this.router.navigate(['/minha-comunidade', localStorage.getItem('idNutri')], {relativeTo: this.route.parent});
+  }
+
+  irParaComunidadeDoNutri(): void {
+    this.router.navigate(['/comunidade', this.nutriResponsavel.id_nutricionista], {relativeTo: this.route.parent});
   }
 
 } 

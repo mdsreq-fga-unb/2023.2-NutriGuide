@@ -1,1 +1,221 @@
-<!--Comunidade Pela ótica do paciente e do usuári default-->
+<ng-container *ngIf="load === false else loaded">
+
+    <app-spinner></app-spinner>
+
+</ng-container>
+
+
+<ng-template #loaded>
+
+    <!--Comunidade Pela ótica do paciente-->
+    <ng-container *ngIf="role === 'paciente' || role === 'nutricionista' else usuarioDefault">
+
+        <div class="container">
+
+            <div class="title">
+                <h1>Comunidade</h1>
+
+                <div class="botao-icone">
+                    <button (click)="voltar()">
+                        <mat-icon>keyboard_return</mat-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="infos">
+                <h3><span>Nutricionista:</span> {{ nutricionista.nome_usuario }}</h3>
+                <h3><span>Especialidade:</span> {{ nutricionista.especialidade }}</h3>
+                <h3><span>Telefone para contato:</span> {{ nutricionista.telefone }}</h3>
+            </div>
+    
+            <div class="body">
+    
+                <ng-container *ngIf="postList.length > 0 else semPost">
+    
+                    <div *ngFor="let post of  postList" class="body-post">
+                        <div class="post">
+    
+                            <div class="inputs">
+                                <div class="div-data">
+                                    <mat-form-field class="data-postagem" appearance="outline">
+                                        <mat-label>Data da postagem</mat-label>
+                                        <input disabled matInput [value]="post.data_criacao | date">
+                                    </mat-form-field>
+                                </div>
+    
+                                <mat-form-field class="conteudo-postagem" appearance="outline">
+                                    <mat-label>Conteúdo da Publicação</mat-label>
+                                    <textarea matInput name="" id="" cols="30" rows="10" disabled
+                                        [value]="post.conteudo_post"></textarea>
+                                </mat-form-field>
+    
+                                <ng-container *ngIf="post.link_iframe !== null">
+                                    <div class="iframe-video" [innerHtml]="converterParaIframe(post.link_iframe)"></div>
+                                </ng-container>
+                            </div>
+    
+                            <!--Passar um id para trazer apenas os comentários desse post:-->
+                            <ng-container *ngFor="let comentario of comentarios(post.id_post)">
+                                <div class="comentario">
+                                    <mat-label>Comentário:</mat-label>
+                                    <mat-divider></mat-divider>
+                                    <div>
+                                        <h3>{{ comentario.conteudo}}</h3>
+                                    </div>
+                                    <mat-divider></mat-divider>
+                                    <div class="comentario-footer">
+                                        <p><span>Comentado por:</span> {{ comentario.nome_usuario }}, {{ comentario.tipo_usuario }}</p>
+                                        <p><span>{{ comentario.data_criacao | date}}</span></p>
+                                    </div>
+                                </div>
+                            </ng-container>
+
+                            <ng-container *ngIf="inputComentario === false else comentarioHabiliatado">
+
+                                <button style="margin-bottom: 15px;" (click)="abrirInputComentario()">
+                                    <mat-icon>comment</mat-icon>
+                                </button>
+
+                            </ng-container>
+                            
+                            <ng-template #comentarioHabiliatado>
+
+                                <mat-divider></mat-divider>
+
+                                <form class="comentario-habilitado" [formGroup]="formularioComentario">
+                                    <mat-form-field class="comentar" appearance="outline">
+                                        <mat-label>Comentar na publicação de {{ nutricionista.nome_usuario }}</mat-label>
+                                        <textarea name="" id="" cols="30" rows="10"  matInput type="text" formControlName="comentario"></textarea>
+                                    </mat-form-field>
+
+                                    <div class="botoes-comentario">
+                                        <button (click)="comentar(post.id_post)">
+                                            <mat-icon>send</mat-icon>
+                                        </button>
+
+                                        <button (click)="fecharComentario()">
+                                            <mat-icon>cancel</mat-icon>
+                                        </button>
+                                    </div>
+                                </form>
+
+                            </ng-template>
+    
+                        </div>
+                    </div>
+    
+                </ng-container>
+    
+                <ng-template #semPost>
+    
+                    <div class="body-sem-post">
+    
+                        <h2 style="color: #F49320;">O nutricionista ainda não publicou nada!</h2>
+    
+                    </div>
+    
+                </ng-template>
+    
+            </div>
+    
+            <div class="footer">
+                <button (click)="voltar()">
+                    Voltar
+                </button>
+            </div>
+    
+        </div>
+
+    </ng-container>
+    
+    <!--Comunidade Pela ótica do usuario default-->
+    <ng-template #usuarioDefault>
+
+        <div class="container">
+
+            <div class="title">
+                <h1>Comunidade</h1>
+
+                <div class="botao-icone">
+                    <button (click)="voltar()">
+                        <mat-icon>keyboard_return</mat-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="infos">
+                <h3><span>Nutricionista:</span> {{ nutricionista.nome_usuario }}</h3>
+                <h3><span>Especialidade:</span> {{ nutricionista.especialidade }}</h3>
+                <h3><span>Telefone para contato:</span> {{ nutricionista.telefone }}</h3>
+            </div>
+    
+            <div class="body">
+    
+                <ng-container *ngIf="postList.length > 0 else semPost">
+    
+                    <div *ngFor="let post of  postList" class="body-post">
+                        <div class="post">
+    
+                            <div class="inputs">
+                                <div class="div-data">
+                                    <mat-form-field class="data-postagem" appearance="outline">
+                                        <mat-label>Data da postagem</mat-label>
+                                        <input disabled matInput [value]="post.data_criacao | date">
+                                    </mat-form-field>
+                                </div>
+    
+                                <mat-form-field class="conteudo-postagem" appearance="outline">
+                                    <mat-label>Conteúdo da Publicação</mat-label>
+                                    <textarea matInput name="" id="" cols="30" rows="10" disabled
+                                        [value]="post.conteudo_post"></textarea>
+                                </mat-form-field>
+    
+                                <ng-container *ngIf="post.link_iframe !== null">
+                                    <div class="iframe-video" [innerHtml]="converterParaIframe(post.link_iframe)"></div>
+                                </ng-container>
+                            </div>
+    
+                            <!--Passar um id para trazer apenas os comentários desse post:-->
+                            <ng-container *ngFor="let comentario of comentarios(post.id_post)">
+                                <div class="comentario">
+                                    <mat-label>Comentário:</mat-label>
+                                    <mat-divider></mat-divider>
+                                    <div>
+                                        <h3>{{ comentario.conteudo}}</h3>
+                                    </div>
+                                    <mat-divider></mat-divider>
+                                    <div class="comentario-footer">
+                                        <p><span>Comentado por:</span> {{ comentario.nome_usuario }}, {{ comentario.tipo_usuario }}</p>
+                                        <p><span>{{ comentario.data_criacao | date}}</span></p>
+                                    </div>
+                                </div>
+                            </ng-container>
+    
+                        </div>
+                    </div>
+    
+                </ng-container>
+    
+                <ng-template #semPost>
+    
+                    <div class="body-sem-post">
+    
+                        <h2 style="color: #F49320;">O nutricionista ainda não publicou nada!</h2>
+    
+                    </div>
+    
+                </ng-template>
+    
+            </div>
+    
+            <div class="footer">
+                <button (click)="voltar()">
+                    Voltar
+                </button>
+            </div>
+    
+        </div>
+
+    </ng-template>
+
+</ng-template>

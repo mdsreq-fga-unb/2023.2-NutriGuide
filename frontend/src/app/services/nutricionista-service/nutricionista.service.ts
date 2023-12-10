@@ -34,5 +34,4 @@ export class NutricionistaService {
     ).pipe(take(1));
   }
 
-
 }

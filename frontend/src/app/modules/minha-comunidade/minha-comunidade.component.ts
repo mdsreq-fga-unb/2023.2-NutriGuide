@@ -6,6 +6,9 @@ import { PostService } from 'src/app/services/post-service/post.service';
 import { Location } from '@angular/common';
 import { ComentarioService } from 'src/app/services/comentario-service/comentario.service';
 import UsuarioComentario from 'src/app/interfaces/UsuarioComentario';
+import { CriarPostComponent } from '../criar-post/criar-post.component';
+import { take } from 'rxjs';
+import { MatDialog } from '@angular/material/dialog';
 
 
 @Component({
@@ -27,7 +30,8 @@ export class MinhaComunidadeComponent implements OnInit {
     private comentarioService: ComentarioService,
     private router: Router,
     private route: ActivatedRoute,
-    private location: Location
+    private location: Location,
+    private dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
@@ -59,6 +63,17 @@ export class MinhaComunidadeComponent implements OnInit {
 
   voltar(): void {
     this.location.back();
+  }
+
+  abrirDialogCriarPost(): void {
+    const dialogRef = this.dialog.open(CriarPostComponent, {
+      width: '600px',
+      height: '600px'
+    });
+
+    dialogRef.afterClosed().pipe(take(1)).subscribe((post: Post) => {
+      if (post !== undefined) this.postList.push(post); 
+    })
   }
 
 }

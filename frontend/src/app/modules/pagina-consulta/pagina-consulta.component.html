@@ -319,7 +319,7 @@
                 <img id="logo" src="../../../assets/img/logo.png">
 
                 <div class="botoes-logado">
-                    <a routerLink="#" matTooltip="Ir para comunidade do seu nutricista">Comunidade</a>
+                    <a (click)="irParaComunidadeDoNutri()" [matTooltip]="strTooltip">Comunidade</a>
 
                     <button (click)="irParaMeuPerfil()">
                         Meu Perfil
