@@ -64,11 +64,13 @@ export class ComunidadeNutricionistaComponent implements OnInit {
   }
 
   buscarUsuario(): void {
-    const nome: string = localStorage.getItem('nome')!.toString();
+    const nome: string = String(localStorage.getItem('nome'));
 
-    this.usuarioService.getUserByName(nome).subscribe((user) => {
-      this.usuario = user;
-    })
+    if (nome !== '' && nome !== undefined && nome !== null) {
+      this.usuarioService.getUserByName(nome).subscribe((user) => {
+        this.usuario = user;
+      })
+    }
   }
 
   buscarNutri(): void {

@@ -23,7 +23,7 @@ export class PaginaConsultaComponent implements OnInit {
   usuario!: Usuario;
   load: boolean = false;
   nutriResponsavel!: UsuarioNutricionista;
-  role: string = localStorage.getItem('role')!.toString();
+  role: string = String(localStorage.getItem('role'));
   strTooltip: string = '';
 
   // Injeção de Dependências:
