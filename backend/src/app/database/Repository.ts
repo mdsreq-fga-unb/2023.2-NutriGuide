@@ -442,7 +442,7 @@ export default class Repository {
         await new Promise((resolve, reject) => {
             this.database.query(
                 post.inserir, 
-                [postagem.conteudo_post, postagem.data_criacao, postagem.id_nutricionista], 
+                [postagem.conteudo_post, postagem.data_criacao, postagem.id_nutricionista, postagem.link_iframe], 
                 (err, result) => {
                     if (err) {
                         console.log('erro: ', err);
