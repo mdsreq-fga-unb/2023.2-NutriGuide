@@ -11,7 +11,7 @@ Won't: valor de negócio <4 pontuação geral <11
 
 Abaixo está o MIRO usado na criação do MVP:
 
-<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVNE9tEmo=/?moveToViewport=-16703,-12229,27795,14085&embedId=979624900312" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVNWybxac=/?moveToViewport=6055,20915,10518,12494&embedId=681267620991" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
 Abaixo estão descritas as US's definidas para o MVP, que foram categorizadas nas categorias Must Have e Should Have: 
 
@@ -51,5 +51,4 @@ Para obter uma fonte confiável e concreta do delineamento do projeto, definir a
 |  0.2   | 19/11/2023 | Ajustes do MVP | [Luana Torres](https://github.com/luanatorress) |  [Eric Camargo](https://github.com/Ericcs10) |
 |  0.3   | 02/11/2023 | Adicionando o MIRO | [Guilherme](https://github.com/GG555-13)  |  [Eric Camargo](https://github.com/Ericcs10)|
 |  0.4   | 07/12/2023 | Adicionando o Protótipo | [Luana Torres](https://github.com/luanatorress) |  [Eric Camargo](https://github.com/Ericcs10) |
-|  0.5   | 07/12/2023 | Atualizando o MVP | [Guilherme](https://github.com/GG555-13) |  [Luana Torres](https://github.com/luanatorress) |
 ---
