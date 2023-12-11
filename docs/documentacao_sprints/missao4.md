@@ -51,22 +51,22 @@ _tabela 3_ Dailys realizadas
 
 | Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
 |---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
-| 24/11   | Luana     |                                                         |                                                            |                                                          |
-| 24/11   | Henrique  |                                                         |                                                            |                                                          |
-| 24/11   | Eric      |                                                         |                                                            |                                                          |
-| 24/11   | Guilherme |                                                         |                                                            |                                                          |
-| 27/11   | Luana     |                                                         |                                                            |                                                          |
-| 27/11   | Henrique  |                                                         |                                                            |                                                          |
-| 27/11   | Eric      |                                                         |                                                            |                                                          |
-| 27/11   | Guilherme |                                                         |                                                            |                                                          |
-| 28/11   | Luana     |                                                         |                                                            |                                                          |
-| 28/11   | Henrique  |                                                         |                                                            |                                                          |
-| 28/11   | Eric      |                                                         |                                                            |                                                          |
-| 28/11   | Guilherme |                                                         |                                                            |                                                          |
-| 29/11   | Luana     |                                                         |                                                            |                                                          |
-| 29/11   | Henrique  |                                                         |                                                            |                                                          |
-| 29/11   | Eric      |                                                         |                                                            |                                                          |
-| 29/11   | Guilherme |                                                         |                                                            |                                                          |
+| 24/11   | Luana     | |    |  |
+| 24/11   | Henrique  | |    |  |
+| 24/11   | Eric      | |    |  |
+| 24/11   | Guilherme | |    |  |
+| 27/11   | Luana     | |    |  |
+| 27/11   | Henrique  | |    |  |
+| 27/11   | Eric      | |    |  |
+| 27/11   | Guilherme | |    |  |
+| 28/11   | Luana     | |    |  |
+| 28/11   | Henrique  | |    |  |
+| 28/11   | Eric      | |    |  |
+| 28/11   | Guilherme | |    |  |
+| 29/11   | Luana     | |    |  |
+| 29/11   | Henrique  | |    |  |
+| 29/11   | Eric      | |    |  |
+| 29/11   | Guilherme | |    |  |
 
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
@@ -124,30 +124,30 @@ _tabela 3_ Dailys realizadas
 
 | Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
 |---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
-| 04/12   | Luana     |                                                         |                                                            |                                                          |
-| 04/12   | Henrique  |                                                         |                                                            |                                                          |
-| 04/12   | Eric      |                                                         |                                                            |                                                          |
-| 04/12   | Guilherme |                                                         |                                                            |                                                          |
-| 05/12   | Luana     |                                                         |                                                            |                                                          |
-| 05/12   | Henrique  |                                                         |                                                            |                                                          |
-| 05/12   | Eric      |                                                         |                                                            |                                                          |
-| 05/12   | Guilherme |                                                         |                                                            |                                                          |
-| 06/12   | Luana     |                                                         |                                                            |                                                          |
-| 06/12   | Henrique  |                                                         |                                                            |                                                          |
-| 06/12   | Eric      |                                                         |                                                            |                                                          |
-| 06/12   | Guilherme |                                                         |                                                            |                                                          |
-| 07/12   | Luana     |                                                         |                                                            |                                                          |
-| 07/12   | Henrique  |                                                         |                                                            |                                                          |
-| 07/12   | Eric      |                                                         |                                                            |                                                          |
-| 07/12   | Guilherme |                                                         |                                                            |                                                          |
-| 08/12   | Luana     |                                                         |                                                            |                                                          |
-| 08/12   | Henrique  |                                                         |                                                            |                                                          |
-| 08/12   | Eric      |                                                         |                                                            |                                                          |
-| 08/12   | Guilherme |                                                         |                                                            |                                                          |
-| 11/12   | Luana     |                                                         |                                                            |                                                          |
-| 11/12   | Henrique  |                                                         |                                                            |                                                          |
-| 11/12   | Eric      |                                                         |                                                            |                                                          |
-| 11/12   | Guilherme |                                                         |                                                            |                                                          |
+| 04/12   | Luana     | |    |  |
+| 04/12   | Henrique  | |    |  |
+| 04/12   | Eric      | |    |  |
+| 04/12   | Guilherme | |    |  |
+| 05/12   | Luana     | |    |  |
+| 05/12   | Henrique  | |    |  |
+| 05/12   | Eric      | |    |  |
+| 05/12   | Guilherme | |    |  |
+| 06/12   | Luana     | |    |  |
+| 06/12   | Henrique  | |    |  |
+| 06/12   | Eric      | |    |  |
+| 06/12   | Guilherme | |    |  |
+| 07/12   | Luana     | |    |  |
+| 07/12   | Henrique  | |    |  |
+| 07/12   | Eric      | |    |  |
+| 07/12   | Guilherme | |    |  |
+| 08/12   | Luana     | |    |  |
+| 08/12   | Henrique  | |    |  |
+| 08/12   | Eric      | |    |  |
+| 08/12   | Guilherme | |    |  |
+| 11/12   | Luana     | |    |  |
+| 11/12   | Henrique  | |    |  |
+| 11/12   | Eric      | |    |  |
+| 11/12   | Guilherme | |    |  |
 
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
