@@ -73,6 +73,7 @@ nav:
   - Unidade 4: 
     - Casos de uso: unidade_4/casos-de-uso.md
     - Verificação e Validação Moonwalkers: unidade_4/VVMoonwalkers.md
+    - Especificação dos Casos de Uso: unidade_4/especificacao-csdu.md
 
 # Extensions
 markdown_extensions:
