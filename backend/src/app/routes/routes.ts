@@ -400,7 +400,7 @@ routes.post('/email-cadastro', async (req, res) => {
 });
 
 // email para notificar sobre o plano alimentar
-routes.post('/email-cadastro', async (req, res) => {
+routes.post('/email-plano-alimentar', async (req, res) => {
     const { emailPaciente, nome } = req.body;
 
     const title: string = 'Você possui um plano alimentar disponível para download!';
@@ -423,10 +423,10 @@ routes.post('/email-cadastro', async (req, res) => {
 
 // email para enviar uma mensagem para o nutricionista
 routes.post('/email-mensagem-nutricionista', async (req, res) => {
-    const { emailPaciente, nome, title, html } = req.body;
+    const { emailPaciente, nome, title, html, emailNutri } = req.body;
 
     const service = new Service();
-    await service.enviarEmail(transport, title, html, nome, emailPaciente);
+    await service.enviarEmail(transport, title, html, nome, emailPaciente, emailNutri);
 
     res.json({ msg: 'Email enviado com sucesso!' });
 });
