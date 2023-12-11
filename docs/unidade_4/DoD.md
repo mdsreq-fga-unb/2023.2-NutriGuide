@@ -1,4 +1,4 @@
-# validação do que foi feito (DoD)
+# Validação do que foi desenvolvido (DoD)
 
 Esta seção tem como objetivo validar os itens de backlog do nosso projeto por meio da definição de pronto, Dod (definition of done), Para conduzir essa validação de forma estruturada e abrangente, implementaremos uma checklist de Definition of Done (DoD) que abordará minuciosamente os requisitos essenciais para cada User Story (US). Esta checklist não apenas nos guiará na avaliação da conformidade com as especificações, mas também garantirá que cada US tenha sido implementada para o sucesso global do MVP.
 
@@ -36,17 +36,17 @@ _tabela 2_ Checklist de validação DoD para a US 13
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          |   X                |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |    X               |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           |  X                |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        | X                  |                |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        | X                  |                   |                    |
+| O código foi documentado?                                                |    X              |                   |                    |
+| O código foi integrado ao repositório?                                    |                X   |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       |   X                |                 |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |  X                 |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10),  [Luana Torres](https://github.com/luanatorress),  2023.
 
 </center>
 
@@ -62,17 +62,17 @@ _tabela 3_ Checklist de validação DoD para a US 15
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          | X                  |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? | X                  |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           | X                  |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        |X                   |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        | X                  |                   |                    |
+| O código foi documentado?                                                | X                  |                   |                    |
+| O código foi integrado ao repositório?                                    | X                  |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       |X                   |                   |                    |
+| O aplicativo foi testado nas plataformas propostas?                      | X                  |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10),  [Luana Torres](https://github.com/luanatorress),  2023.
 
 </center>
 
@@ -88,17 +88,17 @@ _tabela 4_ Checklist de validação DoD para a US 19
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          | X                   |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? | X                  |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           | X                  |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        | X                  |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        |  X                 |                   |                    |
+| O código foi documentado?                                                |       X            |                   |                    |
+| O código foi integrado ao repositório?                                    |       X            |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       |  X                 |                   |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |    X               |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10), [Luana Torres](https://github.com/luanatorress),  2023.
 
 </center>
 
@@ -115,17 +115,17 @@ _tabela 5_ Checklist de validação DoD para a US 40
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          | X                  |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |  X                 |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           |  X                |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        |           X        |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        | X                  |                   |                    |
+| O código foi documentado?                                                |   X                |                   |                    |
+| O código foi integrado ao repositório?                                    |   X                |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       | X                  |                   |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |   X                |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10),  [Luana Torres](https://github.com/luanatorress), 2023.
 
 </center>
 
@@ -141,17 +141,17 @@ _tabela 6_ Checklist de validação DoD para a US 14
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          |  X                 |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |   X                |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           |    X               |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        |   X                |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        |       X            |                   |                    |
+| O código foi documentado?                                                |      X             |                   |                    |
+| O código foi integrado ao repositório?                                    |    X               |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       |      X             |                   |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |    X               |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10), [Luana Torres](https://github.com/luanatorress),  2023.
 
 </center>
 
@@ -167,17 +167,17 @@ _tabela 7_ Checklist de validação DoD para a US 26
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          |   X                |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |    X               |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           |       X            |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        |            X       |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        |      X             |                   |                    |
+| O código foi documentado?                                                |     X              |                   |                    |
+| O código foi integrado ao repositório?                                    |       X            |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       |    X               |                   |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |   X                |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10),  [Luana Torres](https://github.com/luanatorress), 2023.
 
 </center>
 
@@ -193,17 +193,17 @@ _tabela 8_ Checklist de validação DoD para a US 22
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          |    X                |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |        X           |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           |      X             |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        |             X      |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        |    X               |                   |                    |
+| O código foi documentado?                                                |   X                |                   |                    |
+| O código foi integrado ao repositório?                                    |            X       |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       |    X               |                |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |    X               |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10),  [Luana Torres](https://github.com/luanatorress), 2023.
 
 </center>
 
@@ -219,17 +219,17 @@ _tabela 9_ Checklist de validação DoD para a US 33
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          |    X               |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |         X          |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           |      X             |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        |            X      |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        |    X               |                   |                    |
+| O código foi documentado?                                                |      X             |                   |                    |
+| O código foi integrado ao repositório?                                    |          X         |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       |     X              |                   |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |     X             |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10),  [Luana Torres](https://github.com/luanatorress), 2023.
 
 </center>
 
@@ -245,17 +245,17 @@ _tabela 10_ Checklist de validação DoD para a US 34
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          |     X              |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |         X          |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           |       X            |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        |   X                |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        |      X             |                   |                    |
+| O código foi documentado?                                                |    X               |                   |                    |
+| O código foi integrado ao repositório?                                    |         X          |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       |    X               |                   |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |       X            |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10),  [Luana Torres](https://github.com/luanatorress), 2023.
 
 </center>
 
@@ -271,17 +271,17 @@ _tabela 11_ Checklist de validação DoD para a US 35
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          |     X              |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |      X             |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           |     X              |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        |   X                |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        |        X           |                   |                    |
+| O código foi documentado?                                                |          X         |                   |                    |
+| O código foi integrado ao repositório?                                    |           X        |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       |     X              |                   |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |   X                |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10),  [Luana Torres](https://github.com/luanatorress),2023.
 
 </center>
 
@@ -297,17 +297,17 @@ _tabela 12_ Checklist de validação DoD para a US 37
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          |     X              |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |          X         |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           |          X         |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        |                X   |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        |      X             |                   |                    |
+| O código foi documentado?                                                |    X               |                   |                    |
+| O código foi integrado ao repositório?                                    |     X              |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       |      X             |                   |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |   X                |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10),  [Luana Torres](https://github.com/luanatorress), 2023.
 
 </center>
 
@@ -323,17 +323,17 @@ _tabela 13_ Checklist de validação DoD para a US 39
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          |    X              |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |      X            |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           |         X          |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        |             X      |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        |     X              |                   |                    |
+| O código foi documentado?                                                |      X             |                   |                    |
+| O código foi integrado ao repositório?                                    |          X         |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       |       X            |                   |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |       X            |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10),  [Luana Torres](https://github.com/luanatorress), 2023.
 
 </center>
 
@@ -349,17 +349,17 @@ _tabela 14_ Checklist de validação DoD para a US 43
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          |   X                |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |        X           |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           |   X                |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        |              X     |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        |   X                |                   |                    |
+| O código foi documentado?                                                |   X                |                   |                    |
+| O código foi integrado ao repositório?                                    |        X           |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       |    X               |                   |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |   X                |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10), [Luana Torres](https://github.com/luanatorress), 2023.
 
 </center>
 
@@ -375,17 +375,17 @@ _tabela 15_ Checklist de validação DoD para a US 45
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          |   X                |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |       X            |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           |     X              |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        |             X      |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        |       X            |                   |                    |
+| O código foi documentado?                                                |       X            |                   |                    |
+| O código foi integrado ao repositório?                                    |          X         |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       |    X               |                   |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |     X              |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10),  [Luana Torres](https://github.com/luanatorress), 2023.
 
 </center>
 
@@ -401,20 +401,21 @@ _tabela 16_ Checklist de validação DoD para a US 49
 
 | DoD                                                                      | Sim               | Não               | Incompleto         |
 |--------------------------------------------------------------------------|-------------------|-------------------|--------------------|
-| O código foi revisado por outro membro do time?                          |                   |                   |                    |
-| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |                   |                   |                    |
-| A funcionalidade foi testada e está livre de erros conhecidos?           |                   |                   |                    |
-| A funcionalidade foi revisada pelos stakeholders?                        |                   |                   |                    |
-| Todas as histórias programadas para a sprint foram desenvolvidas?        |                   |                   |                    |
-| O código foi documentado?                                                |                   |                   |                    |
-| O código foi integrado ao repositório?                                    |                   |                   |                    |
-| O código foi escrito conforme os padrões da equipe?                       |                   |                   |                    |
-| O aplicativo foi testado nas plataformas propostas?                      |                   |                   |                    |
+| O código foi revisado por outro membro do time?                          |   X                |                   |                    |
+| O requisito foi entregue de forma que agregue valor ao produto e está seguindo os critérios de aceitação? |             X      |                   |                    |
+| A funcionalidade foi testada e está livre de erros conhecidos?           |        X           |                   |                    |
+| A funcionalidade foi revisada pelos stakeholders?                        |               X    |                   |                    |
+| Todas as histórias programadas para a sprint foram desenvolvidas?        |       X            |                   |                    |
+| O código foi documentado?                                                |     X              |                   |                    |
+| O código foi integrado ao repositório?                                    |             X      |                   |                    |
+| O código foi escrito conforme os padrões da equipe?                       | X                  |                   |                    |
+| O aplicativo foi testado nas plataformas propostas?                      |       X            |                   |                    |
 
-Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+Fonte: [Eric Camargo](https://github.com/Ericcs10), [Luana Torres](https://github.com/luanatorress),2023.
 
 </center>
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
-|  0.1   | 11/12/2023 | Criação do documento | Eric | Guilherme  |
+|  0.1   | 11/12/2023 | Criação do documento | [Eric Camargo](https://github.com/Ericcs10) | [Guilherme](https://github.com/GG555-13)  |
+|  0.2   | 11/12/2023 | Adicionando verificação de Done | [Luana Torres](https://github.com/luanatorress) | [Guilherme](https://github.com/GG555-13) |
