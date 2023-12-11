@@ -10,6 +10,7 @@ import PlanoAlimentar from '../models/PlanoAlimentar';
 import Avaliacao from "../models/Avaliacao";
 import Post from "../models/Post";
 import Comentario from "../models/Comentario";
+import nodemailer from "nodemailer";
 
 const routes = Router();
 
@@ -47,7 +48,7 @@ routes.post('/login', async (req, res) => {
     }
 
     try {
-        
+
         const token = jwt.sign(
             {
                 id: user.id
@@ -56,9 +57,9 @@ routes.post('/login', async (req, res) => {
         );
 
         res.status(200).json(
-            { 
-                msg: 'Logado com sucesso!', 
-                token: token 
+            {
+                msg: 'Logado com sucesso!',
+                token: token
             }
         );
 
@@ -80,7 +81,7 @@ routes.get('/user/nome', checkToken, async (req, res) => {
     const user: User | undefined = await repository.findUserByName(String(nome));
 
     if (!user) {
-        return res.status(404).json({msg: 'Usuário não encontrado!'});
+        return res.status(404).json({ msg: 'Usuário não encontrado!' });
     }
 
     res.status(200).json(user);
@@ -123,7 +124,7 @@ routes.get('/paciente/:id', async (req, res) => {
     } else {
         res.status(404).json({ msg: 'Paciente não encontrado!' })
     }
-    
+
 });
 
 routes.get('/paciente-nome', async (req, res) => {
@@ -137,7 +138,7 @@ routes.get('/paciente-nome', async (req, res) => {
     } else {
         res.status(404).json({ msg: 'Paciente não encontrado!' })
     }
-    
+
 });
 
 routes.post('/paciente', async (req, res) => {
@@ -146,7 +147,7 @@ routes.post('/paciente', async (req, res) => {
     const service = new Service();
     await service.insertPaciente(paciente);
 
-    res.status(200).json({msg: 'Paciente inserido com sucesso!'});
+    res.status(200).json({ msg: 'Paciente inserido com sucesso!' });
 });
 
 routes.get('/nutricionista', async (req, res) => {
@@ -167,7 +168,7 @@ routes.get('/nutricionista/:id', async (req, res) => {
     } else {
         res.status(404).json({ msg: 'Nutricionista não encontrado!' })
     }
-    
+
 });
 
 routes.get('/nutricionista-nome', async (req, res) => {
@@ -181,7 +182,7 @@ routes.get('/nutricionista-nome', async (req, res) => {
     } else {
         res.status(404).json({ msg: 'Nutricionista não encontrado!' })
     }
-    
+
 });
 
 routes.get('/nutricionista-filtro', async (req, res) => {
@@ -195,7 +196,7 @@ routes.get('/nutricionista-filtro', async (req, res) => {
     } else {
         res.status(404).json({ msg: 'Não foi encontrado nenhum nutricionista com os parametros aplicados!' })
     }
-    
+
 });
 
 routes.get('/progresso-paciente/:idPaciente', async (req, res) => {
@@ -209,14 +210,14 @@ routes.get('/progresso-paciente/:idPaciente', async (req, res) => {
     } else {
         res.status(404).json({ msg: 'Progressos não encontrados!' })
     }
-    
+
 });
 
 
 routes.post('/progresso-paciente', async (req, res) => {
     const service = new Service();
     const progressoPaciente: ProgressoPaciente = req.body;
-    
+
     await service.insertProgressoPaciente(progressoPaciente);
 
     res.json({ msg: 'Progresso do paciente registrado com sucesso!' });
@@ -235,7 +236,7 @@ routes.post('/alimento', async (req, res) => {
     const service = new Service();
     await service.insertAlimento(alimento);
 
-    res.status(200).json({msg: 'Alimento inserido com sucesso!'});
+    res.status(200).json({ msg: 'Alimento inserido com sucesso!' });
 });
 
 routes.get('/alimento/:idPaciente', async (req, res) => {
@@ -253,16 +254,16 @@ routes.get('/alimento/:idPaciente', async (req, res) => {
 
 routes.post('/plano-alimentar', async (req, res) => {
     const plano: PlanoAlimentar = req.body;
-    
+
     const service = new Service();
     await service.insertPlanoAlimentar(plano);
 
-    res.status(200).json({msg: 'Nome do plano alimentar criado com sucesso!'});
+    res.status(200).json({ msg: 'Nome do plano alimentar criado com sucesso!' });
 });
 
 routes.get('/plano-alimentar', async (req, res) => {
     const { nome } = req.query;
-    
+
     const service = new Service();
     const plano = await service.getPlanoAlimentarByName(String(nome));
 
@@ -292,7 +293,7 @@ routes.post('/avaliacao', async (req, res) => {
     const service = new Service();
     await service.insertAvaliacao(avaliacao);
 
-    res.status(200).json({msg: 'Avaliação cadastrada no sistema!'});
+    res.status(200).json({ msg: 'Avaliação cadastrada no sistema!' });
 });
 
 routes.get('/post', async (req, res) => {
@@ -325,7 +326,7 @@ routes.post('/post', async (req, res) => {
     const service = new Service();
     await service.insertPost(post);
 
-    res.status(200).json({msg: 'Postagem concluída!'});
+    res.status(200).json({ msg: 'Postagem concluída!' });
 });
 
 routes.get('/comentario', async (req, res) => {
@@ -358,7 +359,76 @@ routes.post('/comentario', async (req, res) => {
     const service = new Service();
     await service.insertComentario(comentario);
 
-    res.status(200).json({msg: 'Comentário concluída!'});
+    res.status(200).json({ msg: 'Comentário concluída!' });
+});
+
+// Módulo de envio de emails:
+const transport = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
+    auth: {
+        user: 'nutriguide018@gmail.com',
+        pass: 'ogzi xssf wkma fhiu'             // senha de app, não é a senha do e-mail...
+    },
+    tls: {
+        rejectUnauthorized: false,
+    }
+});
+
+// email para notificar sobre cadastro
+routes.post('/email-cadastro', async (req, res) => {
+    const { emailPaciente, nome  } = req.body;
+
+    const title: string = 'Você foi cadastrado no sistema';
+    const html: string = 
+    `
+    <div>
+        <h1>Olá, ${nome}</h1>
+        <h2>Meus parabéns, você acabou de ser cadastrado no nosso sistema!</h2>
+        <h2>Para acessar o site, basta informar o seu nome e seu email,</h2>
+        <h2>clique no botão abaixo para visitar nosso site:</h2>
+        <a href="https://nutriguide-req.netlify.app" style="display: inline-block; padding: 10px 20px; font-size: 16px; text-align: center; text-decoration: none; background-color: #28B225; color: #fff; border-radius: 5px;">Clique aqui para ir para o site</a>
+        <h2>Muito obrigado!</h2>
+    </div>
+    `
+
+    const service = new Service();
+    await service.enviarEmail(transport, title, html, nome, emailPaciente);
+
+    res.json({ msg: 'Email enviado com sucesso!' });
+});
+
+// email para notificar sobre o plano alimentar
+routes.post('/email-cadastro', async (req, res) => {
+    const { emailPaciente, nome } = req.body;
+
+    const title: string = 'Você possui um plano alimentar disponível para download!';
+    const html: string = 
+    `
+    <div>
+        <h1>Olá, ${nome}</h1>
+        <h2>Seu nutricionista acabou de criar um plano alimentar para você</h2>
+        <h2>clique no botão abaixo para conferir seu plano no nosso site:</h2>
+        <a href="https://nutriguide-req.netlify.app" style="display: inline-block; padding: 10px 20px; font-size: 16px; text-align: center; text-decoration: none; background-color: #28B225; color: #fff; border-radius: 5px;">Clique aqui para ir para o site</a>
+        <h2>Muito obrigado!</h2>
+    </div>
+    `
+
+    const service = new Service();
+    await service.enviarEmail(transport, title, html, nome, emailPaciente);
+
+    res.json({ msg: 'Email enviado com sucesso!' });
+});
+
+// email para enviar uma mensagem para o nutricionista
+routes.post('/email-mensagem-nutricionista', async (req, res) => {
+    const { emailPaciente, nome, title, html } = req.body;
+
+    const service = new Service();
+    await service.enviarEmail(transport, title, html, nome, emailPaciente);
+
+    res.json({ msg: 'Email enviado com sucesso!' });
 });
 
 export default routes;

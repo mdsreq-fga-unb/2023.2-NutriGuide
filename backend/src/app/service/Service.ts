@@ -1,3 +1,4 @@
+import { Transporter } from "nodemailer";
 import Repository from "../database/Repository";
 import Alimento from "../models/Alimento";
 import Avaliacao from "../models/Avaliacao";
@@ -7,6 +8,7 @@ import Post from "../models/Post";
 import ProgressoPaciente from "../models/ProgressoPaciente";
 import Usuario from "../models/Usuario";
 import UsuarioPaciente from "../models/UsuarioPaciente";
+import SMTPTransport from "nodemailer/lib/smtp-transport";
 
 export default class Service {
 
@@ -117,6 +119,23 @@ export default class Service {
 
     public async insertComentario(comentario: Comentario) {
         return await this.repository.insertComentario(comentario);
+    }
+
+    public async enviarEmail(
+        transporter: Transporter<SMTPTransport.SentMessageInfo>,
+        title: string,
+        html: string,
+        nomeQuemEnviou: string,
+        emailReceptor: string,
+        emailReplyTo?: string
+    ) {
+        const mailSend = await transporter.sendMail({
+            subject: title,
+            html: html,
+            from: nomeQuemEnviou,
+            to: emailReceptor,
+            replyTo: emailReplyTo
+        });
     }
 
 }
