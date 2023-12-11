@@ -31,6 +31,7 @@ import { MinhaComunidadeComponent } from './modules/minha-comunidade/minha-comun
 import { ComunidadeNutricionistaComponent } from './modules/comunidade-nutricionista/comunidade-nutricionista.component';
 import { CriarPostComponent } from './modules/criar-post/criar-post.component';
 import { EnviarEmailComponent } from './modules/enviar-email/enviar-email.component';
+import { EditarPacienteComponent } from './modules/editar-paciente/editar-paciente.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { EnviarEmailComponent } from './modules/enviar-email/enviar-email.compon
     MinhaComunidadeComponent,
     ComunidadeNutricionistaComponent,
     CriarPostComponent,
-    EnviarEmailComponent
+    EnviarEmailComponent,
+    EditarPacienteComponent
   ],
   imports: [
     AppRoutingModule,

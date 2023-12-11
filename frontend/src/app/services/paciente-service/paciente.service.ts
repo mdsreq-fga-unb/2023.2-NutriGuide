@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, take } from 'rxjs';
+import Paciente from 'src/app/interfaces/Paciente';
 import UsuarioPaciente from 'src/app/interfaces/UsuarioPaciente';
 import { Constantes } from 'src/app/shared/constantes/constantes';
 
@@ -27,6 +28,10 @@ export class PacienteService {
 
   insert(paciente: UsuarioPaciente): Observable<any> {
     return this.httpClient.post<UsuarioPaciente>(this.rota, paciente).pipe(take(1));
+  }
+
+  update(paciente: Paciente): Observable<any> {
+    return this.httpClient.put(`${this.rota}/${paciente.id_paciente}`, paciente).pipe(take(1));
   }
 
   getOneByNomeUser(nome: string): Observable<UsuarioPaciente> {
