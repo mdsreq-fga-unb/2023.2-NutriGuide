@@ -41,6 +41,58 @@ Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
 
 </center>
 
+### Dailys da sprint
+
+A tabela 3 apresenta o registros das dailys
+
+<center>
+
+_tabela 3_ Dailys realizadas
+
+| Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
+|---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
+| 03/10   | Luana     |                                                         |                                                            |                                                          |
+| 03/10   | Henrique  |                                                         |                                                            |                                                          |
+| 03/10   | Eric      |                                                         |                                                            |                                                          |
+| 03/10   | Guilherme |                                                         |                                                            |                                                          |
+| 04/10   | Luana     |                                                         |                                                            |                                                          |
+| 04/10   | Henrique  |                                                         |                                                            |                                                          |
+| 04/10   | Eric      |                                                         |                                                            |                                                          |
+| 04/10   | Guilherme |                                                         |                                                            |                                                          |
+| 05/10   | Luana     |                                                         |                                                            |                                                          |
+| 05/10   | Henrique  |                                                         |                                                            |                                                          |
+| 05/10   | Eric      |                                                         |                                                            |                                                          |
+| 05/10   | Guilherme |                                                         |                                                            |                                                          |
+| 06/10   | Luana     |                                                         |                                                            |                                                          |
+| 06/10   | Henrique  |                                                         |                                                            |                                                          |
+| 06/10   | Eric      |                                                         |                                                            |                                                          |
+| 06/10   | Guilherme |                                                         |                                                            |                                                          |
+| 09/10   | Luana     |                                                         |                                                            |                                                          |
+| 09/10   | Henrique  |                                                         |                                                            |                                                          |
+| 09/10   | Eric      |                                                         |                                                            |                                                          |
+| 09/10   | Guilherme |                                                         |                                                            |                                                          |
+| 10/10   | Luana     |                                                         |                                                            |                                                          |
+| 10/10   | Henrique  |                                                         |                                                            |                                                          |
+| 10/10   | Eric      |                                                         |                                                            |                                                          |
+| 10/10   | Guilherme |                                                         |                                                            |                                                          |
+| 11/10   | Luana     |                                                         |                                                            |                                                          |
+| 11/10   | Henrique  |                                                         |                                                            |                                                          |
+| 11/10   | Eric      |                                                         |                                                            |                                                          |
+| 11/10   | Guilherme |                                                         |                                                            |                                                          |
+| 16/10   | Luana     |                                                         |                                                            |                                                          |
+| 16/10   | Henrique  |                                                         |                                                            |                                                          |
+| 16/10   | Eric      |                                                         |                                                            |                                                          |
+| 16/10   | Guilherme |                                                         |                                                            |                                                          |
+| 17/10   | Luana     |                                                         |                                                            |                                                          |
+| 17/10   | Henrique  |                                                         |                                                            |                                                          |
+| 17/10   | Eric      |                                                         |                                                            |                                                          |
+| 17/10   | Guilherme |                                                         |                                                            |                                                          |
+
+
+Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+
+</center>
+
 ### **Planning Meeting**
  
 - Template da planning:
@@ -61,11 +113,11 @@ Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
 
 ### Sprint 4
 
-A tabela 3 apresenta o que foi feito na sprint 4
+A tabela 4 apresenta o que foi feito na sprint 4
 
 <center>
 
-_tabela 3_ Sprint 4
+_tabela 4_ Sprint 4
 
 Data: 18/10 a 26/10
 
@@ -76,6 +128,50 @@ Data: 18/10 a 26/10
 | Sprint Review               | Professor sugeriu retirar as US de cadastro, Não tivemos mvp aprovado, Retirar do mvp US que fossem referentes a CRUD de cadastro, Repriorizar as US e propor outro mvp |
 | Débitos                     | Aprovar MVP |
 | Sprint Retrospective        | Nos organizamos para priorizar as US, Participamos das atividades em sala, Criamos o backlog do produto, Atualizamos o github pages, Entregamos a missão |
+
+Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+
+</center>
+
+### Dailys da sprint
+
+A tabela 5 apresenta o registros das dailys
+
+<center>
+
+_tabela 5_ Dailys realizadas
+
+| Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
+|---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
+| 18/10   | Luana     |                                                         |                                                            |                                                          |
+| 18/10   | Henrique  |                                                         |                                                            |                                                          |
+| 18/10   | Eric      |                                                         |                                                            |                                                          |
+| 18/10   | Guilherme |                                                         |                                                            |                                                          |
+| 19/10   | Luana     |                                                         |                                                            |                                                          |
+| 19/10   | Henrique  |                                                         |                                                            |                                                          |
+| 19/10   | Eric      |                                                         |                                                            |                                                          |
+| 19/10   | Guilherme |                                                         |                                                            |                                                          |
+| 20/10   | Luana     |                                                         |                                                            |                                                          |
+| 20/10   | Henrique  |                                                         |                                                            |                                                          |
+| 20/10   | Eric      |                                                         |                                                            |                                                          |
+| 20/10   | Guilherme |                                                         |                                                            |                                                          |
+| 23/10   | Luana     |                                                         |                                                            |                                                          |
+| 23/10   | Henrique  |                                                         |                                                            |                                                          |
+| 23/10   | Eric      |                                                         |                                                            |                                                          |
+| 23/10   | Guilherme |                                                         |                                                            |                                                          |
+| 24/10   | Luana     |                                                         |                                                            |                                                          |
+| 24/10   | Henrique  |                                                         |                                                            |                                                          |
+| 24/10   | Eric      |                                                         |                                                            |                                                          |
+| 24/10   | Guilherme |                                                         |                                                            |                                                          |
+| 25/10   | Luana     |                                                         |                                                            |                                                          |
+| 25/10   | Henrique  |                                                         |                                                            |                                                          |
+| 25/10   | Eric      |                                                         |                                                            |                                                          |
+| 25/10   | Guilherme |                                                         |                                                            |                                                          |
+| 26/10   | Luana     |                                                         |                                                            |                                                          |
+| 26/10   | Henrique  |                                                         |                                                            |                                                          |
+| 26/10   | Eric      |                                                         |                                                            |                                                          |
+| 26/10   | Guilherme |                                                         |                                                            |                                                          |
+
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
 

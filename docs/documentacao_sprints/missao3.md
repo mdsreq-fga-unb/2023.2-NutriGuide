@@ -39,6 +39,58 @@ Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
 
 </center>
 
+### Dailys da sprint
+
+A tabela 3 apresenta o registros das dailys
+
+<center>
+
+_tabela 3_ Dailys realizadas
+
+| Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
+|---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
+| 31/10   | Luana     |                                                         |                                                            |                                                          |
+| 31/10   | Henrique  |                                                         |                                                            |                                                          |
+| 31/10   | Eric      |                                                         |                                                            |                                                          |
+| 31/10   | Guilherme |                                                         |                                                            |                                                          |
+| 01/11   | Luana     |                                                         |                                                            |                                                          |
+| 01/11   | Henrique  |                                                         |                                                            |                                                          |
+| 01/11   | Eric      |                                                         |                                                            |                                                          |
+| 01/11   | Guilherme |                                                         |                                                            |                                                          |
+| 06/11   | Luana     |                                                         |                                                            |                                                          |
+| 06/11   | Henrique  |                                                         |                                                            |                                                          |
+| 06/11   | Eric      |                                                         |                                                            |                                                          |
+| 06/11   | Guilherme |                                                         |                                                            |                                                          |
+| 07/11   | Luana     |                                                         |                                                            |                                                          |
+| 07/11   | Henrique  |                                                         |                                                            |                                                          |
+| 07/11   | Eric      |                                                         |                                                            |                                                          |
+| 07/11   | Guilherme |                                                         |                                                            |                                                          |
+| 08/11   | Luana     |                                                         |                                                            |                                                          |
+| 08/11   | Henrique  |                                                         |                                                            |                                                          |
+| 08/11   | Eric      |                                                         |                                                            |                                                          |
+| 08/11   | Guilherme |                                                         |                                                            |                                                          |
+| 09/11   | Luana     |                                                         |                                                            |                                                          |
+| 09/11   | Henrique  |                                                         |                                                            |                                                          |
+| 09/11   | Eric      |                                                         |                                                            |                                                          |
+| 09/11   | Guilherme |                                                         |                                                            |                                                          |
+| 10/11   | Luana     |                                                         |                                                            |                                                          |
+| 10/11   | Henrique  |                                                         |                                                            |                                                          |
+| 10/11   | Eric      |                                                         |                                                            |                                                          |
+| 10/11   | Guilherme |                                                         |                                                            |                                                          |
+| 13/11   | Luana     |                                                         |                                                            |                                                          |
+| 13/11   | Henrique  |                                                         |                                                            |                                                          |
+| 13/11   | Eric      |                                                         |                                                            |                                                          |
+| 13/11   | Guilherme |                                                         |                                                            |                                                          |
+| 14/11   | Luana     |                                                         |                                                            |                                                          |
+| 14/11   | Henrique  |                                                         |                                                            |                                                          |
+| 14/11   | Eric      |                                                         |                                                            |                                                          |
+| 14/11   | Guilherme |                                                         |                                                            |                                                          |
+
+
+Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+
+</center>
+
 ### **Planning Meeting**
  
 - Template da planning:
@@ -59,11 +111,11 @@ Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
 
 ### Sprint 6
 
-A tabela 3 apresenta o que foi feito na sprint 6
+A tabela 4 apresenta o que foi feito na sprint 6
 
 <center>
 
-_tabela 3_ Sprint 6
+_tabela 4_ Sprint 6
 
 Data: 15/11 a 23/11
 
@@ -74,6 +126,46 @@ Data: 15/11 a 23/11
 | Sprint Review               | MVP aprovado, seguir com as atividades, Alterar USM, Criar criterios de aceitação,  |
 | Débitos                     | Não participamos do ponto de controle |
 | Sprint Retrospective        | Conseguimos concluir tudo |
+
+Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+
+</center>
+
+### Dailys da sprint
+
+A tabela 5 apresenta o registros das dailys
+
+<center>
+
+_tabela 5_ Dailys realizadas
+
+| Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
+|---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
+| 16/11   | Luana     |                                                         |                                                            |                                                          |
+| 16/11   | Henrique  |                                                         |                                                            |                                                          |
+| 16/11   | Eric      |                                                         |                                                            |                                                          |
+| 16/11   | Guilherme |                                                         |                                                            |                                                          |
+| 17/11   | Luana     |                                                         |                                                            |                                                          |
+| 17/11   | Henrique  |                                                         |                                                            |                                                          |
+| 17/11   | Eric      |                                                         |                                                            |                                                          |
+| 17/11   | Guilherme |                                                         |                                                            |                                                          |
+| 20/11   | Luana     |                                                         |                                                            |                                                          |
+| 20/11   | Henrique  |                                                         |                                                            |                                                          |
+| 20/11   | Eric      |                                                         |                                                            |                                                          |
+| 20/11   | Guilherme |                                                         |                                                            |                                                          |
+| 21/11   | Luana     |                                                         |                                                            |                                                          |
+| 21/11   | Henrique  |                                                         |                                                            |                                                          |
+| 21/11   | Eric      |                                                         |                                                            |                                                          |
+| 21/11   | Guilherme |                                                         |                                                            |                                                          |
+| 22/11   | Luana     |                                                         |                                                            |                                                          |
+| 22/11   | Henrique  |                                                         |                                                            |                                                          |
+| 22/11   | Eric      |                                                         |                                                            |                                                          |
+| 22/11   | Guilherme |                                                         |                                                            |                                                          |
+| 23/11   | Luana     |                                                         |                                                            |                                                          |
+| 23/11   | Henrique  |                                                         |                                                            |                                                          |
+| 23/11   | Eric      |                                                         |                                                            |                                                          |
+| 23/11   | Guilherme |                                                         |                                                            |                                                          |
+
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
 
