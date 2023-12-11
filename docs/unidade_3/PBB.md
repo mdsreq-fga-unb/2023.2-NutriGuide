@@ -13,7 +13,7 @@ O PBB (Product Backlog Building) foi feito a partir da atividade fornecida pelo 
 Abaixo se encontra o MIRO que foi usado para fazer essa Atividade
  <center>
 
-<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVNS_3zz8=/?moveToViewport=-3775,-2853,17741,8990&embedId=102514266029" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVNE9tEmo=/?moveToViewport=-16703,-12229,27795,14085&embedId=439943258000" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
 </center>
 
@@ -25,8 +25,9 @@ Abaixo se encontra o MIRO que foi usado para fazer essa Atividade
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
-|  0.1   | 5/11/2023 | Criação do PBB | Guilherme, Eric, Henrique, Luana |  Guilherme,Luana |
-|  0.2   | 22/11/2023 | Arrumando para colocar no GitPages | Guilherme | Luana |
+|  0.1   | 5/11/2023 | Criação do PBB | [Guilherme](https://github.com/GG555-13), [Eric Camargo](https://github.com/Ericcs10), [Henrique](https://github.com/henriqtorresl), [Luana Torres](https://github.com/luanatorress) |  [Guilherme](https://github.com/GG555-13),[Luana Torres](https://github.com/luanatorress) |
+|  0.2   | 22/11/2023 | Arrumando para colocar no GitPages |[Guilherme](https://github.com/GG555-13) | [Luana Torres](https://github.com/luanatorress) |
+|  0.3   | 12/11/2023 |Atualizando o MIRO do PBB e  arrumando Histórico de versão | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/henriqtorresl) |
 
 
 ---
