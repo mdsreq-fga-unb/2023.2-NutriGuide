@@ -33,6 +33,10 @@ export default class Service {
         await this.repository.insertPaciente(paciente, retorno!.id_usuario);
     }
 
+    public async editPaciente(paciente: UsuarioPaciente, idPaciente: string) {
+        await this.repository.editPaciente(paciente, idPaciente);
+    }
+
     public async getAllPacientesByNutriName(responsavel: string) {
         return await this.repository.getAllPacientesByNutriName(responsavel);
     }

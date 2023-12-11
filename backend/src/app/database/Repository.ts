@@ -97,11 +97,30 @@ export default class Repository {
         });
     }
 
-    public insertPaciente(userPaciente: UsuarioPaciente, idUsuario: number): Promise<Usuario | undefined> {
+    public insertPaciente(userPaciente: UsuarioPaciente, idUsuario: number): Promise<UsuarioPaciente | undefined> {
         return new Promise((resolve, reject) => {
-            this.database.query<User[]>(
+            this.database.query<UsuarioPaciente[]>(
                 paciente.inserir, 
                 [userPaciente.peso, userPaciente.altura, userPaciente.queixa, userPaciente.comorbidades, userPaciente.medicacoes, idUsuario, userPaciente.nutricionista_responsavel], 
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result?.[0]);
+
+                        this.database.end();
+                    }
+            });
+        });
+    }
+
+    public editPaciente(userPaciente: UsuarioPaciente, idPaciente: string): Promise<UsuarioPaciente | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<UsuarioPaciente[]>(
+                paciente.atualizar, 
+                [userPaciente.peso, userPaciente.altura, userPaciente.queixa, userPaciente.comorbidades, userPaciente.medicacoes, idPaciente], 
                 (err, result) => {
                     if (err) {
                         reject(err);

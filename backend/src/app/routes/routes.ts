@@ -150,6 +150,17 @@ routes.post('/paciente', async (req, res) => {
     res.status(200).json({ msg: 'Paciente inserido com sucesso!' });
 });
 
+routes.put('/paciente/:id', async (req, res) => {
+    const paciente: UsuarioPaciente = req.body;
+    const { id } = req.params;
+
+    const service = new Service();
+    await service.editPaciente(paciente, id);
+
+    res.status(200).json({ msg: 'Paciente editado com sucesso!' });
+});
+
+
 routes.get('/nutricionista', async (req, res) => {
     const service = new Service();
     const nutricionista = await service.getAllNutricionistas();
