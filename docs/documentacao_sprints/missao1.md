@@ -4,12 +4,28 @@
 
 ### **Missão 1 - 05/09 a 28/09**
 
+A tabela 1 apresenta o Planejamento da missão 1
+
+<center>
+
+_tabela 1_ Planejamento da missão 1
+
 | Data Início | Sprint  | Data Final |
 |-------------|---------|------------|
 | 05/09       | Sprint 1| 12/09      |
 | 13/09       | Sprint 2| 28/09      |
 
+Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+
+</center>
+
 ### Sprint 1 
+
+A tabela 2 apresenta o que foi feito na sprint 1
+
+<center>
+
+_tabela 2_ Sprint 1
 
 Data: 05/09 a 12/09
 
@@ -20,6 +36,10 @@ Data: 05/09 a 12/09
 | Sprint Review               | Após definido o tema, e os processos de engenharia de software, O professor sugeriu uma mudança na ideia de tema e de cliente, tivemos que pensar em outro tema para aprovar com o professor, e começar a fazer a visão de produto e projeto de ambas as ideias |
 | Débitos                     | Aprovar ideia de tema e cliente (antiga ou nova)|
 | Sprint Retrospective        | O problema encontrado foi que o processo inicialmente escolhido não era o mais adequado para o nosso projeto, de acordo com o feedback do professor, foram escolhidos o processo e o ciclo de vida, |
+
+Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+
+</center>
 
 ### **Planning Meeting**
  
@@ -41,6 +61,12 @@ Data: 05/09 a 12/09
 
 ### Sprint 2
 
+A tabela 3 apresenta o que foi feito na Sprint 2
+
+<center>
+
+_tabela 3_ Sprint 2
+
 Data: 13/09 a 28/09
 
 | Cerimônia                   | Atividades da Sprint       |
@@ -50,6 +76,10 @@ Data: 13/09 a 28/09
 | Sprint Review               | Acrescentamos as atribuições de cada participante ao documento, Acrescentamos as ferramentas a serem utilizadas ao documento, alterações na visão de produto e projeto, Atualização do documento,Decidir como vamos aplicar atributos da engenharia de requisitos ao nosso projeto, Atualizar o documento e preparar apresentação de entrega da missão |
 | Débitos                     | Não adicionamos história da facção ao pages |
 | Sprint Retrospective        | Tudo o que foi feito durante a missão 1 foi devidamente documentado no pages, Vídeo foi gravado,  |
+
+Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+
+</center>
 
 ### **Planning Meeting**
  
