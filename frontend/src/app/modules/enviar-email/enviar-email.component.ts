@@ -86,6 +86,8 @@ export class EnviarEmailComponent implements OnInit {
         this.formulario.value.conteudo === '' ||
         this.formulario.value.emailUsuario === '' 
       ) {
+        console.log(this.formulario.value);
+
         this.snackbar.open('Preencha todos os campos corretamente!', 'OK', {duration: 3000});
       } else {
         this.emailService.sendMsgNutricionista(
