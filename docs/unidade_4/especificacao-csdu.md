@@ -22,9 +22,33 @@ Ator Principal - Cliente
 * Fluxos de Exceção 
     - [FE01] Se o aplicativo não conseguir carregar as inspirações de viagens, ele deve informar o cliente e tentar novamente.
 
+## Título do Caso de uso - Reserva de Atividades
 
+* Descrição: O cliente acessa uma área do aplicativo que contém artigos, fotografias e vídeos sobre diversos destinos para inspirar suas viagens futuras.
+Ator Principal - Cliente
+* Pré-Condições:
+      -O Cliente deve estar logado no aplicativo.
+      -Deve haver atividades disponíveis para reserva.
+* Fluxo Principal:
+     -O usuário logado navega até a seção de atividades disponíveis.
+     -O aplicativo exibe uma lista de atividades disponíveis.
+     -O Cliente seleciona uma atividade da lista.
+     -O aplicativo exibe os detalhes da atividade, incluindo a disponibilidade.
+     -O Cliente seleciona a opção para reservar a atividade.
+     -O aplicativo confirma a disponibilidade da atividade.
+     -O aplicativo realiza a reserva para o usuário.
+     -O aplicativo exibe uma confirmação de sucesso para o usuário.
+* Pós-condições:A atividade é reservada para o Cliente e ele recebe uma confirmação da reserva.
+
+* Fluxos Alternativos 
+    - [FA01] Se a atividade selecionada não estiver disponível.
+       -O aplicativo informa ao Cliente que a atividade não está disponível.
+       -O fluxo retorna ao passo 2 do Fluxo Principal.
+* Fluxos de Exceção 
+    - [FE01] Se o aplicativo não conseguir carregar as atividades disponíveis para reserva, ele deve informar o cliente e tentar novamente.
 ## Histórico de versão
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  0.1   | 07/12/2023 | Criação do documento | [Luana](https://github.com/luanatorress) | [Guilherme](https://github.com/GG555-13)  |
+|  0.2   | 07/12/2023 | Adicionando  o caso de uso de reserva de atividades | [Guilherme](https://github.com/GG555-13) | [Luana](https://github.com/luanatorress)  |
