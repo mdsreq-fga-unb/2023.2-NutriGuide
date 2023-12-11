@@ -4,12 +4,28 @@
 
 ### **Missão 2 - 03/10 a 26/10**
 
+A tabela 1 apresenta o planejamento da missão 2
+
+<center>
+
+_tabela 1_ Planejamento missão 2
+
 | Data Início | Sprint  | Data Final |
 |-------------|---------|------------|
-| 03/10       | Sprint 1| 17/10      |
-| 18/10       | Sprint 2| 26/10      |
+| 03/10       | Sprint 4| 17/10      |
+| 18/10       | Sprint 5| 26/10      |
 
-### Sprint 1 
+Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+
+</center>
+
+### Sprint 4 
+
+A tabela 2 apresenta o que foi feito na Sprint 4
+
+<center>
+
+_tabela 2_ Sprint 4
 
 Data: 03/10 a 17/10
 
@@ -20,6 +36,10 @@ Data: 03/10 a 17/10
 | Sprint Review               | Requisitos foram aprovados apos avaliação, Gerar nosso backlog a partir dos requisitos, com a estrutura do safe, Alterar o gitpages conforme Feedback |
 | Débitos                     | Não conseguimos fazer as alterações pedidas no Pages |
 | Sprint Retrospective        | Conseguimos separar os requisitos e falar com o cliente, conseguimos fazer chegar nas historias de usuario a partir dos requisitos, fizemos a avaliação do backlog de outra equipe na atividade em sala, começamos o backlog |
+
+Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+
+</center>
 
 ### **Planning Meeting**
  
@@ -39,7 +59,13 @@ Data: 03/10 a 17/10
 
 <center> ![](../assets/images/missao2_sprint1_retro.png) </center>
 
-### Sprint 2
+### Sprint 5
+
+A tabela 3 apresenta o que foi feito na sprint 5
+
+<center>
+
+_tabela 3_ Sprint 5
 
 Data: 18/10 a 26/10
 
@@ -50,6 +76,10 @@ Data: 18/10 a 26/10
 | Sprint Review               | Professor sugeriu retirar as US de cadastro, Não tivemos mvp aprovado, Retirar do mvp US que fossem referentes a CRUD de cadastro, Repriorizar as US e propor outro mvp |
 | Débitos                     | Aprovar MVP |
 | Sprint Retrospective        | Nos organizamos para priorizar as US, Participamos das atividades em sala, Criamos o backlog do produto, Atualizamos o github pages, Entregamos a missão |
+
+Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+
+</center>
 
 ### **Planning Meeting**
  
@@ -74,4 +104,4 @@ Data: 18/10 a 26/10
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  1.0   | 22/11/2023 | Criação da página | [Henrique](https://github.com/henriqtorresl) | [Eric](https://github.com/Ericcs10)  |
-|  1.1   | 22/11/2023 | Descrição missão 1| [Eric](https://github.com/Ericcs10) | [Luana Torres](https://github.com/luanatorress)  |
+|  1.1   | 22/11/2023 | Descrição missão 2| [Eric](https://github.com/Ericcs10) | [Luana Torres](https://github.com/luanatorress)  |
