@@ -36,6 +36,7 @@
                 <div class="pdf-download">
                     <button 
                         [matTooltip]="'Clique aqui para baixar as informações do plano de ' + paciente.nome_usuario"
+                        (click)="downloadPdf()"
                     >
                         <mat-icon>download</mat-icon>
                     </button>
