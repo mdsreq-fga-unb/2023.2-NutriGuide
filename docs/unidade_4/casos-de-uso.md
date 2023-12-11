@@ -19,6 +19,9 @@ No frame abaixo é possível visualizar o digrama:
 </center>
 
 
+
+## Histórico de versão
+
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  0.1   | 07/12/2023 | Criação do documento | [Eric](https://github.com/Ericcs10) | [Guilherme](https://github.com/GG555-13)  |
