@@ -20,8 +20,11 @@ Após o nosso grupo terminar as US e os seus críterios de aceitação conforme 
 - A recepcionista não pode cadastrar alguem que tem conta   
 - A  recepcionista pode cadastrar alguém sem conta  
 
-Cenário: paciente não possui conta
-DADO que o paciente não possui conta, QUANDO eu for cadastrar o paciente, ENTÃO o sistema deve liberar o cadastro do novo paciente.
+- Cenário: Paciente não possui conta
+DADO que o paciente "João Silva" não possui conta,
+QUANDO a Recepcionista "Maria" for cadastrar o paciente,
+ENTÃO o sistema deve liberar o cadastro do novo paciente.
+
 
 
 
@@ -42,7 +45,9 @@ como recepcionista posso inserir dados para adicionar os dados ao perfil
 Cenário: histórico médico do paciente foi alterado
 </center>
 
-DADO que o paciente possui conta no sistema e seu histórico médico foi alterado, QUANDO eu for alterar seu histórico médico, ENTÃO o sistema deve deixar alterar.
+DADO que o paciente "Maria Oliveira" possui conta no sistema e seu histórico médico foi alterado para incluir "diabetes tipo 2",
+QUANDO a Recepcionista "Maria" for alterar seu histórico médico,
+ENTÃO o sistema deve deixar alterar.
 
  <center>
   US
@@ -61,7 +66,9 @@ como recepcionista posso coletar as informações das outras unidades para agili
  Cenário: paciente se consulta em mais de uma unidade 
 </center>
 
-DADO que o paciente possui conta e tem dados em outra unidade, QUANDO eu coletar as informações de outra unidade, ENTÃO o sistema deve transferir os dados do paciente selecionado.
+DADO que o paciente "Carlos Santos" possui conta e tem dados na unidade "Heath Tech B",
+QUANDO a Recepcionista "Maria" coletar as informações de outra unidade,
+ENTÃO o sistema deve transferir os dados do paciente selecionado.
 
  <center>
   US
@@ -80,7 +87,9 @@ como recepcionista posso acessar as informações cadastradas para confirmar se 
  Cenário: Visualizar informações de um paciente
 </center>
 
-DADO que o paciente possui cadastro e informações cadastradas, QUANDO eu acessar sua conta, ENTÃO o sistema deve mostrar na tela as informações do paciente
+DADO que o paciente "João Silva" possui cadastro e informações cadastradas,
+QUANDO a Recepcionista "Maria" acessar sua conta,
+ENTÃO o sistema deve mostrar na tela as informações do paciente.
 
 
  <center>
@@ -100,14 +109,12 @@ Como recepcionista, posso inserir dados para atualizar dados ao perfil.
 Cenário: Atualizar dados do perfil.
 </center>
 
-DADO que a recepcionista acesse o perfil do paciente, E que ela selecione a opção de atualizar dados, QUANDO inserir as informações atualizadas no perfil do paciente, ENTÃO o sistema deve salvar as alterações feitas no perfil, E o sistema deve exibir uma confirmação de que os dados foram atualizados com sucesso.
-Como recepcionista, posso acessar as informações cadastradas para realizar atualizações nos dados.
+DADO que a Recepcionista "Maria" acesse o perfil do paciente "Ana Oliveira",
+E que ela selecione a opção de atualizar dados,
+QUANDO inserir as informações atualizadas no perfil do paciente,
+ENTÃO o sistema deve salvar as alterações feitas no perfil,
+E o sistema deve exibir uma confirmação de que os dados foram atualizados com sucesso.
 
-<center>
-Cenário: Acessar e Atualizar Dados do Paciente.
-</center>
- 
-DADO que a recepcionista esteja autenticada no sistema, E que ela tenha acesso ao cadastro de pacientes, QUANDO selecionar o perfil de um paciente específico, E optar pela opção de atualizar dados, ENTÃO o sistema deve exibir as informações cadastradas do paciente, E permitir que a recepcionista faça as atualizações necessárias no perfil do paciente, E ao salvar as alterações, o sistema deve exibir uma confirmação de que os dados foram atualizados com sucesso.
 
  <center>
   US
@@ -126,7 +133,12 @@ Como recepcionista, posso atualizar informações de outras unidades para poder 
 <center>
 Cenário: Atualizar Informações de Outras Unidades. 
 </center>
-DADO que a recepcionista esteja autenticada no sistema, E que ela tenha permissões para acessar dados de outras unidades, E que ela selecione a opção de atualizar informações de uma unidade específica, QUANDO realizar as alterações necessárias nos dados da unidade, ENTÃO o sistema deve salvar as atualizações feitas na unidade, E exibir uma confirmação de que os dados foram atualizados com sucesso
+DADO que a Recepcionista "Maria" esteja autenticada no sistema,
+E que ela tenha permissões para acessar dados de outras unidades,
+E que ela selecione a opção de atualizar informações de uma unidade específica,
+QUANDO realizar as alterações necessárias nos dados da unidade,
+ENTÃO o sistema deve salvar as atualizações feitas na unidade,
+E exibir uma confirmação de que os dados foram atualizados com sucesso.
 
  <center>
   US
@@ -144,7 +156,12 @@ Como recepcionista, posso sobrepor as informações para realizar a atualizaçã
 Cenário: Sobrepor Informações para Atualização do Sistema.
 </center>
  
-DADO que a recepcionista esteja autenticada no sistema, E que ela tenha permissões para sobrepor informações, E que ela selecione a opção de atualizar dados de um paciente específico, QUANDO sobrepor ou editar as informações necessárias no sistema, ENTÃO o sistema deve aceitar as alterações e sobrepor as informações existentes, E exibir uma confirmação de que os dados foram atualizados com sucesso.
+DADO que a Recepcionista "Maria" esteja autenticada no sistema,
+E que ela tenha permissões para sobrepor informações,
+E que ela selecione a opção de atualizar dados de um paciente específico,
+QUANDO sobrepor ou editar as informações necessárias no sistema,
+ENTÃO o sistema deve aceitar as alterações e sobrepor as informações existentes,
+E exibir uma confirmação de que os dados foram atualizados com sucesso.
 
 ### DR João (Médico)
 
@@ -164,19 +181,30 @@ DADO que a recepcionista esteja autenticada no sistema, E que ela tenha permiss�
 Cenário: Médico visualiza lista de possíveis doenças de um paciente
 </center>
 
-Dado que o Médico está logado no sistema E que há um paciente com predições de doenças Quando o Médico acessa a página de predições de doenças do paciente Então o Médico deve ver a lista de possíveis doenças do paciente
+DADO que o Médico "Dr. João" está logado no sistema,
+E que há um paciente "Maria Oliveira" com predições de doenças,
+QUANDO o Médico acessa a página de predições de doenças do paciente,
+ENTÃO o Médico deve ver a lista de possíveis doenças do paciente.
 
 <center>
 Cenário: Médico visualiza sintomas das possíveis doenças
 </center>
 
-Dado que o Médico está logado no sistema E que há um paciente com predições de doenças Quando o Médico acessa a página de predições de doenças do paciente Então o Médico deve ver a lista de possíveis doenças do paciente E deve ver os sintomas de cada possível doença
+DADO que o Médico "Dr. João" está logado no sistema,
+E que há um paciente "Maria Oliveira" com predições de doenças,
+QUANDO o Médico acessa a página de predições de doenças do paciente,
+ENTÃO o Médico deve ver a lista de possíveis doenças do paciente,
+E deve ver os sintomas de cada possível doença.
+
 
 <center>
 Cenário: Médico visualiza possíveis doenças por ordem de gravidade
 </center>
-
-Dado que o Médico está logado no sistema E que há um paciente com predições de doenças Quando o Médico acessa a página de predições de doenças do paciente Então o Médico deve ver a lista de possíveis doenças do paciente E deve ver as possíveis doenças ordenadas por gravidade
+DADO que o Médico "Dr. João" está logado no sistema,
+E que há um paciente "Maria Oliveira" com predições de doenças,
+QUANDO o Médico acessa a página de predições de doenças do paciente,
+ENTÃO o Médico deve ver a lista de possíveis doenças do paciente,
+E deve ver as possíveis doenças ordenadas por gravidade.
  
  <center>
   US
@@ -194,13 +222,25 @@ Como Médico eu quero utilizar um filtro de tratamento Para facilitar na busca d
 Cenário: O médico pode utilizar do filtro de tratamento para buscar informações sobre o paciente
 </center>
 
-Dado que o médico está logado no sistema E o médico está na página de busca de pacientes Quando o médico seleciona o filtro de tratamento E o médico insere o nome do tratamento E o médico clica no botão de busca Então o sistema exibe uma lista de pacientes que receberam o tratamento
+DADO que o médico "Dr. João" está logado no sistema,
+E o médico está na página de busca de pacientes,
+QUANDO o médico seleciona o filtro de tratamento,
+E o médico insere o nome do tratamento "quimioterapia",
+E o médico clica no botão de busca,
+ENTÃO o sistema exibe uma lista de pacientes que receberam o tratamento.
 
 <center>
 Cenário: O médico encontrar informações do paciente de forma organizada
 </center>
 
-Dado que o médico está logado no sistema E o médico está na página de busca de pacientes Quando o médico seleciona o filtro de tratamento E o médico insere o nome do tratamento E o médico clica no botão de busca E o sistema exibe uma lista de pacientes que receberam o tratamento Então o sistema exibe as informações do paciente de forma organizada
+DADO que o médico "Dr. João" está logado no sistema,
+E o médico está na página de busca de pacientes,
+QUANDO o médico seleciona o filtro de tratamento,
+E o médico insere o nome do tratamento "quimioterapia",
+E o médico clica no botão de busca,
+E o sistema exibe uma lista de pacientes que receberam o tratamento,
+ENTÃO o sistema exibe as informações do paciente de forma organizada.
+
 
  <center>
   US
@@ -219,14 +259,21 @@ Como Médico eu quero visualizar todas as informações do paciente em uma tela 
 Cenário: O médico pode visualizar as informações de todos os pacientes em uma tela scroll
 </center>
 
-Dado que o médico está logado no sistema E o médico está na página de busca de pacientes Quando o médico clica no botão "Visualizar todos os pacientes" Então o sistema exibe todas as informações dos pacientes em uma tela scroll
+DADO que o médico "Dr. João" está logado no sistema,
+E o médico está na página de busca de pacientes,
+QUANDO o médico clica no botão "Visualizar todos os pacientes",
+ENTÃO o sistema exibe todas as informações dos pacientes em uma tela scroll.
 
 
 <center>
 Cenário: O médico pode visualizar informações de apenas um paciente
 </center>
 
-Dado que o médico está logado no sistema E o médico está na página de busca de pacientes Quando o médico insere o nome do paciente na barra de pesquisa E o médico clica no botão de busca Então o sistema exibe as informações do paciente em uma tela
+DADO que o médico "Dr. João" está logado no sistema,
+E o médico está na página de busca de pacientes,
+QUANDO o médico insere o nome do paciente "Maria Oliveira" na barra de pesquisa,
+E o médico clica no botão de busca,
+ENTÃO o sistema exibe as informações do paciente em uma tela.
 
 
 
@@ -239,30 +286,28 @@ Como Médico eu quero utilizar um filtro de pacientes Para facilitar na busca do
  Críterios de Aceitação
 </center>
 
-- o medico pode selecionar o paciente em que ele quer visualizar as informações
 - o medico pode selecionar o cpf do paciente em que ele quer visualizar as informações
 - o medico pode selecionar o nome do paciente em que ele quer visualizar as informações  
 
-<center>
-Cenário: O médico pode selecionar o paciente em que ele quer visualizar as informações
-</center>
 
-Dado que o médico está logado no sistema E o médico está na página de busca de pacientes Quando o médico seleciona o filtro de pacientes E o médico seleciona o paciente Então o sistema exibe as informações do paciente
-
-<center>
 Cenário: O médico pode selecionar o cpf do paciente em que ele quer visualizar as informações
 </center>
 
-Dado que o médico está logado no sistema E o médico está na página de busca de pacientes
-Quando o médico seleciona o filtro de pacientes E o médico insere o cpf do paciente E o médico clica no botão de busca Então o sistema exibe as informações do paciente
+DADO que o médico "Dr. João" está logado no sistema,
+E o médico está na página de busca de pacientes,
+QUANDO o médico insere o cpf do paciente "111.222.333-44" na barra de pesquisa,
+E o médico clica no botão de busca,
+ENTÃO o sistema exibe as informações do paciente em uma tela
 
 
 <center>
 Cenário: O médico pode selecionar o nome do paciente em que ele quer visualizar as informações
 </center>
-
-Dado que o médico está logado no sistema E o médico está na página de busca de pacientes Quando o médico seleciona o filtro de pacientes E o médico insere o nome do paciente E o médico clica no botão de busca Então o sistema exibe as informações do paciente
-
+DADO que o médico "Dr. João" está logado no sistema,
+E o médico está na página de busca de pacientes,
+QUANDO o médico insere o nome do paciente "Maria Oliveira" na barra de pesquisa,
+E o médico clica no botão de busca,
+ENTÃO o sistema exibe as informações do paciente em uma tela.
 
  <center>
   US
@@ -280,13 +325,18 @@ Como Médico eu quero receber um alerta de risco Para prevenir possíveis contra
 Cenário: O médico deve receber os alertas a cada paciente que atende
 </center>
 
-Dado que o médico está logado no sistema E o médico está na página de informações do paciente Quando o médico seleciona a opção "Receber alertas de risco" Então o sistema envia um alerta de risco para o médico a cada paciente que ele atende
-
+DADO que o médico "Dr. João" está logado no sistema,
+E o médico está na página de informações do paciente,
+QUANDO o médico seleciona a opção "Receber alertas de risco",
+ENTÃO o sistema envia um alerta de risco para o médico a cada paciente que ele atende.
 <center>
 Cenário: O médico deve poder selecionar gatilhos para receber os alertas
 </center>
 
-Dado que o médico está logado no sistema E o médico está na página de configurações de alerta de risco Quando o médico seleciona os gatilhos para receber alertas Então o sistema envia alertas de risco para o médico com base nos gatilhos selecionados
+DADO que o médico "Dr. João" está logado no sistema,
+E o médico está na página de configurações de alerta de risco,
+QUANDO o médico seleciona os gatilhos para receber alertas "Pressão alta, Diabetes",
+ENTÃO o sistema envia alertas de risco para o médico com base nos gatilhos selecionados.
 
 
 
@@ -309,7 +359,9 @@ como médico posso utilizar um filtro de data para saber quando foram realizados
 Cenário: Selecionar data válida 
 </center>
 
-DADO que o médico selecione o data válida, QUANDO filtrar por data, ENTÃO o sistema deve retornar os processos realizados na data escolhida, seja no ano, mês ou dia.
+DADO que o médico "Dr. João" selecione a data válida "01/01/2023",
+QUANDO filtrar por data,
+ENTÃO o sistema deve retornar os processos realizados na data escolhida, seja no ano, mês ou dia.
 
  <center>
   US
@@ -327,7 +379,14 @@ Como médico, posso utilizar um filtro de unidade para saber onde os pacientes s
 Cenário: Filtrar Pacientes por Unidade de Consulta 
 </center>
 
-DADO que o médico esteja autenticado no sistema, E que ele tenha permissões para acessar informações de unidades de consulta, E que existam pacientes registrados no sistema, QUANDO o médico selecionar a opção de filtrar por unidade de consulta, E escolher uma unidade específica, ENTÃO o sistema deve exibir a lista de pacientes que se consultaram na unidade escolhida, E apresentar informações relevantes sobre esses pacientes, E permitir ao médico visualizar detalhes adicionais sobre cada paciente, se necessário.
+DADO que o médico "Dr. João" esteja autenticado no sistema,
+E que ele tenha permissões para acessar informações de unidades de consulta,
+E que existam pacientes registrados no sistema,
+QUANDO o médico selecionar a opção de filtrar por unidade de consulta,
+E escolher a unidade "HealthNet - Unidade Centro",
+ENTÃO o sistema deve exibir a lista de pacientes que se consultaram na unidade escolhida,
+E apresentar informações relevantes sobre esses pacientes,
+E permitir ao médico visualizar detalhes adicionais sobre cada paciente, se necessário.
 
 
 
@@ -349,17 +408,17 @@ Como Farmacêutica eu quero acessar as informações detalhadas dos medicamentos
 Cenário: Acessar informações detalhadas dos medicamentos
 </center>
 
-Dado que a Farmacêutica está logada no sistema
-Quando a Farmacêutica clica no botão "Detalhes"
-Então a Farmacêutica vê as informações detalhadas do medicamento
+DADO que a Farmacêutica "Lívia" está logada no sistema,
+QUANDO ela clica no botão "Detalhes" do medicamento "Ibuprofeno",
+ENTÃO ela vê as informações detalhadas do medicamento.
 
 <center>
 Cenário: Ver possíveis interações perigosas do medicamento
 </center>
 
-Dado que a Farmacêutica está logada no sistema
-Quando a Farmacêutica clica no botão "Interações Perigosas"
-Então a Farmacêutica vê as possíveis interações perigosas do medicamento
+DADO que a Farmacêutica "Lívia" está logada no sistema,
+QUANDO ela clica no botão "Interações Perigosas" do medicamento "Ibuprofeno",
+ENTÃO ela vê as possíveis interações perigosas do medicamento.
 
  <center>
   US
@@ -378,17 +437,17 @@ Como Farmacêutica eu quero acessar o registro de medicamentos dispensados para 
 Cenário: Ver histórico de medicamentos dispensados
 </center>
 
-Dado que a Farmacêutica está logada no sistema
-Quando a Farmacêutica clica no botão "Histórico"
-Então a Farmacêutica vê o histórico de medicamentos dispensados
+DADO que a Farmacêutica "Lívia" está logada no sistema,
+QUANDO ela clica no botão "Histórico",
+ENTÃO ela vê o histórico de medicamentos dispensados.
 
 <center>
 Cenário: Ver quem pediu o medicamento que saiu
 </center>
 
-Dado que a Farmacêutica está logada no sistema
-Quando a Farmacêutica clica no botão "Detalhes"
-Então a Farmacêutica vê quem pediu o medicamento que saiu
+DADO que a Farmacêutica "Lívia" está logada no sistema,
+QUANDO ela clica no botão "Detalhes" do medicamento "Ibuprofeno",
+ENTÃO ela vê quem pediu o medicamento que saiu.
 
  <center>
   US
@@ -407,17 +466,17 @@ Como Farmacêutica eu quero acessar o relatório de riscos para deixar mais segu
 Cenário: Ver relatório de riscos de pacientes
 </center>
 
-Dado que a Farmacêutica está logada no sistema
-Quando a Farmacêutica clica no botão "Relatório de Riscos"
-Então a Farmacêutica vê o relatório de riscos de pacientes
+DADO que a Farmacêutica "Lívia" está logada no sistema,
+QUANDO ela clica no botão "Relatório de Riscos",
+ENTÃO ela vê o relatório de riscos de pacientes.
 
 <center>
 Cenário: Ver lista de substâncias alérgicas do paciente
 </center>
 
-Dado que a Farmacêutica está logada no sistema
-Quando a Farmacêutica clica no botão "Substâncias Alérgicas"
-Então a Farmacêutica vê a lista de substâncias alérgicas do paciente
+DADO que a Farmacêutica "Lívia" está logada no sistema,
+QUANDO ela clica no botão "Substâncias Alérgicas" do paciente "Maria Oliveira",
+ENTÃO ela vê a lista de substâncias alérgicas do paciente.
 
  <center>
   US
@@ -436,44 +495,21 @@ Como Farmacêutica eu quero acessar o estoque de medicamentos para ter um contro
 Cenário: Farmacêutica visualiza o estoque de medicamentos
 </center>
 
-    Dado que a Farmacêutica está logada no sistema
-    Quando ela acessa a página de estoque de medicamentos
-  Então ela deve ver a lista de medicamentos disponíveis e ver a quantidade de cada medicamento
+DADO que a Farmacêutica "Lívia" está logada no sistema,
+QUANDO ela acessa a página de estoque de medicamentos,
+ENTÃO ela deve ver a lista de medicamentos disponíveis e ver a quantidade de cada medicamento.
 
 <center>
 Cenário: Farmacêutica verifica a quantidade de um medicamento específico
 </center>
 
-Dado que a Farmacêutica está logada no sistema
-E que ela está na página de estoque de medicamentos
-Quando ela procurar por um medicamento específico e deve ver a quantidade deste medicamento
+DADO que a Farmacêutica "Lívia" está logada no sistema,
+E que ela está na página de estoque de medicamentos,
+QUANDO ela procurar pelo medicamento "Ibuprofeno",
+ENTÃO ela deve ver a quantidade deste medicamento.
 
- <center>
-  US
- </center>
-Como Farmacêutica eu quero acessar o estoque de medicamentos para ter um controle de segurança de armazenamento
 
-<center>
- Críterios de Aceitação
-</center>
 
-- A farmacêutica pode ver o estoque de medicamentos
-- Deve saber a quantidade de cada medicamento  
-
-<center>
-Cenário: Farmacêutica visualiza o estoque de medicamentos
-</center>
-Dado que a Farmacêutica está logada no sistema
-Quando ela acessa a página de estoque de medicamentos
-Então ela deve ver a lista de medicamentos disponíveis e ver a quantidade de cada medicamento
-
-<center>
-Cenário: Farmacêutica verifica a quantidade de um medicamento específico
-</center>
-
-Dado que a Farmacêutica está logada no sistema
-E que ela está na página de estoque de medicamentos
-Quando ela procurar por um medicamento específico e deve ver a quantidade deste medicamento
 
 
 ### Rafael (Coordenador de Agendamento)
@@ -495,21 +531,21 @@ Como Coordenador de Agendamento eu quero coletar informações Para ajustar agen
 Cenário: O coordenador consegue cancelar o agendamento quando o médico tiver horários conflitantes
 </center>
 
-Dado que o coordenador está logado no sistema
-E o coordenador está na página de agendamento
-Quando o coordenador seleciona o agendamento com horários conflitantes
-E o coordenador clica no botão "Cancelar agendamento"
-Então o sistema cancela o agendamento
+DADO que o Coordenador de Agendamento "Rafael" está logado no sistema,
+E que ele está na página de agendamento,
+QUANDO ele seleciona o agendamento com horários conflitantes do médico "Dr. João Silva",
+E ele clica no botão "Cancelar agendamento",
+ENTÃO o sistema cancela o agendamento.
 
 <center>
 Cenário: O coordenador consegue cancelar o agendamento quando o paciente tiver horário conflitante
 </center>
 
-Dado que o coordenador está logado no sistema
-E o coordenador está na página de agendamento
-Quando o coordenador seleciona o agendamento com horários conflitantes
-E o coordenador clica no botão "Cancelar agendamento"
-Então o sistema cancela o agendamento
+DADO que o Coordenador de Agendamento "Rafael" está logado no sistema,
+E que ele está na página de agendamento,
+QUANDO ele seleciona o agendamento com horários conflitantes do paciente "Maria Oliveira",
+E ele clica no botão "Cancelar agendamento",
+ENTÃO o sistema cancela o agendamento.
 
  <center>
   US
@@ -529,20 +565,20 @@ Como Coordenador de Agendamento eu quero sincronizar o calendário entre todas a
 Cenário: Visualizar disponibilidade dos médicos das outras unidades
 </center>
 
-Dado que o Coordenador de Agendamento está logado
-E que a opção de visualizar a disponibilidade dos médicos das outras unidades foi selecionada
-Quando o botão "Visualizar" é clicado
-Então a disponibilidade dos médicos das outras unidades é exibida
+DADO que o Coordenador de Agendamento "Rafael" está logado,
+E que a opção de visualizar a disponibilidade dos médicos das outras unidades foi selecionada,
+QUANDO o botão "Visualizar" é clicado,
+ENTÃO a disponibilidade dos médicos das outras unidades é exibida.
 
 <center>
 Cenário: Informar disponibilidade de médicos da sua unidade
 </center>
 
-Dado que o Coordenador de Agendamento está logado
-E que a opção de informar a disponibilidade de médicos da sua unidade foi selecionada
-Quando o formulário com a disponibilidade dos médicos da sua unidade é preenchido
-E o botão "Enviar" é clicado
-Então a disponibilidade dos médicos da sua unidade é atualizada no sistema
+DADO que o Coordenador de Agendamento "Rafael" está logado,
+E que a opção de informar a disponibilidade de médicos da sua unidade foi selecionada,
+QUANDO o formulário com a disponibilidade dos médicos da sua unidade é preenchido,
+E o botão "Enviar" é clicado,
+ENTÃO a disponibilidade dos médicos da sua unidade é atualizada no sistema.
 
  <center>
   US
@@ -561,19 +597,19 @@ Então a disponibilidade dos médicos da sua unidade é atualizada no sistema
 Cenário: Acessar calendário do médico
 </center>
 
-Dado que estou logado como Coordenador de Agendamento
-E que eu selecionei a opção de acessar o calendário do médico
-Quando eu clico no botão "Acessar"
-Então eu vejo o calendário do médico
+DADO que o Coordenador de Agendamento "Rafael" está logado no sistema,
+QUANDO ele seleciona a opção de acessar o calendário do médico "Dr. João Silva",
+E ele clica no botão "Acessar",
+ENTÃO ele vê o calendário do médico "Dr. João Silva".
 
 <center>
 Cenário: Receber notificação sobre dias disponíveis do médico
 </center>
 
-Dado que estou logado como Coordenador de Agendamento
-E que eu selecionei a opção de receber notificação sobre os dias disponíveis do médico
-Quando o médico atualiza sua disponibilidade
-Então eu recebo uma notificação sobre os dias disponíveis do médico
+DADO que o Coordenador de Agendamento "Rafael" está logado no sistema,
+E que ele selecionou a opção de receber notificação sobre os dias disponíveis do médico "Dr. João Silva",
+QUANDO o médico "Dr. João Silva" atualiza sua disponibilidade,
+ENTÃO o Coordenador de Agendamento "Rafael" recebe uma notificação sobre os dias disponíveis do médico "Dr. João Silva".
 
 
 
@@ -591,22 +627,14 @@ Para avisar o médico que a consulta foi desmarcada
 - o médico responsável pela consulta será notificado  
 
 <center>
-Cenário: Visualizar disponibilidade dos médicos das outras unidades
+Cenário: Cancelar consulta marcada
 </center>
 
-Dado que o Coordenador de Agendamento está logado
-E que a opção de visualizar a disponibilidade dos médicos das outras unidades foi selecionada
-Quando o botão "Visualizar" é clicado
-Então a disponibilidade dos médicos das outras unidades é exibida
+Dado que o Coordenador de Agendamento está logado no sistema e que há uma consulta agendada
+Quando o Coordenador de Agendamento clicar em "Cancelar Consulta"
+Então a consulta é marcada como cancelada e o médico responsável pela consulta é notificado
 
-<center>
-Cenário: Receber notificação sobre dias disponíveis do médico
-</center>
-Cenário: Receber notificação sobre dias disponíveis do médico
-Dado que o Coordenador de Agendamento está logado
-E que a opção de receber notificação sobre os dias disponíveis do médico foi selecionada
-Quando o médico atualiza sua disponibilidade
-Então o Coordenador de Agendamento recebe uma notificação sobre os dias disponíveis do médico
+
 
  <center>
   US
@@ -654,19 +682,24 @@ Como Coordenador de Agendamento, eu quero notificar pacientes sobre as consultas
 Cenário: Notificação de Confirmação
 </center>
 
-Dado que a consulta foi confirmada E o Coordenador de Agendamento deseja notificar o paciente Quando o Coordenador de Agendamento envia uma notificação de confirmação Então o paciente deve receber uma notificação de confirmação
+Dado que a consulta foi confirmada e o Coordenador de Agendamento deseja notificar o paciente
+Quando o Coordenador de Agendamento envia uma notificação de confirmação
+Então o paciente deve receber uma notificação de confirmação
 
 <center>
 Cenário: Notificação de Cancelamento
 </center>
-Dado que a consulta foi cancelada E o Coordenador de Agendamento deseja notificar o paciente Quando o Coordenador de Agendamento envia uma notificação de cancelamento Então o paciente deve receber uma notificação de cancelamento
+Dado que a consulta foi cancelada e o Coordenador de Agendamento deseja notificar o paciente
+Quando o Coordenador de Agendamento envia uma notificação de cancelamento
+Então o paciente deve receber uma notificação de cancelamento
 
 <center>
 Cenário: Notificação de Chegada
 </center>
 Cenário: Notificação de Chegada
-Dado que a consulta está chegando E o Coordenador de Agendamento deseja notificar o paciente Quando o Coordenador de Agendamento envia uma notificação de chegada Então o paciente deve receber uma notificação de chegada
-
+Dado que a consulta está chegando e o Coordenador de Agendamento deseja notificar o paciente
+Quando o Coordenador de Agendamento envia uma notificação de chegada
+Então o paciente deve receber uma notificação de chegada
 
 
 
@@ -674,8 +707,9 @@ Dado que a consulta está chegando E o Coordenador de Agendamento deseja notific
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
-|  0.1   | 13/11/2023 | Criação do BDD | Guilherme, Eric, Henrique, Luana |  Guilherme,Luana |
-|  0.2   | 22/11/2023 | Arrumando para colocar no GitPages | Guilherme | Luana |
+|  0.1   | 13/11/2023 | Criação do BDD | [Guilherme](https://github.com/GG555-13), [Eric Camargo](https://github.com/Ericcs10), [Henrique](https://github.com/henriqtorresl), [Luana Torres](https://github.com/luanatorress) |  [Guilherme](https://github.com/GG555-13),[Luana Torres](https://github.com/luanatorress) |
+|  0.2   | 22/11/2023 | Arrumando para colocar no GitPages |[Guilherme](https://github.com/GG555-13) | [Luana Torres](https://github.com/luanatorress) |
+|  0.3   | 11/12/2023 | Arrumando os dados de exemplo | [Guilherme](https://github.com/GG555-13) | [Luana Torres](https://github.com/luanatorress) |
 
 
 ---
