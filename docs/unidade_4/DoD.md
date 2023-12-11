@@ -1,6 +1,6 @@
 # validação do que foi feito (DoD)
 
-Esta seção tem como objetivo verificar os itens de backlog do nosso projeto por meio da definição de pronto, Dod (definition of done), Para conduzir essa validação de forma estruturada e abrangente, implementaremos uma checklist de Definition of Done (DoD) que abordará minuciosamente os requisitos essenciais para cada User Story (US). Esta checklist não apenas nos guiará na avaliação da conformidade com as especificações, mas também garantirá que cada US tenha sido implementada para o sucesso global do MVP.
+Esta seção tem como objetivo validar os itens de backlog do nosso projeto por meio da definição de pronto, Dod (definition of done), Para conduzir essa validação de forma estruturada e abrangente, implementaremos uma checklist de Definition of Done (DoD) que abordará minuciosamente os requisitos essenciais para cada User Story (US). Esta checklist não apenas nos guiará na avaliação da conformidade com as especificações, mas também garantirá que cada US tenha sido implementada para o sucesso global do MVP.
 
 A tabela 1 apresenta a checklist que utilizaremos em cada US
 
