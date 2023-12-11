@@ -76,6 +76,7 @@ nav:
     - Verificação e Validação Moonwalkers: unidade_4/VVMoonwalkers.md
     - Especificação dos Casos de Uso: unidade_4/especificacao-csdu.md
     - Validação DoD: unidade_4/DoD.md
+    - Revisão de Código de outro membro da equipe: unidade_4/revisao-de-codigo.md
 
 # Extensions
 markdown_extensions:
