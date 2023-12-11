@@ -12,20 +12,20 @@ _tabela 1_ Planejamento missão 2
 
 | Data Início | Sprint  | Data Final |
 |-------------|---------|------------|
-| 03/10       | Sprint 4| 17/10      |
-| 18/10       | Sprint 5| 26/10      |
+| 03/10       | Sprint 3| 17/10      |
+| 18/10       | Sprint 4| 26/10      |
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
 
 </center>
 
-### Sprint 4 
+### Sprint 3 
 
-A tabela 2 apresenta o que foi feito na Sprint 4
+A tabela 2 apresenta o que foi feito na Sprint 3
 
 <center>
 
-_tabela 2_ Sprint 4
+_tabela 2_ Sprint 3
 
 Data: 03/10 a 17/10
 
@@ -59,13 +59,13 @@ Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
 
 <center> ![](../assets/images/missao2_sprint1_retro.png) </center>
 
-### Sprint 5
+### Sprint 4
 
-A tabela 3 apresenta o que foi feito na sprint 5
+A tabela 3 apresenta o que foi feito na sprint 4
 
 <center>
 
-_tabela 3_ Sprint 5
+_tabela 3_ Sprint 4
 
 Data: 18/10 a 26/10
 

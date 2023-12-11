@@ -4,12 +4,26 @@
 
 ### **Missão 3 - 31/10 a 23/11**
 
+A tabela 1 apresenta o planejamento da missão 3
+
+<center>
+
+_tabela 1_ Planejamento das sprints da missão 3
+
 | Data Início | Sprint  | Data Final |
 |-------------|---------|------------|
-| 31/10       | Sprint 1| 14/11      |
-| 15/11       | Sprint 2| 23/11      |
+| 31/10       | Sprint 5| 14/11      |
+| 15/11       | Sprint 6| 23/11      |
 
-### Sprint 1 
+</center>
+
+### Sprint 5
+
+A tabela 2 apresenta o que foi feito na sprint 5
+
+<center>
+
+_tabela 2_ Sprint 5
 
 Data: 31/10 a 14/11
 
@@ -21,6 +35,9 @@ Data: 31/10 a 14/11
 | Débitos                     |    MVP ainda não foi aprovado  |
 | Sprint Retrospective        |  conseguimos fazer todas as atividades, A equipe parece ter encontrado um ritmo, Atualizar o pages, Fazer as alterações pedidas no MVP |
 
+Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+
+</center>
 
 ### **Planning Meeting**
  
@@ -40,7 +57,13 @@ Data: 31/10 a 14/11
 
 <center> ![](../assets/images/missao3_sprint1_retro.png) </center>
 
-### Sprint 2
+### Sprint 6
+
+A tabela 3 apresenta o que foi feito na sprint 6
+
+<center>
+
+_tabela 3_ Sprint 6
 
 Data: 15/11 a 23/11
 
@@ -51,6 +74,10 @@ Data: 15/11 a 23/11
 | Sprint Review               | MVP aprovado, seguir com as atividades, Alterar USM, Criar criterios de aceitação,  |
 | Débitos                     | Não participamos do ponto de controle |
 | Sprint Retrospective        | Conseguimos concluir tudo |
+
+Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
+
+</center>
 
 ### **Planning Meeting**
  
