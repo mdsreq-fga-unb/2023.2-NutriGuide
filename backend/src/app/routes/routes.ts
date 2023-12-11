@@ -426,7 +426,7 @@ routes.post('/email-mensagem-nutricionista', async (req, res) => {
     const { emailPaciente, nome, title, html, emailNutri } = req.body;
 
     const service = new Service();
-    await service.enviarEmail(transport, title, html, nome, emailPaciente, emailNutri);
+    await service.enviarEmail(transport, title, html, nome, emailNutri, emailPaciente);
 
     res.json({ msg: 'Email enviado com sucesso!' });
 });
