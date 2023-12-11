@@ -27,7 +27,7 @@ Abaixo se encontra o MIRO que foi usado para fazer essa Atividade
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  0.1   | 5/11/2023 | Criação do PBB | [Guilherme](https://github.com/GG555-13), [Eric Camargo](https://github.com/Ericcs10), [Henrique](https://github.com/henriqtorresl), [Luana Torres](https://github.com/luanatorress) |  [Guilherme](https://github.com/GG555-13),[Luana Torres](https://github.com/luanatorress) |
 |  0.2   | 22/11/2023 | Arrumando para colocar no GitPages |[Guilherme](https://github.com/GG555-13) | [Luana Torres](https://github.com/luanatorress) |
-|  0.3   | 12/11/2023 |Atualizando o MIRO do PBB e  arrumando Histórico de versão | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/henriqtorresl) |
+|  0.3   | 11/12/2023 |Atualizando o MIRO do PBB e  arrumando Histórico de versão | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/henriqtorresl) |
 
 
 ---
