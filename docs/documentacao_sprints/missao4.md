@@ -73,6 +73,25 @@ Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
 
 </center>
 
+### **Planning Meeting**
+ 
+- Template da planning:
+
+<center> ![](../assets/images/psp7.png) </center>
+
+### **Review Meeting**
+
+- Template da review:
+
+<center> ![](../assets/images/reviewsp7.png) </center>
+
+### **Retrospective Meeting**
+
+- Template da retrospective:
+
+<center> ![](../assets/images/retrosp7.png) </center>
+
+
 ### Sprint 8 
 
 A tabela 4 apresenta o que foi feito na sprint 8
@@ -135,7 +154,30 @@ Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
 
 </center>
 
+### **Planning Meeting**
+ 
+- Template da planning:
+
+<center> ![](../assets/images/psp8.png) </center>
+
+### **Review Meeting**
+
+- Template da review:
+
+<center> ![](../assets/images/reviewsp8.png) </center>
+
+### **Retrospective Meeting**
+
+- Template da retrospective:
+
+<center> ![](../assets/images/retrosp8.png) </center>
+
+
+
+## Histórico de Versão
+
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  1.0   | 11/12/2023 | Criação da página | [Eric](https://github.com/Ericcs10) |   |
 |  1.1   | 11/12/2023 | Descrição missão 4| [Eric](https://github.com/Ericcs10) | [Luana Torres](https://github.com/luanatorress)  |
+|  1.1   | 11/12/2023 | Adicionando os Templates | [Luana Torres](https://github.com/luanatorress), [Eric](https://github.com/Ericcs10) | [Luana Torres](https://github.com/luanatorress)  |
