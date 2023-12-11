@@ -14,6 +14,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
 import { InserirAlimentoComponent } from '../inserir-alimento/inserir-alimento.component';
 import { take } from 'rxjs';
+import { EmailService } from 'src/app/services/email-service/email.service';
 
 @Component({
   selector: 'app-criar-plano',
@@ -41,7 +42,8 @@ export class CriarPlanoComponent implements OnInit {
     private planoAlimentarService: PlanoAlimentarService,
     private formBuilder: FormBuilder,
     private snackbar: MatSnackBar,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private emailService: EmailService
   ) {}
 
   ngOnInit(): void {
@@ -131,6 +133,10 @@ export class CriarPlanoComponent implements OnInit {
         console.log('nome plano: ', this.nomePlano);
 
         this.alimentosList.push(alimento);
+
+        this.emailService.sendMailPlano(this.paciente.email, this.paciente.nome_usuario).subscribe((r) => {
+          this.snackbar.open('O paciente recebeu um e-mail informando sobre o plano alimentar!', 'OK', {duration: 3000});
+        })
       }
     })
   }

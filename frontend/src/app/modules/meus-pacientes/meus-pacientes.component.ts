@@ -7,6 +7,7 @@ import { take } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import UsuarioPaciente from 'src/app/interfaces/UsuarioPaciente';
 import { PacienteService } from 'src/app/services/paciente-service/paciente.service';
+import { EmailService } from 'src/app/services/email-service/email.service';
 
 @Component({
   selector: 'app-meus-pacientes',
@@ -24,7 +25,8 @@ export class MeusPacientesComponent implements OnInit {
     private snackbar: MatSnackBar,
     private router: Router,
     private route: ActivatedRoute,
-    private pacienteService: PacienteService
+    private pacienteService: PacienteService,
+    private emailService: EmailService
   ) { }
 
   ngOnInit(): void {
@@ -57,7 +59,11 @@ export class MeusPacientesComponent implements OnInit {
           this.pacientesList.push(value);
 
           this.snackbar.open('Paciente cadastrado com sucesso!', 'OK', {
-            duration: 3000
+            duration: 2000
+          });
+
+          this.emailService.sendMailCadastro(value.email, value.nome_usuario).subscribe((r) => {
+            this.snackbar.open('O paciente recebeu um e-mail informando sobre o cadastrado!', 'OK', {duration: 3000});
           });
         }
       }
