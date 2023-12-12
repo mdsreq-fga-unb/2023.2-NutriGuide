@@ -16,18 +16,22 @@
 <p align="justify">&emsp;&emsp;O NutriGuide é um aplicativo web que serve como uma plataforma que facilita a interação entre um nutricionista e os seus pacientes com o objetivo de facilitar a comunicação entre ambos.</p>
  
 ## Link do site: 
-[NutriGuide](https://nutriguide-req.netlify.app/) 
+[NutriGuide](https://nutriguide-req.netlify.app) 
 
 Para acessar com a experiência completa você precisará de um login. O login fornecido é pela visão de um nutricionista, se quiser obter a experiência pela visão de um paciente é só se cadastrar como um paciente a partir do login de nutricionista fornecido. Você receberá um e-mail para logar-se como paciente. Ou pode usar um pronto fornecido abaixo:
 
+Conta de um dos nutricionistas cadastrados no nosso banco de dados:
 - Login de Nutricionista:
   Nome: Henrique Torres
   e-mail: henriquetlandin@gmail.com
 
+Conta de um dos pacientes que foi cadastrado pelo nutricionista 'Henrique Torres':
 - Login de Paciente:
   Nome: João
   e-mail: joao@email.com
 
+  OBS: Qualquer paciente que você cadastrar (para cadastrar um paciente você deve estar logado como nutricionista)
+   pode se logar na aplicação através do e-mail e senha do paciente. 
 ---
 
 ## Contribuidores
