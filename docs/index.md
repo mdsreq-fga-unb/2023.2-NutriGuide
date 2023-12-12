@@ -14,7 +14,7 @@
 ## Sobre o site.
 
 <p align="justify">&emsp;&emsp;O NutriGuide é um aplicativo web que serve como uma plataforma que facilita a interação entre um nutricionista e os seus pacientes com o objetivo de facilitar a comunicação entre ambos.</p>
-
+ Link do site: [NutriGuide](https://nutriguide-req.netlify.app/inicio) 
 ---
 
 ## Contribuidores
@@ -34,6 +34,7 @@
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  0.1   | 29/09/2023 | Criação do documento | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/henriqtorresl)  |
+|  0.2   | 12/12/2023 | Adicionando link do site | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/henriqtorresl)  |
 
 
 ---
