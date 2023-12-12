@@ -96,7 +96,11 @@
                         </div>
                     </div>
 
-                    <div class="func-button">
+                    <div 
+                        class="func-button"
+                        [matTooltip]="'Editar informações de ' + paciete.nome_usuario"
+                        (click)="abrirEditarPaciente(paciete)"    
+                    >
                         <button>Editar informações do paciente</button>
                     </div>
                 </div>

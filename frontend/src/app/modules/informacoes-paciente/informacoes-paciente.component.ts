@@ -7,6 +7,9 @@ import { MatDialog } from '@angular/material/dialog';
 import { ProgressoPacienteComponent } from '../progresso-paciente/progresso-paciente.component';
 import { RegistrarProgressoComponent } from 'src/app/modules/registrar-progresso/registrar-progresso.component';
 import { ConsultarPlanoComponent } from '../consultar-plano/consultar-plano.component';
+import { EditarPacienteComponent } from '../editar-paciente/editar-paciente.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { take } from 'rxjs';
 
 @Component({
   selector: 'app-informacoes-paciente',
@@ -26,7 +29,8 @@ export class InformacoesPacienteComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     private location: Location,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private snackBar: MatSnackBar
   ) {}
 
   ngOnInit(): void {
@@ -65,8 +69,14 @@ export class InformacoesPacienteComponent implements OnInit {
       width: '1000px',
       height: '700px'
     });
+  }
 
-    // dialogRef.afterClosed()
+  abrirEditarPaciente(paciente: UsuarioPaciente): void {
+    const dialogRef = this.dialog.open(EditarPacienteComponent, {
+      data: paciente.id_paciente,
+      width: '1500px',
+      height: '800px'
+    });
   }
 
   abrirRegistrarProgresso(paciente: UsuarioPaciente): void {
