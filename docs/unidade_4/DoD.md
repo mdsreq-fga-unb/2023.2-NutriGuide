@@ -415,6 +415,18 @@ Fonte: [Eric Camargo](https://github.com/Ericcs10), [Luana Torres](https://githu
 
 </center>
 
+### Video da validação com o Cliente
+
+- Video da validação do funcionamento com o Cliente
+
+<center>
+
+[link do video no youtube](https://www.youtube.com/watch?v=jVEqpkMUTU0)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jVEqpkMUTU0?si=XHomRAtZKZY76KcK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</center>
+
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  0.1   | 11/12/2023 | Criação do documento | [Eric Camargo](https://github.com/Ericcs10) | [Guilherme](https://github.com/GG555-13)  |
