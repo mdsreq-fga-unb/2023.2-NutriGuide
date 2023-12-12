@@ -33,6 +33,16 @@ Abaixo estão descritas as US's definidas para o MVP, que foram categorizadas na
 | US45 | Eu como usuário paciente quero ser capaz de visualizar posts do meu nutricionista na aba comunidade para obter uma experiência personalizada e facilitar o acompanhamento das recomendações nutricionais. |
 | US49 | Eu como usuário paciente quero ser notificado quando receber um aviso para ficar ciente de informações importantes, como atualizações em meu plano alimentar, mensagens do nutricionista ou outras notificações relevantes. |
 
+## Link do video de validação do MVP com o cliente
+
+<center>
+
+[link do video no youtube](https://www.youtube.com/watch?v=hjKvz2HJ9sA)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hjKvz2HJ9sA?si=liP98YwXMIcoMJ53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</center>
+
 ## Protótipo de Alta Fidelidade
 
 Para obter uma fonte confiável e concreta do delineamento do projeto, definir aspectos visuais e a identidade visual de maneira robusta, foi prototipado a aplicação web no Figma. O protótipo pode ser visualizado abaixo ou [aqui](https://www.figma.com/file/3RA8c7BvQktm4eZ04Df0Yk/NutriGuide?type=design&node-id=0%3A1&mode=design&t=ZWhEBRBQTKuoxrsH-1).
@@ -43,7 +53,7 @@ Para obter uma fonte confiável e concreta do delineamento do projeto, definir a
 
 </center>
 
-## Link do video da validação do protótipo de alta fidelidade
+## Link do video da validação do protótipo de alta fidelidade com o cliente
 
 <center>
 
