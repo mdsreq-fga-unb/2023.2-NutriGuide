@@ -43,6 +43,16 @@ Para obter uma fonte confiável e concreta do delineamento do projeto, definir a
 
 </center>
 
+## Link do video da validação do protótipo de alta fidelidade
+
+<center>
+
+[link do video no youtube](https://youtu.be/lLSilBxROZs)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lLSilBxROZs?si=xiydH3mN1821z6wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</center>
+
 ## Histórico de versão
 
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
