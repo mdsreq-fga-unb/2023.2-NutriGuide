@@ -143,34 +143,34 @@ _tabela 5_ Dailys realizadas
 
 | Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
 |---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
-| 18/10   | Luana     |  |     |   |
-| 18/10   | Henrique  |  |     |   |
-| 18/10   | Eric      |  |     |   |
-| 18/10   | Guilherme |  |     |   |
-| 19/10   | Luana     |  |     |   |
-| 19/10   | Henrique  |  |     |   |
-| 19/10   | Eric      |  |     |   |
-| 19/10   | Guilherme |  |     |   |
-| 20/10   | Luana     |  |     |   |
-| 20/10   | Henrique  |  |     |   |
-| 20/10   | Eric      |  |     |   |
-| 20/10   | Guilherme |  |     |   |
-| 23/10   | Luana     |  |     |   |
-| 23/10   | Henrique  |  |     |   |
-| 23/10   | Eric      |  |     |   |
-| 23/10   | Guilherme |  |     |   |
-| 24/10   | Luana     |  |     |   |
-| 24/10   | Henrique  |  |     |   |
-| 24/10   | Eric      |  |     |   |
-| 24/10   | Guilherme |  |     |   |
-| 25/10   | Luana     |  |     |   |
-| 25/10   | Henrique  |  |     |   |
-| 25/10   | Eric      |  |     |   |
-| 25/10   | Guilherme |  |     |   |
-| 26/10   | Luana     |  |     |   |
-| 26/10   | Henrique  |  |     |   |
-| 26/10   | Eric      |  |     |   |
-| 26/10   | Guilherme |  |     |   |
+| 18/10   | Luana     | Não mexeu no Projeto |     | Outras disciplinas  |
+| 18/10   | Henrique  | Não mexeu no Projeto |     | Outras disciplinas  |
+| 18/10   | Eric      | Não mexeu no Projeto |     | Outras disciplinas  |
+| 18/10   | Guilherme | Não mexeu no Projeto |     | Outras disciplinas  |
+| 19/10   | Luana     | Não mexeu no Projeto |     | Outras disciplinas  |
+| 19/10   | Henrique  | Não mexeu no Projeto |     | Outras disciplinas  |
+| 19/10   | Eric      | Não mexeu no Projeto |     | Outras disciplinas |
+| 19/10   | Guilherme | Não mexeu no Projeto |     | Outras disciplinas  |
+| 20/10   | Luana     | Priorizou as US |  preparar apresentação   | Nenhuma  |
+| 20/10   | Henrique  | Priorizou as US |  preparar apresentação   | Nenhuma  |
+| 20/10   | Eric      | Priorizou as US |  preparar apresentação   | Nenhuma  |
+| 20/10   | Guilherme | Priorizou as US |  preparar apresentação   | Nenhuma  |
+| 23/10   | Luana     | Separou o MVP para a aprovação |  Preparar a apresentação   | Equipe não separou o MVP corretamente para a apresentação  |
+| 23/10   | Henrique  | Separou o MVP para a aprovação |  Preparar a apresentação   | Equipe não separou o MVP corretamente para a apresentação  |
+| 23/10   | Eric      | Separou o MVP para a aprovação |  Preparar a apresentação   | Equipe não separou o MVP corretamente para a apresentação  |
+| 23/10   | Guilherme | Separou o MVP para a aprovação |  Preparar a apresentação   | Equipe não separou o MVP corretamente para a apresentação  |
+| 24/10   | Luana     | Ajustar o MVP da maneira certa |  terminar o MVP   | Nenhum  |
+| 24/10   | Henrique  | Ajustar o MVP da maneira certa |  terminar o MVP   | Nenhum  |
+| 24/10   | Eric      | Repriorizar as historias |  terminar o MVP   | Nenhum  |
+| 24/10   | Guilherme | Repriorizar as historias |  terminar o MVP   | Nenhum  |
+| 25/10   | Luana     | Não mexeu no Projeto |     | Outras disciplinas  |
+| 25/10   | Henrique  | Não mexeu no Projeto |     | Outras disciplinas  |
+| 25/10   | Eric      | Não mexeu no Projeto |     | Outras disciplinas  |
+| 25/10   | Guilherme | Não mexeu no Projeto |     | Outras disciplinas  |
+| 26/10   | Luana     | Ajudou a finalizar o MVP | Esperar a aprovação do professor    | Nenhum  |
+| 26/10   | Henrique  | Ajudou a finalizar o MVP | Esperar a aprovação do professor    | Nenhum  |
+| 26/10   | Eric      | Ajudou a finalizar o MVP | Esperar a aprovação do professor    | Nenhum  |
+| 26/10   | Guilherme | Ajudou a finalizar o MVP | Esperar a aprovação do professor    | Nenhum  |
 
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
