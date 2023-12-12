@@ -9,10 +9,10 @@ A tabela 1 possui os principais papeis e quem serão os responsáveis por garant
 
 | **Papel**                        | **Atribuições**                                                                                                                                                                   | **Responsável** | **Participantes** |
 |:--------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------:|:-----------------:|
-| Analista de Requisitos           | Traduzir as diversas perspectivas em uma especificação e manter o elo entre todos os stakeholders e documentar os requisitos ou como documentos de linguagem natural, casos de uso, ou processo de especificação.                             | Eric  | Luana, Guilherme, Henrique e Arthur  |
-| Designer de Interface de Usuário |  Criar interfaces gráficas em sites, aplicativos, softwares e dispositivos, de forma que o acesso a essas plataformas seja simplificado, intuitivo e confortável para o usuário  | Henrique | Guilherme, Arthur,Luana e Eric |
-| Desenvolvedor de Software        |  Produzir códigos eficientes e inteligíveis, testar e implementar programas e sistemas, reparar e aprimorar softwares existentes.                      | Arthur | Luana, Eric, Henrique e Guilherme  |
-| Testador de Qualidade            | Garantir que o software desenvolvido esteja livre de defeitos e atenda aos requisitos do projeto, criar casos de teste e cenários para validar o software.                        | Luana | Eric, Guilherme, Henrique e Arthur |
+| Analista de Requisitos           | Traduzir as diversas perspectivas em uma especificação e manter o elo entre todos os stakeholders e documentar os requisitos ou como documentos de linguagem natural, casos de uso, ou processo de especificação.                             | Eric  | Luana, Guilherme, Henrique   |
+| Designer de Interface de Usuário |  Criar interfaces gráficas em sites, aplicativos, softwares e dispositivos, de forma que o acesso a essas plataformas seja simplificado, intuitivo e confortável para o usuário  | Henrique | Guilherme,Luana e Eric |
+| Desenvolvedor de Software        |  Produzir códigos eficientes e inteligíveis, testar e implementar programas e sistemas, reparar e aprimorar softwares existentes.                      | Henrique| Luana, Eric, Henrique e Guilherme  |
+| Testador de Qualidade            | Garantir que o software desenvolvido esteja livre de defeitos e atenda aos requisitos do projeto, criar casos de teste e cenários para validar o software.                        | Luana | Eric, Guilherme, Henrique  |
 | Dono do Produto               |   Maximizar o valor do produto, definindo as prioridades e gerenciando o Product Backlog.                | Guilherme |  Luana, Guilherme, Henrique e Eric |
 | Clientes               |    Fornecer as necessidades e os requisitos do produto, que serão priorizados pelo Dono do Produto.               | Catarine Camargo(nutricionista) |  George Marsicano, Comunidade de nutricionistas |
 
@@ -105,4 +105,4 @@ Tabela 4 - Tabela de riscos
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  0.1   | 24/10/2023 | Criação do documento | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
 |  0.2   | 25/10/2023 | Arrumando as tabelas e modificando os participantes de Cliente | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
-|  0.3   | 25/10/2023 | Arrumando as tabelas de sprint | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
+|  0.3   | 25/10/2023 | Arrumando as tabelas de sprint e arrumando papel | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
