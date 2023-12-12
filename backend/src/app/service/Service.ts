@@ -113,6 +113,10 @@ export default class Service {
         return await this.repository.insertPost(post);
     }
 
+    public async getNutriByIdPost(idPost: string) {
+        return await this.repository.getNutriByIdPost(idPost);
+    }
+
     public async getAllComentario() {
         return await this.repository.getAllComentario();
     }
@@ -130,7 +134,7 @@ export default class Service {
         title: string,
         html: string,
         nomeQuemEnviou: string,
-        emailReceptor: string,
+        emailReceptor: string | string[],
         emailReplyTo?: string
     ) {
         const mailSend = await transporter.sendMail({

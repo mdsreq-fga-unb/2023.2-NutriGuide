@@ -11,6 +11,8 @@ import Avaliacao from "../models/Avaliacao";
 import Post from "../models/Post";
 import Comentario from "../models/Comentario";
 import nodemailer from "nodemailer";
+import UsuarioComentario from "../models/UsuarioComentario";
+import UsuarioNutricionista from "../models/UsuarioNutricionista";
 
 const routes = Router();
 
@@ -440,6 +442,58 @@ routes.post('/email-mensagem-nutricionista', async (req, res) => {
     await service.enviarEmail(transport, title, html, nome, emailNutri, emailPaciente);
 
     res.json({ msg: 'Email enviado com sucesso!' });
+});
+
+// notificar o nutricionista, por email de que comentaram em seu post
+routes.post('/email-notificar-comentario', async (req, res) => {
+    const usuarioComentario: UsuarioComentario = req.body;
+
+    const service = new Service();
+
+    const nutricionista = await service.getNutriByIdPost(usuarioComentario.id_post.toString());
+
+    const title: string = `Novo comentário na sua publicação!`;
+    const html: string = 
+    `
+    <div>
+        <h1>Olá, ${nutricionista.nome_usuario}</h1>
+        <h2>${usuarioComentario.nome_usuario} comentou na sua publicação</h2>
+        <h2>clique no botão abaixo para conferir as interações com suas postagens no nosso site:</h2>
+        <a href="https://nutriguide-req.netlify.app" style="display: inline-block; padding: 10px 20px; font-size: 16px; text-align: center; text-decoration: none; background-color: #28B225; color: #fff; border-radius: 5px;">Clique aqui para ir para o site</a>
+        <h2>Muito obrigado!</h2>
+    </div>
+    `
+
+    await service.enviarEmail(transport, title, html, usuarioComentario.nome_usuario, nutricionista.email, usuarioComentario.email);
+
+    res.json({ msg: 'O nutricionista foi notificado sobre o comentário!' });
+});
+
+// notificar pacientes, por email de que seu nutricionista fez um post
+routes.post('/email-notificar-pacientes', async (req, res) => {
+    const { nome } = req.body;
+
+    const service = new Service();
+
+    const nutricionista = await service.getOneNutricionistaByNomeUser(nome);
+    const pacientes = await service.getAllPacientesByNutriName(nutricionista!.nome_usuario.toString());
+
+    const title: string = `Novo comentário na sua publicação!`;
+    const html: string = 
+    `
+    <div>
+        <h1>Seu nutricionista ${nutricionista!.nome_usuario} fez uma nova publicação!</h1>
+        <h2>Para ver a postagem nova do seu nutricionista entre no nosso site:</h2>
+        <a href="https://nutriguide-req.netlify.app" style="display: inline-block; padding: 10px 20px; font-size: 16px; text-align: center; text-decoration: none; background-color: #28B225; color: #fff; border-radius: 5px;">Clique aqui para ir para o site</a>
+        <h2>Muito obrigado!</h2>
+    </div>
+    `
+
+    const emails: string[] = pacientes!.map((p) => p.email);
+
+    await service.enviarEmail(transport, title, html, nutricionista!.nome_usuario, emails);
+
+    res.json({ msg: 'Seus pacientes foram notificados sobre sua nova postagem!' });
 });
 
 export default routes;

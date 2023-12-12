@@ -478,6 +478,23 @@ export default class Repository {
         });
     }
 
+    getNutriByIdPost(idPost: string): Promise<any | undefined> {
+        return new Promise((resolve, reject) => {
+            this.database.query<any>(
+                post.trazerNutriPorIdPost,
+                [idPost],  
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+
+                        this.database.end();
+                    } else {
+                        resolve(result?.[0]);
+                    }
+            });
+        });
+    }
+
     getAllComentario(): Promise<UsuarioComentario[] | undefined> {
         return new Promise((resolve, reject) => {
             this.database.query<UsuarioComentario[]>(
