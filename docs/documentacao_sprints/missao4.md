@@ -51,22 +51,22 @@ _tabela 3_ Dailys realizadas
 
 | Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
 |---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
-| 24/11   | Luana     | |    |  |
-| 24/11   | Henrique  | |    |  |
-| 24/11   | Eric      | |    |  |
-| 24/11   | Guilherme | |    |  |
-| 27/11   | Luana     | |    |  |
-| 27/11   | Henrique  | |    |  |
-| 27/11   | Eric      | |    |  |
-| 27/11   | Guilherme | |    |  |
-| 28/11   | Luana     | |    |  |
-| 28/11   | Henrique  | |    |  |
-| 28/11   | Eric      | |    |  |
-| 28/11   | Guilherme | |    |  |
-| 29/11   | Luana     | |    |  |
-| 29/11   | Henrique  | |    |  |
-| 29/11   | Eric      | |    |  |
-| 29/11   | Guilherme | |    |  |
+| 24/11   | Luana     | Mexeu no protótipo |  Atualização do protótipo  | Nenhum |
+| 24/11   | Henrique  | Começou a configurar ambiente de desenvolvimento |  Finalizar a configuração do ambiente de desenvolvimento  | Nenhum |
+| 24/11   | Eric      | Mexeu no protótipo | Atualização do protótipo   | Nenhum |
+| 24/11   | Guilherme | Modelagem do banco de dados | trabalhar no banco   | Nenhum |
+| 27/11   | Luana     | Mexeu no protótipo | Atualização do protótipo   | Nenhum |
+| 27/11   | Henrique  | Configurou ambiente de desenvolvimento |  Começar a desenvolver   | Nenhum |
+| 27/11   | Eric      | Mexeu no protótipo | Atualização do protótipo   | Nenhum |
+| 27/11   | Guilherme | Modelagem do banco de dados | trabalhar no banco   | Nenhum |
+| 28/11   | Luana     | Mexeu no protótipo | Atualização do protótipo   | Nenhum |
+| 28/11   | Henrique  | Começou o desenvolvimento |  focar no desenvolvimento   | Nenhum |
+| 28/11   | Eric      | Mexeu no protótipo |  Atualização do protótipo  | Nenhum |
+| 28/11   | Guilherme | Modelagem do banco de dados | trabalhar no banco   | Nenhum |
+| 29/11   | Luana     | Mexeu no protótipo | Finalizar o protótipo   | Nenhum |
+| 29/11   | Henrique  | Continuou o desenvolvimento |  focar no desenvolvimento  | Nenhum |
+| 29/11   | Eric      | Mexeu no protótipo | Finalizar o protótipo   | Nenhum |
+| 29/11   | Guilherme | Modelagem do banco de dados |  trabalhar no banco  | Nenhum |
 
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
@@ -124,30 +124,30 @@ _tabela 3_ Dailys realizadas
 
 | Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
 |---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
-| 04/12   | Luana     | |    |  |
-| 04/12   | Henrique  | |    |  |
-| 04/12   | Eric      | |    |  |
-| 04/12   | Guilherme | |    |  |
-| 05/12   | Luana     | |    |  |
-| 05/12   | Henrique  | |    |  |
-| 05/12   | Eric      | |    |  |
-| 05/12   | Guilherme | |    |  |
-| 06/12   | Luana     | |    |  |
-| 06/12   | Henrique  | |    |  |
-| 06/12   | Eric      | |    |  |
-| 06/12   | Guilherme | |    |  |
-| 07/12   | Luana     | |    |  |
-| 07/12   | Henrique  | |    |  |
-| 07/12   | Eric      | |    |  |
-| 07/12   | Guilherme | |    |  |
-| 08/12   | Luana     | |    |  |
-| 08/12   | Henrique  | |    |  |
-| 08/12   | Eric      | |    |  |
-| 08/12   | Guilherme | |    |  |
-| 11/12   | Luana     | |    |  |
-| 11/12   | Henrique  | |    |  |
-| 11/12   | Eric      | |    |  |
-| 11/12   | Guilherme | |    |  |
+| 04/12   | Luana     | Finalizou o protótipo | Ajustar conforme feedback   | Nenhum |
+| 04/12   | Henrique  | Continuou o desenvolvimento | foco no desenvolvimento   | Nenhum |
+| 04/12   | Guilherme | Modelando Banco de dados |  Finalizar a parte do banco  | Nenhum |
+| 04/12   | Eric      | Finalizou o protótipo | Ajustar conforme feedback | Nenhum |
+| 05/12   | Luana     | Ajustes no protótipo | Auxiliar no desenvolvimento   | Outras disciplinas |
+| 05/12   | Henrique  | Continuou o desenvolvimento | foco no desenvolvimento   | Nenhum |
+| 05/12   | Eric      | Ajustes no protótipo | Auxiliar nos testes da aplicação   | Outras disciplinas |
+| 05/12   | Guilherme | Finalizou a parte do banco de dados | Auxiliar nos testes da aplicação   | Nenhum |
+| 06/12   | Luana     | Ajudou no desenvolvimento | Auxiliar no desenvolvimento  | Outras disciplinas |
+| 06/12   | Henrique  | Continuou o desenvolvimento | foco no desenvolvimento   | Nenhum |
+| 06/12   | Eric      | Ajudou no desenvolvimento |  Auxiliar nos testes da aplicação   | Nenhum |
+| 06/12   | Guilherme | testou a aplicação | Auxiliar nos testes da aplicação   | Outras disciplinas |
+| 07/12   | Luana     | Ajudou no desenvolvimento | foco no desenvolvimento   | Nenhum |
+| 07/12   | Henrique  | Continuou o desenvolvimento | Fazer ajustes na aplicação   | Nenhum |
+| 07/12   | Eric      | testou a aplicação |  Ajudar nos testes da aplicação  | Outras disciplinas |
+| 07/12   | Guilherme | testou a aplicação  |  Ajudar nos testes da aplicação  | Nenhum |
+| 08/12   | Luana     | testou a aplicação | Organizar a documentação   | Nenhum |
+| 08/12   | Henrique  | Continuou o desenvolvimento | foco no desenvolvimento   | Nenhum |
+| 08/12   | Eric      | Ajudou no desenvolvimento | Organizar a documentação   | Outras disciplinas |
+| 08/12   | Guilherme | testou a aplicação  | Organizar a documentaçãoo   | Nenhum |
+| 11/12   | Luana     | Organizou ajustes no pages  | Entrega da Missão | Outras disciplinas |
+| 11/12   | Henrique  | Finalizou o desenvolvimento | Entrega da Missão  | Nenhum |
+| 11/12   | Eric      | Organizou ajustes no pages  | Entrega da Missão   | Nenhum |
+| 11/12   | Guilherme | Organizou ajustes no pages  | Entrega da Missão   | Nenhum |
 
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
