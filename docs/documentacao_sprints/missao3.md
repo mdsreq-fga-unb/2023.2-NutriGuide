@@ -149,22 +149,20 @@ _tabela 5_ Dailys realizadas
 | 17/11   | Henrique  | Adicionar criterios de aceitação as US |  Escrever o planejamento de sprints  | nenhum |
 | 17/11   | Eric      | Adicionar criterios de aceitação as US |  Escrever o planejamento de sprints  | nenhum |
 | 17/11   | Guilherme | Adicionar criterios de aceitação as US |  Escrever o planejamento de sprints  | nenhum |
-| 20/11   | Luana     | |    |  |
-| 20/11   | Henrique  | |    |  |
-| 20/11   | Eric      | |    |  |
-| 20/11   | Guilherme | |    |  |
-| 21/11   | Luana     | |    |  |
-| 21/11   | Henrique  | |    |  |
-| 21/11   | Eric      | |    |  |
-| 21/11   | Guilherme | |    |  |
-| 22/11   | Luana     | |    |  |
-| 22/11   | Henrique  | |    |  |
-| 22/11   | Eric      | |    |  |
-| 22/11   | Guilherme | |    |  |
-| 23/11   | Luana     | |    |  |
-| 23/11   | Henrique  | |    |  |
-| 23/11   | Eric      | |    |  |
-| 23/11   | Guilherme | |    |  |
+| 20/11   | Luana     | Alterou os Valores de negocio  | Começar a fazer o DoR e DoD  | nenhum |
+| 20/11   | Henrique  | Alterou os Valores de negocio |  Começar a fazer o DoR e DoD  | nenhum |
+| 20/11   | Eric      | Alterou os Valores de negocio | Começar a fazer o DoR e DoD   | nenhum |
+| 21/11   | Henrique  | Passar as atividades para o GitPages | Passar o planejamento de sprints para o template    | nenhum |
+| 21/11   | Eric      | Passar as atividades para o GitPages |  Passar o planejamento de sprints para o template  | nenhum |
+| 21/11   | Guilherme | Passar as atividades para o GitPages |  Passar o planejamento de sprints para o template  | nenhum |
+| 22/11   | Luana     | Alterou documentação e gravou video de apresentação  | Preparar para o desenvolvimento do MVP   | nenhum |
+| 22/11   | Henrique  | Alterou documentação e gravou video de apresentação  | Preparar para o desenvolvimento do MVP   | nenhum |
+| 22/11   | Eric      | Alterou documentação e gravou video de apresentação  | Preparar para o desenvolvimento do MVP  | nenhum |
+| 22/11   | Guilherme | Alterou documentação e gravou video de apresentação  | Preparar para o desenvolvimento do MVP   | nenhum |
+| 23/11   | Luana     | Começar o desenvolvimento do MVP | Estudar para a prova da unidade 3  | nenhum |
+| 23/11   | Henrique  | Começar o desenvolvimento do MVP |  Estudar para a prova da unidade 3  | nenhum |
+| 23/11   | Eric      | Começar o desenvolvimento do MVP |  Estudar para a prova da unidade 3  | nenhum |
+| 23/11   | Guilherme | Começar o desenvolvimento do MVP |  Estudar para a prova da unidade 3  | nenhum |
 
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
