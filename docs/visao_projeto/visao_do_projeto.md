@@ -105,4 +105,4 @@ Tabela 4 - Tabela de riscos
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  0.1   | 24/10/2023 | Criação do documento | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
 |  0.2   | 25/10/2023 | Arrumando as tabelas e modificando os participantes de Cliente | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
-|  0.3   | 25/10/2023 | Arrumando as tabelas de sprint e arrumando papel | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
+|  0.3   | 25/10/2023 | Arrumando as tabelas de sprint e arrumando organização do projeto | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
