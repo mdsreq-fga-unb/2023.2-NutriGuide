@@ -49,10 +49,10 @@ _tabela 3_ Dailys realizadas
 
 | Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
 |---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
-| 31/10   | Luana     | Não mexeu no Projeto |    | Outras disciplinas  |
-| 31/10   | Henrique  | Não mexeu no Projeto |    | Outras disciplinas  |
-| 31/10   | Eric      | Não mexeu no Projeto |    | Outras disciplinas  |
-| 31/10   | Guilherme | Não mexeu no Projeto |    | Outras disciplinas  |
+| 31/10   | Luana     | Não mexeu no Projeto | Estudar sobre o PBB    | Outras disciplinas  |
+| 31/10   | Henrique  | Não mexeu no Projeto | Estudar sobre o PBB   | Outras disciplinas  |
+| 31/10   | Eric      | Não mexeu no Projeto | Estudar sobre o PBB   | Outras disciplinas  |
+| 31/10   | Guilherme | Não mexeu no Projeto | Estudar sobre o PBB   | Outras disciplinas  |
 | 01/11   | Luana     | Não mexeu no Projeto |  Realizar mudanças no MVP  | Outras disciplinas  |
 | 01/11   | Henrique  | Não mexeu no Projeto |  Realizar mudanças no MVP  | Outras disciplinas  |
 | 01/11   | Eric      | Não mexeu no Projeto |  Realizar mudanças no MVP  | Outras disciplinas  |
@@ -69,22 +69,22 @@ _tabela 3_ Dailys realizadas
 | 08/11   | Henrique  | Alterou o MVP |  Aguardar aprovação do professor  | nenhum |
 | 08/11   | Eric      | Alterou o MVP |  Aguardar aprovação do professor  | nenhum |
 | 08/11   | Guilherme | Alterou o MVP |  Aguardar aprovação do professor  | nenhum |
-| 09/11   | Luana     | Não mexeu no Projeto |    | Outras disciplinas |
-| 09/11   | Henrique  | Não mexeu no Projeto |    | Outras disciplinas |
-| 09/11   | Eric      | Não mexeu no Projeto |    | Outras disciplinas |
-| 09/11   | Guilherme | Não mexeu no Projeto |    | Outras disciplinas |
-| 10/11   | Luana     | Não mexeu no Projeto |    | Outras disciplinas |
-| 10/11   | Henrique  | Não mexeu no Projeto |    | Outras disciplinas |
-| 10/11   | Eric      | Não mexeu no Projeto |    | Outras disciplinas |
-| 10/11   | Guilherme | Não mexeu no Projeto |    | Outras disciplinas |
+| 09/11   | Luana     | Não mexeu no Projeto | Atividade Validação e verificação   | Outras disciplinas |
+| 09/11   | Henrique  | Não mexeu no Projeto | Atividade Validação e verificação   | Outras disciplinas |
+| 09/11   | Eric      | Não mexeu no Projeto | Atividade Validação e verificação   | Outras disciplinas |
+| 09/11   | Guilherme | Não mexeu no Projeto | Atividade Validação e verificação   | Outras disciplinas |
+| 10/11   | Luana     | Não mexeu no Projeto |  Estudar sobre o BDD  | Outras disciplinas |
+| 10/11   | Henrique  | Não mexeu no Projeto |  Estudar sobre o BDD  | Outras disciplinas |
+| 10/11   | Eric      | Não mexeu no Projeto |  Estudar sobre o BDD  | Outras disciplinas |
+| 10/11   | Guilherme | Não mexeu no Projeto | Estudar sobre o BDD   | Outras disciplinas |
 | 13/11   | Luana     | Ajustou o backlog |  alterar MVP  | Professor não aprovou a nova versão |
 | 13/11   | Henrique  | Ajustou o backlog |  alterar MVP  | Professor não aprovou a nova versão |
 | 13/11   | Eric      | Ajustou o backlog |  alterar MVP  | Professor não aprovou a nova versão |
 | 13/11   | Guilherme | Separou as tarefas | alterar MVP  | Professor não aprovou a nova versão |
-| 14/11   | Luana     | Preparou nova versão do MVP |    |  |
-| 14/11   | Henrique  | Preparou nova versão do MVP |    |  |
-| 14/11   | Eric      | Preparou nova versão do MVP |    |  |
-| 14/11   | Guilherme | Preparou nova versão do MVP |    |  |
+| 14/11   | Luana     | Preparou nova versão do MVP |  Fazer atividade USM   |  nenhum  |
+| 14/11   | Henrique  | Preparou nova versão do MVP |  Fazer atividade USM     | nenhum   |
+| 14/11   | Eric      | Preparou nova versão do MVP |  Fazer atividade USM    | nenhum   |
+| 14/11   | Guilherme | Preparou nova versão do MVP |  Fazer atividade USM     | nenhum   |
 
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
@@ -141,14 +141,14 @@ _tabela 5_ Dailys realizadas
 
 | Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
 |---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
-| 16/11   | Luana     | |    |  |
-| 16/11   | Henrique  | |    |  |
-| 16/11   | Eric      | |    |  |
-| 16/11   | Guilherme | |    |  |
-| 17/11   | Luana     | |    |  |
-| 17/11   | Henrique  | |    |  |
-| 17/11   | Eric      | |    |  |
-| 17/11   | Guilherme | |    |  |
+| 16/11   | Luana     | Revisar a atividade USM | Atualizar os Valores de negocio   |  nenhum  |
+| 16/11   | Henrique  | Revisar a atividade USM | Atualizar os Valores de negocio   |  nenhum  |
+| 16/11   | Eric      | Revisar a atividade USM | Atualizar os Valores de negocio   |  nenhum  |
+| 16/11   | Guilherme | Revisar a atividade USM | Atualizar os Valores de negocio   |  nenhum  |
+| 17/11   | Luana     | Adicionar criterios de aceitação as US | Escrever o planejamento de sprints    | nenhum |
+| 17/11   | Henrique  | Adicionar criterios de aceitação as US |  Escrever o planejamento de sprints  | nenhum |
+| 17/11   | Eric      | Adicionar criterios de aceitação as US |  Escrever o planejamento de sprints  | nenhum |
+| 17/11   | Guilherme | Adicionar criterios de aceitação as US |  Escrever o planejamento de sprints  | nenhum |
 | 20/11   | Luana     | |    |  |
 | 20/11   | Henrique  | |    |  |
 | 20/11   | Eric      | |    |  |
