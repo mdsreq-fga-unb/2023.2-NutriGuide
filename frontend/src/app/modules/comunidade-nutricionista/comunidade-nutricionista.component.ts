@@ -14,6 +14,7 @@ import Comentario from 'src/app/interfaces/Comentario';
 import Usuario from 'src/app/interfaces/Usuario';
 import { UsuarioService } from 'src/app/services/usuario-service/usuario.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { EmailService } from 'src/app/services/email-service/email.service';
 
 @Component({
   selector: 'app-comunidade-nutricionista',
@@ -44,7 +45,8 @@ export class ComunidadeNutricionistaComponent implements OnInit {
     private nutricionistaService: NutricionistaService,
     private formBuilder: FormBuilder,
     private usuarioService: UsuarioService,
-    private snackbar: MatSnackBar
+    private snackbar: MatSnackBar,
+    private emailService: EmailService
   ) { }
 
   ngOnInit(): void {
@@ -143,9 +145,11 @@ export class ComunidadeNutricionistaComponent implements OnInit {
 
     if (comentario.conteudo !== '') {
       this.comentarioService.insert(comentario).subscribe((r) => {
-        this.snackbar.open(r.msg, 'OK', { duration: 3000 });
 
         this.comentariosList.push(usuarioComentario);
+        this.emailService.notificarNutriComentario(usuarioComentario).subscribe((r) => {
+          this.snackbar.open(r.msg, 'OK', {duration: 3000});
+        })
 
         // window.location.reload();   
         this.inputComentario = false;

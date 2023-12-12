@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, take } from 'rxjs';
+import Post from 'src/app/interfaces/Post';
+import UsuarioComentario from 'src/app/interfaces/UsuarioComentario';
 import { Constantes } from 'src/app/shared/constantes/constantes';
 
 @Injectable({
@@ -68,6 +70,18 @@ export class EmailService {
     }
 
     return this.httpClient.post(`${this.rota}-mensagem-nutricionista`, body).pipe(take(1));
+  }
+
+  notificarNutriComentario(usuarioComentario: UsuarioComentario): Observable<any> {
+    return this.httpClient.post(`${this.rota}-notificar-comentario`, usuarioComentario).pipe(take(1));
+  }
+
+  notificarPacientesPost(nomeNutri: string): Observable<any> {
+    const body = {
+      nome: nomeNutri
+    }
+
+    return this.httpClient.post(`${this.rota}-notificar-pacientes`, body).pipe(take(1));
   }
 
 }

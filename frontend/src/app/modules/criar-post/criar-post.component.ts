@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import Post from 'src/app/interfaces/Post';
+import { EmailService } from 'src/app/services/email-service/email.service';
 import { PostService } from 'src/app/services/post-service/post.service';
 
 @Component({
@@ -18,7 +19,8 @@ export class CriarPostComponent implements OnInit {
     public dialogRef: MatDialogRef<CriarPostComponent>,
     private formBuilder: FormBuilder,
     private postService: PostService,
-    private snackbar: MatSnackBar
+    private snackbar: MatSnackBar,
+    private emailService: EmailService
   ) { }
 
   ngOnInit(): void {
@@ -56,9 +58,11 @@ export class CriarPostComponent implements OnInit {
       this.postService.insert(post).subscribe((p) => {
         this.dialogRef.close(post);
         
-        this.snackbar.open(p.msg, 'OK', {
-          duration: 3000
-        });
+        const nome = localStorage.getItem('nome')!.toString();
+
+        this.emailService.notificarPacientesPost(nome).subscribe((r) => {
+          this.snackbar.open(r.msg, 'OK', { duration: 3000 });
+        })
       },
       (err) => {
         console.log('erro: ', err);
