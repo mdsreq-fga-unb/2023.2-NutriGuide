@@ -51,42 +51,42 @@ _tabela 3_ Dailys realizadas
 
 | Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
 |---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
-| 03/10   | Luana     |  |     |   |
-| 03/10   | Henrique  |  |     |   |
-| 03/10   | Eric      |  |     |   |
-| 03/10   | Guilherme |  |     |   |
-| 04/10   | Luana     |  |     |   |
-| 04/10   | Henrique  |  |     |   |
-| 04/10   | Eric      |  |     |   |
-| 04/10   | Guilherme |  |     |   |
-| 05/10   | Luana     |  |     |   |
-| 05/10   | Henrique  |  |     |   |
-| 05/10   | Eric      |  |     |   |
-| 05/10   | Guilherme |  |     |   |
-| 06/10   | Luana     |  |     |   |
-| 06/10   | Henrique  |  |     |   |
-| 06/10   | Eric      |  |     |   |
-| 06/10   | Guilherme |  |     |   |
-| 09/10   | Luana     |  |     |   |
-| 09/10   | Henrique  |  |     |   |
-| 09/10   | Eric      |  |     |   |
-| 09/10   | Guilherme |  |     |   |
-| 10/10   | Luana     |  |     |   |
-| 10/10   | Henrique  |  |     |   |
-| 10/10   | Eric      |  |     |   |
-| 10/10   | Guilherme |  |     |   |
-| 11/10   | Luana     |  |     |   |
-| 11/10   | Henrique  |  |     |   |
-| 11/10   | Eric      |  |     |   |
-| 11/10   | Guilherme |  |     |   |
-| 16/10   | Luana     |  |     |   |
-| 16/10   | Henrique  |  |     |   |
-| 16/10   | Eric      |  |     |   |
-| 16/10   | Guilherme |  |     |   |
-| 17/10   | Luana     |  |     |   |
-| 17/10   | Henrique  |  |     |   |
-| 17/10   | Eric      |  |     |   |
-| 17/10   | Guilherme |  |     |   |
+| 03/10   | Luana     | Estudou sobre declaração de requisitos |  Corrigir o Pages de acordo com o feedback do professor   | Nenhum  |
+| 03/10   | Henrique  | Estudou sobre declaração de requisitos |  Corrigir o Pages de acordo com o feedback do professor   | Nenhum  |
+| 03/10   | Eric      | Estudou sobre declaração de requisitos |  Corrigir o Pages de acordo com o feedback do professor   | Nenhum  |
+| 03/10   | Guilherme | Estudou sobre declaração de requisitos |  Transferir o Pages para Mkdocks   | Nenhum  |
+| 04/10   | Luana     | Corrigiu o Pages de acordo com o feedback | declarar os requisitos do projeto    |  Nenhum |
+| 04/10   | Henrique  | Corrigiu o Pages de acordo com o feedback | declarar os requisitos do projeto    | Nenhum  |
+| 04/10   | Eric      | Corrigiu o Pages de acordo com o feedback | declarar os requisitos do projeto    | Nenhum  |
+| 04/10   | Guilherme | Transferiu o Pages para Mkdocks |  declarar os requisitos do projeto   | Nenhum  |
+| 05/10   | Luana     | Trabalhou nos requisitos funcionais |  estudar sobre o SAFE   | Nenhum  |
+| 05/10   | Henrique  | Trabalhou nos requisitos funcionais |  estudar sobre o SAFE   | Nenhum  |
+| 05/10   | Eric      | Trabalhou nos requisitos funcionais |  estudar sobre o SAFE   | Nenhum  |
+| 05/10   | Guilherme | Trabalhou nos requisitos não funcionais | estudar sobre o SAFE    | Nenhum  |
+| 06/10   | Luana     | Criação do backlog | preparar apresentação    | Nenhum  |
+| 06/10   | Henrique  | Criação do backlog | preparar apresentação   | Nenhum  |
+| 06/10   | Eric      | Criação do backlog | preparar apresentação    | Nenhum  |
+| 06/10   | Guilherme | Criação do backlog | preparar apresentação    | Nenhum  |
+| 09/10   | Luana     | Corrigiu o Backlog com base nos feedback's | verificação e validação beach tennis cordimate   | Nenhum  |
+| 09/10   | Henrique  | Corrigiu o Backlog com base nos feedback's | verificação e validação beach tennis cordimate     | Nenhum  |
+| 09/10   | Eric      | Corrigiu o Backlog com base nos feedback's | verificação e validação beach tennis cordimate     | Nenhum  |
+| 09/10   | Guilherme | Corrigiu o Backlog com base nos feedback's | verificação e validação beach tennis cordimate     | Nenhum  |
+| 10/10   | Luana     | Alterou requisitos não funcionais | Preparar historias de usuario    | Nenhum  |
+| 10/10   | Henrique  | Alterou requisitos não funcionais | Preparar historias de usuario    | Nenhum  |
+| 10/10   | Eric      | Alterou requisitos não funcionais | Preparar historias de usuario    | Nenhum  |
+| 10/10   | Guilherme | Alterou requisitos não funcionais | Preparar historias de usuario    | Nenhum  |
+| 11/10   | Luana     | Montagem das Hitorias de usuário |  atualizar backlog   | Nenhum  |
+| 11/10   | Henrique  | Montagem das Hitorias de usuário |  atualizar backlog   | Nenhum  |
+| 11/10   | Eric      | Montagem das Hitorias de usuário |  atualizar backlog   | Nenhum  |
+| 11/10   | Guilherme | Montagem das Hitorias de usuário |  atualizar backlog   | Nenhum  |
+| 16/10   | Luana     | Atualizou backlog |  fazer a alterações necessarias no pages   | Nenhum  |
+| 16/10   | Henrique  | Atualizou backlog |  fazer a alterações necessarias no pages   | Nenhum  |
+| 16/10   | Eric      | Historia da facção |  fazer a alterações necessarias no pages   | Nenhum  |
+| 16/10   | Guilherme | Visão de produto e projeto |  fazer a alterações necessarias no pages  | Nenhum  |
+| 17/10   | Luana     | Alterou descrição do ciclo de vida |  Estudo sobre MVP   | Nenhum  |
+| 17/10   | Henrique  | Alterou tabelas |  Estudo sobre MVP   | Nenhum  |
+| 17/10   | Eric      | Alterou descrição de problema e visão de produto |  Estudo sobre MVP   | Nenhum  |
+| 17/10   | Guilherme | Organizou os arquivos | Estudo sobre MVP    | Nenhum  |
 
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
