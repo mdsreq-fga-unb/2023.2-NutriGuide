@@ -51,22 +51,22 @@ _tabela 3_ Dailys realizadas
 
 | Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
 |---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
-| 05/09   | Luana     |                                                         |                                                            |                                                          |
-| 05/09   | Henrique  |                                                         |                                                            |                                                          |
-| 05/09   | Eric      |                                                         |                                                            |                                                          |
-| 05/09   | Guilherme |                                                         |                                                            |                                                          |
-| 06/09   | Luana     |                                                         |                                                            |                                                          |
-| 06/09   | Henrique  |                                                         |                                                            |                                                          |
-| 06/09   | Eric      |                                                         |                                                            |                                                          |
-| 06/09   | Guilherme |                                                         |                                                            |                                                          |
-| 11/09   | Luana     |                                                         |                                                            |                                                          |
-| 11/09   | Henrique  |                                                         |                                                            |                                                          |
-| 11/09   | Eric      |                                                         |                                                            |                                                          |
-| 11/09   | Guilherme |                                                         |                                                            |                                                          |
-| 12/09   | Luana     |                                                         |                                                            |                                                          |
-| 12/09   | Henrique  |                                                         |                                                            |                                                          |
-| 12/09   | Eric      |                                                         |                                                            |                                                          |
-| 12/09   | Guilherme |                                                         |                                                            |                                                          |
+| 05/09   | Luana     |  Estudei opções de tema | Vou verificar a viabilidade da opção de tema que pensei | Nenhum |
+| 05/09   | Henrique  | Procurei opções de tema | Pensar mais sobre opções | Nenhum |
+| 05/09   | Eric      | Apresentei uma opção de tema | verificar a viabilidade do tema | Nenhum |
+| 05/09   | Guilherme | Apresentei uma opção de tema | analisar se é uma boa proposta | Nenhum |
+| 06/09   | Luana     | Pensar em uma nova ideia de projeto | Apresentar ao Professor | Professor não aprovou a ideia de tema |
+| 06/09   | Henrique  | Pensar em uma nova ideia de projeto | Apresentar ao Professor | Professor não aprovou a ideia de tema |
+| 06/09   | Eric      | Pensar em uma nova ideia de projeto | Apresentar ao Professor | Professor não aprovou a ideia de tema |
+| 06/09   | Guilherme | Pensar em uma nova ideia de projeto | Apresentar ao Professor | Professor não aprovou a ideia de tema |
+| 11/09   | Luana     | Mexi no ducumento, na parte de problema | Continuar ajudando a completar o documento | Nenhum |
+| 11/09   | Henrique  | Arrumei a tabela de ferramentas do documento | Continuar ajudando a completar o documento | Nenhum |
+| 11/09   | Eric      | Fiz a parte de visão de produto e projeto | Continuar ajudando a completar o documento | Nenhum |
+| 11/09   | Guilherme | Fiz a parte de ciclo de vida | Continuar ajudando a completar o documento | Nenhum |
+| 12/09   | Luana     | Pensar em um novo problema e visão de produto para sustentar a escolha de tema | Terminar o documento | Nenhum |
+| 12/09   | Henrique  | Pensar em um novo problema e visão de produto para sustentar a escolha de tema | Terminar o documento | Nenhum |
+| 12/09   | Eric      | Pensar em um novo problema e visão de produto para sustentar a escolha de tema | Terminar o documento | Nenhum |
+| 12/09   | Guilherme | Pensar em um novo problema e visão de produto para sustentar a escolha de tema | Terminar o documento | Nenhum |
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
 
@@ -122,54 +122,54 @@ _tabela 5_ Dailys realizadas
 
 | Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
 |---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
-| 13/09   | Luana     |                                                         |                                                            |                                                          |
-| 13/09   | Henrique  |                                                         |                                                            |                                                          |
-| 13/09   | Eric      |                                                         |                                                            |                                                          |
-| 13/09   | Guilherme |                                                         |                                                            |                                                          |
-| 14/09   | Luana     |                                                         |                                                            |                                                          |
-| 14/09   | Henrique  |                                                         |                                                            |                                                          |
-| 14/09   | Eric      |                                                         |                                                            |                                                          |
-| 14/09   | Guilherme |                                                         |                                                            |                                                          |
-| 15/09   | Luana     |                                                         |                                                            |                                                          |
-| 15/09   | Henrique  |                                                         |                                                            |                                                          |
-| 15/09   | Eric      |                                                         |                                                            |                                                          |
-| 15/09   | Guilherme |                                                         |                                                            |                                                          |
-| 18/09   | Luana     |                                                         |                                                            |                                                          |
-| 18/09   | Henrique  |                                                         |                                                            |                                                          |
-| 18/09   | Eric      |                                                         |                                                            |                                                          |
-| 18/09   | Guilherme |                                                         |                                                            |                                                          |
-| 19/09   | Luana     |                                                         |                                                            |                                                          |
-| 19/09   | Henrique  |                                                         |                                                            |                                                          |
-| 19/09   | Eric      |                                                         |                                                            |                                                          |
-| 19/09   | Guilherme |                                                         |                                                            |                                                          |
-| 20/09   | Luana     |                                                         |                                                            |                                                          |
-| 20/09   | Henrique  |                                                         |                                                            |                                                          |
-| 20/09   | Eric      |                                                         |                                                            |                                                          |
-| 20/09   | Guilherme |                                                         |                                                            |                                                          |
-| 21/09   | Luana     |                                                         |                                                            |                                                          |
-| 21/09   | Henrique  |                                                         |                                                            |                                                          |
-| 21/09   | Eric      |                                                         |                                                            |                                                          |
-| 21/09   | Guilherme |                                                         |                                                            |                                                          |
-| 22/09   | Luana     |                                                         |                                                            |                                                          |
-| 22/09   | Henrique  |                                                         |                                                            |                                                          |
-| 22/09   | Eric      |                                                         |                                                            |                                                          |
-| 22/09   | Guilherme |                                                         |                                                            |                                                          |
-| 25/09   | Luana     |                                                         |                                                            |                                                          |
-| 25/09   | Henrique  |                                                         |                                                            |                                                          |
-| 25/09   | Eric      |                                                         |                                                            |                                                          |
-| 25/09   | Guilherme |                                                         |                                                            |                                                          |
-| 26/09   | Luana     |                                                         |                                                            |                                                          |
-| 26/09   | Henrique  |                                                         |                                                            |                                                          |
-| 26/09   | Eric      |                                                         |                                                            |                                                          |
-| 26/09   | Guilherme |                                                         |                                                            |                                                          |
-| 27/09   | Luana     |                                                         |                                                            |                                                          |
-| 27/09   | Henrique  |                                                         |                                                            |                                                          |
-| 27/09   | Eric      |                                                         |                                                            |                                                          |
-| 27/09   | Guilherme |                                                         |                                                            |                                                          |
-| 28/09   | Luana     |                                                         |                                                            |                                                          |
-| 28/09   | Henrique  |                                                         |                                                            |                                                          |
-| 28/09   | Eric      |                                                         |                                                            |                                                          |
-| 28/09   | Guilherme |                                                         |                                                            |                                                          |
+| 13/09   | Luana     | Iniciou a montagem do pages | Estudar para Outra disciplina | Outras disciplinas |
+| 13/09   | Henrique  | Iniciou a montagem do pages | Passar as tabelas do documento para o pages | Nenhum |
+| 13/09   | Eric      | Iniciou a montagem do pages | Estudar para Outra disciplina | Outras disciplinas |
+| 13/09   | Guilherme | Iniciou a montagem do pages | Seguir configurando o pages | Nenhum |
+| 14/09   | Luana     | Não mexeu no Projeto |  | Outras disciplinas |
+| 14/09   | Henrique  | Não mexeu no Projeto |  | Outras disciplinas |
+| 14/09   | Eric      | Não mexeu no Projeto |  | Outras disciplinas |
+| 14/09   | Guilherme | Não mexeu no Projeto |  | Outras disciplinas |
+| 15/09   | Luana     | Não mexeu no Projeto |  | Outras disciplinas |
+| 15/09   | Henrique  | Não mexeu no Projeto |  | Outras disciplinas |
+| 15/09   | Eric      | Não mexeu no Projeto |  | Outras disciplinas |
+| 15/09   | Guilherme | Preparou atribuições para os membros | Passar as tarefas para os membros | Nenhum |
+| 18/09   | Luana     | Organizou a documentação | Estudar atributos da engenharia de requisitos | Nenhum |
+| 18/09   | Henrique  | Documentou ferramentas no pages |  | Nenhum |
+| 18/09   | Eric      | Alterou visão de produto e projeto | Estudar atributos da engenharia de requisitos | Nenhum |
+| 18/09   | Guilherme | Organizou a documentação | Estudar atributos da engenharia de requisitos | Nenhum |
+| 19/09   | Luana     | Não mexeu no Projeto |  | Outras disciplinas |
+| 19/09   | Henrique  | Não mexeu no Projeto |  | Outras disciplinas |
+| 19/09   | Eric      | Não mexeu no Projeto |  | Outras disciplinas |
+| 19/09   | Guilherme | Não mexeu no Projeto |  | Outras disciplinas |
+| 20/09   | Luana     | Não mexeu no Projeto |  | Outras disciplinas |
+| 20/09   | Henrique  | Não mexeu no Projeto |  | Outras disciplinas |
+| 20/09   | Eric      | Não mexeu no Projeto |  | Outras disciplinas |
+| 20/09   | Guilherme | Não mexeu no Projeto |  | Outras disciplinas |
+| 21/09   | Luana     | Refinou a escolha do ciclo de vida | Atualizar documentação | Nenhum |
+| 21/09   | Henrique  | Aprimorou a escolha do processo | Atualizar documentação | Nenhum |
+| 21/09   | Eric      | Analisou como vincular engenharia de requisitos com engenharia de software | Estudar sobre engenharia de requisitos | Nenhum |
+| 21/09   | Guilherme | Analisou como vincular engenharia de requisitos com engenharia de software | sobre engenharia de requisitos | Nenhum |
+| 22/09   | Luana     | Sugeriu novo ciclo de vida | Atualizar documentação | Nenhum |
+| 22/09   | Henrique  | Estudou sobre engenharia de requisitos | Atualizar documentação | Nenhum |
+| 22/09   | Eric      | Estudou sobre engenharia de requisitos | Atualizar documentação | Nenhum |
+| 22/09   | Guilherme | Estudou sobre engenharia de requisitos | Atualizar documentação | Nenhum |
+| 25/09   | Luana     | Não mexeu no Projeto |  | Outras disciplinas |
+| 25/09   | Henrique  | Não mexeu no Projeto |  | Outras disciplinas |
+| 25/09   | Eric      | Não mexeu no Projeto |  | Outras disciplinas |
+| 25/09   | Guilherme | Não mexeu no Projeto |  | Outras disciplinas|
+| 26/09   | Luana     | Não mexeu no Projeto |  | Outras disciplinas |
+| 26/09   | Henrique  | Não mexeu no Projeto |  | Outras disciplinas |
+| 26/09   | Eric      | Não mexeu no Projeto |  | Outras disciplinas |
+| 26/09   | Guilherme | Não mexeu no Projeto |  | Outras disciplinas |
+| 27/09   | Luana     | Planejou como vai ser a aplicação de elicitação e descoberta | Preparar apresentação | Nenhum |
+| 27/09   | Henrique  | Planejou como vai ser a aplicação de Analise e consenso e declaração | Preparar apresentação | Nenhum |
+| 27/09   | Eric      | Planejou como vai ser a aplicação de verificação e validação | Preparar apresentação | Nenhum |
+| 27/09   | Guilherme | Planejou como vai ser a aplicação de organização e atualização e representação | Preparar apresentação | Nenhum |
+| 28/09   | Luana     | Gravação do video |  | Nenhum |
+| 28/09   | Henrique  | Gravação do video |  | Nenhum |
+| 28/09   | Eric      | Gravação do video |  | Nenhum |
+| 28/09   | Guilherme | Gravação do video |  | Nenhum |
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
 
