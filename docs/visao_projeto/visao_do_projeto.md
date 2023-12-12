@@ -36,8 +36,8 @@ Sprint 3 | Lista de Requisitos Funcionais e Não Funcionais | 03/10/23 | 16/10/2
 Sprint 4 | Backlog do projeto e MVP | 17/10/23 | 26/10/23
 Sprint 5 | US(login do nutricionista e adicionar paciente) | 27/10/23 | 09/11/23
 Sprint 6 | US(pesquisar nutricionista e paciente ) | 10/10/23 | 23/11/23
-Sprint 7 | US (aba da comuniade) | 24/11/23 | 07/12/23
-Sprint 8 | Entregar MVP | 24/11/23 | 07/12/23
+Sprint 7 | US (aba da comuniade) | 24/11/23 | 11/12/23
+Sprint 8 | Entregar MVP | 24/11/23 | 11/12/23
 
 Tabela 2 - Organização das sprints do projeto 
 (Fonte: [Guilherme](https://github.com/GG555-13), 2023)
@@ -104,4 +104,5 @@ Tabela 4 - Tabela de riscos
 | Versão |    Data    |      Descrição       |  Autor  | Revisor |
 | :----: | :--------: | :------------------: | :-----: | :-----: |
 |  0.1   | 24/10/2023 | Criação do documento | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
-|  1.2   | 25/10/2023 | Arrumando as tabelas e modificando os participantes de Cliente | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
+|  0.2   | 25/10/2023 | Arrumando as tabelas e modificando os participantes de Cliente | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
+|  0.3   | 25/10/2023 | Arrumando as tabelas de sprint | [Guilherme](https://github.com/GG555-13) | [Henrique](https://github.com/GG555-13) |
