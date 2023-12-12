@@ -1,7 +1,6 @@
 export class Constantes {
 
-    //public static nutriguideApi = 'https://api-nutriguide.vercel.app';   // rota de produção
-    public static nutriguideApi = 'http://localhost:3000';                  // rota local
+    public static nutriguideApi = 'https://api-nutriguide.vercel.app';   // rota de produção
 
     constructor() {}
 
