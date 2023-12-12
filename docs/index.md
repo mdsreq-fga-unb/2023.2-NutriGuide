@@ -22,17 +22,16 @@ Para acessar com a experiência completa você precisará de um login. O login f
 
 Conta de um dos nutricionistas cadastrados no nosso banco de dados:
 - Login de Nutricionista:
-  Nome: Henrique Torres
+  Nome: Henrique Torres |
   e-mail: henriquetlandin@gmail.com
 
 Conta de um dos pacientes que foi cadastrado pelo nutricionista 'Henrique Torres':
 - Login de Paciente:
-  Nome: João
+  Nome: João |
   e-mail: joao@email.com
 
   OBS: Qualquer paciente que você cadastrar (para cadastrar um paciente você deve estar logado como nutricionista)
    pode se logar na aplicação através do e-mail e senha do paciente. 
----
 
 ## Contribuidores
 
