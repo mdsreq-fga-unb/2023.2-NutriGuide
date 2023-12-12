@@ -14,7 +14,7 @@
 <p align="justify">&emsp;&emsp;O NutriGuide é um aplicativo web que serve como uma plataforma que facilita a interação entre um nutricionista e os seus pacientes com o objetivo de facilitar a comunicação entre ambos.
 
 ## Link do site 
-[NutriGuide](https://nutriguide-req.netlify.app/inicio) 
+[NutriGuide](https://nutriguide-req.netlify.app) 
 
 
 <br>
