@@ -163,14 +163,14 @@ _tabela 5_ Dailys realizadas
 | 24/10   | Henrique  | Ajustar o MVP da maneira certa |  terminar o MVP   | Nenhum  |
 | 24/10   | Eric      | Repriorizar as historias |  terminar o MVP   | Nenhum  |
 | 24/10   | Guilherme | Repriorizar as historias |  terminar o MVP   | Nenhum  |
-| 25/10   | Luana     | Não mexeu no Projeto |     | Outras disciplinas  |
-| 25/10   | Henrique  | Não mexeu no Projeto |     | Outras disciplinas  |
-| 25/10   | Eric      | Não mexeu no Projeto |     | Outras disciplinas  |
-| 25/10   | Guilherme | Não mexeu no Projeto |     | Outras disciplinas  |
-| 26/10   | Luana     | Ajudou a finalizar o MVP | Esperar a aprovação do professor    | Nenhum  |
-| 26/10   | Henrique  | Ajudou a finalizar o MVP | Esperar a aprovação do professor    | Nenhum  |
-| 26/10   | Eric      | Ajudou a finalizar o MVP | Esperar a aprovação do professor    | Nenhum  |
-| 26/10   | Guilherme | Ajudou a finalizar o MVP | Esperar a aprovação do professor    | Nenhum  |
+| 25/10   | Luana     | Ajudou a finalizar o MVP | Alterar documentação e adicionar o que foi feito    | Nenhum   |
+| 25/10   | Henrique  | Ajudou a finalizar o MVP|  Alterar documentação e adicionar o que foi feito   | Nenhum |
+| 25/10   | Eric      | Ajudou a finalizar o MVP | Alterar documentação e adicionar o que foi feito    | Nenhum |
+| 25/10   | Guilherme | Ajudou a finalizar o MVP|  Alterar documentação e adicionar o que foi feito   | Nenhum |
+| 26/10   | Luana     | Alterou documentação e gravou video de apresentação | Esperar a aprovação do professor sobre o mvp   | Nenhum  |
+| 26/10   | Henrique  | Alterou documentação e gravou video de apresentação | Esperar a aprovação do professor sobre o mvp   | Nenhum  |
+| 26/10   | Eric      | Alterou documentação e gravou video de apresentação | Esperar a aprovação do professor sobre o mvp  | Nenhum  |
+| 26/10   | Guilherme | Alterou documentação e gravou video de apresentação | Esperar a aprovação do professor sobre o mvp   | Nenhum  |
 
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.

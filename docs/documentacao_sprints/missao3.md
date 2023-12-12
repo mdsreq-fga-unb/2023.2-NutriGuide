@@ -49,42 +49,42 @@ _tabela 3_ Dailys realizadas
 
 | Data    | Aluno     | O que foi feito                                         | O que vai ser feito                                      | Bloqueios                                               |
 |---------|-----------|---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
-| 31/10   | Luana     | |    |  |
-| 31/10   | Henrique  | |    |  |
-| 31/10   | Eric      | |    |  |
-| 31/10   | Guilherme | |    |  |
-| 01/11   | Luana     | |    |  |
-| 01/11   | Henrique  | |    |  |
-| 01/11   | Eric      | |    |  |
-| 01/11   | Guilherme | |    |  |
-| 06/11   | Luana     | |    |  |
-| 06/11   | Henrique  | |    |  |
-| 06/11   | Eric      | |    |  |
-| 06/11   | Guilherme | |    |  |
-| 07/11   | Luana     | |    |  |
-| 07/11   | Henrique  | |    |  |
-| 07/11   | Eric      | |    |  |
-| 07/11   | Guilherme | |    |  |
-| 08/11   | Luana     | |    |  |
-| 08/11   | Henrique  | |    |  |
-| 08/11   | Eric      | |    |  |
-| 08/11   | Guilherme | |    |  |
-| 09/11   | Luana     | |    |  |
-| 09/11   | Henrique  | |    |  |
-| 09/11   | Eric      | |    |  |
-| 09/11   | Guilherme | |    |  |
-| 10/11   | Luana     | |    |  |
-| 10/11   | Henrique  | |    |  |
-| 10/11   | Eric      | |    |  |
-| 10/11   | Guilherme | |    |  |
-| 13/11   | Luana     | |    |  |
-| 13/11   | Henrique  | |    |  |
-| 13/11   | Eric      | |    |  |
-| 13/11   | Guilherme | |    |  |
-| 14/11   | Luana     | |    |  |
-| 14/11   | Henrique  | |    |  |
-| 14/11   | Eric      | |    |  |
-| 14/11   | Guilherme | |    |  |
+| 31/10   | Luana     | Não mexeu no Projeto |    | Outras disciplinas  |
+| 31/10   | Henrique  | Não mexeu no Projeto |    | Outras disciplinas  |
+| 31/10   | Eric      | Não mexeu no Projeto |    | Outras disciplinas  |
+| 31/10   | Guilherme | Não mexeu no Projeto |    | Outras disciplinas  |
+| 01/11   | Luana     | Não mexeu no Projeto |  Realizar mudanças no MVP  | Outras disciplinas  |
+| 01/11   | Henrique  | Não mexeu no Projeto |  Realizar mudanças no MVP  | Outras disciplinas  |
+| 01/11   | Eric      | Não mexeu no Projeto |  Realizar mudanças no MVP  | Outras disciplinas  |
+| 01/11   | Guilherme | Não mexeu no Projeto |  Realizar mudanças no MVP  | Outras disciplinas  |
+| 06/11   | Luana     | Repriorizou as historias |  Alterar o MVP  | Professor não aprovou a primeira versaõ |
+| 06/11   | Henrique  | Repriorizou as historias |  Alterar o MVP  | Professor não aprovou a primeira versaõ |
+| 06/11   | Eric      | Não mexeu no Projeto |  Alterar o MVP  | Outras disciplinas |
+| 06/11   | Guilherme | Não mexeu no Projeto |  Alterar o MVP  | Outras disciplinas |
+| 07/11   | Luana     | Repriorizou as historias |  Alterar o MVP  | Professor não aprovou a primeira versaõ  |
+| 07/11   | Henrique  | Não mexeu no Projeto |  Alterar o MVP  | Outras disciplinas |
+| 07/11   | Eric      | Repriorizou as historias |  Alterar o MVP  | Professor não aprovou a primeira versaõ |
+| 07/11   | Guilherme | Não mexeu no Projeto  |  Alterar o MVP   | Outras disciplinas |
+| 08/11   | Luana     | Alterou o MVP |  Aguardar aprovação do professor  | nenhum |
+| 08/11   | Henrique  | Alterou o MVP |  Aguardar aprovação do professor  | nenhum |
+| 08/11   | Eric      | Alterou o MVP |  Aguardar aprovação do professor  | nenhum |
+| 08/11   | Guilherme | Alterou o MVP |  Aguardar aprovação do professor  | nenhum |
+| 09/11   | Luana     | Não mexeu no Projeto |    | Outras disciplinas |
+| 09/11   | Henrique  | Não mexeu no Projeto |    | Outras disciplinas |
+| 09/11   | Eric      | Não mexeu no Projeto |    | Outras disciplinas |
+| 09/11   | Guilherme | Não mexeu no Projeto |    | Outras disciplinas |
+| 10/11   | Luana     | Não mexeu no Projeto |    | Outras disciplinas |
+| 10/11   | Henrique  | Não mexeu no Projeto |    | Outras disciplinas |
+| 10/11   | Eric      | Não mexeu no Projeto |    | Outras disciplinas |
+| 10/11   | Guilherme | Não mexeu no Projeto |    | Outras disciplinas |
+| 13/11   | Luana     | Ajustou o backlog |  alterar MVP  | Professor não aprovou a nova versão |
+| 13/11   | Henrique  | Ajustou o backlog |  alterar MVP  | Professor não aprovou a nova versão |
+| 13/11   | Eric      | Ajustou o backlog |  alterar MVP  | Professor não aprovou a nova versão |
+| 13/11   | Guilherme | Separou as tarefas | alterar MVP  | Professor não aprovou a nova versão |
+| 14/11   | Luana     | Preparou nova versão do MVP |    |  |
+| 14/11   | Henrique  | Preparou nova versão do MVP |    |  |
+| 14/11   | Eric      | Preparou nova versão do MVP |    |  |
+| 14/11   | Guilherme | Preparou nova versão do MVP |    |  |
 
 
 Fonte: [Eric Camargo](https://github.com/Ericcs10), 2023.
